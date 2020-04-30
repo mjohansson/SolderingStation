@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name solderstn_fp)(type KiCad)(uri /home/mjoh/projects/stm32/projects/v2_soldering_station/hw/solderstn_fp.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0041)http://kair.us/projects/weller/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+    <title>DIY Weller WMRP and WMRT soldering iron driver</title>
+  </head>
+  <body>
+    <i><a href="http://kair.us/">kair.us/</a></i><i> </i><i><a href="http://kair.us/projects/index.html">projects/</a></i><i> </i><i><a href="http://kair.us/projects/weller/index.html">temp_controller/</a></i><br>
+    <h1>Weller WMRP and WMRT compatible soldering station<br>
+    </h1>
+    <img alt="WMRP and WMRT compatible soldering station" title="WMRP
+      and WMRT compatible soldering station" src="./DIY Weller WMRP and WMRT soldering iron driver_files/wmrp_wmrt_soldering_station.jpg" width="800" height="611"><br>
+    <br>
+    This driver can be used with Weller tips which have integrated
+    heater element and temperature sensor. More precisely, tips from
+    WMRP (soldering pen) and WMRT (soldering tweezers) series can be
+    used. Hardware is kept as simple and cheap as possible while still
+    trying to give special attention to usability and accuracy. Main
+    inspiration for this project was the usability (or lack of) the
+    original Weller WD1M and WD2M solder stations. Hardware-wise they
+    are true to Weller quality and engineering, but the UI experience
+    could be better. Factory default setting to cut power from tip
+    immediately when placed in stand - and impossible to change the
+    behavior without manual! Well, someone else might think the same
+    from UI in my Weller driver, but at least I'm happy to use it.<br>
+    <br>
+    For a demonstration video of the station in action and overview of
+    the various functions <a href="https://youtu.be/pl9qgf_qli0">click
+      here</a>.
+    <h2>Features<br>
+    </h2>
+    <ul>
+      <li>Supports Weller WMRP and WMRT tips</li>
+      <li>Very quick heat-up time and response</li>
+      <li>Supports WMRP bare tips (with 3.5mm stereo plug)</li>
+      <li>Supports the original Weller cables/handles, including readout
+        of PTC for cold junction compensation and reed switch for
+        in-stand detection<br>
+      </li>
+      <li>Accurate temperature readings with auto-zero opamp</li>
+      <li>Mains frequency filtering for noisy environments<br>
+      </li>
+      <li>Setback temperature, setback delay, standby, offset settings
+        as in original Weller stations</li>
+      <li>Possible to change step size and temperature unit (°C or °F)</li>
+      <li>Diagnostics functions to show thermocouple temperatures from
+        both tips of WMRT, cold junction PTC temperature, reed status
+        and recognized tip type</li>
+      <li>Uses internal reference of microcontroller. Possible to
+        calibrate it with multimeter and diagnostic menu setting.</li>
+      <li>All functions controlled with one knob<br>
+      </li>
+    </ul>
+    <h2>Hardware</h2>
+    The hardware is based on PIC16F1788, fairly cheap PIC with good
+    analog peripherals. The circuit is kept as simple as possible, while
+    trying to provide optimum performance. The schematic is available in
+    PDF below.<br>
+    <a href="http://kair.us/projects/weller/weller_driver_v1_circuit_diagram.pdf">weller_driver_v1_circuit_diagram.pdf</a><br>
+    <h2>Layout</h2>
+    <img src="./DIY Weller WMRP and WMRT soldering iron driver_files/weller_driver_v11_eagleup.png" title="Weller driver
+      version 1.1 eagleUp render" alt="Weller driver version 1.1 eagleUp
+      render" width="825" height="939"><br>
+    The layout is designed with Cadsoft EAGLE 5.12.0. Two-sided board,
+    designed to fit<span class="template-min-width"> in cheap but
+      nice-looking aluminum enclosure from eBay. Eagle files available
+      below:<br>
+      <a href="http://kair.us/projects/weller/weller_driver_hw_v1.zip">weller_driver_hw_v1.zip</a>&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+      (Version 1, Dec 22, 2015) <br>
+      <a href="http://kair.us/projects/weller/weller_driver_hw_v11.zip">weller_driver_hw_v11.zip</a>&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+      (Version 1.1, Feb 4, 2018. Added PICkit2/3 pin header to make more
+      DIY-friendly. Boards not yet arrived, when I have tested them I
+      will update also the DirtyPCB order link)<br>
+      Assembly drawing including bill of materials:<br>
+      <a href="http://kair.us/projects/weller/weller_driver_v1_assy_dwg.pdf">weller_driver_v1_assy_dwg.pdf</a><br>
+      IDF exported from Eagle and STEP converted with Solid Works. May
+      be helpful if you are designing an enclosure:<br>
+      <a href="http://kair.us/projects/weller/weller_driver_v1_idf_and_step.zip">weller_driver_v1_idf_and_step.zip</a><br>
+      I have produced these boards at <a href="http://dirtypcbs.com/">DirtyPCBs</a>.
+      You can order 10 pcs of these boards for $25 using <a href="http://dirtypcbs.com/view.php?share=12240&amp;accesskey=a15d218fd057072b8ed63313fdb99488">this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        link</a> <br>
+    </span>
+    <h2>Firmware</h2>
+    Currently the FW consumes about one fourth of total available in
+    PIC16F1788. Pretty much all needed features are implemented, so
+    PIC16F1786 could be used as well. With some optimization probably
+    also PIC16F1783. But the price difference is negligible. The package
+    below contains source files and compiled binary for PIC16F1788.<br>
+    &nbsp;<br>
+    <a href="http://kair.us/projects/weller/weller_driver_fw_v05.zip">weller_driver_fw_v05.zip</a>
+    (Version 0.5, Dec 27, 2015. Compiled with <a href="http://www.ccsinfo.com/">CCS compiler</a> v5.048)<br>
+    <a href="http://kair.us/projects/weller/weller_driver_fw_v08.zip">weller_driver_fw_v08.zip</a>
+    (Version 0.8, Feb 5, 2017. Compiled with <a href="http://www.ccsinfo.com/">CCS compiler</a> v5.054) This
+    includes mains frequency filtering and reduced WMRT buzz.<br>
+    <a href="http://kair.us/projects/weller/weller_driver_fw_v0901.zip">weller_driver_fw_v901.zip</a>
+    (Version 0.901, Jul 28, 2017. Compiled with CCS compiler v5.054)
+    This includes fix for parameters being out of range after
+    programming the PIC.<br>
+    <h2>The build<br>
+    </h2>
+    I've built the soldering station in a full aluminum enclosure from
+    eBay (search for '0905 aluminum enclosure' or <a href="http://www.ebay.com/sch/i.html?_from=R40&amp;LH_BIN=1&amp;_nkw=0905+aluminum+enclosure&amp;_sop=15">click
+
+
+
+
+
+
+      here</a>, should cost around 14 € including shipping).<br>
+    The photo below shows inside of the station. I am using a 10 amp
+    power supply, since I originally planned to put two controllers in
+    one station. 120 W would be enough to operate one WMRP and one WMRT
+    simultaneously. I recommend to get a smaller PSU since this 10 A
+    supply is very tight fit in the enclosure. 7 amps should be enough,
+    or 4 amps if you are only going to use WMRP. You can (and should!)
+    of course use an external power supply to avoid mains connections in
+    the enclosure. It will reduce the risk of an electric shock
+    significantly.<br>
+    <br>
+    The photo below still has connector piece from a Weller WDH10T stand
+    connected to the driver PCB (the black plastic thing behind the
+    case).<br>
+    <br>
+    <img alt="WMRP WMRT soldering station inside" title="WMRP WMRT
+      soldering station inside" src="./DIY Weller WMRP and WMRT soldering iron driver_files/wmrp_wmrt_soldering_station_inside.jpg" width="700" height="516"><br>
+    <br>
+    The front panel of the enclosure is 6 mm thick aluminum, so some
+    machining was required to accommodate the rotary encoder and
+    display. If you use smaller PSU and encoder with longer shaft, the
+    build is a tad easier. For the encoder, I really recommend using an
+    Alps brand encoder! Models from Bourns and TT Electronics are also
+    available which are directly compatible, but the quality of Alps is
+    superior. You can use e.g. Alps EC12E2424407 part number 1520813
+    from Farnell or part number STEC12E08 from Reichelt. The photo below
+    also shows the display lens I used, a piece of smoke tinted Lexan.
+    The BOM specifies a Lite-On LTC-4627JR display, but you can also use
+    Youngsun ATA3492BR-1 display which you can get from <a href="https://www.sparkfun.com/products/9483">Sparkfun</a> and
+    also from <a href="http://www.hobbytronics.co.uk/lcd/led-displays/4digit-7segment-red">Hobbytronics</a>.
+    A third alternative is Vishay TDCR1050M, available from <a href="https://www.tme.eu/">TME</a>.<br>
+    <br>
+    <img alt="WMRP WMRT soldering station front panel machined" title="WMRP WMRT soldering station front panel machined" src="./DIY Weller WMRP and WMRT soldering iron driver_files/wmrp_wmrt_soldering_station_front_panel_machined.jpg" width="700" height="453"><br>
+    <br>
+    Below is rear view photo of the station. The mains connector comes
+    with the enclosure, but hole for iron connector must of course be
+    made. The connector is a modified Amphenol <span itemprop="mpn">T
+      3437 000 connector, see </span><a href="http://www.mikrocontroller.net/topic/143288#1500819">this
+      link for instructions in German</a> (thanks for this tip from <a href="https://github.com/FlyGlas/WMRP">FlyGlas Solder Station
+      build page</a>!). It is available e.g. from Farnell, part number
+    1123523.<br>
+    <br>
+    <img alt="WMRP WMRT soldering station rear" title="WMRP WMRT
+      soldering station rear" src="./DIY Weller WMRP and WMRT soldering iron driver_files/wmrp_wmrt_soldering_station_rear.jpg" width="700" height="501">
+    <h2>Handle<br>
+    </h2>
+    You can also build the WMRP handle yourself. Rens PA3AXA has
+    designed a 3D-printable handle and PCB for it. You can buy the PCB
+    from DirtyPCBs using <a href="http://dev.dirtypcbs.com/store/designer/details/8234/6106/handle-panel-1x1-zip">this
+
+
+
+      link</a>. The board needs to be ordered as 0.8 mm thick. Design
+    files available for download below:<br>
+    <br>
+    <a href="http://kair.us/projects/weller/Handle.skp.zip">Handle.skp.zip</a> Handle mechanical model,
+    designed with SketchUp.<br>
+    <a href="http://kair.us/projects/weller/Handle_Eagle.zip">Handle_Eagle.zip</a> Circuit diagram,
+    assembly drawing and CAD files, designed with Eagle 6.<br>
+    <a href="http://kair.us/projects/weller/handle_bom.txt">handle_bom.txt</a> Part list<br>
+    <br>
+    Below are pictures from Rens and his build. He has also modeled the
+    front panel so you can print it if you don't have access to milling
+    machine. Get it <a href="http://kair.us/projects/weller/Weller_Case_Front.skp.zip">here</a>.<br>
+    <br>
+    <img src="./DIY Weller WMRP and WMRT soldering iron driver_files/IMG_5327_s.jpg" title="Weller station and WMRP handle made
+      by Rens Dijkshoorn" alt="Weller station and WMRP handle made by
+      Rens Dijkshoorn" width="783" height="465"><br>
+    <br>
+    <img src="./DIY Weller WMRP and WMRT soldering iron driver_files/IMG_5292.JPG" title="WMRP handle PCB with KTY82 sensor and
+      reed switch" alt="WMRP handle PCB with KTY82 sensor and reed
+      switch" width="640" height="480"><br>
+    <br>
+    A tip from Rens how to get flexible cable:<br>
+    <br>
+    <div>"I prepared the cable my self using 4x&nbsp; 1 mm PTFE stranded
+      copper wire into a</div>
+    <div>number a 8 tube [ 5 mm outer, inside 3 mm, wall 1 ] from<br>
+    </div>
+    <br>
+    <div><a href="https://aliexpress.com/store/product/2x4mm-Food-Grade-Imported-Silicone-Hose-Tube-Pipe-ID2mm-OD4mm-Free-Shipping-3-5-10-Meters/1939888_32854372904.html" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://aliexpress.com/store/product/2x4mm-Food-Grade-Imported-Silicone-Hose-Tube-Pipe-ID2mm-OD4mm-Free-Shipping-3-5-10-Meters/1939888_32854372904.html&amp;source=gmail&amp;ust=1533473643977000&amp;usg=AFQjCNHGEcZs-wtLkBR2m94fch1qHUljLg">https://aliexpress.com/store/<wbr>product/2x4mm-Food-Grade-<wbr>Imported-Silicone-Hose-Tube-<wbr>Pipe-ID2mm-OD4mm-Free-<wbr>Shipping-3-5-10-Meters/<wbr>1939888_32854372904.html</a>"</div>
+    <a href="https://github.com/FlyGlas/WMRP"> </a>
+    <h2>Other similar projects<br>
+    </h2>
+    Here are some other similar projects or products<a href="https://github.com/FlyGlas/WMRP"><br>
+    </a> <a href="https://github.com/FlyGlas/WMRP">DIY-WMRP Solder
+      Station by FlyGlas</a> Code developed in Arduino environment. LCD
+    display. Versatile HW and a lot of functions. For video see <a href="https://www.youtube.com/watch?v=le2HaKJ6B1A">here</a>.
+    <ul>
+      <li><a href="http://www.martin-kumm.de/wiki/doku.php?id=Projects:SMD_Solderstation">SMD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Soldering Station for Weller Soldering Tips by pluto</a> A
+        WMRP compatible soldering station realized as an Arduino shield.<br>
+      </li>
+      <li><a href="http://www.dl4jal.eu/smd_loetstation/smd_loetst.html">Selbstbau
+
+
+
+
+
+
+
+
+          einer SMD-Lötstation</a> Another WMRP compatible soldering
+        station, inspired by the one above. Controlled by a PIC18 micro.
+        In German.<br>
+      </li>
+      <li><a href="https://debugginglab.wordpress.com/2014/10/30/soldering-station/">Soldering
+
+
+
+
+
+
+
+
+          Station by MatthiasW</a> Yet another WMRP compatible soldering
+        station. Arduino-based and with 1.8" color TFT display.</li>
+      <li><a href="https://hannio.org/produkt/maiskolben/">Maiskolben by
+          Luca Zimmermann</a> Quite similar as above. More info
+        available on <a href="https://github.com/ArduinoHannover/Maiskolben">Github</a>.</li>
+      <li><a href="https://hackaday.io/project/18899-rt-soldering-pen">RT
+
+
+
+
+
+          Soldering pen by vlk</a> Weller WMRP soldering station small
+        enough to to fit inside handle! OLED display with lots of
+        information.</li>
+      <li><a href="https://hackaday.io/project/10140-soldering-pen">Soldering
+
+
+
+
+
+          pen by HP</a> Another WMRP station that fits inside the handle
+        With minimalistic approach. Small, simple and cheap.<br>
+      </li>
+      <li><a href="http://lizerd.se/?page_id=41">Solder Station V2 by
+          Lizerd</a> Powerful HW based on STM32. Compatible also with
+        older 24V Weller tools and not just WMRP. Color LCD display. Is
+        listed as 'work in progress' but looks quite finished. Maybe one
+        of the first DIY stations to support WMRP.</li>
+      <li><a href="http://sid.crsndoo.com/">SID Soldering Iron Driver by
+          arhi</a> One of the first open source soldering stations.
+        Supports quite many iron types.</li>
+      <li><a href="http://dangerousprototypes.com/forum/viewtopic.php?t=7218">Unisolder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          by sparkybg</a> More recent universal solder station. Supports
+        a lot of different iron types.<br>
+      </li>
+    </ul>
+    <h2> Frequently asked questions</h2>
+    <p>Q: How to connect WMRP tip with 3,5 mm stereo jack?<br>
+      A: See WMRP pinout from <a href="http://kair.us/projects/weller/wmrp_tip_pinout.jpg">here</a>.
+      Connect sleeve to 'GND'. Connect ring to 'TC1'. Connect tip to
+      'HT1'. Use FW v0.6 or newer, enable 'poor' mode from diag menu.<br>
+    </p>
+    <p>Q: The WMRT tip makes noise! Is this normal?<br>
+      A: It seems that the heating elements of WMRT make noise when
+      power is switched on or off rapidly. Earlier firmware versions
+      used to periodically pulse current to heating element 2 to
+      recognize tip type. This caused constant buzz with WMRT even when
+      in standby. FW 0.6 and newer recognizes tip type from resistor in
+      parallel with reed switch so the noise is reduced. Original Weller
+      stations drive heating elements using AC and zero point switching.
+      So the current to tip rises and falls slowly, that's why they
+      don't make noise.</p>
+    <p>Q: The temperature reading is not stable like in the Youtube
+      video, it flickers like there's noise in temperature readout.
+      Why's that?<br>
+      A: Most likely some external disturbance is coupled to the iron
+      cable. The output of the thermocouple is only some millivolts so
+      it is quite sensitive. WMRT is more sensitive because it has 2k
+      resistor in series with thermocouple while WMRP has 1k. Especially
+      mains frequency seems to couple to the thermocouple line. Starting
+      from firmware v0.6 there is special filtering against mains
+      frequency noise. Temperature measurements are done at double the
+      mains frequency interval, and two consecutive measurements are
+      averaged. This effectively cancels any mains frequency noise. The
+      diagnostics menu has a setting to select between 50 Hz and 60 Hz
+      mains frequency, be sure to set it correctly. Another thing which
+      may help is to connect the ground of the soldering station to
+      mains ground.<br>
+    </p>
+    <p>Q: How can I program the PIC? There is nothing on the PCB to
+      connect the programmer!<br>
+      A: <a href="http://kair.us/projects/programming/index.html">See this page</a> for more
+      information on how to program the PIC in my projects.<br>
+    </p>
+    <p>Q: I have read and understood the PIC programming instructions
+      but I still can't program it. The programmer doesn't find the PIC!<br>
+      A: The ICSP lines on this board are shared with the rotary
+      encoder. On some encoders, the encoder can keep the one of the
+      programming lines pulled down even when it is at detent position,
+      where both switches should be open. Try to rotate the encoder to
+      such position that neither PGD nor PGC are pulled to GND.<br>
+    </p>
+    <p>Q: I can only adjust the reference to one direction! Some of the
+      parameters show '-1' or other erroneous or garbage values!<br>
+      A: These kind of issues seem to happen if the PIC is programmed
+      with MPLAB IPE. By default, the MPLAB IPE doesn't seem to erase or
+      program the data EEPROM. These kind of problems are fixed in
+      firmware v0.9 and newer. All the parameters are checked at startup
+      and if any of those are outside of valid range, all parameters are
+      set to default values.<br>
+    </p>
+    <p><i><a href="http://kair.us/">kair.us/</a></i><i> </i><i><a href="http://kair.us/projects/index.html">projects/</a></i><i> </i><i><a href="http://kair.us/projects/weller/index.html">temp_controller/</a></i> </p>
+    <span style="font-style: italic;">page created 23.12.2015<br>
+      last updated 6.8.2018 <a href="mailto:webmaster@kair.us">webmaster@kair.us</a></span><br>
+  
+
+</body></html>

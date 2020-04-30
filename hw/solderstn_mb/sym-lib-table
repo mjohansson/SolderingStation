@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name solderstn)(type Legacy)(uri /home/mjoh/projects/stm32/projects/v2_soldering_station/hw/solderstn_lib_sch/solderstn.lib)(options "")(descr ""))
+  (lib (name stm32f429v_parts)(type Legacy)(uri /home/mjoh/projects/stm32/projects/customlib_mj/stm32f429v_parts.lib)(options "")(descr ""))
+  (lib (name stm32f429v_compact)(type Legacy)(uri /home/mjoh/projects/stm32/projects/customlib_mj/stm32f429v_compact.lib)(options "")(descr ""))
+)

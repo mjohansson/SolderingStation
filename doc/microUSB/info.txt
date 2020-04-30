@@ -1,0 +1,17 @@
+	Features
+
+Type:Micro USB-B 
+
+Gender:Female
+
+Contact resistance:50mΩ max
+
+Insulation Resistance :100M Ω min
+
+Withstand Voltage: AC 100V(50Hz)/min
+
+Operation Temperature Range: -20 to 85 degrees
+
+Packaging:Tape
+
+  
