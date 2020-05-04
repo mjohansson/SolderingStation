@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:RJ45_Amphenol_RJMG1BD3B8K1ANR J?
+U 1 1 5EB5B24A
+P 9350 3000
+F 0 "J?" H 9350 3725 50  0000 C CNN
+F 1 "RJ45_Amphenol_RJMG1BD3B8K1ANR" H 9350 3634 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR" H 9350 3700 50  0001 C CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 9350 3800 50  0001 C CNN
+	1    9350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Ethernet:DP83848C U?
+U 1 1 5EB61C0F
+P 4850 3800
+F 0 "U?" H 4850 5581 50  0000 C CNN
+F 1 "DP83848C" H 4850 5490 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5850 2250 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/dp83848c.pdf" H 4850 3800 50  0001 C CNN
+	1    4850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2500 8450 2500
+Wire Wire Line
+	5850 2700 8450 2700
+Wire Wire Line
+	8450 2800 6000 2800
+Wire Wire Line
+	6000 2800 6000 3200
+Wire Wire Line
+	6000 3200 5850 3200
+Wire Wire Line
+	5850 3400 6100 3400
+Wire Wire Line
+	6100 3400 6100 3000
+Wire Wire Line
+	6100 3000 8450 3000
+$Comp
+L Device:R_Small R?
+U 1 1 5EB6B9D0
+P 7500 2200
+F 0 "R?" H 7559 2246 50  0000 L CNN
+F 1 "2.2k" H 7559 2155 50  0000 L CNN
+F 2 "" H 7500 2200 50  0001 C CNN
+F 3 "~" H 7500 2200 50  0001 C CNN
+	1    7500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB6CCA1
+P 8000 2200
+F 0 "R?" H 8059 2246 50  0000 L CNN
+F 1 "110ohm" H 8059 2155 50  0000 L CNN
+F 2 "" H 8000 2200 50  0001 C CNN
+F 3 "~" H 8000 2200 50  0001 C CNN
+	1    8000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3200 8000 3200
+Wire Wire Line
+	8000 3200 8000 2300
+$Comp
+L Device:R_Small R?
+U 1 1 5EB6DE28
+P 7050 2200
+F 0 "R?" H 7109 2246 50  0000 L CNN
+F 1 "110ohm" H 7109 2155 50  0000 L CNN
+F 2 "" H 7050 2200 50  0001 C CNN
+F 3 "~" H 7050 2200 50  0001 C CNN
+	1    7050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB6EB54
+P 6650 2200
+F 0 "R?" H 6709 2246 50  0000 L CNN
+F 1 "2.2k" H 6709 2155 50  0000 L CNN
+F 2 "" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2300 7500 3300
+Wire Wire Line
+	7500 3300 8450 3300
+Wire Wire Line
+	8450 3400 7050 3400
+Wire Wire Line
+	7050 3400 7050 2300
+Wire Wire Line
+	8450 3500 6650 3500
+Wire Wire Line
+	6650 3500 6650 2300
+Text GLabel 7300 1650 1    50   Input ~ 0
++3V3
+Wire Wire Line
+	8000 2100 8000 1900
+Wire Wire Line
+	6650 1900 6650 2100
+Wire Wire Line
+	7050 2100 7050 1900
+Connection ~ 7050 1900
+Wire Wire Line
+	7050 1900 6650 1900
+Wire Wire Line
+	7500 2100 7500 1900
+Wire Wire Line
+	7050 1900 7300 1900
+Connection ~ 7500 1900
+Wire Wire Line
+	7500 1900 8000 1900
+Wire Wire Line
+	7300 1650 7300 1900
+Connection ~ 7300 1900
+Wire Wire Line
+	7300 1900 7500 1900
+$EndSCHEMATC
