@@ -1,0 +1,559 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "STM22F429 MCU pinout, clks, reset"
+Date "2020-04-26"
+Rev "R0.0"
+Comp "SolderingStationGroup"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L customlib_mj:STM32F429VITx U?
+U 1 1 5EACD9C1
+P 5700 2750
+F 0 "U?" H 5356 4640 60  0000 L CNN
+F 1 "STM32F429VITx" H 5356 4534 60  0000 L CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4800 3000 60  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f429ng.pdf" H 2000 4200 60  0001 L CNN
+F 4 "STM32F429VITx" H 5400 3100 60  0001 L CNN "manf#"
+F 5 "ARM Cortex-M4 MCU, 2048KB flash, 192KB RAM, 180MHz, 1.8-3.6V, 82 GPIO, LQFP-100 14x14mm. Ref. Man : RM0090" H 3000 2700 60  0001 L CNN "Field5"
+	1    5700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:STM32F429VITx U?
+U 2 1 5EB04B60
+P 3700 7700
+F 0 "U?" H 4250 9450 60  0000 L CNN
+F 1 "STM32F429VITx" H 3350 9450 60  0000 L CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 2800 7950 60  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f429ng.pdf" H 0   9150 60  0001 L CNN
+F 4 "STM32F429VITx" H 3400 8050 60  0001 L CNN "manf#"
+F 5 "ARM Cortex-M4 MCU, 2048KB flash, 192KB RAM, 180MHz, 1.8-3.6V, 82 GPIO, LQFP-100 14x14mm. Ref. Man : RM0090" H 1000 7650 60  0001 L CNN "Field5"
+	2    3700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB15629
+P 1300 3150
+F 0 "#PWR?" H 1300 2900 50  0001 C CNN
+F 1 "GND" V 1305 2943 50  0000 C CNN
+F 2 "" H 1300 3150 50  0001 C CNN
+F 3 "" H 1300 3150 50  0001 C CNN
+	1    1300 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3150 1400 3150
+Wire Wire Line
+	1600 3150 1800 3150
+$Comp
+L Device:R_Small R?
+U 1 1 5EB163A2
+P 1500 3150
+F 0 "R?" V 1450 3225 50  0000 L CNN
+F 1 "10k" V 1550 3225 50  0000 L CNN
+F 2 "" H 1500 3150 50  0001 C CNN
+F 3 "~" H 1500 3150 50  0001 C CNN
+	1    1500 3150
+	0    1    1    0   
+$EndComp
+Text HLabel 1350 2450 0    50   BiDi ~ 0
+SWDIO
+Text HLabel 1350 2550 0    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	1800 2450 1350 2450
+Wire Wire Line
+	1800 2550 1350 2550
+Text HLabel 1350 2050 0    50   Output ~ 0
+DBGUART_TX
+Text HLabel 1350 2150 0    50   Input ~ 0
+DBGUART_RX
+Wire Wire Line
+	1800 2150 1350 2150
+Wire Wire Line
+	1350 2050 1800 2050
+Text HLabel 1350 2350 0    50   BiDi ~ 0
+USB1_DP
+Text HLabel 1350 2250 0    50   BiDi ~ 0
+USB1_DM
+Wire Wire Line
+	1350 2250 1800 2250
+Wire Wire Line
+	1350 2350 1800 2350
+Text HLabel 1350 1850 0    50   Input ~ 0
+RMII_CRS_DV
+Wire Wire Line
+	1800 1850 1350 1850
+Text HLabel 1350 1650 0    50   Output ~ 0
+DAC_OUT2
+Text HLabel 1350 1550 0    50   Output ~ 0
+DAC_OUT1
+Wire Wire Line
+	1800 1550 1350 1550
+Wire Wire Line
+	1800 1650 1350 1650
+Text HLabel 1350 1350 0    50   BiDi ~ 0
+ETH_MDIO
+Text HLabel 1350 1250 0    50   Input ~ 0
+RMII_REF_CLK
+Wire Wire Line
+	1350 1250 1800 1250
+Wire Wire Line
+	1800 1350 1350 1350
+Text HLabel 10100 1250 2    50   Output ~ 0
+ETH_MDC
+Text HLabel 10100 1550 2    50   Input ~ 0
+RMII_RXD0
+Text HLabel 10100 1650 2    50   Input ~ 0
+RMII_RXD1
+Text HLabel 1350 4050 0    50   Output ~ 0
+RMII_TX_EN
+Text HLabel 1350 4150 0    50   Output ~ 0
+RMII_TX_D0
+Text HLabel 1350 4250 0    50   Output ~ 0
+RMII_TX_D1
+Wire Wire Line
+	1350 4050 1800 4050
+Wire Wire Line
+	1350 4150 1800 4150
+Wire Wire Line
+	1350 4250 1800 4250
+Wire Wire Line
+	9600 1250 10100 1250
+Wire Wire Line
+	10100 1550 9600 1550
+Wire Wire Line
+	10100 1650 9600 1650
+Text HLabel 10100 3950 2    50   Output ~ 0
+USB2_VBUS_EN
+Wire Wire Line
+	10100 3950 9600 3950
+Text HLabel 1350 4450 0    50   BiDi ~ 0
+USB2_DP
+Text HLabel 1350 4350 0    50   BiDi ~ 0
+USB2_DM
+Wire Wire Line
+	1350 4350 1800 4350
+Wire Wire Line
+	1800 4450 1350 4450
+Wire Wire Line
+	1800 6100 1700 6100
+Text Label 1800 6100 2    50   ~ 0
+BOOT0
+Text HLabel 900  6700 0    50   BiDi ~ 0
+~MCU_RST~
+$Comp
+L Device:R_Small R?
+U 1 1 5EB3BB62
+P 1600 7600
+F 0 "R?" V 1675 7575 50  0000 L CNN
+F 1 "0R" V 1525 7550 50  0000 L CNN
+F 2 "" H 1600 7600 50  0001 C CNN
+F 3 "~" H 1600 7600 50  0001 C CNN
+	1    1600 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB3C36F
+P 950 7300
+F 0 "C?" V 825 7225 50  0000 L CNN
+F 1 "18p" V 900 7325 50  0000 L CNN
+F 2 "" H 950 7300 50  0001 C CNN
+F 3 "~" H 950 7300 50  0001 C CNN
+	1    950  7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB3CBCD
+P 950 7600
+F 0 "C?" V 1075 7525 50  0000 L CNN
+F 1 "18p" V 1000 7625 50  0000 L CNN
+F 2 "" H 950 7600 50  0001 C CNN
+F 3 "~" H 950 7600 50  0001 C CNN
+	1    950  7600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5EB3D5DA
+P 1200 7450
+F 0 "Y?" V 1100 7475 50  0000 L CNN
+F 1 "8.0M" V 1300 7475 50  0000 L CNN
+F 2 "" H 1200 7450 50  0001 C CNN
+F 3 "~" H 1200 7450 50  0001 C CNN
+	1    1200 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB40961
+P 700 7550
+F 0 "#PWR?" H 700 7300 50  0001 C CNN
+F 1 "GND" H 700 7425 50  0000 C CNN
+F 2 "" H 700 7550 50  0001 C CNN
+F 3 "" H 700 7550 50  0001 C CNN
+	1    700  7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 7550 1200 7600
+Connection ~ 1200 7600
+Wire Wire Line
+	1200 7600 1050 7600
+Wire Wire Line
+	1200 7350 1200 7300
+Connection ~ 1200 7300
+Wire Wire Line
+	1200 7300 1050 7300
+Wire Wire Line
+	1500 7600 1200 7600
+Wire Wire Line
+	850  7600 800  7600
+Wire Wire Line
+	800  7600 800  7500
+Wire Wire Line
+	800  7300 850  7300
+Wire Wire Line
+	700  7550 700  7500
+Wire Wire Line
+	700  7500 800  7500
+Connection ~ 800  7500
+Wire Wire Line
+	800  7500 800  7450
+Wire Wire Line
+	1100 7450 800  7450
+Connection ~ 800  7450
+Wire Wire Line
+	800  7450 800  7300
+$Comp
+L power:GND #PWR?
+U 1 1 5EB5AF27
+P 1350 7450
+F 0 "#PWR?" H 1350 7200 50  0001 C CNN
+F 1 "GND" H 1350 7325 50  0000 C CNN
+F 2 "" H 1350 7450 50  0001 C CNN
+F 3 "" H 1350 7450 50  0001 C CNN
+	1    1350 7450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 7450 1300 7450
+$Comp
+L Device:R_Small R?
+U 1 1 5EB62B78
+P 9800 2750
+F 0 "R?" V 9725 2725 50  0000 L CNN
+F 1 "0R" V 9875 2700 50  0000 L CNN
+F 2 "" H 9800 2750 50  0001 C CNN
+F 3 "~" H 9800 2750 50  0001 C CNN
+	1    9800 2750
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB641D6
+P 10300 2550
+F 0 "C?" V 10175 2475 50  0000 L CNN
+F 1 "10p" V 10250 2575 50  0000 L CNN
+F 2 "" H 10300 2550 50  0001 C CNN
+F 3 "~" H 10300 2550 50  0001 C CNN
+	1    10300 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB652D9
+P 10300 2850
+F 0 "C?" V 10425 2775 50  0000 L CNN
+F 1 "10p" V 10350 2875 50  0000 L CNN
+F 2 "" H 10300 2850 50  0001 C CNN
+F 3 "~" H 10300 2850 50  0001 C CNN
+	1    10300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB65BFD
+P 10650 2800
+F 0 "#PWR?" H 10650 2550 50  0001 C CNN
+F 1 "GND" H 10650 2675 50  0000 C CNN
+F 2 "" H 10650 2800 50  0001 C CNN
+F 3 "" H 10650 2800 50  0001 C CNN
+	1    10650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2750 9700 2750
+Wire Wire Line
+	9900 2750 9950 2750
+Wire Wire Line
+	9950 2750 9950 2850
+Wire Wire Line
+	9950 2850 10050 2850
+Wire Wire Line
+	10050 2800 10050 2850
+Connection ~ 10050 2850
+Wire Wire Line
+	10050 2850 10200 2850
+Wire Wire Line
+	9600 2650 9700 2650
+Wire Wire Line
+	9700 2650 9700 2550
+Wire Wire Line
+	9700 2550 10050 2550
+Wire Wire Line
+	10050 2550 10050 2600
+Connection ~ 10050 2550
+Wire Wire Line
+	10050 2550 10200 2550
+Wire Wire Line
+	10400 2850 10500 2850
+Wire Wire Line
+	10500 2850 10500 2700
+Wire Wire Line
+	10500 2550 10400 2550
+Wire Wire Line
+	10500 2700 10650 2700
+Wire Wire Line
+	10650 2700 10650 2800
+Connection ~ 10500 2700
+Wire Wire Line
+	10500 2700 10500 2550
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5EB621DC
+P 10050 2700
+F 0 "Y?" H 10100 2800 50  0000 C CNN
+F 1 "32768" H 10050 2875 50  0000 C CNN
+F 2 "" H 10050 2700 50  0001 C CNN
+F 3 "~" H 10050 2700 50  0001 C CNN
+	1    10050 2700
+	0    1    1    0   
+$EndComp
+Text Label 1800 6700 2    50   ~ 0
+NRST
+$Comp
+L customlib_mj:STM32_bootmodes TXT?
+U 1 1 5EBF9055
+P 2650 5550
+F 0 "TXT?" H 1700 6200 71  0001 C CNN
+F 1 "STM32_bootmodes" H 2650 6200 71  0001 C CNN
+F 2 "" H 2650 5550 71  0001 C CNN
+F 3 "" H 2650 5550 71  0001 C CNN
+	1    2650 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 6700
+Wire Wire Line
+	1550 6700 1800 6700
+Wire Wire Line
+	1200 7300 1800 7300
+Wire Wire Line
+	1700 7600 1800 7600
+Wire Wire Line
+	1550 6750 1550 6700
+$Comp
+L Device:C_Small C?
+U 1 1 5EB3183C
+P 1550 6850
+F 0 "C?" H 1625 6850 50  0000 L CNN
+F 1 "100n" H 1575 6925 50  0000 L CNN
+F 2 "" H 1550 6850 50  0001 C CNN
+F 3 "~" H 1550 6850 50  0001 C CNN
+	1    1550 6850
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECF7161
+P 1550 7000
+F 0 "#PWR?" H 1550 6750 50  0001 C CNN
+F 1 "GND" H 1550 6875 50  0000 C CNN
+F 2 "" H 1550 7000 50  0001 C CNN
+F 3 "" H 1550 7000 50  0001 C CNN
+	1    1550 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 7000 1550 6950
+$Comp
+L customlib_mj:Pushbutton_SMD_TS-1102W-4316 SW?
+U 1 1 5ED018D7
+P 1250 5950
+F 0 "SW?" H 1250 5800 50  0000 C CNN
+F 1 "Pushbutton_SMD_TS-1102W-4316" H 1250 5800 50  0001 C CNN
+F 2 "customlib_mj_fp:SMD_PUSHBTN_6x6mm" H 1250 6050 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Tactile-Switches_SOFNG-TS-1102W-4316_C111373.html" V 1100 5950 50  0001 C CNN
+	1    1250 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECF51F9
+P 1200 7000
+F 0 "#PWR?" H 1200 6750 50  0001 C CNN
+F 1 "GND" H 1200 6875 50  0000 C CNN
+F 2 "" H 1200 7000 50  0001 C CNN
+F 3 "" H 1200 7000 50  0001 C CNN
+	1    1200 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1150 6700
+Wire Wire Line
+	900  6700 1150 6700
+Wire Wire Line
+	1150 6700 1250 6700
+Connection ~ 1250 6700
+Wire Wire Line
+	1250 6750 1250 6700
+Wire Wire Line
+	1150 6750 1150 6700
+$Comp
+L customlib_mj:Pushbutton_SMD_TS-1102W-4316 SW?
+U 1 1 5ECF190A
+P 1150 6850
+F 0 "SW?" H 1100 6700 50  0000 C CNN
+F 1 "Pushbutton_SMD_TS-1102W-4316" H 1150 6700 50  0001 C CNN
+F 2 "customlib_mj_fp:SMD_PUSHBTN_6x6mm" H 1150 6950 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Tactile-Switches_SOFNG-TS-1102W-4316_C111373.html" V 1000 6850 50  0001 C CNN
+	1    1150 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB2FE9F
+P 1700 6250
+F 0 "R?" V 1625 6225 50  0000 L CNN
+F 1 "10k" V 1775 6175 50  0000 L CNN
+F 2 "" H 1700 6250 50  0001 C CNN
+F 3 "~" H 1700 6250 50  0001 C CNN
+	1    1700 6250
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5EB34A34
+P 1300 5750
+F 0 "#PWR?" H 1300 5600 50  0001 C CNN
+F 1 "VDD" H 1300 5875 50  0000 C CNN
+F 2 "" H 1300 5750 50  0001 C CNN
+F 3 "" H 1300 5750 50  0001 C CNN
+	1    1300 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6700 1550 6700
+Wire Wire Line
+	1150 6950 1200 6950
+Wire Wire Line
+	1200 7000 1200 6950
+Connection ~ 1200 6950
+Wire Wire Line
+	1200 6950 1250 6950
+$Comp
+L Device:C_Small C?
+U 1 1 5ED1DA11
+P 1450 6250
+F 0 "C?" H 1525 6250 50  0000 L CNN
+F 1 "100n" H 1475 6325 50  0000 L CNN
+F 2 "" H 1450 6250 50  0001 C CNN
+F 3 "~" H 1450 6250 50  0001 C CNN
+	1    1450 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED1E2C4
+P 1700 6400
+F 0 "#PWR?" H 1700 6150 50  0001 C CNN
+F 1 "GND" H 1700 6275 50  0000 C CNN
+F 2 "" H 1700 6400 50  0001 C CNN
+F 3 "" H 1700 6400 50  0001 C CNN
+	1    1700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED1EE7F
+P 1450 6400
+F 0 "#PWR?" H 1450 6150 50  0001 C CNN
+F 1 "GND" H 1450 6275 50  0000 C CNN
+F 2 "" H 1450 6400 50  0001 C CNN
+F 3 "" H 1450 6400 50  0001 C CNN
+	1    1450 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6400 1700 6350
+Wire Wire Line
+	1700 6150 1700 6100
+Connection ~ 1700 6100
+Wire Wire Line
+	1700 6100 1450 6100
+Wire Wire Line
+	1450 6400 1450 6350
+Wire Wire Line
+	1450 6150 1450 6100
+Connection ~ 1450 6100
+Text HLabel 1000 6100 0    50   BiDi ~ 0
+MCU_BOOT0
+Wire Wire Line
+	1000 6100 1250 6100
+Wire Wire Line
+	1250 6050 1250 6100
+Connection ~ 1250 6100
+Wire Wire Line
+	1250 6100 1350 6100
+Wire Wire Line
+	1350 6050 1350 6100
+Connection ~ 1350 6100
+Wire Wire Line
+	1350 6100 1450 6100
+Wire Wire Line
+	1250 5850 1250 5800
+Wire Wire Line
+	1250 5800 1300 5800
+Wire Wire Line
+	1350 5800 1350 5850
+Wire Wire Line
+	1300 5750 1300 5800
+Connection ~ 1300 5800
+Wire Wire Line
+	1300 5800 1350 5800
+Text Notes 1050 6900 2    60   ~ 12
+RESET
+Text Notes 1100 6000 2    60   ~ 12
+Force\nbootloader
+Text Notes 9850 2900 0    60   ~ 12
+TBD!
+Text Notes 1650 7750 0    60   ~ 12
+TBD!
+Text HLabel 1150 750  0    50   Output ~ 0
+~PHY_RESETn~
+Text HLabel 1150 950  0    50   Input ~ 0
+~PHY_IRQn~
+Text Notes 550  1050 0    60   ~ 12
+TBD!
+$Comp
+L customlib_mj:W25Q64FV U?
+U 1 1 5F361AE2
+P 7550 5550
+F 0 "U?" H 7550 6153 60  0000 C CNN
+F 1 "W25Q64FV" H 7550 6047 60  0000 C CNN
+F 2 "" H 7550 5550 60  0001 C CNN
+F 3 "https://www.pjrc.com/store/w25q64fv.pdf" H 7550 5550 60  0001 C CNN
+	1    7550 5550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
