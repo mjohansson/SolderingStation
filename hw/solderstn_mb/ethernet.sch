@@ -51,17 +51,6 @@ F 3 "https://www.we-online.com/catalog/datasheet/74980104400.pdf" H 9250 1650 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND24_Small Y?
-U 1 1 5ED6CF96
-P 4550 3400
-F 0 "Y?" V 4450 3425 50  0000 L CNN
-F 1 "25M" V 4650 3425 50  0000 L CNN
-F 2 "" H 4550 3400 50  0001 C CNN
-F 3 "~" H 4550 3400 50  0001 C CNN
-	1    4550 3400
-	0    1    1    0   
-$EndComp
-$Comp
 L customlib_mj:Ferrite_Bead_Small FB?
 U 1 1 5ED6D9C0
 P 6650 5150
@@ -355,7 +344,7 @@ L Device:R_Small R?
 U 1 1 5EDBAC91
 P 4200 3300
 F 0 "R?" V 4125 3225 50  0000 L CNN
-F 1 "10k" V 4275 3225 50  0000 L CNN
+F 1 "0R" V 4275 3225 50  0000 L CNN
 F 2 "" H 4200 3300 50  0001 C CNN
 F 3 "~" H 4200 3300 50  0001 C CNN
 	1    4200 3300
@@ -368,7 +357,7 @@ L Device:C_Small C?
 U 1 1 5EDC20FF
 P 4850 3550
 F 0 "C?" V 4900 3575 50  0000 L CNN
-F 1 "18p" V 4800 3575 50  0000 L CNN
+F 1 "27p" V 4800 3575 50  0000 L CNN
 F 2 "" H 4850 3550 50  0001 C CNN
 F 3 "~" H 4850 3550 50  0001 C CNN
 	1    4850 3550
@@ -379,45 +368,20 @@ L Device:C_Small C?
 U 1 1 5EDC3950
 P 4850 3250
 F 0 "C?" V 4900 3275 50  0000 L CNN
-F 1 "18p" V 4800 3275 50  0000 L CNN
+F 1 "27p" V 4800 3275 50  0000 L CNN
 F 2 "" H 4850 3250 50  0001 C CNN
 F 3 "~" H 4850 3250 50  0001 C CNN
 	1    4850 3250
 	0    1    -1   0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5EDC79D6
-P 4450 3400
-F 0 "#PWR?" H 4450 3150 50  0001 C CNN
-F 1 "GND" H 4450 3275 50  0000 C CNN
-F 2 "" H 4450 3400 50  0001 C CNN
-F 3 "" H 4450 3400 50  0001 C CNN
-	1    4450 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4750 3550 4550 3550
 Wire Wire Line
 	4200 3550 4200 3500
 Wire Wire Line
 	4200 3500 4050 3500
 Wire Wire Line
-	4750 3250 4550 3250
-Wire Wire Line
 	4400 3250 4400 3300
 Wire Wire Line
 	4400 3300 4300 3300
-Wire Wire Line
-	4550 3300 4550 3250
-Connection ~ 4550 3250
-Wire Wire Line
-	4550 3250 4400 3250
-Wire Wire Line
-	4550 3500 4550 3550
-Connection ~ 4550 3550
-Wire Wire Line
-	4550 3550 4200 3550
 Wire Wire Line
 	4950 3550 5050 3550
 Wire Wire Line
@@ -436,17 +400,10 @@ F 3 "" H 5150 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 3400 4650 3400
+	5050 3400 5150 3400
+Wire Wire Line
+	5150 3400 5150 3600
 Connection ~ 5050 3400
-Wire Wire Line
-	5050 3400 5050 3250
-Wire Wire Line
-	5050 3450 5150 3450
-Wire Wire Line
-	5150 3450 5150 3600
-Connection ~ 5050 3450
-Wire Wire Line
-	5050 3450 5050 3400
 $Comp
 L Device:R_Small R?
 U 1 1 5EDD480D
@@ -612,7 +569,7 @@ U 1 1 5EE59C47
 P 1550 3950
 F 0 "JP?" H 1500 4050 50  0000 C CNN
 F 1 "dogbone_3" H 1575 4100 50  0001 C CNN
-F 2 "" H 1550 3950 50  0001 C CNN
+F 2 "customlib_mj_fp:db3_0402" H 1550 3950 50  0001 C CNN
 F 3 "" H 1550 3950 50  0001 C CNN
 	1    1550 3950
 	0    -1   -1   0   
@@ -751,12 +708,12 @@ LED0_LINK
 $Comp
 L power:GND #PWR?
 U 1 1 5EF06910
-P 10650 3050
-F 0 "#PWR?" H 10650 2800 50  0001 C CNN
-F 1 "GND" H 10650 2900 50  0000 C CNN
-F 2 "" H 10650 3050 50  0001 C CNN
-F 3 "" H 10650 3050 50  0001 C CNN
-	1    10650 3050
+P 10850 3050
+F 0 "#PWR?" H 10850 2800 50  0001 C CNN
+F 1 "GND" H 10850 2900 50  0000 C CNN
+F 2 "" H 10850 3050 50  0001 C CNN
+F 3 "" H 10850 3050 50  0001 C CNN
+	1    10850 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -778,17 +735,6 @@ F 3 "~" H 8000 2650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 2650 8250 2650
-$Comp
-L Device:R_Small R?
-U 1 1 5EF2E213
-P 8100 2850
-F 0 "R?" V 8025 2775 50  0000 L CNN
-F 1 "0R" V 8175 2775 50  0000 L CNN
-F 2 "" H 8100 2850 50  0001 C CNN
-F 3 "~" H 8100 2850 50  0001 C CNN
-	1    8100 2850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8000 2850 7100 2850
 Wire Wire Line
@@ -987,12 +933,12 @@ Wire Notes Line
 $Comp
 L customlib_mj:EGND #PWR?
 U 1 1 5F0D426B
-P 10650 2350
-F 0 "#PWR?" H 10650 2150 50  0001 C CNN
-F 1 "EGND" H 10650 2225 50  0000 C CNN
-F 2 "" H 10650 2300 50  0001 C CNN
-F 3 "" H 10650 2300 50  0001 C CNN
-	1    10650 2350
+P 10550 2350
+F 0 "#PWR?" H 10550 2150 50  0001 C CNN
+F 1 "EGND" H 10550 2225 50  0000 C CNN
+F 2 "" H 10550 2300 50  0001 C CNN
+F 3 "" H 10550 2300 50  0001 C CNN
+	1    10550 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1002,9 +948,9 @@ Wire Wire Line
 Wire Wire Line
 	10400 2350 10250 2350
 Wire Wire Line
-	10400 2300 10650 2300
+	10400 2300 10550 2300
 Wire Wire Line
-	10650 2300 10650 2350
+	10550 2300 10550 2350
 Connection ~ 10400 2300
 Wire Wire Line
 	10400 2300 10400 2350
@@ -1018,17 +964,6 @@ F 2 "" H 8600 3200 50  0001 C CNN
 F 3 "" H 8600 3200 50  0001 C CNN
 	1    8600 3250
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5F0F584E
-P 8300 3200
-F 0 "R?" V 8225 3125 50  0000 L CNN
-F 1 "0R" V 8375 3125 50  0000 L CNN
-F 2 "" H 8300 3200 50  0001 C CNN
-F 3 "~" H 8300 3200 50  0001 C CNN
-	1    8300 3200
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -1186,10 +1121,6 @@ Wire Wire Line
 Connection ~ 5750 3100
 Wire Wire Line
 	5950 2850 5950 2500
-Wire Wire Line
-	10650 3050 10650 2850
-Wire Wire Line
-	10650 2850 10550 2850
 $Comp
 L Device:R_Small R?
 U 1 1 5F2B41DA
@@ -1246,4 +1177,91 @@ F 3 "" H 6450 5800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 5800 6450 5550
+$Comp
+L customlib_mj:dogbone_3 JP?
+U 1 1 5F36664E
+P 10850 2850
+F 0 "JP?" V 10850 3006 50  0000 C CNN
+F 1 "dogbone_3" H 10875 3000 50  0001 C CNN
+F 2 "customlib_mj_fp:db3_0402" H 10850 2850 50  0001 C CNN
+F 3 "" H 10850 2850 50  0001 C CNN
+	1    10850 2850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10550 2850 10750 2850
+Wire Wire Line
+	10850 2950 10850 3050
+$Comp
+L power:VDD #PWR?
+U 1 1 5F3A1620
+P 10850 2650
+F 0 "#PWR?" H 10850 2500 50  0001 C CNN
+F 1 "VDD" H 10850 2775 50  0000 C CNN
+F 2 "" H 10850 2650 50  0001 C CNN
+F 3 "" H 10850 2650 50  0001 C CNN
+	1    10850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2650 10850 2750
+$Comp
+L customlib_mj:dogbone_2 JP?
+U 1 1 5F3D2520
+P 8100 2850
+F 0 "JP?" H 8075 2925 50  0000 C CNN
+F 1 "dogbone_2" H 8100 2950 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_0402" H 8100 2850 50  0001 C CNN
+F 3 "" H 8100 2850 50  0001 C CNN
+	1    8100 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F3D5C07
+P 8300 3200
+F 0 "R?" V 8225 3125 50  0000 L CNN
+F 1 "0R" V 8375 3125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 3200 50  0001 C CNN
+F 3 "~" H 8300 3200 50  0001 C CNN
+	1    8300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L customlib_mj:Crystal_TSX3225_25MF10P-C Y?
+U 1 1 5F3EC90A
+P 4650 3400
+F 0 "Y?" V 4700 3500 50  0000 L CNN
+F 1 "25M" V 4605 3503 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4650 3400 50  0001 C CNN
+F 3 "https://www.mouser.se/datasheet/2/137/FA-238_en-932914.pdf" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3250 5050 3350
+Wire Wire Line
+	4400 3250 4650 3250
+Wire Wire Line
+	4200 3550 4650 3550
+Wire Wire Line
+	4650 3300 4650 3250
+Connection ~ 4650 3250
+Wire Wire Line
+	4650 3250 4750 3250
+Wire Wire Line
+	4650 3500 4650 3550
+Connection ~ 4650 3550
+Wire Wire Line
+	4650 3550 4750 3550
+Wire Wire Line
+	4750 3350 5050 3350
+Connection ~ 5050 3350
+Wire Wire Line
+	5050 3350 5050 3400
+Wire Wire Line
+	4750 3450 5050 3450
+Connection ~ 5050 3450
+Wire Wire Line
+	5050 3450 5050 3400
 $EndSCHEMATC

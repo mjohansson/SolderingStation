@@ -167,7 +167,7 @@ L Device:C_Small C?
 U 1 1 5EB3C36F
 P 950 7300
 F 0 "C?" V 825 7225 50  0000 L CNN
-F 1 "18p" V 900 7325 50  0000 L CNN
+F 1 "10p" V 900 7325 50  0000 L CNN
 F 2 "" H 950 7300 50  0001 C CNN
 F 3 "~" H 950 7300 50  0001 C CNN
 	1    950  7300
@@ -178,21 +178,10 @@ L Device:C_Small C?
 U 1 1 5EB3CBCD
 P 950 7600
 F 0 "C?" V 1075 7525 50  0000 L CNN
-F 1 "18p" V 1000 7625 50  0000 L CNN
+F 1 "10p" V 1000 7625 50  0000 L CNN
 F 2 "" H 950 7600 50  0001 C CNN
 F 3 "~" H 950 7600 50  0001 C CNN
 	1    950  7600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Crystal_GND24_Small Y?
-U 1 1 5EB3D5DA
-P 1200 7450
-F 0 "Y?" V 1100 7475 50  0000 L CNN
-F 1 "8.0M" V 1300 7475 50  0000 L CNN
-F 2 "" H 1200 7450 50  0001 C CNN
-F 3 "~" H 1200 7450 50  0001 C CNN
-	1    1200 7450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -207,48 +196,16 @@ F 3 "" H 700 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 7550 1200 7600
-Connection ~ 1200 7600
-Wire Wire Line
-	1200 7600 1050 7600
-Wire Wire Line
-	1200 7350 1200 7300
-Connection ~ 1200 7300
-Wire Wire Line
-	1200 7300 1050 7300
-Wire Wire Line
-	1500 7600 1200 7600
-Wire Wire Line
 	850  7600 800  7600
 Wire Wire Line
 	800  7600 800  7500
 Wire Wire Line
 	800  7300 850  7300
 Wire Wire Line
-	700  7550 700  7500
+	700  7550 700  7450
 Wire Wire Line
-	700  7500 800  7500
-Connection ~ 800  7500
-Wire Wire Line
-	800  7500 800  7450
-Wire Wire Line
-	1100 7450 800  7450
+	700  7450 800  7450
 Connection ~ 800  7450
-Wire Wire Line
-	800  7450 800  7300
-$Comp
-L power:GND #PWR?
-U 1 1 5EB5AF27
-P 1350 7450
-F 0 "#PWR?" H 1350 7200 50  0001 C CNN
-F 1 "GND" H 1350 7325 50  0000 C CNN
-F 2 "" H 1350 7450 50  0001 C CNN
-F 3 "" H 1350 7450 50  0001 C CNN
-	1    1350 7450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1350 7450 1300 7450
 $Comp
 L Device:R_Small R?
 U 1 1 5EB62B78
@@ -357,8 +314,6 @@ $EndComp
 Connection ~ 1550 6700
 Wire Wire Line
 	1550 6700 1800 6700
-Wire Wire Line
-	1200 7300 1800 7300
 Wire Wire Line
 	1700 7600 1800 7600
 Wire Wire Line
@@ -556,4 +511,41 @@ F 3 "https://www.pjrc.com/store/w25q64fv.pdf" H 7550 5550 60  0001 C CNN
 	1    7550 5550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1050 7300 1150 7300
+Wire Wire Line
+	1050 7600 1150 7600
+Wire Wire Line
+	800  7300 800  7400
+$Comp
+L customlib_mj:Crystal_TSX3225_16MF18X-AC3 Y?
+U 1 1 5F429432
+P 1150 7450
+F 0 "Y?" V 1050 7475 50  0000 L CNN
+F 1 "16MHz" V 1250 7475 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1150 7450 50  0001 C CNN
+F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&lang=en" H 1150 7450 50  0001 C CNN
+	1    1150 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 7550 1150 7600
+Connection ~ 1150 7600
+Wire Wire Line
+	1150 7600 1500 7600
+Wire Wire Line
+	1150 7350 1150 7300
+Connection ~ 1150 7300
+Wire Wire Line
+	1150 7300 1800 7300
+Wire Wire Line
+	1050 7400 800  7400
+Connection ~ 800  7400
+Wire Wire Line
+	800  7400 800  7450
+Wire Wire Line
+	1050 7500 800  7500
+Connection ~ 800  7500
+Wire Wire Line
+	800  7500 800  7450
 $EndSCHEMATC

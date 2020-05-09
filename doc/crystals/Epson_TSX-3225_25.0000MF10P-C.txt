@@ -1,0 +1,7 @@
+(Same family as other TSX-3225!)
+TSX-3225 25.0000MF10P-C
+F=25MHz +/- 10ppm
+ESR=40 Ohms
+CL=18 pF
+DLmax=200 uW
+

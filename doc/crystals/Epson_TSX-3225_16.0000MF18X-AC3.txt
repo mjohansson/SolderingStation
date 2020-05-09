@@ -1,0 +1,7 @@
+(Same family as other TSX-3225!)
+TSX-3225 16.0000MF18X-AC3
+F=16MHz +/- 18ppm
+ESR=60 Ohms
+CL=9 pF
+DLmax=200 uW
+
