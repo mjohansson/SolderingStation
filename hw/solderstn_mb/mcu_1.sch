@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 7
 Title "STM22F429 MCU pinout, clks, reset"
 Date "2020-04-26"
-Rev "R0.0"
-Comp "SolderingStationGroup"
+Rev "R0.1"
+Comp "SolderingStationGroup : Jonny Svärd / Mathias Johansson / Magnus Thulesius"
 Comment1 ""
 Comment2 ""
 Comment3 ""

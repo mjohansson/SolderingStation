@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 7
 Title "Ethernet PHY & connector"
 Date "2020-05-03"
-Rev "R0.0"
-Comp "SolderingStationGroup"
+Rev "R0.1"
+Comp "SolderingStationGroup : Jonny Svärd / Mathias Johansson / Magnus Thulesius"
 Comment1 ""
 Comment2 ""
 Comment3 ""
