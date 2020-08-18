@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 21
+Title ""
+Date ""
+Rev "R0.1"
+Comp "SolderingStationGroup : Jonny Svärd / Mathias Johansson / Magnus Thulesius"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1700 2550 0    50   Input ~ 0
+SCL
+Text HLabel 1700 2450 0    50   BiDi ~ 0
+SDA
+Text HLabel 1700 2750 0    50   Input ~ 0
+A0
+Text HLabel 1700 2850 0    50   Input ~ 0
+A1
+$Comp
+L Sensor_Temperature:TMP100 U?
+U 1 1 5F4C3A03
+P 2400 2650
+AR Path="/5F2B2D3D/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2B889C/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2BD2B3/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2BD7F7/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2BDC1C/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2BE052/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2BE47E/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F2C0DB1/5F4C3A03" Ref="U?"  Part="1" 
+AR Path="/5F472FC2/5F4B6AEC/5F4C3A03" Ref="U901"  Part="1" 
+AR Path="/5F472FC2/5F4B6CAA/5F4C3A03" Ref="U1001"  Part="1" 
+AR Path="/5F472FC2/5F4B6E36/5F4C3A03" Ref="U1101"  Part="1" 
+F 0 "U1101" H 2550 3000 50  0000 C CNN
+F 1 "TMP100" H 2650 2300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2400 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/tmp100" H 2350 2650 50  0001 C CNN
+	1    2400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2850 2000 2850
+Wire Wire Line
+	1700 2750 2000 2750
+Wire Wire Line
+	1700 2450 2000 2450
+Wire Wire Line
+	2000 2550 1700 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F4C3A04
+P 2400 3150
+AR Path="/5F2B2D3D/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2B889C/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BD2B3/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BD7F7/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BDC1C/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BE052/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BE47E/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F2C0DB1/5F4C3A04" Ref="#PWR?"  Part="1" 
+AR Path="/5F472FC2/5F4B6AEC/5F4C3A04" Ref="#PWR0904"  Part="1" 
+AR Path="/5F472FC2/5F4B6CAA/5F4C3A04" Ref="#PWR01004"  Part="1" 
+AR Path="/5F472FC2/5F4B6E36/5F4C3A04" Ref="#PWR01104"  Part="1" 
+F 0 "#PWR01104" H 2400 2900 50  0001 C CNN
+F 1 "GND" H 2405 2977 50  0000 C CNN
+F 2 "" H 2400 3150 50  0001 C CNN
+F 3 "" H 2400 3150 50  0001 C CNN
+	1    2400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2150 2400 2250
+Wire Wire Line
+	2400 3150 2400 3050
+$Comp
+L Device:C_Small C?
+U 1 1 5F4C3A05
+P 3300 2650
+AR Path="/5F2B2D3D/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2B889C/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2BD2B3/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2BD7F7/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2BDC1C/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2BE052/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2BE47E/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F2C0DB1/5F4C3A05" Ref="C?"  Part="1" 
+AR Path="/5F472FC2/5F4B6AEC/5F4C3A05" Ref="C901"  Part="1" 
+AR Path="/5F472FC2/5F4B6CAA/5F4C3A05" Ref="C1001"  Part="1" 
+AR Path="/5F472FC2/5F4B6E36/5F4C3A05" Ref="C1101"  Part="1" 
+F 0 "C1101" H 3392 2696 50  0000 L CNN
+F 1 "100n" H 3392 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3300 2650 50  0001 C CNN
+F 3 "~" H 3300 2650 50  0001 C CNN
+	1    3300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2B588B
+P 3300 2850
+AR Path="/5F2B2D3D/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2B889C/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BD2B3/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BD7F7/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BDC1C/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BE052/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2BE47E/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2C0DB1/5F2B588B" Ref="#PWR?"  Part="1" 
+AR Path="/5F472FC2/5F4B6AEC/5F2B588B" Ref="#PWR0903"  Part="1" 
+AR Path="/5F472FC2/5F4B6CAA/5F2B588B" Ref="#PWR01003"  Part="1" 
+AR Path="/5F472FC2/5F4B6E36/5F2B588B" Ref="#PWR01103"  Part="1" 
+F 0 "#PWR01103" H 3300 2600 50  0001 C CNN
+F 1 "GND" H 3305 2677 50  0000 C CNN
+F 2 "" H 3300 2850 50  0001 C CNN
+F 3 "" H 3300 2850 50  0001 C CNN
+	1    3300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2450 3300 2550
+Wire Wire Line
+	3300 2850 3300 2750
+$Comp
+L power:VDD #PWR0901
+U 1 1 5F4B752F
+P 2400 2150
+AR Path="/5F472FC2/5F4B6AEC/5F4B752F" Ref="#PWR0901"  Part="1" 
+AR Path="/5F472FC2/5F4B6CAA/5F4B752F" Ref="#PWR01001"  Part="1" 
+AR Path="/5F472FC2/5F4B6E36/5F4B752F" Ref="#PWR01101"  Part="1" 
+F 0 "#PWR01101" H 2400 2000 50  0001 C CNN
+F 1 "VDD" H 2415 2323 50  0000 C CNN
+F 2 "" H 2400 2150 50  0001 C CNN
+F 3 "" H 2400 2150 50  0001 C CNN
+	1    2400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0902
+U 1 1 5F4B7A67
+P 3300 2450
+AR Path="/5F472FC2/5F4B6AEC/5F4B7A67" Ref="#PWR0902"  Part="1" 
+AR Path="/5F472FC2/5F4B6CAA/5F4B7A67" Ref="#PWR01002"  Part="1" 
+AR Path="/5F472FC2/5F4B6E36/5F4B7A67" Ref="#PWR01102"  Part="1" 
+F 0 "#PWR01102" H 3300 2300 50  0001 C CNN
+F 1 "VDD" H 3315 2623 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

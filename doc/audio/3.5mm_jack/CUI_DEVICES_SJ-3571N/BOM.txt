@@ -1,0 +1,3 @@
+3DX_CUI_DEVICES_Supplier: CUI Devices
+3DX_CUI_DEVICES_Description: 3.5 mm Right-Angle, SPDT Switch, Stereo Audio Jack Connector
+3DX_CUI_DEVICES_Model Number: SJ-3571N
