@@ -46,8 +46,8 @@ F 3 "~" H 6350 6300 50  0001 C CNN
 	1    6350 6300
 	1    0    0    -1  
 $EndComp
-Text Notes 3050 7650 0    50   ~ 0
-FancyBtn LED connector (PWM ctrl low-side; 5V or 12V selectable V+)
+Text Notes 4700 7400 0    60   ~ 12
+FancyBtn LED connector \n(PWM ctrl low-side; 5V/12V selectable V+)
 $Comp
 L customlib_mj:FFC_retention_clamp M501
 U 1 1 5F4700B4
@@ -671,8 +671,8 @@ F 3 "" H 2850 4500 50  0000 C CNN
 	1    2850 4500
 	1    0    0    -1  
 $EndComp
-Text Notes 650  1950 0    75   ~ 15
-TODO: TBD - VDD_OLED or VDD for frontpanel 3V..?\nOr send over Vmain 5V and put local 3.0V LDO on the fp?
+Text Notes 650  2050 0    75   ~ 15
+Place vDD_OLED LDO close to FFC connectors\nTODO: add 2nd optional rotary encoder to FP board\nIdeally it would just be a 3d-printed holder option on\nsame PCB that supports PwrBtn. Worst-case, air-wire\nin the Rotary signals to 5pin header a bit off.\n(TODO#2: Need new 3d-printed holder design for left-side Rotary...)
 Text GLabel 7250 1100 2    50   Output ~ 0
 HWID_MB
 Text GLabel 9500 800  0    50   Input ~ 0
@@ -706,9 +706,7 @@ I2C1_SDA
 Text GLabel 2600 2450 0    50   Input ~ 0
 DISP_D~Cn~
 Text GLabel 2100 2750 0    50   Input ~ 0
-DISP_SCK
-Text GLabel 2600 2850 0    50   Input ~ 0
-DISP_MOSI
+DISP_FLASH_SCK
 Text GLabel 2100 3050 0    50   BiDi ~ 0
 I2C1_SDA
 Text GLabel 2600 3250 0    50   Input ~ 0
@@ -812,8 +810,8 @@ Wire Wire Line
 	5850 6300 6150 6300
 Wire Wire Line
 	5850 5950 5850 5800
-Text Notes 4000 7500 0    50   ~ 0
-TODO: TBD contacts - cable shoe blades, or Pluto 2p Power-connector..?
+Text Notes 2700 7650 0    70   ~ 0
+TODO: TBD contacts - cable shoe blades, or Pluto 2p Power-connector..?\nJST? Molex?
 $Comp
 L customlib_mj:DMG1012T Q501
 U 1 1 5F4241F8
@@ -871,4 +869,14 @@ Wire Wire Line
 Wire Wire Line
 	5650 6650 5750 6650
 Connection ~ 5650 6650
+Text GLabel 2600 2850 0    50   Input ~ 0
+DISP_FLASH_MOSI
+Text GLabel 2600 2950 0    50   Output ~ 0
+FP_ENC2_A
+Text GLabel 2600 3150 0    50   Output ~ 0
+FP_ENC2_B
+Text GLabel 1600 3350 0    50   Output ~ 0
+~FP_ENC2_SWn~
+Text Notes 500  3900 0    75   ~ 15
+\nTODO: Remoce this ~SYS_RSTn~ and add ENC2_x\nto front-panel board too (and update FP layout)
 $EndSCHEMATC

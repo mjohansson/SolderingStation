@@ -42,23 +42,23 @@ $EndComp
 $Comp
 L power:GND #PWR02103
 U 1 1 5EB15629
-P 600 3000
-F 0 "#PWR02103" H 600 2750 50  0001 C CNN
-F 1 "GND" V 605 2793 50  0000 C CNN
-F 2 "" H 600 3000 50  0001 C CNN
-F 3 "" H 600 3000 50  0001 C CNN
-	1    600  3000
+P 550 3000
+F 0 "#PWR02103" H 550 2750 50  0001 C CNN
+F 1 "GND" V 555 2793 50  0000 C CNN
+F 2 "" H 550 3000 50  0001 C CNN
+F 3 "" H 550 3000 50  0001 C CNN
+	1    550  3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R2103
 U 1 1 5EB163A2
-P 750 2950
-F 0 "R2103" V 675 2950 50  0000 C CNN
-F 1 "10k" V 825 2950 50  0000 C CNN
-F 2 "" H 750 2950 50  0001 C CNN
-F 3 "~" H 750 2950 50  0001 C CNN
-	1    750  2950
+P 700 2950
+F 0 "R2103" V 625 2950 50  0000 C CNN
+F 1 "10k" V 700 2950 50  0000 C CNN
+F 2 "" H 700 2950 50  0001 C CNN
+F 3 "~" H 700 2950 50  0001 C CNN
+	1    700  2950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -428,12 +428,12 @@ TBD!
 $Comp
 L customlib_mj:W25Q64FV U2102
 U 1 1 5F361AE2
-P 8650 5400
-F 0 "U2102" H 8800 5750 60  0000 C CNN
-F 1 "W25Q64FV" H 8950 5050 60  0000 C CNN
-F 2 "" H 8650 5400 60  0001 C CNN
-F 3 "https://www.pjrc.com/store/w25q64fv.pdf" H 8650 5400 60  0001 C CNN
-	1    8650 5400
+P 8750 5450
+F 0 "U2102" H 8900 5800 60  0000 C CNN
+F 1 "W25Q64FV" H 9050 5100 60  0000 C CNN
+F 2 "" H 8750 5450 60  0001 C CNN
+F 3 "https://www.pjrc.com/store/w25q64fv.pdf" H 8750 5450 60  0001 C CNN
+	1    8750 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -475,82 +475,74 @@ Wire Wire Line
 	800  7500 800  7450
 Wire Wire Line
 	5600 7500 6250 7500
-Text Label 6250 7500 2    50   ~ 0
-SPI4_MOSI
 Wire Wire Line
 	5600 7300 6250 7300
 Wire Wire Line
 	5600 7400 6250 7400
-Text Label 6250 7300 2    50   ~ 0
-SPI4_SCK
 Text Label 6250 7400 2    50   ~ 0
-SPI4_MISO
+Flash_MISO
 Wire Wire Line
-	8350 5400 7900 5400
+	8450 5450 8000 5450
 Wire Wire Line
-	8350 5500 7900 5500
+	8450 5550 8000 5550
 Wire Wire Line
-	8350 5300 7900 5300
+	8450 5350 8000 5350
 Wire Wire Line
-	9000 5400 8950 5400
+	9100 5450 9050 5450
 Wire Wire Line
-	9000 5500 8950 5500
+	9100 5550 9050 5550
 Wire Wire Line
-	9400 5300 8950 5300
-Text Label 7900 5400 0    50   ~ 0
-SPI4_SCK
-Text Label 7900 5500 0    50   ~ 0
-SPI4_MOSI
-Text Label 9400 5300 2    50   ~ 0
-SPI4_MISO
+	9500 5350 9050 5350
+Text Label 9500 5350 2    50   ~ 0
+Flash_MISO
 $Comp
 L power:VDD #PWR02107
 U 1 1 5F44F4B6
-P 8650 4900
-F 0 "#PWR02107" H 8650 4750 50  0001 C CNN
-F 1 "VDD" H 8650 5025 50  0000 C CNN
-F 2 "" H 8650 4900 50  0001 C CNN
-F 3 "" H 8650 4900 50  0001 C CNN
-	1    8650 4900
+P 8750 4950
+F 0 "#PWR02107" H 8750 4800 50  0001 C CNN
+F 1 "VDD" H 8750 5075 50  0000 C CNN
+F 2 "" H 8750 4950 50  0001 C CNN
+F 3 "" H 8750 4950 50  0001 C CNN
+	1    8750 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02113
 U 1 1 5F44FBEC
-P 8650 5900
-F 0 "#PWR02113" H 8650 5650 50  0001 C CNN
-F 1 "GND" H 8650 5775 50  0000 C CNN
-F 2 "" H 8650 5900 50  0001 C CNN
-F 3 "" H 8650 5900 50  0001 C CNN
-	1    8650 5900
+P 8750 5950
+F 0 "#PWR02113" H 8750 5700 50  0001 C CNN
+F 1 "GND" H 8750 5825 50  0000 C CNN
+F 2 "" H 8750 5950 50  0001 C CNN
+F 3 "" H 8750 5950 50  0001 C CNN
+	1    8750 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8650 5900 8650 5800
+	8750 5950 8750 5850
 Wire Wire Line
-	8650 5000 8650 4900
+	8750 5050 8750 4950
 Wire Wire Line
 	5600 7600 6250 7600
 Text Label 6250 7600 2    50   ~ 0
 ~Flash_CSn~
-Text Label 7900 5300 0    50   ~ 0
+Text Label 8000 5350 0    50   ~ 0
 ~Flash_CSn~
 Wire Wire Line
-	9000 5400 9000 5450
+	9100 5450 9100 5500
 Wire Wire Line
-	9000 5450 9150 5450
-Connection ~ 9000 5450
+	9100 5500 9250 5500
+Connection ~ 9100 5500
 Wire Wire Line
-	9000 5450 9000 5500
+	9100 5500 9100 5550
 $Comp
 L power:VDD #PWR02109
 U 1 1 5F46890F
-P 9150 5450
-F 0 "#PWR02109" H 9150 5300 50  0001 C CNN
-F 1 "VDD" H 9150 5575 50  0000 C CNN
-F 2 "" H 9150 5450 50  0001 C CNN
-F 3 "" H 9150 5450 50  0001 C CNN
-	1    9150 5450
+P 9250 5500
+F 0 "#PWR02109" H 9250 5350 50  0001 C CNN
+F 1 "VDD" H 9250 5625 50  0000 C CNN
+F 2 "" H 9250 5500 50  0001 C CNN
+F 3 "" H 9250 5500 50  0001 C CNN
+	1    9250 5500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -659,13 +651,13 @@ Wire Wire Line
 Wire Wire Line
 	1850 2800 1400 2800
 Wire Wire Line
-	650  2950 600  2950
+	600  2950 550  2950
 Wire Wire Line
-	600  2950 600  3000
+	550  2950 550  3000
 Wire Wire Line
 	1850 2900 1550 2900
 Wire Wire Line
-	850  2950 1550 2950
+	800  2950 1550 2950
 Wire Wire Line
 	1550 2950 1550 2900
 Connection ~ 1550 2900
@@ -711,8 +703,6 @@ Wire Wire Line
 	1850 3400 1400 3400
 Wire Wire Line
 	1850 3500 1400 3500
-Wire Wire Line
-	1850 3700 1550 3700
 Text GLabel 1400 900  0    50   Input ~ 0
 CH_A_KTY_HWID_MB_ADC2
 Text GLabel 1400 1000 0    50   Input ~ 0
@@ -726,7 +716,7 @@ DAC_OUT1
 Text GLabel 1400 1400 0    50   Output ~ 0
 DAC_OUT2
 Text GLabel 1400 1500 0    50   Input ~ 0
-CH_B_IN_STAND_ADC2
+CH_B_IN_STAND_ADC1
 Text GLabel 1400 1600 0    50   Input ~ 0
 RMII_CRS_DV
 Text GLabel 1400 1700 0    50   Output ~ 0
@@ -751,22 +741,20 @@ Text GLabel 1400 2800 0    50   Input ~ 0
 CH_B_TC2_AMP_ADC2
 Text GLabel 1400 2900 0    50   Output ~ 0
 ~SYS_RSTn~
-Text GLabel 1400 3000 0    50   Output ~ 0
-DISP_SCK
-Text GLabel 1400 3100 0    50   Output ~ 0
+Text GLabel 6250 7300 2    50   Output ~ 0
+DISP_FLASH_SCK
+Text GLabel 6250 6800 2    50   Output ~ 0
 DISP_D~Cn~
-Text GLabel 1400 3200 0    50   Output ~ 0
-DISP_MOSI
+Text GLabel 6250 7500 2    50   Output ~ 0
+DISP_FLASH_MOSI
 Text GLabel 1400 3300 0    50   Output ~ 0
 I2C1_SCL
 Text GLabel 1400 3400 0    50   BiDi ~ 0
 I2C1_SDA
-Text GLabel 1400 3500 0    50   Output ~ 0
+Text GLabel 6250 6900 2    50   Output ~ 0
 ~DISP_CSn~
 Text GLabel 1400 3600 0    50   Input ~ 0
 FAN3_RPM
-Text GLabel 1400 3700 0    50   Output ~ 0
-KTY_BIAS_ENABLE
 Text GLabel 1400 3800 0    50   Output ~ 0
 RMII_TX_EN
 Text GLabel 1400 3900 0    50   Output ~ 0
@@ -833,7 +821,7 @@ Text GLabel 10150 3000 2    50   Input ~ 0
 ~FP_BTN_2Bn~
 Text GLabel 10150 3100 2    50   Input ~ 0
 ~FP_ENC_SWn~
-Text GLabel 10150 3200 2    50   Input ~ 0
+Text GLabel 10150 3500 2    50   Input ~ 0
 ~AUX_INTn~
 Text GLabel 10150 3300 2    50   Input ~ 0
 CH_A_DRV_OK
@@ -842,26 +830,19 @@ CH_B_DRV_OK
 Text GLabel 10150 3600 2    50   Input ~ 0
 ~VBUS2_FLGn~
 Text GLabel 10150 3700 2    50   Output ~ 0
-VBUS2_EN
+VBUS2_ENABLE
 Text GLabel 10150 3800 2    50   Output ~ 0
 PWRDRV_ENABLE
-Text GLabel 10150 3900 2    50   Output ~ 0
+Text GLabel 1400 3100 0    50   Output ~ 0
 FAN1_PWM
-Text GLabel 10150 4000 2    50   Output ~ 0
+Text GLabel 1400 3200 0    50   Output ~ 0
 FAN2_PWM
-Text GLabel 10150 4100 2    50   Output ~ 0
+Text GLabel 1400 3000 0    50   Output ~ 0
 FAN3_PWM
-Text GLabel 10150 4200 2    50   Output ~ 0
+Text GLabel 1400 3500 0    50   Output ~ 0
 PWRBTN_LED_PWM
-Text HLabel 1400 4400 0    50   Output ~ 0
-KTY_BIAS_ENABLE
-Wire Wire Line
-	1550 3700 1550 4400
-Wire Wire Line
-	1550 4400 1400 4400
-Connection ~ 1550 3700
-Wire Wire Line
-	1550 3700 1400 3700
+Text HLabel 10150 4100 2    50   Output ~ 0
+CH_A_KTY_BIAS_ENABLE
 $Comp
 L power:VDD #PWR02105
 U 1 1 5FCFC625
@@ -926,7 +907,7 @@ Wire Wire Line
 	1200 4900 1200 4950
 Wire Wire Line
 	1500 4900 1500 4950
-Text Notes 8900 6200 2    60   ~ 12
+Text Notes 9000 6250 2    60   ~ 12
 SPI flash
 $Comp
 L customlib_mj:MCP1316 U2101
@@ -1036,7 +1017,39 @@ DLED_WDT
 Text Label 5550 5300 0    50   ~ 0
 DLED_WDT
 Wire Wire Line
-	9650 3500 9850 3500
-Text GLabel 9850 3500 2    50   Output ~ 0
+	9650 3500 10150 3500
+Text Notes 10950 1750 1    50   ~ 0
+TIM8
+Text GLabel 10150 3200 2    50   Input ~ 0
+~FP_ENC2_SWn~
+Text GLabel 10150 3900 2    50   Input ~ 0
+FP_ENC2_A
+Text GLabel 10150 4000 2    50   Input ~ 0
+FP_ENC2_B
+Text Notes 10700 4000 0    50   ~ 0
+TIM4 (ENC)
+Text Notes 6900 7200 1    50   ~ 0
+TIM1\n(ENC)
+Text HLabel 10150 4200 2    50   Output ~ 0
+CH_B_KTY_BIAS_ENABLE
+Wire Wire Line
+	1400 3700 1850 3700
+Text Notes 700  3650 0    50   ~ 0
+TIM11
+Text Notes 450  3550 0    50   ~ 0
+TIM10
+Text Notes 800  3150 0    50   ~ 0
+TIM2,\nTIM3
+Text HLabel 1400 3700 0    50   Output ~ 0
 HWID_ADC_SELECT
+Text Notes 6700 6700 0    50   ~ 0
+TIM9
+Text Label 6250 7300 2    50   ~ 0
+Flash_SCK
+Text Label 6250 7500 2    50   ~ 0
+Flash_MOSI
+Text Label 8000 5450 0    50   ~ 0
+Flash_SCK
+Text Label 8000 5550 0    50   ~ 0
+Flash_MOSI
 $EndSCHEMATC

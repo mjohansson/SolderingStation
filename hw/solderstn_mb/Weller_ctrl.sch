@@ -188,7 +188,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 5350 6250 5350
 Text GLabel 6600 4850 2    50   Output ~ 0
-CH_B_IN_STAND_ADC2
+CH_B_IN_STAND_ADC1
 Text GLabel 6600 5050 2    50   Output ~ 0
 CH_B_TC1_AMP_ADC1
 Text GLabel 6600 5150 2    50   Output ~ 0
@@ -431,12 +431,8 @@ Wire Wire Line
 	9500 2850 9600 2850
 Wire Wire Line
 	9600 2850 9600 2750
-Text GLabel 8950 3050 0    50   Input ~ 0
-HWID_ADC_SELECT
 Wire Wire Line
 	9100 3050 8950 3050
-Text GLabel 8950 5500 0    50   Input ~ 0
-HWID_ADC_SELECT
 Wire Wire Line
 	9100 5500 8950 5500
 $Comp
@@ -563,4 +559,8 @@ Wire Wire Line
 Connection ~ 9750 5400
 Wire Wire Line
 	9750 5400 9500 5400
+Text HLabel 8950 3050 0    50   Input ~ 0
+HWID_ADC_SEL
+Text HLabel 8950 5500 0    50   Input ~ 0
+HWID_ADC_SEL
 $EndSCHEMATC

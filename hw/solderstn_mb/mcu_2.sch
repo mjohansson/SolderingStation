@@ -64,76 +64,67 @@ $EndComp
 $Comp
 L customlib_mj:TLV9052SIDGS U?
 U 1 1 5F392B98
-P 3350 5900
+P 3150 5900
 AR Path="/5F785D6E/5F392B98" Ref="U?"  Part="1" 
 AR Path="/5EAEB4B5/5F392B98" Ref="U403"  Part="1" 
-F 0 "U403" H 3082 5625 50  0000 L CNN
-F 1 "TLV9052SIDGS" H 3082 5534 50  0000 L CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 3350 5900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tlv9052" H 3400 6100 50  0001 C CNN
-	1    3350 5900
+F 0 "U403" H 2882 5625 50  0000 L CNN
+F 1 "TLV9052SIDGS" H 2882 5534 50  0000 L CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 3150 5900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tlv9052" H 3200 6100 50  0001 C CNN
+	1    3150 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L customlib_mj:TLV9052SIDGS U?
 U 2 1 5F392B9E
-P 5150 5900
+P 5450 5900
 AR Path="/5F785D6E/5F392B9E" Ref="U?"  Part="2" 
 AR Path="/5EAEB4B5/5F392B9E" Ref="U403"  Part="2" 
-F 0 "U403" H 4882 5625 50  0000 L CNN
-F 1 "TLV9052SIDGS" H 4882 5534 50  0000 L CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 5150 5900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tlv9052" H 5200 6100 50  0001 C CNN
-	2    5150 5900
+F 0 "U403" H 5182 5625 50  0000 L CNN
+F 1 "TLV9052SIDGS" H 5182 5534 50  0000 L CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 5450 5900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tlv9052" H 5500 6100 50  0001 C CNN
+	2    5450 5900
 	1    0    0    -1  
 $EndComp
-Text HLabel 3000 5500 0    50   Input ~ 0
-KTY_BIAS_EN
+Text HLabel 2800 5500 0    50   Input ~ 0
+CH_A_KTY_BIAS_ENABLE
 Wire Wire Line
-	3350 5500 3000 5500
+	3150 5500 2800 5500
 Wire Wire Line
-	3350 5600 5150 5600
+	3450 5900 3550 5900
 Wire Wire Line
-	5150 5600 5150 5700
+	3550 5900 3550 6300
 Wire Wire Line
-	3650 5900 3750 5900
+	3550 6300 2750 6300
 Wire Wire Line
-	3750 5900 3750 6300
+	2750 6300 2750 6000
 Wire Wire Line
-	3750 6300 2950 6300
+	2750 6000 2850 6000
 Wire Wire Line
-	2950 6300 2950 6000
+	5750 5900 5850 5900
 Wire Wire Line
-	2950 6000 3050 6000
+	5850 5900 5850 6300
 Wire Wire Line
-	5450 5900 5550 5900
+	5850 6300 5050 6300
 Wire Wire Line
-	5550 5900 5550 6300
+	5050 6300 5050 6000
 Wire Wire Line
-	5550 6300 4750 6300
+	5050 6000 5150 6000
 Wire Wire Line
-	4750 6300 4750 6000
+	2850 5800 2450 5800
 Wire Wire Line
-	4750 6000 4850 6000
-Wire Wire Line
-	3050 5800 2650 5800
-Wire Wire Line
-	4850 5800 4400 5800
-Text Label 4400 5800 0    50   ~ 0
+	5150 5800 4700 5800
+Text Label 4700 5800 0    50   ~ 0
 Vref_2v5
-Text Label 2650 5800 0    50   ~ 0
+Text Label 2450 5800 0    50   ~ 0
 Vref_2v5
 Wire Wire Line
-	5550 5900 5700 5900
-Connection ~ 5550 5900
+	5850 5900 6000 5900
+Connection ~ 5850 5900
 Wire Wire Line
-	3750 5900 3850 5900
-Connection ~ 3750 5900
-Wire Wire Line
-	3350 5500 3350 5600
-Connection ~ 3350 5600
-Wire Wire Line
-	3350 5600 3350 5700
+	3550 5900 3650 5900
+Connection ~ 3550 5900
 $Comp
 L Device:C_Small C414
 U 1 1 5F398C87
@@ -280,9 +271,9 @@ Wire Wire Line
 	6350 3300 6200 3300
 Text Label 3900 3300 2    50   ~ 0
 Vref_2v5
-Text HLabel 3850 5900 2    50   Output ~ 0
+Text HLabel 3650 5900 2    50   Output ~ 0
 KTY_BIAS_CH_A
-Text HLabel 5700 5900 2    50   Output ~ 0
+Text HLabel 6000 5900 2    50   Output ~ 0
 KTY_BIAS_CH_B
 Wire Wire Line
 	6200 2700 6350 2700
@@ -761,4 +752,12 @@ Text Notes 2350 4500 0    70   ~ 14
 Precisin Vref. Place close\nto MCU. See REF6125 ds\nfor layout suggestions.
 Text Notes 3050 7050 0    70   ~ 14
 Switchable Vref for biasing KTY sensors\n(for cold-junction compensation), one\nper channel. The KTY's can then be\nmeassured through the ordinary TC \namps.\n
+Text HLabel 5300 5500 0    50   Input ~ 0
+CH_B_KTY_BIAS_ENABLE
+Wire Wire Line
+	3150 5500 3150 5700
+Wire Wire Line
+	5300 5500 5450 5500
+Wire Wire Line
+	5450 5500 5450 5700
 $EndSCHEMATC

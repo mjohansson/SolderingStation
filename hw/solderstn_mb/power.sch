@@ -1616,7 +1616,7 @@ $EndComp
 Text GLabel 7950 5200 0    50   Output ~ 0
 ~VBUS2_FLGn~
 Text GLabel 8300 5400 0    50   Input ~ 0
-VBUS2_EN
+VBUS2_ENABLE
 Wire Wire Line
 	1550 4800 1500 4800
 Text GLabel 1250 4800 0    50   Input ~ 0
