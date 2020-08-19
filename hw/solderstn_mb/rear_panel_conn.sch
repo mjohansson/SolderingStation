@@ -261,17 +261,6 @@ F3 "Audio_L_ch" I R 9400 1200 50
 F4 "Audio_int_L" O R 9400 1350 50 
 F5 "Audio_int_R" O R 9400 1500 50 
 $EndSheet
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
-U 1 1 5F920BA3
-P 7250 1350
-F 0 "J?" H 7300 1667 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 7300 1576 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 7250 1350 50  0001 C CNN
-F 3 "~" H 7250 1350 50  0001 C CNN
-	1    7250 1350
-	1    0    0    -1  
-$EndComp
 Text HLabel 6800 1250 0    50   Input ~ 0
 Audio_L
 Text HLabel 7800 1250 2    50   Output ~ 0
@@ -398,7 +387,7 @@ Wire Wire Line
 	9400 1500 9500 1500
 Text Notes 10100 1500 1    50   ~ 0
 (Dummies!)
-Text Notes 7450 2150 0    50   ~ 10
+Text Notes 7500 2350 0    50   ~ 10
 Headphone 3.5mm connector on\na break-away sub-PCB.\nAudio signals get routed out to\nthe 3.5mm connector, through\nthe plug-switches and optionally\nback to internal speakers conns\nif there's no plug inserted
 Wire Wire Line
 	8550 5500 8550 5350
@@ -660,4 +649,41 @@ Wire Wire Line
 Connection ~ 3750 5000
 Wire Wire Line
 	3750 5000 4050 5000
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5FA2CF9B
+P 7250 1450
+F 0 "J?" H 7300 1867 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7300 1776 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 7250 1450 50  0001 C CNN
+F 3 "~" H 7250 1450 50  0001 C CNN
+	1    7250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2DA97
+P 7000 1550
+F 0 "#PWR?" H 7000 1300 50  0001 C CNN
+F 1 "GND" H 7000 1400 50  0000 C CNN
+F 2 "" H 7000 1550 50  0001 C CNN
+F 3 "" H 7000 1550 50  0001 C CNN
+	1    7000 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2DDB5
+P 7600 1550
+F 0 "#PWR?" H 7600 1300 50  0001 C CNN
+F 1 "GND" H 7600 1400 50  0000 C CNN
+F 2 "" H 7600 1550 50  0001 C CNN
+F 3 "" H 7600 1550 50  0001 C CNN
+	1    7600 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 1550 7550 1550
+Wire Wire Line
+	7050 1550 7000 1550
 $EndSCHEMATC

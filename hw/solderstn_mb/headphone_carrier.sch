@@ -167,17 +167,6 @@ Wire Wire Line
 	6000 3250 6000 3150
 Wire Wire Line
 	6000 3150 5700 3150
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
-U 1 1 5F918642
-P 3950 2950
-F 0 "J?" H 4000 3267 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 4000 3176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 3950 2950 50  0001 C CNN
-F 3 "~" H 3950 2950 50  0001 C CNN
-	1    3950 2950
-	1    0    0    -1  
-$EndComp
 Text Label 6100 2750 2    50   ~ 0
 R_ch
 Text Label 6100 3050 2    50   ~ 0
@@ -205,38 +194,38 @@ R_ch
 $Comp
 L power:GND #PWR?
 U 1 1 5F91D9D6
-P 3350 3100
+P 3350 3300
 AR Path="/5FAFD5BA/5F91D9D6" Ref="#PWR?"  Part="1" 
 AR Path="/5F4730B9/5F907915/5F91D9D6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3350 2850 50  0001 C CNN
-F 1 "GND" H 3350 2950 50  0000 C CNN
-F 2 "" H 3350 3100 50  0001 C CNN
-F 3 "" H 3350 3100 50  0001 C CNN
-	1    3350 3100
+F 0 "#PWR?" H 3350 3050 50  0001 C CNN
+F 1 "GND" H 3350 3150 50  0000 C CNN
+F 2 "" H 3350 3300 50  0001 C CNN
+F 3 "" H 3350 3300 50  0001 C CNN
+	1    3350 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F91E0F4
-P 4650 3100
+P 4650 3300
 AR Path="/5FAFD5BA/5F91E0F4" Ref="#PWR?"  Part="1" 
 AR Path="/5F4730B9/5F907915/5F91E0F4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4650 2850 50  0001 C CNN
-F 1 "GND" H 4650 2950 50  0000 C CNN
-F 2 "" H 4650 3100 50  0001 C CNN
-F 3 "" H 4650 3100 50  0001 C CNN
-	1    4650 3100
+F 0 "#PWR?" H 4650 3050 50  0001 C CNN
+F 1 "GND" H 4650 3150 50  0000 C CNN
+F 2 "" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 3100 4650 2950
+	4650 3300 4650 3150
 Wire Wire Line
 	4250 2950 4650 2950
 Wire Wire Line
-	3350 3100 3350 2950
+	3350 3300 3350 3150
 Wire Wire Line
 	3350 2950 3750 2950
-Text Notes 3400 3500 0    50   ~ 10
+Text Notes 3400 3600 0    50   ~ 10
 Right-angle 2.54mm pinheader
 $Comp
 L customlib_mj:SLESD5Z5V D?
@@ -300,4 +289,25 @@ Wire Wire Line
 	7950 3750 7950 3600
 Wire Wire Line
 	7300 3750 7300 3600
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5FA40A6F
+P 3950 3050
+F 0 "J?" H 4000 3467 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4000 3376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 3950 3050 50  0001 C CNN
+F 3 "~" H 3950 3050 50  0001 C CNN
+	1    3950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3150 3350 3150
+Connection ~ 3350 3150
+Wire Wire Line
+	3350 3150 3350 2950
+Wire Wire Line
+	4250 3150 4650 3150
+Connection ~ 4650 3150
+Wire Wire Line
+	4650 3150 4650 2950
 $EndSCHEMATC
