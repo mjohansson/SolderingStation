@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 21
+Sheet 5 22
 Title "Front-side and internal connectors"
 Date "2020-08-03"
 Rev "R0.1"
@@ -871,12 +871,18 @@ Wire Wire Line
 Connection ~ 5650 6650
 Text GLabel 2600 2850 0    50   Input ~ 0
 DISP_FLASH_MOSI
-Text GLabel 2600 2950 0    50   Output ~ 0
+Text GLabel 1050 2950 0    50   Output ~ 0
 FP_ENC2_A
-Text GLabel 2600 3150 0    50   Output ~ 0
+Text GLabel 1050 3150 0    50   Output ~ 0
 FP_ENC2_B
-Text GLabel 1600 3350 0    50   Output ~ 0
+Text GLabel 1100 3350 0    50   Output ~ 0
 ~FP_ENC2_SWn~
 Text Notes 500  3900 0    75   ~ 15
 \nTODO: Remoce this ~SYS_RSTn~ and add ENC2_x\nto front-panel board too (and update FP layout)
+Wire Wire Line
+	1050 2950 1350 2950
+Wire Wire Line
+	1050 3150 1350 3150
+Wire Wire Line
+	1100 3350 1350 3350
 $EndSCHEMATC

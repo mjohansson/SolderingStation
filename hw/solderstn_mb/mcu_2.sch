@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 21
+Sheet 4 22
 Title "STM32F429 MCU power, decoupling, Vref"
 Date "2020-04-26"
 Rev "R0.1"
@@ -77,18 +77,18 @@ $EndComp
 $Comp
 L customlib_mj:TLV9052SIDGS U?
 U 2 1 5F392B9E
-P 5450 5900
+P 6000 5900
 AR Path="/5F785D6E/5F392B9E" Ref="U?"  Part="2" 
 AR Path="/5EAEB4B5/5F392B9E" Ref="U403"  Part="2" 
-F 0 "U403" H 5182 5625 50  0000 L CNN
-F 1 "TLV9052SIDGS" H 5182 5534 50  0000 L CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 5450 5900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tlv9052" H 5500 6100 50  0001 C CNN
-	2    5450 5900
+F 0 "U403" H 5732 5625 50  0000 L CNN
+F 1 "TLV9052SIDGS" H 5732 5534 50  0000 L CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6000 5900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tlv9052" H 6050 6100 50  0001 C CNN
+	2    6000 5900
 	1    0    0    -1  
 $EndComp
 Text HLabel 2800 5500 0    50   Input ~ 0
-CH_A_KTY_BIAS_ENABLE
+CH_A_KTY_REED_BIAS_ENABLE
 Wire Wire Line
 	3150 5500 2800 5500
 Wire Wire Line
@@ -102,26 +102,26 @@ Wire Wire Line
 Wire Wire Line
 	2750 6000 2850 6000
 Wire Wire Line
-	5750 5900 5850 5900
+	6300 5900 6400 5900
 Wire Wire Line
-	5850 5900 5850 6300
+	6400 5900 6400 6300
 Wire Wire Line
-	5850 6300 5050 6300
+	6400 6300 5600 6300
 Wire Wire Line
-	5050 6300 5050 6000
+	5600 6300 5600 6000
 Wire Wire Line
-	5050 6000 5150 6000
+	5600 6000 5700 6000
 Wire Wire Line
 	2850 5800 2450 5800
 Wire Wire Line
-	5150 5800 4700 5800
-Text Label 4700 5800 0    50   ~ 0
+	5700 5800 5250 5800
+Text Label 5250 5800 0    50   ~ 0
 Vref_2v5
 Text Label 2450 5800 0    50   ~ 0
 Vref_2v5
 Wire Wire Line
-	5850 5900 6000 5900
-Connection ~ 5850 5900
+	6400 5900 6550 5900
+Connection ~ 6400 5900
 Wire Wire Line
 	3550 5900 3650 5900
 Connection ~ 3550 5900
@@ -272,9 +272,9 @@ Wire Wire Line
 Text Label 3900 3300 2    50   ~ 0
 Vref_2v5
 Text HLabel 3650 5900 2    50   Output ~ 0
-KTY_BIAS_CH_A
-Text HLabel 6000 5900 2    50   Output ~ 0
-KTY_BIAS_CH_B
+KTY_REED_BIAS_CH_A
+Text HLabel 6550 5900 2    50   Output ~ 0
+KTY_REED_BIAS_CH_B
 Wire Wire Line
 	6200 2700 6350 2700
 Wire Wire Line
@@ -752,12 +752,12 @@ Text Notes 2350 4500 0    70   ~ 14
 Precisin Vref. Place close\nto MCU. See REF6125 ds\nfor layout suggestions.
 Text Notes 3050 7050 0    70   ~ 14
 Switchable Vref for biasing KTY sensors\n(for cold-junction compensation), one\nper channel. The KTY's can then be\nmeassured through the ordinary TC \namps.\n
-Text HLabel 5300 5500 0    50   Input ~ 0
-CH_B_KTY_BIAS_ENABLE
+Text HLabel 5850 5500 0    50   Input ~ 0
+CH_B_KTY_REED_BIAS_ENABLE
 Wire Wire Line
 	3150 5500 3150 5700
 Wire Wire Line
-	5300 5500 5450 5500
+	5850 5500 6000 5500
 Wire Wire Line
-	5450 5500 5450 5700
+	6000 5500 6000 5700
 $EndSCHEMATC

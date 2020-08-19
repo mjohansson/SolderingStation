@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 20 21
+Sheet 21 22
 Title "Audio & FM-radio :)"
 Date "2020-08-12"
 Rev "R0.1"
@@ -560,17 +560,6 @@ F 3 "~" H 1800 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R2007
-U 1 1 5F3C7C43
-P 5850 5000
-F 0 "R2007" V 5750 5000 50  0000 C CNN
-F 1 "100" V 5950 5000 50  0000 C CNN
-F 2 "" H 5850 5000 50  0001 C CNN
-F 3 "~" H 5850 5000 50  0001 C CNN
-	1    5850 5000
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C_Small C2009
 U 1 1 5F3C8295
 P 1950 4550
@@ -691,19 +680,6 @@ DAC_OUT2
 Wire Wire Line
 	1150 3700 1300 3700
 $Comp
-L Device:CP_Small C2010
-U 1 1 5F40B5B0
-P 5500 5000
-F 0 "C2010" V 5600 5000 50  0000 C CNN
-F 1 "47u/10V" V 5400 4800 50  0000 L CNN
-F 2 "" H 5500 5000 50  0001 C CNN
-F 3 "~" H 5500 5000 50  0001 C CNN
-	1    5500 5000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5600 5000 5750 5000
-$Comp
 L customlib_mj:TS4990IDT U2003
 U 1 1 5F416928
 P 2900 6750
@@ -756,17 +732,6 @@ F 1 "10k" V 1900 6350 50  0000 C CNN
 F 2 "" H 1800 6350 50  0001 C CNN
 F 3 "~" H 1800 6350 50  0001 C CNN
 	1    1800 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R2008
-U 1 1 5F41695A
-P 5850 5300
-F 0 "R2008" V 5750 5300 50  0000 C CNN
-F 1 "100" V 5950 5300 50  0000 C CNN
-F 2 "" H 5850 5300 50  0001 C CNN
-F 3 "~" H 5850 5300 50  0001 C CNN
-	1    5850 5300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -890,21 +855,6 @@ DAC_OUT1
 Wire Wire Line
 	1150 6350 1300 6350
 $Comp
-L Device:CP_Small C2011
-U 1 1 5F4169C8
-P 5500 5300
-F 0 "C2011" V 5600 5300 50  0000 C CNN
-F 1 "47u/10V" V 5400 5100 50  0000 L CNN
-F 2 "" H 5500 5300 50  0001 C CNN
-F 3 "~" H 5500 5300 50  0001 C CNN
-	1    5500 5300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5050 5300 5400 5300
-Wire Wire Line
-	5600 5300 5750 5300
-$Comp
 L Connector_Generic:Conn_01x02 J2002
 U 1 1 5F5B2BFC
 P 9100 2450
@@ -928,110 +878,34 @@ F 3 "" H 8800 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 2550 8800 2550
-$Comp
-L customlib_mj:SJ-3571N J2004
-U 1 1 5F5CEE99
-P 6650 5150
-F 0 "J2004" H 6074 5224 50  0000 C CNN
-F 1 "SJ-3571N" H 6074 5133 50  0000 C CNN
-F 2 "customlib_mj_fp:SJ-3571N" H 6650 5150 50  0001 C CNN
-F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-357xn-series/sj-3571n" H 6650 5150 50  0001 C CNN
-	1    6650 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L customlib_mj:SJ-3571N J2004
-U 2 1 5F5D23CA
-P 4150 4500
-F 0 "J2004" H 4000 4400 50  0000 C CNN
-F 1 "SJ-3571N" H 4150 4250 50  0000 C CNN
-F 2 "customlib_mj_fp:SJ-3571N" H 4150 4500 50  0001 C CNN
-F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-357xn-series/sj-3571n" H 4150 4500 50  0001 C CNN
-	2    4150 4500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L customlib_mj:SJ-3571N J2004
-U 3 1 5F5D3D4C
-P 4150 7150
-F 0 "J2004" H 4000 7050 50  0000 C CNN
-F 1 "SJ-3571N" H 4150 6850 50  0000 C CNN
-F 2 "customlib_mj_fp:SJ-3571N" H 4150 7150 50  0001 C CNN
-F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-357xn-series/sj-3571n" H 4150 7150 50  0001 C CNN
-	3    4150 7150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 4200 3800 4200
 Wire Wire Line
 	3800 4200 3800 4500
 Wire Wire Line
-	3800 4500 4000 4500
+	3800 4500 5000 4500
 Wire Wire Line
 	3700 6850 3800 6850
 Wire Wire Line
 	3800 6850 3800 7150
 Wire Wire Line
-	3800 7150 4000 7150
-Wire Wire Line
-	4000 7250 3900 7250
-Wire Wire Line
-	3900 7250 3900 7350
-Wire Wire Line
-	3900 7350 5050 7350
-Wire Wire Line
-	5050 7350 5050 5300
-Wire Wire Line
-	4000 4600 3900 4600
-Wire Wire Line
-	3900 5000 5400 5000
+	3800 7150 5000 7150
 Wire Wire Line
 	4000 6850 3950 6850
 Wire Wire Line
 	3950 6850 3950 6950
 Wire Wire Line
-	3950 7050 4000 7050
+	3950 7050 5000 7050
 Wire Wire Line
 	4000 4200 3950 4200
 Wire Wire Line
 	3950 4200 3950 4300
 Wire Wire Line
-	3950 4400 4000 4400
-Wire Wire Line
-	3900 4600 3900 5000
-Wire Wire Line
-	5950 5300 6350 5300
-Wire Wire Line
-	5950 5000 6350 5000
-Text Notes 6450 5750 0    50   ~ 0
-Sleeve (1) : Gnd\nRing (3) : R ch\nTip (2) : L ch
-$Comp
-L power:GND #PWR02020
-U 1 1 5F689124
-P 6050 4700
-F 0 "#PWR02020" H 6050 4450 50  0001 C CNN
-F 1 "GND" H 6050 4550 50  0000 C CNN
-F 2 "" H 6050 4700 50  0001 C CNN
-F 3 "" H 6050 4700 50  0001 C CNN
-	1    6050 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4900 6250 4900
-Wire Wire Line
-	6250 4900 6250 4600
-Wire Wire Line
-	6250 4600 6050 4600
-Wire Wire Line
-	6050 4600 6050 4700
+	3950 4400 5000 4400
 Text Notes 1000 6000 0    50   ~ 10
 Left channel
 Text Notes 1000 3500 0    50   ~ 10
 Right channel
-Text Label 6350 5300 2    50   ~ 0
-L_ch_out
-Text Label 6350 5000 2    50   ~ 0
-R_ch_out
 $Comp
 L Connector_Generic:Conn_01x02 J2003
 U 1 1 5F69C43E
@@ -1172,6 +1046,14 @@ F 3 "" H 3400 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 6050 3400 6000
-Text Notes 4600 4650 0    50   ~ 10
-Using internal speakers until a\n3.5mm plug is inserted; then\nswitching to the external load
+Text Notes 5100 4150 0    50   ~ 10
+Using internal speakers until a\n3.5mm plug is inserted; then\nswitching to the external load.\nThe switch is integrated in the\nheadphone connector (rear panel)
+Text HLabel 5000 4500 2    50   Output ~ 0
+Audio_R_o
+Text HLabel 5000 7150 2    50   Output ~ 0
+Audio_L_o
+Text HLabel 5000 4400 2    50   Input ~ 0
+Audio_R_int
+Text HLabel 5000 7050 2    50   Input ~ 0
+Audio_L_int
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 21 21
+Sheet 21 22
 Title "STM22F429 MCU pinout, clks, reset"
 Date "2020-04-26"
 Rev "R0.1"
@@ -771,8 +771,6 @@ Text GLabel 5600 5000 0    50   Input ~ 0
 ~EXT_RSTn~
 Text GLabel 6250 6300 2    50   Output ~ 0
 AUX_BOOT0
-Text GLabel 6250 6400 2    50   Output ~ 0
-REED_PULLUP_EN
 Text GLabel 6250 6500 2    50   Output ~ 0
 ~AUDIO_MUTEn~
 Text GLabel 6250 6600 2    50   Input ~ 0
@@ -842,7 +840,7 @@ FAN3_PWM
 Text GLabel 1400 3500 0    50   Output ~ 0
 PWRBTN_LED_PWM
 Text HLabel 10150 4100 2    50   Output ~ 0
-CH_A_KTY_BIAS_ENABLE
+CH_A_KTY_REED_BIAS_EN
 $Comp
 L power:VDD #PWR02105
 U 1 1 5FCFC625
@@ -1031,7 +1029,7 @@ TIM4 (ENC)
 Text Notes 6900 7200 1    50   ~ 0
 TIM1\n(ENC)
 Text HLabel 10150 4200 2    50   Output ~ 0
-CH_B_KTY_BIAS_ENABLE
+CH_B_KTY_REED_BIAS_EN
 Wire Wire Line
 	1400 3700 1850 3700
 Text Notes 700  3650 0    50   ~ 0
@@ -1040,7 +1038,7 @@ Text Notes 450  3550 0    50   ~ 0
 TIM10
 Text Notes 800  3150 0    50   ~ 0
 TIM2,\nTIM3
-Text HLabel 1400 3700 0    50   Output ~ 0
+Text HLabel 6250 6400 2    50   Output ~ 0
 HWID_ADC_SELECT
 Text Notes 6700 6700 0    50   ~ 0
 TIM9
