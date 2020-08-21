@@ -345,7 +345,7 @@ F 3 "~" H 10500 2300 50  0001 C CNN
 $EndComp
 Text Notes 10350 2650 0    50   ~ 10
 To ferrite loop stick,\napprx 180-450µH
-Text Notes 8650 2950 0    50   ~ 10
+Text Notes 8700 3000 0    50   ~ 10
 To e.g. 1/4 FM wire-\nor screw telescope\n(whip) antenna
 $Comp
 L Device:C_Small C2004
@@ -858,26 +858,24 @@ $Comp
 L Connector_Generic:Conn_01x02 J2002
 U 1 1 5F5B2BFC
 P 9100 2450
-F 0 "J2002" H 9200 2450 50  0000 L CNN
-F 1 "Conn_01x02" H 9410 2351 50  0000 C CNN
-F 2 "" H 9100 2450 50  0001 C CNN
-F 3 "~" H 9100 2450 50  0001 C CNN
+F 0 "J2002" H 9100 2250 50  0000 C CNN
+F 1 "Molex_PicoBlade-53398-0271" H 9100 2550 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 9100 2450 50  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0533980271" H 9100 2450 50  0001 C CNN
 	1    9100 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02008
 U 1 1 5F5B3589
-P 8800 2550
-F 0 "#PWR02008" H 8800 2300 50  0001 C CNN
-F 1 "GND" H 8800 2400 50  0000 C CNN
-F 2 "" H 8800 2550 50  0001 C CNN
-F 3 "" H 8800 2550 50  0001 C CNN
-	1    8800 2550
+P 8550 2600
+F 0 "#PWR02008" H 8550 2350 50  0001 C CNN
+F 1 "GND" H 8550 2450 50  0000 C CNN
+F 2 "" H 8550 2600 50  0001 C CNN
+F 3 "" H 8550 2600 50  0001 C CNN
+	1    8550 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 2550 8800 2550
 Wire Wire Line
 	3700 4200 3800 4200
 Wire Wire Line
@@ -963,17 +961,6 @@ Connection ~ 3800 3700
 Wire Wire Line
 	3800 3700 3800 3800
 $Comp
-L customlib_mj:CES-30207-158L120-67_mini_speaker_20x30x7mm LS2001
-U 1 1 5F6F74E3
-P 4000 4000
-F 0 "LS2001" H 4100 4400 90  0000 C CNN
-F 1 "CES-30207-158L120-67_mini_speaker_20x30x7mm" H 3550 2850 90  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 4000 4000 90  0001 C CNN
-F 3 "https://www.cuidevices.com/product/audio/speakers/miniature-(10-mm~40-mm)/ces-30207-158l120-67" H 4000 4000 90  0001 C CNN
-	1    4000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:CES-30207-158L120-67_mini_speaker_20x30x7mm LS2002
 U 1 1 5F6F8808
 P 4000 6650
@@ -1056,4 +1043,34 @@ Text HLabel 5000 4400 2    50   Input ~ 0
 Audio_R_int
 Text HLabel 5000 7050 2    50   Input ~ 0
 Audio_L_int
+$Comp
+L customlib_mj:CES-30207-158L120-67_mini_speaker_20x30x7mm LS2001
+U 1 1 5F6F74E3
+P 4000 4000
+F 0 "LS2001" H 4100 4400 90  0000 C CNN
+F 1 "CES-30207-158L120-67_mini_speaker_20x30x7mm" H 3550 2850 90  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 4000 4000 90  0001 C CNN
+F 3 "https://www.cuidevices.com/product/audio/speakers/miniature-(10-mm~40-mm)/ces-30207-158l120-67" H 4000 4000 90  0001 C CNN
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 8450 2300 0    50   ~ 0
+(OTS cable assm: e.g. 151340203)
+$Comp
+L customlib_mj:dogbone_2 JP?
+U 1 1 5FB8DE1A
+P 8750 2550
+F 0 "JP?" H 8650 2475 50  0000 L CNN
+F 1 "dogbone_2" H 8750 2650 50  0001 C CNN
+F 2 "" H 8750 2550 50  0001 C CNN
+F 3 "" H 8750 2550 50  0001 C CNN
+	1    8750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2600 8550 2550
+Wire Wire Line
+	8550 2550 8650 2550
+Wire Wire Line
+	8850 2550 8900 2550
 $EndSCHEMATC

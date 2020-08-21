@@ -191,6 +191,32 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Generic_MountingPin_Conn_02x02_Counter_Clockwise_MountingPin
+#
+DEF Connector_Generic_MountingPin_Conn_02x02_Counter_Clockwise_MountingPin J 0 40 Y N 1 F N
+F0 "J" 50 100 50 H V C CNN
+F1 "Connector_Generic_MountingPin_Conn_02x02_Counter_Clockwise_MountingPin" 100 -200 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??-1MP*
+$ENDFPLIST
+DRAW
+T 0 50 -165 15 0 1 1 Mounting Normal 0 C C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+P 2 1 1 6 10 -180 90 -180 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+X Pin_3 3 300 -100 150 L 50 50 1 1 P
+X Pin_4 4 300 0 150 L 50 50 1 1 P
+X MountPin MP 50 -300 120 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_CP_Small
 #
 DEF Device_CP_Small C 0 10 N N 1 F N
@@ -2026,6 +2052,19 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #

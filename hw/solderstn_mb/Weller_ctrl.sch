@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 22
+Sheet 14 22
 Title "Dual Weller WMRP or WMRT capable channels"
 Date "2020-08-07"
 Rev "R0.1"

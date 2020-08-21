@@ -13,46 +13,46 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2250 2700 0    50   Input ~ 0
+Text HLabel 2300 2350 0    50   Input ~ 0
 CH_A_HEATER_1
-Text HLabel 2250 2800 0    50   Input ~ 0
+Text HLabel 2300 2450 0    50   Input ~ 0
 CH_A_HEATER_2
-Text HLabel 2250 2900 0    50   Output ~ 0
+Text HLabel 2250 2650 0    50   Output ~ 0
 CH_A_TC1
-Text HLabel 2250 3000 0    50   Output ~ 0
+Text HLabel 2250 2750 0    50   Output ~ 0
 CH_A_TC2_KTY
-Text HLabel 2250 3450 0    50   Input ~ 0
+Text HLabel 2250 3100 0    50   Input ~ 0
 CH_B_HEATER_1
-Text HLabel 2250 3550 0    50   Input ~ 0
+Text HLabel 2250 3200 0    50   Input ~ 0
 CH_B_HEATER_2
-Text HLabel 2250 3650 0    50   Output ~ 0
+Text HLabel 2250 3400 0    50   Output ~ 0
 CH_B_TC1
-Text HLabel 2250 3750 0    50   Output ~ 0
+Text HLabel 2250 3500 0    50   Output ~ 0
 CH_B_TC2_KTY
 Wire Wire Line
-	2250 2700 2450 2700
+	2300 2350 2500 2350
 Wire Wire Line
-	2250 2800 2450 2800
+	2300 2450 2500 2450
 Wire Wire Line
-	2250 2900 2450 2900
+	2250 2650 2450 2650
 Wire Wire Line
-	2250 3000 2450 3000
+	2250 2750 2450 2750
 Wire Wire Line
-	2250 3450 2450 3450
+	2250 3100 2450 3100
 Wire Wire Line
-	2250 3550 2450 3550
+	2250 3200 2450 3200
 Wire Wire Line
-	2250 3650 2450 3650
+	2250 3400 2450 3400
 Wire Wire Line
-	2250 3750 2450 3750
+	2250 3500 2450 3500
 Text Notes 4550 1900 0    70   ~ 14
-DBGUART / SWD (dsub-9?)\nFM-ant? (AM-ferrit extern..?)\nUSB1 (device)\nUSB2 (host)\nForce Bootloader/rst\n2x Amphenol Weller-jacks!
+Audiojack 3.5mm (sub-PCB)\nDBGUART / SWD (dsub-9?)\nFM-ant? (AM-ferrit extern..?)\nUSB1 (device)\nUSB2 (host)\nForce Bootloader/rst\n2x Amphenol Weller-jacks!
 Text GLabel 3150 5600 0    50   Output ~ 0
 ~EXT_RSTn~
 Text GLabel 3150 5000 0    50   Output ~ 0
 MCU_BOOT0
 Text Notes 1750 1850 0    70   ~ 14
-Notes:\nAudio-jack 3.5mm - located on audio page\nRJ45 ethernet - located on ethernet page\n
+Notes:\nRJ45 ethernet - located on ethernet page\n
 $Comp
 L customlib_mj:USB_A-TE_1-292303-1 J1201
 U 1 1 5F769C5C
@@ -686,4 +686,14 @@ Wire Wire Line
 	7600 1550 7550 1550
 Wire Wire Line
 	7050 1550 7000 1550
+Text Notes 2550 2750 0    50   ~ 0
+5x1 or 4x1 pin picoblade/pico-clasp/micro-clasp..?\ngnd/tc1_reed/gnd/tc2_kty/(ESD ref. pin 5?)
+Text Notes 2550 2450 0    50   ~ 0
+4x solderable quick-disconnect cable tabs (6.35x0.81), right-angle:\nHT1 / GND / HT2 / GND\n
+Text Notes 2550 3500 0    50   ~ 0
+5x1 or 4x1 pin picoblade/pico-clasp/micro-clasp..?\ngnd/tc1_reed/gnd/tc2_kty/(ESD ref. pin 5?)
+Text Notes 2550 3200 0    50   ~ 0
+4x solderable quick-disconnect cable tabs (6.35x0.81), right-angle:\nHT1 / GND / HT2 / GND\n
+Text Notes 2650 2300 0    70   ~ 14
+ToDo:
 $EndSCHEMATC
