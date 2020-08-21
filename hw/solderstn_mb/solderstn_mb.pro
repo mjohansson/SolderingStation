@@ -1,4 +1,4 @@
-update=Fri 21 Aug 2020 12:26:03 PM CEST
+update=Fri 21 Aug 2020 01:39:35 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=46
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -33,18 +43,22 @@ TrackWidth2=0.127
 TrackWidth3=0.15
 TrackWidth4=0.2
 TrackWidth5=0.25
-TrackWidth6=0.4
-TrackWidth7=0.5
-TrackWidth8=0.75
-TrackWidth9=1
+TrackWidth6=0.3
+TrackWidth7=0.4
+TrackWidth8=0.5
+TrackWidth9=0.75
+TrackWidth10=1
+TrackWidth11=1.25
 ViaDiameter1=0.6
 ViaDrill1=0.3
 ViaDiameter2=0.6
 ViaDrill2=0.3
 ViaDiameter3=0.7
 ViaDrill3=0.4
-ViaDiameter4=1
-ViaDrill4=0.6
+ViaDiameter4=0.8
+ViaDrill4=0.5
+ViaDiameter5=1
+ViaDrill5=0.6
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -241,7 +255,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.15
+Clearance=0.127
 TrackWidth=0.15
 ViaDiameter=0.6
 ViaDrill=0.3
@@ -250,13 +264,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=46
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
