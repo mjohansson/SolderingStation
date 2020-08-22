@@ -1,4 +1,4 @@
-19378844461566886
+19380442598807886
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81213,6 +81213,13 @@ Front-panel left-hand generic variant holder
 0
 10
 8
+customlib_mj_fp
+Frontpanel_L_Hybrid_Rotary_Pushbtns_outer_cutouts
+Front-panel cutouts for Hybrid 2nd rotary enc + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand 2nd rotary buttons cutouts
+0
+0
+0
 customlib_mj_fp
 Frontpanel_L_Powerbtn_Pushbtns_holder
 Front-panel assembly of a 3d-printed holder for Power push-button + Grayhill 87DC3-201 dual pushbuttons
