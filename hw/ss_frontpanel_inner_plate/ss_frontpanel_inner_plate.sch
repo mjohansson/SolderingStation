@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 700  1800 0    80   ~ 0
-2x 14pin, 0.5mm FF-FFCs (multiple gnd/vdd instead of N/C)\nPinout LCD-conn:\n1: D/Cn,  2: VDD_IO\n3. GND, 4: SCK\n5: MOSI, 6: VDD_IO\n7: SDA, 8: GND\n9: SCL 10: RESn\n11: CSn 12: PB-1B (left Grayhill)\n13: GND 14: PB-1A
+2x 14pin, 0.5mm FF-FFCs (multiple gnd/vdd instead of N/C)\nPinout LCD-conn:\n1: D/Cn,  2: VDD_IO\n3. GND, 4: SCK\n5: MOSI, 6: Enc2_A\n7: SDA, 8: Enc2_B\n9: SCL 10: Enc2_SW\n11: CSn 12: PB-1B (left Grayhill)\n13: GND 14: PB-1A
 Text Notes 4950 1650 0    80   ~ 0
 Pinout AUX- & ENC-conn:\n1: Aux_BOOT0,  2: EncoderPBn\n3: AuxIRQn, 4: Enc_B\n5: RESn, 6: Enc_A\n7: VDD_IO 8: AUX_TX\n9: AUX_RX, 10: VDD_IO\n11: HWID, 12: GND\n13: PB_2B, 14: PB_2A (Grayhill)
 $Comp
@@ -62,25 +62,14 @@ F 3 "~" H 6100 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:Frontpanel_L_Powerbtn_Pushbtns_holder ASM1
-U 1 1 5F2241C0
-P 7600 1600
-F 0 "ASM1" H 7600 2565 50  0000 C CNN
-F 1 "Frontpanel_L_Powerbtn_Pushbtns_holder" H 7600 2474 50  0000 C CNN
-F 2 "customlib_mj_fp:Frontpanel_L_Powerbtn_Pushbtns_holder" H 7575 1995 50  0001 C CNN
-F 3 "" H 7575 1995 50  0001 C CNN
-	1    7600 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:Frontpanel_R_RotaryEnc_Pushbtns_holder ASM2
 U 1 1 5F227C77
-P 9600 1600
-F 0 "ASM2" H 9600 2565 50  0000 C CNN
-F 1 "Frontpanel_R_RotaryEnc_Pushbtns_holder" H 9600 2474 50  0000 C CNN
-F 2 "customlib_mj_fp:Frontpanel_R_RotaryEnc_Pushbtns_holder-one_M3_removed" H 9575 2025 50  0001 C CNN
-F 3 "" H 9575 2025 50  0001 C CNN
-	1    9600 1600
+P 9950 1600
+F 0 "ASM2" H 9950 2565 50  0000 C CNN
+F 1 "Frontpanel_R_RotaryEnc_Pushbtns_holder" H 9950 2474 50  0000 C CNN
+F 2 "customlib_mj_fp:Frontpanel_R_RotaryEnc_Pushbtns_holder-one_M3_removed" H 9925 2025 50  0001 C CNN
+F 3 "" H 9925 2025 50  0001 C CNN
+	1    9950 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -117,11 +106,11 @@ F 3 "" H 1100 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  2900 1550 2900
-Text Label 1550 2900 2    50   ~ 0
+	950  2900 1450 2900
+Text Label 1450 2900 2    50   ~ 0
 SCK
 Wire Wire Line
-	950  3000 1550 3000
+	950  3000 1450 3000
 Wire Wire Line
 	5600 3400 6200 3400
 Wire Wire Line
@@ -130,12 +119,10 @@ Wire Wire Line
 	5600 2800 6200 2800
 Wire Wire Line
 	5600 2600 6200 2600
-Text Label 1550 3000 2    50   ~ 0
+Text Label 1450 3000 2    50   ~ 0
 MOSI
-Text Label 1400 3600 2    50   ~ 0
+Text Label 1450 3600 2    50   ~ 0
 ~CSn~
-Text Label 1400 3500 2    50   ~ 0
-~RESn~
 Text Label 6200 3400 2    50   ~ 0
 AUX_RX
 Text Label 6200 3300 2    50   ~ 0
@@ -571,9 +558,9 @@ Connection ~ 2750 3850
 Wire Wire Line
 	2750 3850 2850 3850
 Wire Wire Line
-	950  3600 1400 3600
+	950  3600 1450 3600
 Wire Wire Line
-	950  3500 1400 3500
+	950  3500 1450 3500
 Wire Wire Line
 	2150 3500 2100 3500
 Wire Wire Line
@@ -614,7 +601,7 @@ Text Label 4000 3500 2    50   ~ 0
 SCK
 Text Label 4000 3600 2    50   ~ 0
 MOSI
-Text Label 1400 2600 2    50   ~ 0
+Text Label 1450 2600 2    50   ~ 0
 D~Cn~
 $Comp
 L Device:C_Small C5
@@ -787,9 +774,9 @@ F 3 "" H 5700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  3900 1400 3900
+	950  3900 1450 3900
 Wire Wire Line
-	950  3700 1400 3700
+	950  3700 1450 3700
 Wire Wire Line
 	5600 3900 6050 3900
 Wire Wire Line
@@ -800,9 +787,9 @@ Wire Wire Line
 	5600 2900 6200 2900
 Wire Wire Line
 	5600 2700 6200 2700
-Text Label 1400 3900 2    50   ~ 0
+Text Label 1450 3900 2    50   ~ 0
 PB_1A
-Text Label 1400 3700 2    50   ~ 0
+Text Label 1450 3700 2    50   ~ 0
 PB_1B
 Text Label 6050 3900 2    50   ~ 0
 PB_2A
@@ -819,7 +806,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1900 7200 1900
 Wire Wire Line
-	9300 1900 9200 1900
+	9650 1900 9550 1900
 Wire Wire Line
 	7900 1900 8500 1900
 Wire Wire Line
@@ -829,40 +816,40 @@ PB_1A
 Text Label 8500 1900 2    50   ~ 0
 PB_1B
 Wire Wire Line
-	9900 1900 10500 1900
+	10250 1900 10850 1900
 Wire Wire Line
-	9900 2000 10500 2000
-Text Label 10500 2000 2    50   ~ 0
+	10250 2000 10850 2000
+Text Label 10850 2000 2    50   ~ 0
 PB_2A
-Text Label 10500 1900 2    50   ~ 0
+Text Label 10850 1900 2    50   ~ 0
 PB_2B
 Wire Wire Line
-	10000 1000 10550 1000
+	10350 1000 10900 1000
 Wire Wire Line
-	10000 1100 10550 1100
+	10350 1100 10900 1100
 Wire Wire Line
-	10000 1200 10550 1200
-Text Label 10550 1000 2    50   ~ 0
+	10350 1200 10900 1200
+Text Label 10900 1000 2    50   ~ 0
 ENC_A
-Text Label 10550 1100 2    50   ~ 0
+Text Label 10900 1100 2    50   ~ 0
 ENC_B
-Text Label 10550 1200 2    50   ~ 0
+Text Label 10900 1200 2    50   ~ 0
 ENC_SWn
 $Comp
 L customlib_mj:VDD_IO #PWR01
 U 1 1 5F436C13
-P 10650 850
-F 0 "#PWR01" H 10650 700 50  0001 C CNN
-F 1 "VDD_IO" H 10650 1000 50  0000 C CNN
-F 2 "" H 10650 850 50  0001 C CNN
-F 3 "" H 10650 850 50  0001 C CNN
-	1    10650 850 
+P 11000 850
+F 0 "#PWR01" H 11000 700 50  0001 C CNN
+F 1 "VDD_IO" H 11000 1000 50  0000 C CNN
+F 2 "" H 11000 850 50  0001 C CNN
+F 3 "" H 11000 850 50  0001 C CNN
+	1    11000 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 850  10650 1300
+	11000 850  11000 1300
 Wire Wire Line
-	10650 1300 10000 1300
+	11000 1300 10350 1300
 Text Label 4000 3400 2    50   ~ 0
 D~Cn~
 Wire Wire Line
@@ -870,12 +857,12 @@ Wire Wire Line
 Wire Wire Line
 	5700 3700 5700 4050
 Wire Wire Line
-	950  3200 1400 3200
+	950  3200 1450 3200
 Wire Wire Line
-	950  3400 1400 3400
-Text Label 1400 3200 2    50   ~ 0
+	950  3400 1450 3400
+Text Label 1450 3200 2    50   ~ 0
 SDA
-Text Label 1400 3400 2    50   ~ 0
+Text Label 1450 3400 2    50   ~ 0
 SCL
 $Comp
 L power:GND #PWR013
@@ -891,33 +878,33 @@ $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5F47CC32
-P 9200 2200
-F 0 "#PWR014" H 9200 1950 50  0001 C CNN
-F 1 "GND" H 9200 2050 50  0000 C CNN
-F 2 "" H 9200 2200 50  0001 C CNN
-F 3 "" H 9200 2200 50  0001 C CNN
-	1    9200 2200
+P 9550 2200
+F 0 "#PWR014" H 9550 1950 50  0001 C CNN
+F 1 "GND" H 9550 2050 50  0000 C CNN
+F 2 "" H 9550 2200 50  0001 C CNN
+F 3 "" H 9550 2200 50  0001 C CNN
+	1    9550 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 1900 9200 2200
+	9550 1900 9550 2200
 Wire Wire Line
 	7200 2200 7200 1900
 $Comp
 L power:GND #PWR02
 U 1 1 5F485434
-P 10350 1500
-F 0 "#PWR02" H 10350 1250 50  0001 C CNN
-F 1 "GND" H 10350 1350 50  0000 C CNN
-F 2 "" H 10350 1500 50  0001 C CNN
-F 3 "" H 10350 1500 50  0001 C CNN
-	1    10350 1500
+P 10700 1500
+F 0 "#PWR02" H 10700 1250 50  0001 C CNN
+F 1 "GND" H 10700 1350 50  0000 C CNN
+F 2 "" H 10700 1500 50  0001 C CNN
+F 3 "" H 10700 1500 50  0001 C CNN
+	1    10700 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10350 1500 10350 1400
+	10700 1500 10700 1400
 Wire Wire Line
-	10350 1400 10000 1400
+	10700 1400 10350 1400
 $Comp
 L power:GND #PWR022
 U 1 1 5F49A151
@@ -1367,17 +1354,11 @@ Text Label 1700 3300 0    50   ~ 0
 Text Label 1700 3200 0    50   ~ 0
 ~CSn~
 Wire Wire Line
-	950  2600 1400 2600
+	950  2600 1450 2600
 Text Label 6200 3000 2    50   ~ 0
 ~RESn~
 Wire Wire Line
 	5600 3000 6200 3000
-Wire Wire Line
-	950  3300 1050 3300
-Wire Wire Line
-	1100 3300 1100 3800
-Wire Wire Line
-	950  3100 1100 3100
 Wire Wire Line
 	5700 3200 5600 3200
 Wire Wire Line
@@ -1432,7 +1413,6 @@ NoConn ~ 4600 7500
 NoConn ~ 4800 7500
 Wire Wire Line
 	950  2700 1100 2700
-Connection ~ 1100 2700
 Wire Wire Line
 	1100 2700 1100 2450
 $Comp
@@ -1548,17 +1528,75 @@ Wire Wire Line
 	5700 3500 5700 3200
 Connection ~ 5700 3200
 Wire Wire Line
-	1100 2700 1100 3100
-Wire Wire Line
-	950  2800 1050 2800
-Wire Wire Line
-	1050 2800 1050 3300
-Connection ~ 1050 3300
-Wire Wire Line
-	1050 3300 1100 3300
+	950  2800 1100 2800
 Wire Wire Line
 	950  3800 1100 3800
 Connection ~ 1100 3800
 Wire Wire Line
 	1100 3800 1100 4050
+Text Label 1450 3500 2    50   ~ 0
+Enc2_SW
+Wire Wire Line
+	1100 2800 1100 3800
+Wire Wire Line
+	950  3100 1450 3100
+Wire Wire Line
+	950  3300 1450 3300
+Text Label 1450 3100 2    50   ~ 0
+Enc2_A
+Text Label 1450 3300 2    50   ~ 0
+Enc2_B
+$Comp
+L customlib_mj:Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder ASM101
+U 1 1 5FCBCA58
+P 7600 1600
+F 0 "ASM101" H 7658 2565 50  0000 C CNN
+F 1 "Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder" H 7658 2474 50  0000 C CNN
+F 2 "customlib_mj_fp:Frontpanel_L_Hybrid_Power_Rotary_Pushbtns_holder" H 7575 1995 50  0001 C CNN
+F 3 "" H 7575 1995 50  0001 C CNN
+	1    7600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5FCC0149
+P 8650 1550
+F 0 "#PWR0106" H 8650 1300 50  0001 C CNN
+F 1 "GND" H 8650 1400 50  0000 C CNN
+F 2 "" H 8650 1550 50  0001 C CNN
+F 3 "" H 8650 1550 50  0001 C CNN
+	1    8650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1550 8650 1450
+Wire Wire Line
+	8650 1450 8300 1450
+Wire Wire Line
+	8300 1050 8850 1050
+Wire Wire Line
+	8300 1150 8850 1150
+Wire Wire Line
+	8300 1250 8850 1250
+Text Label 8850 1050 2    50   ~ 0
+Enc2_A
+Text Label 8850 1150 2    50   ~ 0
+Enc2_B
+Text Label 8850 1250 2    50   ~ 0
+Enc2_SW
+$Comp
+L customlib_mj:VDD_IO #PWR0105
+U 1 1 5FCCA10E
+P 8950 900
+F 0 "#PWR0105" H 8950 750 50  0001 C CNN
+F 1 "VDD_IO" H 8950 1050 50  0000 C CNN
+F 2 "" H 8950 900 50  0001 C CNN
+F 3 "" H 8950 900 50  0001 C CNN
+	1    8950 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 900  8950 1350
+Wire Wire Line
+	8950 1350 8300 1350
 $EndSCHEMATC

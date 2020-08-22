@@ -1,4 +1,4 @@
-19372453599232886
+19378844461566886
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81207,6 +81207,13 @@ Wurth WE 687114182122 FFC FPC 14-pin
 16
 16
 customlib_mj_fp
+Frontpanel_L_Hybrid_Power_Rotary_Pushbtns_holder
+Front-panel assembly of a 3d-printed holder for either Pwrbutton OR a 2nd Rotary Enc  + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand generic variant holder
+0
+10
+8
+customlib_mj_fp
 Frontpanel_L_Powerbtn_Pushbtns_holder
 Front-panel assembly of a 3d-printed holder for Power push-button + Grayhill 87DC3-201 dual pushbuttons
 Front-panel left-hand buttons holder
@@ -81711,6 +81718,13 @@ SIM SmartCard UICC
 9
 8
 customlib_mj_fp
+SJ-3571N
+CUI devices 3.5mm stereo audio jack, right-angle w. isolated DPDT switch and tip- & ring switches
+3.5mm stereo audio jack PTH through-hole CUI
+0
+18
+12
+customlib_mj_fp
 SK6812mini_plcc4
 
 3535 PLCC4
@@ -81815,6 +81829,20 @@ barrel polarity
 0
 0
 0
+customlib_mj_fp
+TE_1-292303-1
+TE USB Type A r/a receptacle, SMD with through-hole retention pins
+USB Type A TE 
+0
+6
+5
+customlib_mj_fp
+TE_1734346
+TE connectivity USB 2.0 TypeB R/A SMT
+
+0
+8
+6
 customlib_mj_fp
 TJ-S1706_0603
 https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_TOGIALED-TJ-S1706SW6TGLC2G-A5_C273616.html

@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L customlib_mj:FFC_conn_14p J502
 U 1 1 5F46D565
-P 3100 5300
-F 0 "J502" H 3512 5346 50  0000 C CNN
-F 1 "FFC_conn_14p" H 3512 5255 50  0000 C CNN
-F 2 "" H 3050 5300 50  0001 C CNN
-F 3 "https://www.we-online.com/catalog/datasheet/687114182122.pdf" H 3050 5300 50  0001 C CNN
-	1    3100 5300
+P 3100 5550
+F 0 "J502" H 3512 5596 50  0000 C CNN
+F 1 "FFC_conn_14p" H 3512 5505 50  0000 C CNN
+F 2 "" H 3050 5550 50  0001 C CNN
+F 3 "https://www.we-online.com/catalog/datasheet/687114182122.pdf" H 3050 5550 50  0001 C CNN
+	1    3100 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -62,12 +62,12 @@ $EndComp
 $Comp
 L customlib_mj:FFC_retention_clamp M502
 U 1 1 5F4709C2
-P 3600 5750
-F 0 "M502" H 3600 5975 50  0000 C CNN
-F 1 "FFC_retention_clamp" H 3600 5884 50  0000 C CNN
-F 2 "" H 3600 5750 50  0001 C CNN
-F 3 "" H 3600 5750 50  0001 C CNN
-	1    3600 5750
+P 3600 6000
+F 0 "M502" H 3600 6225 50  0000 C CNN
+F 1 "FFC_retention_clamp" H 3600 6134 50  0000 C CNN
+F 2 "" H 3600 6000 50  0001 C CNN
+F 3 "" H 3600 6000 50  0001 C CNN
+	1    3600 6000
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -196,10 +196,10 @@ Wire Wire Line
 Wire Wire Line
 	10250 4850 9850 4850
 $Comp
-L power:VDD #PWR0511
+L power:VDD #PWR0513
 U 1 1 5F4BCCF4
 P 10250 5550
-F 0 "#PWR0511" H 10250 5400 50  0001 C CNN
+F 0 "#PWR0513" H 10250 5400 50  0001 C CNN
 F 1 "VDD" H 10265 5723 50  0000 C CNN
 F 2 "" H 10250 5550 50  0001 C CNN
 F 3 "" H 10250 5550 50  0001 C CNN
@@ -230,12 +230,12 @@ $EndComp
 $Comp
 L power:GND #PWR0507
 U 1 1 5F4C1AC2
-P 2750 3900
-F 0 "#PWR0507" H 2750 3650 50  0001 C CNN
-F 1 "GND" H 2755 3727 50  0000 C CNN
-F 2 "" H 2750 3900 50  0001 C CNN
-F 3 "" H 2750 3900 50  0001 C CNN
-	1    2750 3900
+P 2750 3850
+F 0 "#PWR0507" H 2750 3600 50  0001 C CNN
+F 1 "GND" H 2750 3700 50  0000 C CNN
+F 2 "" H 2750 3850 50  0001 C CNN
+F 3 "" H 2750 3850 50  0001 C CNN
+	1    2750 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -541,73 +541,66 @@ Connection ~ 8000 900
 Wire Wire Line
 	8000 900  8000 850 
 Wire Wire Line
-	3000 2450 2600 2450
+	3000 2450 2650 2450
 Wire Wire Line
-	3000 2750 2100 2750
+	3000 2750 2650 2750
 Wire Wire Line
-	3000 2850 2600 2850
+	3000 2850 1900 2850
 Wire Wire Line
-	3000 3050 2100 3050
+	3000 3050 1900 3050
 Wire Wire Line
-	3000 3250 2600 3250
+	3000 3250 1900 3250
 Wire Wire Line
-	3000 3350 2100 3350
+	3000 3450 1900 3450
 Wire Wire Line
-	3000 3450 2600 3450
+	3000 3550 2650 3550
 Wire Wire Line
-	3000 3550 2100 3550
-Wire Wire Line
-	3000 3750 2600 3750
+	3000 3750 1900 3750
 Wire Wire Line
 	3000 2550 2750 2550
 Wire Wire Line
 	2750 2550 2750 2300
-Connection ~ 2750 2550
-Wire Wire Line
-	3000 3150 2850 3150
-Wire Wire Line
-	2750 3150 2750 3650
 Wire Wire Line
 	3000 3650 2750 3650
 Wire Wire Line
-	3000 4650 2650 4650
+	3000 4900 2650 4900
 Wire Wire Line
-	3000 4750 2100 4750
+	3000 5000 1900 5000
 Wire Wire Line
-	3000 4850 2650 4850
+	3000 5100 2650 5100
 Wire Wire Line
-	3000 4950 2100 4950
+	3000 5200 1900 5200
 Wire Wire Line
-	3000 5050 2650 5050
+	3000 5300 2650 5300
 Wire Wire Line
-	3000 5150 2100 5150
+	3000 5400 1900 5400
 Wire Wire Line
-	3000 5350 2300 5350
+	3000 5600 2300 5600
 Wire Wire Line
-	3000 5450 2300 5450
+	3000 5700 2300 5700
 Wire Wire Line
-	3000 5650 2300 5650
+	3000 5900 1900 5900
 Wire Wire Line
-	3000 5850 2300 5850
+	3000 6100 2650 6100
 $Comp
 L power:GND #PWR0514
 U 1 1 5F5B25DD
-P 2850 6100
-F 0 "#PWR0514" H 2850 5850 50  0001 C CNN
-F 1 "GND" H 2855 5927 50  0000 C CNN
-F 2 "" H 2850 6100 50  0001 C CNN
-F 3 "" H 2850 6100 50  0001 C CNN
-	1    2850 6100
+P 2850 6350
+F 0 "#PWR0514" H 2850 6100 50  0001 C CNN
+F 1 "GND" H 2850 6200 50  0000 C CNN
+F 2 "" H 2850 6350 50  0001 C CNN
+F 3 "" H 2850 6350 50  0001 C CNN
+	1    2850 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 4500 2850 5250
+	2850 4750 2850 5500
 Wire Wire Line
-	2850 5250 3000 5250
+	2850 5500 3000 5500
 Wire Wire Line
-	3000 5750 2850 5750
+	3000 6000 2850 6000
 Wire Wire Line
-	2850 5750 2850 6100
+	2850 6000 2850 6350
 $Comp
 L customlib_mj:TLV9051SIDBV U501
 U 1 1 5F5A8A8B
@@ -631,30 +624,21 @@ F 3 "https://www.ti.com/lit/gpn/tlv9051" H 8050 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 2550 2750 2950
-Wire Wire Line
-	2850 3150 2850 2650
-Wire Wire Line
-	2850 2650 3000 2650
-Connection ~ 2850 3150
-Wire Wire Line
-	2850 3150 2750 3150
-Wire Wire Line
-	2750 2950 3000 2950
+	2750 2650 3000 2650
 Connection ~ 2750 3650
 Wire Wire Line
-	2750 3650 2750 3900
+	2750 3650 2750 3850
 Wire Wire Line
-	3000 5550 2850 5550
+	3000 5800 2850 5800
 Wire Wire Line
-	2850 5550 2850 5250
-Connection ~ 2850 5250
+	2850 5800 2850 5500
+Connection ~ 2850 5500
 $Comp
 L customlib_mj:VDD_OLED #PWR0506
 U 1 1 5FB4AE16
 P 2750 2300
 F 0 "#PWR0506" H 2750 2150 50  0001 C CNN
-F 1 "VDD_OLED" H 2767 2473 50  0000 C CNN
+F 1 "VDD_OLED" H 2750 2450 50  0000 C CNN
 F 2 "" H 2750 2300 50  0000 C CNN
 F 3 "" H 2750 2300 50  0000 C CNN
 	1    2750 2300
@@ -663,16 +647,16 @@ $EndComp
 $Comp
 L customlib_mj:VDD_OLED #PWR0509
 U 1 1 5FB4B19C
-P 2850 4500
-F 0 "#PWR0509" H 2850 4350 50  0001 C CNN
-F 1 "VDD_OLED" H 2867 4673 50  0000 C CNN
-F 2 "" H 2850 4500 50  0000 C CNN
-F 3 "" H 2850 4500 50  0000 C CNN
-	1    2850 4500
+P 2850 4750
+F 0 "#PWR0509" H 2850 4600 50  0001 C CNN
+F 1 "VDD_OLED" H 2850 4900 50  0000 C CNN
+F 2 "" H 2850 4750 50  0000 C CNN
+F 3 "" H 2850 4750 50  0000 C CNN
+	1    2850 4750
 	1    0    0    -1  
 $EndComp
 Text Notes 650  2050 0    75   ~ 15
-Place vDD_OLED LDO close to FFC connectors\nTODO: add 2nd optional rotary encoder to FP board\nIdeally it would just be a 3d-printed holder option on\nsame PCB that supports PwrBtn. Worst-case, air-wire\nin the Rotary signals to 5pin header a bit off.\n(TODO#2: Need new 3d-printed holder design for left-side Rotary...)
+Place vDD_OLED LDO close to FFC connectors
 Text GLabel 7250 1100 2    50   Output ~ 0
 HWID_MB
 Text GLabel 9500 800  0    50   Input ~ 0
@@ -703,50 +687,42 @@ Text GLabel 8950 3750 0    50   Input ~ 0
 I2C1_SCL
 Text GLabel 8950 3950 0    50   BiDi ~ 0
 I2C1_SDA
-Text GLabel 2600 2450 0    50   Input ~ 0
+Text GLabel 2650 2450 0    50   Input ~ 0
 DISP_D~Cn~
-Text GLabel 2100 2750 0    50   Input ~ 0
+Text GLabel 2650 2750 0    50   Input ~ 0
 DISP_FLASH_SCK
-Text GLabel 2100 3050 0    50   BiDi ~ 0
+Text GLabel 1900 3050 0    50   BiDi ~ 0
 I2C1_SDA
-Text GLabel 2600 3250 0    50   Input ~ 0
+Text GLabel 1900 3250 0    50   Input ~ 0
 I2C1_SCL
-Text GLabel 2100 3350 0    50   Input ~ 0
-~SYS_RSTn~
-Text GLabel 2600 3450 0    50   Input ~ 0
+Text GLabel 1900 3450 0    50   Input ~ 0
 ~DISP_CSn~
-Text GLabel 2100 3550 0    50   Output ~ 0
+Text GLabel 2650 3550 0    50   Output ~ 0
 ~FP_BTN_1Bn~
-Text GLabel 2600 3750 0    50   Output ~ 0
+Text GLabel 1900 3750 0    50   Output ~ 0
 ~FP_BTN_1An~
-Text GLabel 2300 5850 0    50   Output ~ 0
+Text GLabel 2650 6100 0    50   Output ~ 0
 ~FP_BTN_2Bn~
-Text GLabel 2300 5650 0    50   Output ~ 0
+Text GLabel 1900 5900 0    50   Output ~ 0
 HWID_FP
-Text GLabel 2100 5150 0    50   Output ~ 0
+Text GLabel 1900 5400 0    50   Output ~ 0
 FP_ENC_A
-Text GLabel 2100 4950 0    50   Output ~ 0
+Text GLabel 1900 5200 0    50   Output ~ 0
 FP_ENC_B
-Text GLabel 2650 4850 0    50   Output ~ 0
+Text GLabel 2650 5100 0    50   Output ~ 0
 ~AUX_INTn~
-Text GLabel 2100 4750 0    50   Output ~ 0
+Text GLabel 1900 5000 0    50   Output ~ 0
 ~FP_ENC_SWn~
-Text GLabel 2650 4650 0    50   Input ~ 0
+Text GLabel 2650 4900 0    50   Input ~ 0
 AUX_BOOT0
-Text GLabel 2650 5050 0    50   Input ~ 0
+Text GLabel 2650 5300 0    50   Input ~ 0
 ~SYS_RSTn~
-Text HLabel 2300 5350 0    50   Output ~ 0
+Text HLabel 2300 5600 0    50   Output ~ 0
 AUX_TX
-Text HLabel 2300 5450 0    50   Input ~ 0
+Text HLabel 2300 5700 0    50   Input ~ 0
 AUX_RX
-Wire Wire Line
-	3000 5950 2450 5950
-Text GLabel 2300 6000 0    50   Output ~ 0
+Text GLabel 1900 6200 0    50   Output ~ 0
 ~FP_BTN_2An~
-Wire Wire Line
-	2450 5950 2450 6000
-Wire Wire Line
-	2450 6000 2300 6000
 Wire Wire Line
 	5350 6650 5650 6650
 Text GLabel 5350 6650 0    50   Input ~ 0
@@ -775,10 +751,10 @@ F 3 "" H 6050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:VIN #PWR0513
+L customlib_mj:VIN #PWR0512
 U 1 1 5F3FFD24
 P 6250 5450
-F 0 "#PWR0513" H 6250 5300 50  0001 C CNN
+F 0 "#PWR0512" H 6250 5300 50  0001 C CNN
 F 1 "VIN" H 6250 5600 50  0000 C CNN
 F 2 "" H 6250 5450 50  0001 C CNN
 F 3 "" H 6250 5450 50  0001 C CNN
@@ -786,10 +762,10 @@ F 3 "" H 6250 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:VMAIN #PWR0512
+L customlib_mj:VMAIN #PWR0511
 U 1 1 5F4002E4
 P 5850 5450
-F 0 "#PWR0512" H 5850 5300 50  0001 C CNN
+F 0 "#PWR0511" H 5850 5300 50  0001 C CNN
 F 1 "VMAIN" H 5850 5600 50  0000 C CNN
 F 2 "" H 5850 5450 50  0001 C CNN
 F 3 "" H 5850 5450 50  0001 C CNN
@@ -867,22 +843,26 @@ Wire Wire Line
 Wire Wire Line
 	5650 6650 5750 6650
 Connection ~ 5650 6650
-Text GLabel 2600 2850 0    50   Input ~ 0
+Text GLabel 1900 2850 0    50   Input ~ 0
 DISP_FLASH_MOSI
-Text GLabel 1050 2950 0    50   Output ~ 0
+Text GLabel 2650 2950 0    50   Output ~ 0
 FP_ENC2_A
-Text GLabel 1050 3150 0    50   Output ~ 0
+Text GLabel 2650 3150 0    50   Output ~ 0
 FP_ENC2_B
-Text GLabel 1100 3350 0    50   Output ~ 0
+Text GLabel 2650 3350 0    50   Output ~ 0
 ~FP_ENC2_SWn~
-Text Notes 500  3900 0    75   ~ 15
-\nTODO: Remoce this ~SYS_RSTn~ and add ENC2_x\nto front-panel board too (and update FP layout)
 Wire Wire Line
-	1050 2950 1350 2950
+	2650 2950 3000 2950
 Wire Wire Line
-	1050 3150 1350 3150
+	2650 3150 3000 3150
 Wire Wire Line
-	1100 3350 1350 3350
+	2650 3350 3000 3350
 Text Notes 6200 6450 0    50   ~ 0
 (OTS Cable: e.g. 15136-0203)
+Wire Wire Line
+	2750 2650 2750 3650
+Wire Wire Line
+	1900 6200 3000 6200
+Text Notes 600  4400 0    75   ~ 15
+The left-side of front panel supports either an on/off\nPower-button OR optionally a 2nd rotary encoder.\nHWID_FP should be used to indicate which option is chosen
 $EndSCHEMATC

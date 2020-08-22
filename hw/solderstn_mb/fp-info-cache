@@ -1,4 +1,4 @@
-19377246405965886
+19378844461566886
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81206,6 +81206,13 @@ Wurth WE 687114182122 FFC FPC 14-pin
 0
 16
 16
+customlib_mj_fp
+Frontpanel_L_Hybrid_Power_Rotary_Pushbtns_holder
+Front-panel assembly of a 3d-printed holder for either Pwrbutton OR a 2nd Rotary Enc  + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand generic variant holder
+0
+10
+8
 customlib_mj_fp
 Frontpanel_L_Powerbtn_Pushbtns_holder
 Front-panel assembly of a 3d-printed holder for Power push-button + Grayhill 87DC3-201 dual pushbuttons
