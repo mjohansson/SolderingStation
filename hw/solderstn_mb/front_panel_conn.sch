@@ -19,7 +19,7 @@ U 1 1 5F469D5D
 P 3100 3100
 F 0 "J501" H 3512 3146 50  0000 C CNN
 F 1 "FFC_conn_14p" H 3512 3055 50  0000 C CNN
-F 2 "" H 3050 3100 50  0001 C CNN
+F 2 "customlib_mj_fp:FPC_14p_05mm-Molex_5052781433" H 3050 3100 50  0001 C CNN
 F 3 "https://www.we-online.com/catalog/datasheet/687114182122.pdf" H 3050 3100 50  0001 C CNN
 	1    3100 3100
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5F46D565
 P 3100 5550
 F 0 "J502" H 3512 5596 50  0000 C CNN
 F 1 "FFC_conn_14p" H 3512 5505 50  0000 C CNN
-F 2 "" H 3050 5550 50  0001 C CNN
+F 2 "customlib_mj_fp:FPC_14p_05mm-Molex_5052781433" H 3050 5550 50  0001 C CNN
 F 3 "https://www.we-online.com/catalog/datasheet/687114182122.pdf" H 3050 5550 50  0001 C CNN
 	1    3100 5550
 	1    0    0    -1  
@@ -54,7 +54,7 @@ U 1 1 5F4700B4
 P 3600 3600
 F 0 "M501" H 3600 3825 50  0000 C CNN
 F 1 "FFC_retention_clamp" H 3600 3734 50  0000 C CNN
-F 2 "" H 3600 3600 50  0001 C CNN
+F 2 "customlib_mj_fp:FFC_retention_clamp_14pin_7_5mm" H 3600 3600 50  0001 C CNN
 F 3 "" H 3600 3600 50  0001 C CNN
 	1    3600 3600
 	1    0    0    -1  
@@ -65,7 +65,7 @@ U 1 1 5F4709C2
 P 3600 6000
 F 0 "M502" H 3600 6225 50  0000 C CNN
 F 1 "FFC_retention_clamp" H 3600 6134 50  0000 C CNN
-F 2 "" H 3600 6000 50  0001 C CNN
+F 2 "customlib_mj_fp:FFC_retention_clamp_14pin_7_5mm" H 3600 6000 50  0001 C CNN
 F 3 "" H 3600 6000 50  0001 C CNN
 	1    3600 6000
 	1    0    0    -1  
@@ -222,7 +222,7 @@ U 1 1 5F4C1178
 P 6050 5900
 F 0 "R508" H 6109 5946 50  0000 L CNN
 F 1 "0R" H 6109 5855 50  0000 L CNN
-F 2 "" H 6050 5900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 5900 50  0001 C CNN
 F 3 "~" H 6050 5900 50  0001 C CNN
 	1    6050 5900
 	1    0    0    -1  
@@ -521,7 +521,7 @@ U 1 1 5F4EF6FD
 P 8150 1250
 F 0 "C501" H 8242 1296 50  0000 L CNN
 F 1 "100n" H 8242 1205 50  0000 L CNN
-F 2 "" H 8150 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8150 1250 50  0001 C CNN
 F 3 "~" H 8150 1250 50  0001 C CNN
 	1    8150 1250
 	1    0    0    -1  
@@ -740,17 +740,6 @@ Wire Notes Line
 Text Notes 8450 6300 0    60   ~ 12
 Ambient temperature sensors (TMP100)
 $Comp
-L customlib_mj:dogbone_3 JP501
-U 1 1 5F3FE2C8
-P 6050 5550
-F 0 "JP501" H 6050 5683 50  0000 C CNN
-F 1 "dogbone_3" H 6075 5700 50  0001 C CNN
-F 2 "" H 6050 5550 50  0001 C CNN
-F 3 "" H 6050 5550 50  0001 C CNN
-	1    6050 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:VIN #PWR0512
 U 1 1 5F3FFD24
 P 6250 5450
@@ -775,7 +764,7 @@ $EndComp
 Wire Wire Line
 	5850 5450 5850 5550
 Wire Wire Line
-	5850 5550 5950 5550
+	5850 5550 5900 5550
 Wire Wire Line
 	6150 5550 6250 5550
 Wire Wire Line
@@ -785,14 +774,14 @@ Wire Wire Line
 Wire Wire Line
 	6050 6150 6550 6150
 Wire Wire Line
-	6050 5800 6050 5650
+	6050 5800 6050 5700
 $Comp
 L customlib_mj:DMG1012T Q501
 U 1 1 5F4241F8
 P 5950 6650
 F 0 "Q501" H 6156 6696 50  0000 L CNN
 F 1 "DMG1012T" H 6352 6605 50  0000 C CNN
-F 2 "bobs:SOT-523" H 6150 6750 50  0001 C CNN
+F 2 "customlib_mj_fp:SOT-523" H 6150 6750 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 5950 6650 50  0001 C CNN
 	1    5950 6650
 	1    0    0    -1  
@@ -820,7 +809,7 @@ U 1 1 5F43274E
 P 5650 6800
 F 0 "R509" H 5709 6846 50  0000 L CNN
 F 1 "10k" H 5709 6755 50  0000 L CNN
-F 2 "" H 5650 6800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 6800 50  0001 C CNN
 F 3 "~" H 5650 6800 50  0001 C CNN
 	1    5650 6800
 	1    0    0    -1  
@@ -865,4 +854,29 @@ Wire Wire Line
 	1900 6200 3000 6200
 Text Notes 600  4400 0    75   ~ 15
 The left-side of front panel supports either an on/off\nPower-button OR optionally a 2nd rotary encoder.\nHWID_FP should be used to indicate which option is chosen
+Wire Wire Line
+	5900 5550 5900 5700
+Wire Wire Line
+	5900 5700 6050 5700
+Connection ~ 5900 5550
+Wire Wire Line
+	5900 5550 5950 5550
+Connection ~ 6050 5700
+Wire Wire Line
+	6050 5700 6050 5650
+$Comp
+L customlib_mj:dogbone_3_ud JP501
+U 1 1 5F4766CC
+P 6050 5550
+F 0 "JP501" H 6050 5683 50  0000 C CNN
+F 1 "dogbone_3_ud" H 6075 5700 50  0001 C CNN
+F 2 "customlib_mj_fp:db3_ud_0402" H 6050 5550 50  0001 C CNN
+F 3 "" H 6050 5550 50  0001 C CNN
+	1    6050 5550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 3600
+NoConn ~ 3700 3600
+NoConn ~ 3500 6000
+NoConn ~ 3700 6000
 $EndSCHEMATC

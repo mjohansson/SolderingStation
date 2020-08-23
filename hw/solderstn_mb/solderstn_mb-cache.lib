@@ -1635,8 +1635,8 @@ DRAW
 T 900 50 900 50 0 0 0 (pad) Normal 0 C C
 S -400 800 400 -800 0 1 0 f
 X GND 1 500 -600 100 L 50 50 1 1 P
-X VOUT2 10 500 -100 100 L 50 50 1 1 w
-X VOUT2 11 500 -200 100 L 50 50 1 1 w
+X VOUT2 10 500 0 100 L 50 50 1 1 P N
+X VOUT2 11 500 0 100 L 50 50 1 1 P N
 X ILIM2 12 -500 -400 100 R 50 50 1 1 O
 X EN2 13 -500 200 100 R 50 50 1 1 I
 X SEL1 14 -500 500 100 R 50 50 1 1 I
@@ -1648,8 +1648,8 @@ X LATCH 3 -500 100 100 R 50 50 1 1 I
 X EN1 4 -500 300 100 R 50 50 1 1 I
 X ILIM1 5 -500 -200 100 R 50 50 1 1 O
 X VOUT1 6 500 700 100 L 50 50 1 1 w
-X VOUT1 7 500 600 100 L 50 50 1 1 w
-X VOUT1 8 500 500 100 L 50 50 1 1 w
+X VOUT1 7 500 700 100 L 50 50 1 1 P N
+X VOUT1 8 500 700 100 L 50 50 1 1 P N
 X VOUT2 9 500 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
@@ -1958,11 +1958,11 @@ X GND 4 0 -400 100 U 40 40 1 1 W
 ENDDRAW
 ENDDEF
 #
-# customlib_mj_dogbone_2
+# customlib_mj_dogbone_2_ud
 #
-DEF customlib_mj_dogbone_2 JP 0 40 Y Y 1 F N
+DEF customlib_mj_dogbone_2_ud JP 0 40 Y Y 1 F N
 F0 "JP" 0 -75 50 H V C CNN
-F1 "customlib_mj_dogbone_2" 0 100 50 H I C CNN
+F1 "customlib_mj_dogbone_2_ud" 0 100 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1971,17 +1971,16 @@ $ENDFPLIST
 DRAW
 S -50 25 -25 -25 0 1 0 N
 S 50 25 25 -25 0 1 0 N
-P 2 0 1 0 -25 0 25 0 N
 X ~ 1 -100 0 50 R 50 50 1 1 P
-X ~ 1 100 0 50 L 50 50 1 1 P
+X ~ 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# customlib_mj_dogbone_3
+# customlib_mj_dogbone_3_ud
 #
-DEF customlib_mj_dogbone_3 JP 0 40 Y Y 1 F N
+DEF customlib_mj_dogbone_3_ud JP 0 40 Y Y 1 F N
 F0 "JP" 0 75 50 H V C CNN
-F1 "customlib_mj_dogbone_3" 25 150 50 H I C CNN
+F1 "customlib_mj_dogbone_3_ud" 25 150 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1991,10 +1990,9 @@ DRAW
 S -50 25 -30 -25 0 1 0 N
 S -10 25 10 -50 0 1 0 N
 S 50 25 30 -25 0 1 0 N
-P 2 0 1 0 -30 0 -10 0 N
 X ~ 1 -100 0 50 R 50 50 1 1 P
-X ~ 1 0 -100 50 U 50 50 1 1 P
-X ~ 2 100 0 50 L 50 50 1 1 P
+X ~ 2 0 -100 50 U 50 50 1 1 P
+X ~ 3 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

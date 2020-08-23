@@ -425,7 +425,7 @@ U 1 1 5F67D632
 P 9300 6000
 F 0 "C1402" H 9350 6050 50  0000 L CNN
 F 1 "100n" H 9350 5950 50  0000 L CNN
-F 2 "" H 9300 6000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9300 6000 50  0001 C CNN
 F 3 "~" H 9300 6000 50  0001 C CNN
 	1    9300 6000
 	1    0    0    -1  
@@ -462,7 +462,7 @@ U 1 1 5F681CF8
 P 9300 3550
 F 0 "C1401" H 9350 3600 50  0000 L CNN
 F 1 "100n" H 9350 3500 50  0000 L CNN
-F 2 "" H 9300 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9300 3550 50  0001 C CNN
 F 3 "~" H 9300 3550 50  0001 C CNN
 	1    9300 3550
 	1    0    0    -1  
@@ -493,48 +493,26 @@ Wire Wire Line
 	9300 3450 9300 3400
 Wire Wire Line
 	9300 3650 9300 3700
-$Comp
-L customlib_mj:dogbone_2 JP1401
-U 1 1 5F686AB5
-P 9400 2450
-F 0 "JP1401" H 9400 2584 50  0000 C CNN
-F 1 "dogbone_2" H 9400 2550 50  0001 C CNN
-F 2 "customlib_mj_fp:db2_0402" H 9400 2450 50  0001 C CNN
-F 3 "" H 9400 2450 50  0001 C CNN
-	1    9400 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9050 2850 9050 2450
 Wire Wire Line
-	9050 2450 9300 2450
+	9050 2450 9250 2450
 Connection ~ 9050 2850
 Wire Wire Line
 	9050 2850 8500 2850
 Wire Wire Line
-	9500 2450 9800 2450
+	9500 2450 9550 2450
 Wire Wire Line
 	9800 2450 9800 2950
 Connection ~ 9800 2950
 Wire Wire Line
 	9800 2950 9500 2950
-$Comp
-L customlib_mj:dogbone_2 JP1402
-U 1 1 5F692262
-P 9350 4900
-F 0 "JP1402" H 9350 5034 50  0000 C CNN
-F 1 "dogbone_2" H 9350 5000 50  0001 C CNN
-F 2 "customlib_mj_fp:db2_0402" H 9350 4900 50  0001 C CNN
-F 3 "" H 9350 4900 50  0001 C CNN
-	1    9350 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9000 5300 9000 4900
 Wire Wire Line
-	9000 4900 9250 4900
+	9000 4900 9200 4900
 Wire Wire Line
-	9450 4900 9750 4900
+	9450 4900 9500 4900
 Wire Wire Line
 	9750 4900 9750 5400
 Connection ~ 9000 5300
@@ -565,4 +543,50 @@ Wire Wire Line
 Connection ~ 3900 4850
 Wire Wire Line
 	3900 4850 3900 4800
+$Comp
+L customlib_mj:dogbone_2_ud JP1401
+U 1 1 5F4C0E49
+P 9400 2450
+F 0 "JP1401" H 9400 2584 50  0000 C CNN
+F 1 "dogbone_2_ud" H 9400 2550 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 9400 2450 50  0001 C CNN
+F 3 "" H 9400 2450 50  0001 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2450 9250 2500
+Wire Wire Line
+	9250 2500 9550 2500
+Wire Wire Line
+	9550 2500 9550 2450
+Connection ~ 9250 2450
+Wire Wire Line
+	9250 2450 9300 2450
+Connection ~ 9550 2450
+Wire Wire Line
+	9550 2450 9800 2450
+$Comp
+L customlib_mj:dogbone_2_ud JP1402
+U 1 1 5F4C3BF6
+P 9350 4900
+F 0 "JP1402" H 9350 5034 50  0000 C CNN
+F 1 "dogbone_2_ud" H 9350 5000 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 9350 4900 50  0001 C CNN
+F 3 "" H 9350 4900 50  0001 C CNN
+	1    9350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4900 9200 4950
+Wire Wire Line
+	9200 4950 9500 4950
+Wire Wire Line
+	9500 4950 9500 4900
+Connection ~ 9200 4900
+Wire Wire Line
+	9200 4900 9250 4900
+Connection ~ 9500 4900
+Wire Wire Line
+	9500 4900 9750 4900
 $EndSCHEMATC
