@@ -1547,17 +1547,6 @@ Enc2_A
 Text Label 1450 3300 2    50   ~ 0
 Enc2_B
 $Comp
-L customlib_mj:Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder ASM101
-U 1 1 5FCBCA58
-P 7600 1600
-F 0 "ASM101" H 7658 2565 50  0000 C CNN
-F 1 "Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder" H 7658 2474 50  0000 C CNN
-F 2 "customlib_mj_fp:Frontpanel_L_Hybrid_Power_Rotary_Pushbtns_holder" H 7575 1995 50  0001 C CNN
-F 3 "" H 7575 1995 50  0001 C CNN
-	1    7600 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5FCC0149
 P 8650 1550
@@ -1599,4 +1588,15 @@ Wire Wire Line
 	8950 900  8950 1350
 Wire Wire Line
 	8950 1350 8300 1350
+$Comp
+L customlib_mj:Frontpanel_L_Powerbtn_Pushbtns_holder ASM1
+U 1 1 5F4694CB
+P 7600 1600
+F 0 "ASM1" H 7658 2565 50  0000 C CNN
+F 1 "Frontpanel_L_Powerbtn_Pushbtns_holder" H 7658 2474 50  0000 C CNN
+F 2 "customlib_mj_fp:Frontpanel_L_Powerbtn_Pushbtns_holder" H 7575 1995 50  0001 C CNN
+F 3 "" H 7575 1995 50  0001 C CNN
+	1    7600 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

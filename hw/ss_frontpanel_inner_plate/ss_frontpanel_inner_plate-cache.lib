@@ -216,12 +216,12 @@ X ~ 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# customlib_mj_Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder
+# customlib_mj_Frontpanel_L_Powerbtn_Pushbtns_holder
 #
-DEF customlib_mj_Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder ASM 0 5 Y Y 1 F N
+DEF customlib_mj_Frontpanel_L_Powerbtn_Pushbtns_holder ASM 0 5 Y Y 1 F N
 F0 "ASM" 0 850 50 H V C CNN
-F1 "customlib_mj_Frontpanel_L_Hybrid_PwrRotary_Pushbtns_holder" 0 -550 50 H V C CNN
-F2 "customlib_mj_fp:Frontpanel_L_Hybrid_Power_Rotary_Pushbtns_holder" -25 395 50 H I C CNN
+F1 "customlib_mj_Frontpanel_L_Powerbtn_Pushbtns_holder" 0 -550 50 H V C CNN
+F2 "customlib_mj_fp:Frontpanel_L_Powerbtn_Pushbtns_holder" -25 395 50 H I C CNN
 F3 "" -25 395 50 H I C CNN
 DRAW
 A -28 395 116 960 -860 0 1 25 N -40 510 -20 280
@@ -229,7 +229,7 @@ A 28 395 115 -940 840 0 1 25 N 20 280 40 510
 C -200 0 50 0 1 0 N
 C 0 400 354 0 1 0 N
 C 200 0 50 0 1 0 N
-T 900 450 450 50 0 0 0 "(Alt. Encoder)" Normal 0 C C
+T 900 450 425 30 0 0 0 "Alt. enc2.(optional!)" Normal 0 C C
 S -600 800 600 -500 0 1 0 N
 S -10 580 10 480 0 1 0 F
 P 2 0 1 0 -150 50 -250 -50 N
