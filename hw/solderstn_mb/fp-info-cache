@@ -1,4 +1,4 @@
-19666676291875274
+19666676298862274
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82020,11 +82020,11 @@ DM5-8824D3_DIP24
 24
 customlib_mj_fp
 DS3231_module_6pin_horizontal_mnt
+DS3231 module 23x38.5mm with CR2032 backup battery. Horizontally mounted, battery down, 10mm distances, pinlist+pinheader interconnect
 
-
 0
-0
-0
+6
+6
 customlib_mj_fp
 D_SOD-123
 SOD-123

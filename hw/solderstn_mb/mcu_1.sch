@@ -918,21 +918,6 @@ Flash_SCK
 Text Label 8000 5550 0    50   ~ 0
 Flash_MOSI
 $Comp
-L customlib_mj:DS3231_Module RTC2201
-U 1 1 5F77A0A2
-P 10450 5450
-F 0 "RTC2201" H 10450 5887 60  0000 C CNN
-F 1 "DS3231_Module" H 10450 5781 60  0000 C CNN
-F 2 "customlib_mj_fp:DS3231_module_6pin_horizontal_mnt" H 10450 5450 60  0001 C CNN
-F 3 "" H 10450 5450 60  0001 C CNN
-	1    10450 5450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10750 5750
-NoConn ~ 10750 5650
-NoConn ~ 10750 5550
-NoConn ~ 10750 5450
-$Comp
 L power:GND #PWR02219
 U 1 1 5F7A2F27
 P 10100 5850
@@ -1247,4 +1232,15 @@ Text Notes 4900 5700 2    60   ~ 12
 DbgLED
 Text Notes 11200 2450 2    50   ~ 10
 DNP (LSE\nnot used)
+$Comp
+L customlib_mj:DS3231_Module_6pins RTC2201
+U 1 1 5FA4E1CC
+P 10450 5450
+F 0 "RTC2201" H 10450 5750 60  0000 C CNN
+F 1 "DS3231_Module_6pins" V 10700 5450 60  0000 C CNN
+F 2 "customlib_mj_fp:DS3231_module_6pin_horizontal_mnt" H 10450 5450 60  0001 C CNN
+F 3 "" H 10450 5450 60  0001 C CNN
+	1    10450 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
