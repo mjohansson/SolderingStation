@@ -227,4 +227,8 @@ Wire Wire Line
 	3400 3800 3400 4950
 Wire Wire Line
 	3400 4950 3800 4950
+Text Notes 9100 2900 0    60   ~ 12
+DS3231 (TCXO RTC module) :
+Text Notes 9200 3150 0    50   ~ 10
+1101000 (DS3231)\n1010--- (24C32, addr customized with A2-A0)\n1010111 (24C32, default (A2-A0 open))
 $EndSCHEMATC
