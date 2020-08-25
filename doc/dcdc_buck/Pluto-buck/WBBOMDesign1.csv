@@ -1,0 +1,15 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+RenB,Yageo,RC0603FR-0768KL,1,0.01,4.68,Resistance: 68 kΩ  Tolerance: 1.0%  Power: 100 mW  
+RenT,Yageo,RC0603FR-07330KL,1,0.01,4.68,Resistance: 330 kΩ  Tolerance: 1.0%  Power: 100 mW  
+Css,MuRata,GRM155R71C153KA01D,1,0.01,3,Cap: 15 nF  Total Derated Cap: 15 nF  VDC: 16 V  ESR: 1 mΩ  Package: 0402  
+Ccomp2,Samsung Electro-Mechanics,CL21C100JBANNNC,1,0.01,6.75,Cap: 10 pF  Total Derated Cap: 10 pF  VDC: 50 V  ESR: 0 Ω  Package: 0805  
+U1,Texas Instruments,TPS54332DDAR,1,0.572,55.2,
+Rfbb,Yageo,RC0603FR-071K8L,1,0.01,4.68,Resistance: 1.8 kΩ  Tolerance: 1.0%  Power: 100 mW  
+Cboot,MuRata,GRM155R71A104KA01D,1,0.01,3,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 10 V  ESR: 1 mΩ  Package: 0402  
+Cin,MuRata,GRM32ER61E226KE15L,1,0.65,14.7,Cap: 22 µF  Total Derated Cap: 9.8 µF  VDC: 25 V  ESR: 2 mΩ  Package: 1210  
+L1,Bourns,SRR7032-3R3M,1,0.32,81,L: 3.3 µH  DCR: 27 mΩ  IDC: 2.2 A  
+Rfbt,Yageo,RC0603FR-0710KL,1,0.01,4.68,Resistance: 10 kΩ  Tolerance: 1.0%  Power: 100 mW  
+Cout,Kemet,C0805C106K8PACTU,2,0.03,6.75,Cap: 10 µF  Total Derated Cap: 13 µF  VDC: 10 V  ESR: 3 mΩ  Package: 0805  
+D1,ON Semiconductor,MBRS340T3G,1,0.13,83.27,Type: Schottky  VRRM: 40 V  Io: 3 A  
+Ccomp,TDK,CGA4C2C0G1H392J060AA,1,0.04,6.75,Cap: 3.9 nF  Total Derated Cap: 3.9 nF  VDC: 50 V  ESR: 0 Ω  Package: 0805  
+Rcomp,Yageo,RC0603FR-0710KL,1,0.01,4.68,Resistance: 10 kΩ  Tolerance: 1.0%  Power: 100 mW  
