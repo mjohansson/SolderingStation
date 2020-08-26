@@ -58,17 +58,6 @@ F 3 "~" H 5900 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:Logo_MJ Logo102
-U 1 1 5F41EB17
-P 9500 6750
-F 0 "Logo102" H 9500 6850 50  0000 C CNN
-F 1 "HighVoltage" H 9500 6650 50  0000 C CNN
-F 2 "Symbol:Symbol_HighVoltage_Type2_CopperTop_Big" H 9500 6750 50  0001 C CNN
-F 3 "" H 9500 6750 50  0001 C CNN
-	1    9500 6750
-	1    0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:Logo_MJ Logo103
 U 1 1 5F41EFE7
 P 10100 6750
@@ -91,14 +80,47 @@ F 3 "~" H 10750 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:Logo_MJ Logo101
-U 1 1 5F41FBAB
-P 9050 6750
-F 0 "Logo101" H 9050 6850 50  0000 C CNN
-F 1 "Attention" H 9050 6650 50  0000 C CNN
-F 2 "Symbol:Symbol_Attention_CopperTop_Big" H 9050 6750 50  0001 C CNN
-F 3 "" H 9050 6750 50  0001 C CNN
-	1    9050 6750
+L customlib_mj:FN283-1-06_Schaffner_AC-panel_cutout M104
+U 1 1 5F4FFAD8
+P 3400 7350
+F 0 "M104" H 3400 7550 50  0000 C CNN
+F 1 "FN283-1-06_Schaffner_AC-panel_cutout" H 3400 7100 50  0000 C CNN
+F 2 "customlib_mj_fp:FN283_panel_cutout-outside_mnt" H 3400 7350 50  0001 C CNN
+F 3 "" H 3400 7350 50  0001 C CNN
+	1    3400 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:Schurter-3101_0060-fuse_holder-Panel_cutout M103
+U 1 1 5F50285E
+P 1500 7200
+F 0 "M103" H 1500 7600 50  0000 C CNN
+F 1 "Schurter-3101_0060-fuse_holder-Panel_cutout" H 1500 6750 50  0000 C CNN
+F 2 "customlib_mj_fp:Schurter_3101_0060_fuse_holder-panel_cutout" H 1500 7200 50  0001 C CNN
+F 3 "" H 1500 7200 50  0001 C CNN
+	1    1500 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:Amphenol_T3437000-DIN7_panel_cutout M101
+U 1 1 5F50426A
+P 2050 5700
+F 0 "M101" H 2050 6100 50  0000 C CNN
+F 1 "Amphenol_T3437000-DIN7_panel_cutout" H 2050 5250 50  0000 C CNN
+F 2 "customlib_mj_fp:Amphenol_T3437000-DIN7-panel_cutout" H 2050 5700 50  0001 C CNN
+F 3 "" H 2050 5700 50  0001 C CNN
+	1    2050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:Amphenol_T3437000-DIN7_panel_cutout M102
+U 1 1 5F504C41
+P 3650 5750
+F 0 "M102" H 3750 6150 50  0000 C CNN
+F 1 "Amphenol_T3437000-DIN7_panel_cutout" H 3650 5350 50  0000 C CNN
+F 2 "customlib_mj_fp:Amphenol_T3437000-DIN7-panel_cutout" H 3650 5750 50  0001 C CNN
+F 3 "" H 3650 5750 50  0001 C CNN
+	1    3650 5750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
