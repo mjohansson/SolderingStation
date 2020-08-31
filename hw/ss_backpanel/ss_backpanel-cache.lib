@@ -28,6 +28,28 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
+# customlib_mj_74980104400-Wurth_RJ45-Panel_cutout
+#
+DEF customlib_mj_74980104400-Wurth_RJ45-Panel_cutout M 0 40 Y Y 1 F N
+F0 "M" 25 275 50 H V C CNN
+F1 "customlib_mj_74980104400-Wurth_RJ45-Panel_cutout" 0 -275 50 H V C CNN
+F2 "customlib_mj_fp:74980104400_WE_RJ45_LAN-Panel_cutout" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 225 300 -225 0 1 0 N
+P 2 0 0 0 -250 0 -400 0 N
+P 2 0 0 0 -150 0 -200 0 N
+P 2 0 0 0 -100 0 100 0 N
+P 2 0 0 0 0 -250 0 -400 N
+P 2 0 0 0 0 -150 0 -200 N
+P 2 0 0 0 0 100 0 -100 N
+P 2 0 0 0 0 150 0 200 N
+P 2 0 0 0 0 250 0 400 N
+P 2 0 0 0 150 0 200 0 N
+P 2 0 0 0 250 0 400 0 N
+ENDDRAW
+ENDDEF
+#
 # customlib_mj_Amphenol_T3437000-DIN7_panel_cutout
 #
 DEF customlib_mj_Amphenol_T3437000-DIN7_panel_cutout M 0 40 Y Y 1 F N
@@ -87,6 +109,50 @@ F2 "customlib_mj_fp:Schurter_3101_0060_fuse_holder-panel_cutout" 0 0 50 H I C CN
 F3 "" 0 0 50 H I C CNN
 DRAW
 C 0 0 300 0 0 0 N
+P 2 0 0 0 -250 0 -400 0 N
+P 2 0 0 0 -150 0 -200 0 N
+P 2 0 0 0 -100 0 100 0 N
+P 2 0 0 0 0 -250 0 -400 N
+P 2 0 0 0 0 -150 0 -200 N
+P 2 0 0 0 0 100 0 -100 N
+P 2 0 0 0 0 150 0 200 N
+P 2 0 0 0 0 250 0 400 N
+P 2 0 0 0 150 0 200 0 N
+P 2 0 0 0 250 0 400 0 N
+ENDDRAW
+ENDDEF
+#
+# customlib_mj_TE-1-292303-Panel_cutout
+#
+DEF customlib_mj_TE-1-292303-Panel_cutout M 0 40 Y Y 1 F N
+F0 "M" 50 275 50 H V C CNN
+F1 "customlib_mj_TE-1-292303-Panel_cutout" 0 -275 50 H V C CNN
+F2 "customlib_mj_fp:TE_1-292303-Panel_cutout" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 225 300 -225 0 1 0 N
+P 2 0 0 0 -250 0 -400 0 N
+P 2 0 0 0 -150 0 -200 0 N
+P 2 0 0 0 -100 0 100 0 N
+P 2 0 0 0 0 -250 0 -400 N
+P 2 0 0 0 0 -150 0 -200 N
+P 2 0 0 0 0 100 0 -100 N
+P 2 0 0 0 0 150 0 200 N
+P 2 0 0 0 0 250 0 400 N
+P 2 0 0 0 150 0 200 0 N
+P 2 0 0 0 250 0 400 0 N
+ENDDRAW
+ENDDEF
+#
+# customlib_mj_TE-1734346-Panel_cutout
+#
+DEF customlib_mj_TE-1734346-Panel_cutout M 0 40 Y Y 1 F N
+F0 "M" 50 275 50 H V C CNN
+F1 "customlib_mj_TE-1734346-Panel_cutout" 0 -275 50 H V C CNN
+F2 "customlib_mj_fp:TE_1734346-Panel_cutout" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 225 300 -225 0 1 0 N
 P 2 0 0 0 -250 0 -400 0 N
 P 2 0 0 0 -150 0 -200 0 N
 P 2 0 0 0 -100 0 100 0 N

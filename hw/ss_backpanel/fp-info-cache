@@ -1,4 +1,4 @@
-19396539017835886
+19401335632999886
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80955,6 +80955,13 @@ Würth RJ45 Ethernet jack integrated magnetics (WE: 74980104400)
 14
 14
 customlib_mj_fp
+74980104400_WE_RJ45_LAN-Panel_cutout
+Panel cut-out for WE RJ45 Ethernet connector
+RJ45 panel cut-out
+0
+0
+0
+customlib_mj_fp
 AAT4900_SC70JW8
 
 AAT4900 SC70JW-8
@@ -81886,12 +81893,26 @@ USB Type A TE
 6
 5
 customlib_mj_fp
+TE_1-292303-Panel_cutout
+Panel cut-out for TE-1-292303 USB-A host connector
+USB-A TE-1-292303 panel cut-out
+0
+0
+0
+customlib_mj_fp
 TE_1734346
 TE connectivity USB 2.0 TypeB R/A SMT
 
 0
 8
 6
+customlib_mj_fp
+TE_1734346-Panel_cutout
+Panel cut-out for TE-1734346 USB-B device connector
+USB-B TE-1734346 panel cut-out
+0
+0
+0
 customlib_mj_fp
 TJ-S1706_0603
 https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_TOGIALED-TJ-S1706SW6TGLC2G-A5_C273616.html

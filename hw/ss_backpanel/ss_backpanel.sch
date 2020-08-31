@@ -123,4 +123,37 @@ F 3 "" H 3650 5750 50  0001 C CNN
 	1    3650 5750
 	1    0    0    -1  
 $EndComp
+$Comp
+L customlib_mj:74980104400-Wurth_RJ45-Panel_cutout M105
+U 1 1 5F4D2201
+P 1450 4700
+F 0 "M105" H 1500 5000 50  0000 C CNN
+F 1 "74980104400-Wurth_RJ45-Panel_cutout" H 1450 4400 50  0000 C CNN
+F 2 "customlib_mj_fp:74980104400_WE_RJ45_LAN-Panel_cutout" H 1450 4700 50  0001 C CNN
+F 3 "" H 1450 4700 50  0001 C CNN
+	1    1450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:TE-1734346-Panel_cutout M106
+U 1 1 5F4D36E9
+P 2850 4750
+F 0 "M106" H 2900 5050 50  0000 C CNN
+F 1 "TE-1734346-Panel_cutout" H 2850 4450 50  0000 C CNN
+F 2 "customlib_mj_fp:TE_1734346-Panel_cutout" H 2850 4750 50  0001 C CNN
+F 3 "" H 2850 4750 50  0001 C CNN
+	1    2850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:TE-1-292303-Panel_cutout M107
+U 1 1 5F4D4611
+P 4000 4750
+F 0 "M107" H 4050 5050 50  0000 C CNN
+F 1 "TE-1-292303-Panel_cutout" H 4000 4450 50  0000 C CNN
+F 2 "customlib_mj_fp:TE_1-292303-Panel_cutout" H 4000 4750 50  0001 C CNN
+F 3 "" H 4000 4750 50  0001 C CNN
+	1    4000 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
