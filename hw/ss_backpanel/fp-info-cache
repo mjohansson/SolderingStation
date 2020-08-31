@@ -1,4 +1,4 @@
-19401335632999886
+19406132312125886
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81137,6 +81137,20 @@ DS3231 module 23x38.5mm with CR2032 backup battery. Horizontally mounted, batter
 6
 6
 customlib_mj_fp
+DSub9-Kycon_K22X-E9P-N_panel_cutout_behind
+Dsub-9 panel cut-out, behind
+DSUB-9 panel cut-out
+0
+0
+0
+customlib_mj_fp
+DSub9-Kycon_K22X-E9P-N_panel_cutout_through
+Dsub-9 panel cut-out, through
+DSUB-9 panel cut-out
+0
+0
+0
+customlib_mj_fp
 D_SOD-123
 SOD-123
 SOD-123
@@ -81759,6 +81773,13 @@ CUI devices 3.5mm stereo audio jack, right-angle w. isolated DPDT switch and tip
 0
 18
 12
+customlib_mj_fp
+SJ-3571N_panel_cutout
+Panel cut-out for CUI SJ-3571N 3.5mm audio jack
+CUI SJ-3571N 3.5mm audio jack panel cut-out
+0
+0
+0
 customlib_mj_fp
 SK6812mini_plcc4
 

@@ -94,7 +94,7 @@ $Comp
 L customlib_mj:Schurter-3101_0060-fuse_holder-Panel_cutout M103
 U 1 1 5F50285E
 P 1500 7200
-F 0 "M103" H 1500 7600 50  0000 C CNN
+F 0 "M103" H 1650 7550 50  0000 C CNN
 F 1 "Schurter-3101_0060-fuse_holder-Panel_cutout" H 1500 6750 50  0000 C CNN
 F 2 "customlib_mj_fp:Schurter_3101_0060_fuse_holder-panel_cutout" H 1500 7200 50  0001 C CNN
 F 3 "" H 1500 7200 50  0001 C CNN
@@ -105,7 +105,7 @@ $Comp
 L customlib_mj:Amphenol_T3437000-DIN7_panel_cutout M101
 U 1 1 5F50426A
 P 2050 5700
-F 0 "M101" H 2050 6100 50  0000 C CNN
+F 0 "M101" H 2200 6050 50  0000 C CNN
 F 1 "Amphenol_T3437000-DIN7_panel_cutout" H 2050 5250 50  0000 C CNN
 F 2 "customlib_mj_fp:Amphenol_T3437000-DIN7-panel_cutout" H 2050 5700 50  0001 C CNN
 F 3 "" H 2050 5700 50  0001 C CNN
@@ -116,7 +116,7 @@ $Comp
 L customlib_mj:Amphenol_T3437000-DIN7_panel_cutout M102
 U 1 1 5F504C41
 P 3650 5750
-F 0 "M102" H 3750 6150 50  0000 C CNN
+F 0 "M102" H 3800 6100 50  0000 C CNN
 F 1 "Amphenol_T3437000-DIN7_panel_cutout" H 3650 5350 50  0000 C CNN
 F 2 "customlib_mj_fp:Amphenol_T3437000-DIN7-panel_cutout" H 3650 5750 50  0001 C CNN
 F 3 "" H 3650 5750 50  0001 C CNN
@@ -127,7 +127,7 @@ $Comp
 L customlib_mj:74980104400-Wurth_RJ45-Panel_cutout M105
 U 1 1 5F4D2201
 P 1450 4700
-F 0 "M105" H 1500 5000 50  0000 C CNN
+F 0 "M105" H 1650 5000 50  0000 C CNN
 F 1 "74980104400-Wurth_RJ45-Panel_cutout" H 1450 4400 50  0000 C CNN
 F 2 "customlib_mj_fp:74980104400_WE_RJ45_LAN-Panel_cutout" H 1450 4700 50  0001 C CNN
 F 3 "" H 1450 4700 50  0001 C CNN
@@ -138,7 +138,7 @@ $Comp
 L customlib_mj:TE-1734346-Panel_cutout M106
 U 1 1 5F4D36E9
 P 2850 4750
-F 0 "M106" H 2900 5050 50  0000 C CNN
+F 0 "M106" H 3050 5050 50  0000 C CNN
 F 1 "TE-1734346-Panel_cutout" H 2850 4450 50  0000 C CNN
 F 2 "customlib_mj_fp:TE_1734346-Panel_cutout" H 2850 4750 50  0001 C CNN
 F 3 "" H 2850 4750 50  0001 C CNN
@@ -149,11 +149,33 @@ $Comp
 L customlib_mj:TE-1-292303-Panel_cutout M107
 U 1 1 5F4D4611
 P 4000 4750
-F 0 "M107" H 4050 5050 50  0000 C CNN
+F 0 "M107" H 4150 5050 50  0000 C CNN
 F 1 "TE-1-292303-Panel_cutout" H 4000 4450 50  0000 C CNN
 F 2 "customlib_mj_fp:TE_1-292303-Panel_cutout" H 4000 4750 50  0001 C CNN
 F 3 "" H 4000 4750 50  0001 C CNN
 	1    4000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:DSub9-Kycon_K22X-E9P-N-panel_cutout-small M108
+U 1 1 5F4DCFFF
+P 5700 4750
+F 0 "M108" H 5900 5050 50  0000 C CNN
+F 1 "DSub9-Kycon_K22X-E9P-N-panel_cutout-small" H 5700 4450 50  0000 C CNN
+F 2 "customlib_mj_fp:DSub9-Kycon_K22X-E9P-N_panel_cutout_behind" H 5700 4750 50  0001 C CNN
+F 3 "" H 5700 4750 50  0001 C CNN
+	1    5700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:SJ-3571N_CUI_audio_jacket_panel_cutout M109
+U 1 1 5F4E1D6C
+P 5600 5750
+F 0 "M109" H 5600 6000 50  0000 C CNN
+F 1 "SJ-3571N_CUI_audio_jacket_panel_cutout" H 5600 5450 50  0000 C CNN
+F 2 "customlib_mj_fp:SJ-3571N_panel_cutout" H 5600 5750 50  0001 C CNN
+F 3 "" H 5600 5750 50  0001 C CNN
+	1    5600 5750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
