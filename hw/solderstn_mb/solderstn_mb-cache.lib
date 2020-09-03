@@ -1124,6 +1124,19 @@ X ~ 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# customlib_mj_FN283-1-06_Schaffner_AC-mainboard_cutout
+#
+DEF customlib_mj_FN283-1-06_Schaffner_AC-mainboard_cutout M 0 40 Y Y 1 F N
+F0 "M" 0 200 50 H V C CNN
+F1 "customlib_mj_FN283-1-06_Schaffner_AC-mainboard_cutout" 50 -200 50 H V C CNN
+F2 "customlib_mj_fp:FN283_mainboard_cutout" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 0 50 0 0 0 ACin Normal 0 C C
+S -100 150 100 -150 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # customlib_mj_Ferrite_Bead_Small
 #
 DEF customlib_mj_Ferrite_Bead_Small FB 0 0 N Y 1 F N

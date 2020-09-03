@@ -1,0 +1,3 @@
+3DX_CUI_DEVICES_Supplier: CUI Devices
+3DX_CUI_DEVICES_Description: 70 x 31 mm, Enclosed, Rectangular Case, 2 W, 8 Ohm, Neodymium Magnet, Paper and Cloth Cone, Speaker
+3DX_CUI_DEVICES_Model Number: CES-703116-28PM

@@ -1,1 +1,1387 @@
+314622711487597
+customlib_mj_fp
+2MS1T2B2M2RE
+
+
 0
+3
+3
+customlib_mj_fp
+4pin_SWD_SMT_100mil
+4-pin SWD on 1x4, 2.54mm SMD pads
+SWD
+0
+4
+4
+customlib_mj_fp
+74HC1G125_SOT23-5
+5-pin SOT23 package
+SOT-23-5 74xx1G125
+0
+5
+5
+customlib_mj_fp
+74HC595(D)_SOIC-16
+
+SOIC-16, SN74HC595D
+0
+16
+16
+customlib_mj_fp
+74HC595(D)_SOIC-16_copy
+
+SOIC-16, SN74HC595D
+0
+16
+16
+customlib_mj_fp
+74LVC2G17DCK_SC70-6
+http://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf
+SC70-6/SC88/SOT363
+0
+6
+6
+customlib_mj_fp
+74xxT245PW_TSSOP-20
+
+74ABT245PW TSSOP-20
+0
+20
+20
+customlib_mj_fp
+87DC3-201
+Grayhill 87DC3-201 dual square pushbuttons, matrix X- & Y-stackable, through-hole pins on 2.54 aligned grid
+
+0
+3
+3
+customlib_mj_fp
+87DC3-201_compound
+Compound assembly for Grayhill 87DC3-201 and "holder bridge board"
+
+0
+3
+3
+customlib_mj_fp
+3528RGB4C_CA
+
+3238, RGB, Common anode
+0
+4
+4
+customlib_mj_fp
+74980104400_WE-RJ45_LAN_trx
+WE-RJ45 Ethernet LAN jack with integrated transformer,  through-hole (Würth 74980104400)
+Würth RJ45 Ethernet jack integrated magnetics (WE: 74980104400)
+0
+14
+14
+customlib_mj_fp
+74980104400_WE_RJ45_LAN-Panel_cutout
+Panel cut-out for WE RJ45 Ethernet connector
+RJ45 panel cut-out
+0
+0
+0
+customlib_mj_fp
+AAT4900_SC70JW8
+
+AAT4900 SC70JW-8
+0
+8
+8
+customlib_mj_fp
+ABMM2
+http://www.abracon.com/Resonators/ABMM2.pdf
+ABMM2 Abracon SMD crystal 6.0x3.6mm
+0
+4
+4
+customlib_mj_fp
+ABS07-32KHZ
+3.2x1.5x0.9mm 32.768kHz Abracon ABS07 SMD crystal
+
+0
+2
+2
+customlib_mj_fp
+ALPS_EC11E
+https://lcsc.com/product-detail/Others_ALPS-Electric_EC11E18244A5_ALPS-Electric-EC11E18244A5_C255515.html
+Rotary Encoder ALPS EC11E18244A5
+0
+7
+6
+customlib_mj_fp
+AMS1117_SOT223
+
+
+0
+4
+4
+customlib_mj_fp
+AMS1117_SOT223_HP
+
+
+0
+4
+4
+customlib_mj_fp
+ASPI-0603LR
+Abracon 7.2x6.7.3mm for ASPI-0603LR series molding-type power inductor
+Abracon ASPI-0603LR series molding-type power inductor SMD
+0
+2
+2
+customlib_mj_fp
+AT25DF321A-SOIJ-8_5.3x5.3mm_Pitch1.27mm
+8-Lead Plastic Small Outline (SM) - Medium, 5.28 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+customlib_mj_fp
+Amphenol_C707_10M006_052_2
+Amphenol SIMBLOCK 8-pin connector, h=2.0mm + spring contacts 0.8mm. For full-size ISO 7816 cards
+SIMBLOCK Amphenol ISO-7816 SIM SmartCard
+0
+18
+9
+customlib_mj_fp
+Amphenol_T3437000-DIN7-panel_cutout
+Amphenol T3437000 DIN7 (Weller connector) panel cutout
+Amphenol T3437000 DIN7 panel cutout
+0
+0
+0
+customlib_mj_fp
+CH340G_SOIC-16
+
+CH340G SOIC-16 3.9mm
+0
+16
+16
+customlib_mj_fp
+CONN_LCD-Epson_EG7504C-FPC_18x1mm
+
+
+0
+20
+19
+customlib_mj_fp
+CONN_LCD_DMF682A_1x14
+
+DMF682A LCD Connector 1x14 2.54mm
+0
+14
+14
+customlib_mj_fp
+CSTCE_3213MM_SMD
+
+Murata CSTCE series ceramicoscillators 3.2x1.3mm
+0
+3
+3
+customlib_mj_fp
+C_0201
+Capacitor SMD 0201, reflow soldering, AVX (see smccp.pdf)
+capacitor 0201
+0
+2
+2
+customlib_mj_fp
+C_0402
+Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)
+capacitor 0402
+0
+2
+2
+customlib_mj_fp
+C_0603
+Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)
+capacitor 0603
+0
+2
+2
+customlib_mj_fp
+C_0805
+Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)
+capacitor 0805
+0
+2
+2
+customlib_mj_fp
+C_1206
+Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)
+capacitor 1206
+0
+2
+2
+customlib_mj_fp
+Crystal_Round_Horizontal_2mm_SMD
+Crystal, Quarz, round, horizontal, Diam. 2mm
+Crystal Quarz round horizontal Diam. 2mm
+0
+2
+2
+customlib_mj_fp
+Crystal_SMD_3225-4Pin_3.2x2.5mm
+SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, 3.2x2.5mm^2 package
+SMD SMT crystal
+0
+4
+4
+customlib_mj_fp
+DCF77_module_PTH_SIL4
+https://www.conrad.se/DCF-mottagare-modul-641138-C-Control.htm
+DCF-77 module, SIL-4
+0
+4
+4
+customlib_mj_fp
+DCF77_module_SMD_SIL4
+https://www.conrad.se/DCF-mottagare-modul-641138-C-Control.htm
+DCF-77 module, SMD, SIL-4
+0
+8
+4
+customlib_mj_fp
+DM5-8824D3_DIP24
+
+60x60 mm G/R LED matrix
+0
+24
+24
+customlib_mj_fp
+DS3231_module_6pin_horizontal_mnt
+DS3231 module 23x38.5mm with CR2032 backup battery. Horizontally mounted, battery down, 10mm distances, pinlist+pinheader interconnect
+
+0
+6
+6
+customlib_mj_fp
+DSub9-Kycon_K22X-E9P-N_panel_cutout_behind
+Dsub-9 panel cut-out, behind
+DSUB-9 panel cut-out
+0
+0
+0
+customlib_mj_fp
+DSub9-Kycon_K22X-E9P-N_panel_cutout_through
+Dsub-9 panel cut-out, through
+DSUB-9 panel cut-out
+0
+0
+0
+customlib_mj_fp
+D_SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+customlib_mj_fp
+D_SOD-523
+http://www.diodes.com/datasheets/ap02001.pdf p.144
+Diode SOD523
+0
+2
+2
+customlib_mj_fp
+D_SOD-523_copy
+http://www.diodes.com/datasheets/ap02001.pdf p.144
+Diode SOD523
+0
+2
+2
+customlib_mj_fp
+Distance_Hex10mm_M3
+M3 mountinghole with 10mm hex distance, with screw & nut
+mounting hole with Hex distance 10mm M3
+0
+0
+0
+customlib_mj_fp
+DoseLCD_fp
+12x 0.5x2mm pads, pitch 1.0mm
+DoseLCD SMD Zebra-strip footprint
+0
+12
+12
+customlib_mj_fp
+DoseLCD_frame
+Metal frame for DoseLCD, solder tabs
+DoseLCD frame, solder tabs
+0
+14
+4
+customlib_mj_fp
+ESD-Logo_6.6x6mm_SilkScreen
+Electrostatic discharge Logo
+Logo ESD
+0
+0
+0
+customlib_mj_fp
+FFC_mech_14p_50mm_folded_x2
+Mechanical representation of a 14-pin FFC, 50mm long, folded twice
+
+0
+0
+0
+customlib_mj_fp
+FFC_retention_clamp_14pin_7_5mm
+Solderable pads for wire-clamps to hold FFC cables. For 14p/0.5mm wires, w=7.5mm
+
+0
+2
+2
+customlib_mj_fp
+FN283_mainboard_cutout
+PCB cut-outs for the can of a Schaffner FN283 AC-inlet
+
+0
+0
+0
+customlib_mj_fp
+FN283_panel_cutout-outside_mnt
+Panel cut-outs for Schaffner FN283 AC-inlet
+
+0
+0
+0
+customlib_mj_fp
+FPC_14p_05mm-LCSC_THD0515-14CL-SN
+FFC 14-pin, 0.5mm pitch, ZIF, frontside flip-locking, SMT connector, h=1.5mm. (LCSC pnbr : C283145)
+FFC FPC 14-pin 0.5mm ZIF bottom contact LCSC C283145
+0
+16
+16
+customlib_mj_fp
+FPC_14p_05mm-Molex_5052781433
+Molex 5052781433 bottom-contact, flip-lock, 14-pin 0.5mm FFC connector, h=1.9mm
+Molex FFC FPC bottom contact connector
+0
+16
+16
+customlib_mj_fp
+FPC_14p_05mm-Universal
+Universal footprint for 14-pin, 0.5mm FFC connector. (Model used is Molex 5052781433)
+Universal FFC FPC connector
+0
+18
+16
+customlib_mj_fp
+FPC_14p_05mm-WE_687114182122
+Würth Electronics 687114182122 dual contact top- and bottom ZIF, backside flip-lock, 14-pin 0.5mm FFC connector, h=1.0mm
+Wurth WE 687114182122 FFC FPC 14-pin 
+0
+16
+16
+customlib_mj_fp
+Frontpanel_L_Hybrid_Power_Rotary_Pushbtns_holder
+Front-panel assembly of a 3d-printed holder for either Pwrbutton OR a 2nd Rotary Enc  + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand generic variant holder
+0
+10
+8
+customlib_mj_fp
+Frontpanel_L_Hybrid_Rotary_Pushbtns_outer_cutouts
+Front-panel cutouts for Hybrid 2nd rotary enc + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand 2nd rotary buttons cutouts
+0
+0
+0
+customlib_mj_fp
+Frontpanel_L_Powerbtn_Pushbtns_holder
+Front-panel assembly of a 3d-printed holder for Power push-button + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand buttons holder
+0
+10
+8
+customlib_mj_fp
+Frontpanel_L_Powerbtn_Pushbtns_outer_cutouts
+Front-panel cutouts for Power push-button + Grayhill 87DC3-201 dual pushbuttons
+Front-panel left-hand buttons cutouts
+0
+0
+0
+customlib_mj_fp
+Frontpanel_R_RotaryEnc_Pushbtns_holder
+Front-panel assembly of a 3d-printed holder for Rotary Encoder + Grayhill 87DC3-201 dual pushbuttons
+Front-panel right-side holder
+0
+10
+8
+customlib_mj_fp
+Frontpanel_R_RotaryEnc_Pushbtns_holder-one_M3_removed
+Front-panel assembly of a 3d-printed holder for Rotary Encoder + Grayhill 87DC3-201 dual pushbuttons
+Front-panel right-side holder
+0
+10
+8
+customlib_mj_fp
+Frontpanel_R_RotaryEnc_Pushbtns_outer_cutouts
+Front-panel cutouts for Rotary Encoder + Grayhill 87DC3-201 dual pushbuttons
+Front-panel right-side cutouts
+0
+0
+0
+customlib_mj_fp
+Fuse_1206_3216Metric
+Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+PTC poly-fuse
+0
+2
+2
+customlib_mj_fp
+Fuse_SMD1206
+Polyfuse, SMD1206, Littlefuse-Wickmann, Reflow
+Polyfuse, SMD1206,  Littlefuse-Wickmann, Reflow
+0
+2
+2
+customlib_mj_fp
+HCM49
+
+HCM49 SMD xtal
+0
+2
+2
+customlib_mj_fp
+HCM49_copy
+
+HCM49 SMD xtal
+0
+2
+2
+customlib_mj_fp
+HTSSOP-56_hs
+
+Handsolder, 14 x 8.2 x 1.2 mm
+0
+58
+57
+customlib_mj_fp
+HV823_SOIC8
+http://ww1.microchip.com/downloads/en/DeviceDoc/HV823%20C082213.pdf
+Supertex HV823 EL-lamp driver
+0
+8
+8
+customlib_mj_fp
+Hole2.5mm_NP
+
+Mounting hole, 2.5mm, NP
+0
+0
+0
+customlib_mj_fp
+Hole3.2mm_NP
+
+Mounting hole, 3.2mm, NP
+0
+0
+0
+customlib_mj_fp
+Hole5.3mm_NP
+
+Mounting hole, 5.3mm, NP
+0
+0
+0
+customlib_mj_fp
+IDC_Header_Straight_10pins
+10 pins through hole IDC header
+IDC header socket VASCH
+0
+10
+10
+customlib_mj_fp
+IRF7329_SO8
+
+SO-8
+0
+8
+8
+customlib_mj_fp
+IRF7329_SO8_copy
+
+SO-8
+0
+8
+8
+customlib_mj_fp
+IRM-3638N3_smd
+http://www.mouser.com/ds/2/143/IRM_3633N3-44494.pdf
+IRM-3638 improvised SMD
+0
+3
+3
+customlib_mj_fp
+K2-1187SQ
+https://lcsc.com/product-detail/Tactile-Switches_Korean-Hroparts-Elec-K2-1187SQ-D4SW-06_C223821.html
+K2-1187SQ-D4SW-06
+0
+4
+4
+customlib_mj_fp
+KLD-0202-A
+http://www.mouser.com/ds/2/222/kld-0202-a%20%20b-299280.pdf
+6.4/2.0mm DC-jack, 5A/20V
+0
+3
+3
+customlib_mj_fp
+KLJ1325
+https://lcsc.com/product-detail/Buzzers_KELIKING-KLJ-1325_C201043.html
+13x13x2.5mm buzzer
+0
+2
+2
+customlib_mj_fp
+KY-040_mod
+KY-040 Rotary encoder "Arduino" 5-pin module. Can be mounted behind PCB (>=~7mm gap) or on top  (add ~2mm gap, or add additional cutouts for pins and resistors on back of module)
+KY-040 rotary encoder module
+0
+5
+5
+customlib_mj_fp
+KiCad-Logo2_6mm_SilkScreen
+KiCad Logo
+Logo KiCad
+0
+0
+0
+customlib_mj_fp
+KiCad-Logo_5mm_Silk
+KiCad Logo
+Logo KiCad
+0
+0
+0
+customlib_mj_fp
+L78xx_D2PAK
+www.st.com/resource/en/datasheet/l78.pdf
+78xx D2PAK
+0
+3
+3
+customlib_mj_fp
+LD2981_SOT23-5
+5-pin SOT23 package
+SOT-23-5
+0
+5
+5
+customlib_mj_fp
+LED_0805
+LED 0805 smd package
+LED 0805 SMD
+0
+2
+2
+customlib_mj_fp
+LED_0805_copy
+LED 0805 smd package
+LED 0805 SMD
+0
+2
+2
+customlib_mj_fp
+LED_D3.0mm
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
+customlib_mj_fp
+LED_PTH_universal
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
+customlib_mj_fp
+LMV321DBV_SOT23-5
+
+LMV321-DBV SOT23-5
+0
+5
+5
+customlib_mj_fp
+LOGO_MJ_Medium
+
+Logo MJ Medium
+0
+0
+0
+customlib_mj_fp
+LOGO_MJ_Medium_copy
+
+Logo MJ Medium
+0
+0
+0
+customlib_mj_fp
+LQFP-64_10x10mm_Pitch0.5mm
+64 LEAD LQFP 10x10mm (see MICREL LQFP10x10-64LD-PL-1.pdf)
+QFP 0.5
+0
+64
+64
+customlib_mj_fp
+LQH43xN_1812
+https://www.mouser.se/datasheet/2/281/o05e-1115425.pdf
+Murata LQH43 series 1812 (4532mm) SMD
+0
+4
+2
+customlib_mj_fp
+LSG-A671
+
+3,8 x 3,4 x 3,8mm
+0
+2
+2
+customlib_mj_fp
+LTD5112_DIP12
+http://www.ligitek.com/datasheet/ltd511-22-xx.pdf
+3-digit, 7-segment, LED display, Common Cathode, 0.56"
+0
+12
+12
+customlib_mj_fp
+MBRS3xx_SMC_CASE_403AC
+ON-semi SMC 2-lead package for MBRS340T3G
+MBRS3x0T3G
+0
+2
+2
+customlib_mj_fp
+MBRS3xx_SMC_CASE_403AC_hs
+ON-semi SMC 2-lead package for MBRS340T3G (hand solder)
+MBRS3x0T3G (hand solder)
+0
+2
+2
+customlib_mj_fp
+MJ_10.3x12.7
+
+
+0
+0
+0
+customlib_mj_fp
+MJ_Mini
+
+MJ mini
+0
+0
+0
+customlib_mj_fp
+MJ_Mini_Cu
+
+MJ mini Cu
+0
+0
+0
+customlib_mj_fp
+MountingHole_3-2mm
+
+Mounting hole
+0
+1
+1
+customlib_mj_fp
+MountingHole_3-2mm_copy
+
+Mounting hole
+0
+1
+1
+customlib_mj_fp
+MountingHole_3-6mm_pth
+3.6mm plated through-hole
+Mounting hole 3.6mm PTH
+0
+1
+1
+customlib_mj_fp
+MountingHole_3.5mm_Hammond_panel_screws
+Mounting Hole 3.5mm, no annular
+mounting hole 3.5mm no annular
+0
+0
+0
+customlib_mj_fp
+NHD3_12-Flush
+Newhaven Display 3.12" intended for module mounted flush on a carrier PCB
+NHD-3.12-25664UCW2 NewHaven OLED display module
+0
+24
+21
+customlib_mj_fp
+NHD3_12-Flush_Reverse
+Newhaven Display 3.12" intended for module reverse-mounted flush behind a carrier PCB
+NHD-3.12-25664UCW2 NewHaven OLED display module
+0
+24
+21
+customlib_mj_fp
+NHD3_12-Flush_with_bridge_cutouts
+Newhaven Display 3.12" intended for module mounted flush on a carrier PCB
+NHD-3.12-25664UCW2 NewHaven OLED display module
+0
+24
+21
+customlib_mj_fp
+NHD3_12-Flush_with_bridge_cutouts-extra_tab
+Newhaven Display 3.12" intended for module mounted flush on a carrier PCB
+NHD-3.12-25664UCW2 NewHaven OLED display module
+0
+24
+21
+customlib_mj_fp
+NHD3_12-Reverse_Bezel
+Newhaven Display 3.12" intended for module reverse-mounted behind an outer panel PCB. Only the bezel cutout + slight detent for the flex
+NHD-3.12-25664UCW2 NewHaven OLED display module outer panel bezel cut-out
+0
+0
+0
+customlib_mj_fp
+Nano_v3_PTH_DIP30
+
+Arduino, Nano v3, ATmega328P, DIP30, DIP-30
+0
+30
+30
+customlib_mj_fp
+Nano_v3_SMD_SOIC30
+
+Arduino, Nano v3, ATmega328P, DIP30, SMD, SOIC-30
+0
+30
+30
+customlib_mj_fp
+O705030MGDA4SC
+https://lcsc.com/product-detail/SMD-Oscillators-XO_Yangxing-Tech-O705030MGDA4SC_C70643.html
+7050 Xtal Osc, LCSC:C70643 
+0
+4
+4
+customlib_mj_fp
+PCIe_x4
+https://www.mouser.se/ProductDetail/Amphenol-FCI/10018784-10210TLF?qs=sGAEpiMZZMtWxQ3D3EXBNw3nQbjtjJvkffHGiLXPOzo%3d
+Amphenol-FCI 10018784-10210TLF
+0
+64
+64
+customlib_mj_fp
+Potentiometer_trim_3x3mm_smd
+
+Trim potentiometer 3x3mm SMD
+0
+3
+3
+customlib_mj_fp
+PrevasLogo-cent_16x5.4mm
+
+
+0
+0
+0
+customlib_mj_fp
+PrevasLogo-cent_19.5x6.5mm
+
+
+0
+0
+0
+customlib_mj_fp
+PrevasLogo-cent_21.6x7.3mm
+
+
+0
+0
+0
+customlib_mj_fp
+PrevasLogo-cent_26x8.7mm
+
+
+0
+0
+0
+customlib_mj_fp
+QFN-24-1EP_4x4mm_P0.5mm_EP2.4x2.4mm
+QFN, 24 Pin
+QFN DFN_QFN
+0
+29
+25
+customlib_mj_fp
+QTLP670C
+
+PLCC4 3,5 x 2,8 mm
+0
+4
+4
+customlib_mj_fp
+RB161L-40_SOD106
+
+Schottky 1A, 0.4V SOD-106
+0
+2
+2
+customlib_mj_fp
+RTCmod_DS3231_CR2032_PTH
+
+RTC, DS3231, CR2032, I2C
+0
+10
+10
+customlib_mj_fp
+RTCmod_DS3231_CR2032_SMD
+
+RTC, DS3231, CR2032, I2C
+0
+10
+10
+customlib_mj_fp
+R_0402
+Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0402
+0
+2
+2
+customlib_mj_fp
+R_0603
+Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0603
+0
+2
+2
+customlib_mj_fp
+R_0603_1608Metric
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+customlib_mj_fp
+R_1206
+Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 1206
+0
+2
+2
+customlib_mj_fp
+R_Array_Convex_4x0402
+Chip Resistor Network: Walsin WA04X; Yageo YC124; etc
+resistor array, 4x0402, convex
+0
+8
+8
+customlib_mj_fp
+SD_card_holder
+https://www.aliexpress.com/item/100Pcs-PUSH-PUSH-Type-SD-Menory-Card-Solder-Socket-Connector-PCB-Mount/32737358299.html
+SD card full-size
+0
+11
+11
+customlib_mj_fp
+SIM_8pin_mini-UICC
+Contact pads for an 8-pin SIM/SmartCard device
+SIM SmartCard UICC
+0
+9
+8
+customlib_mj_fp
+SJ-3571N
+CUI devices 3.5mm stereo audio jack, right-angle w. isolated DPDT switch and tip- & ring switches
+3.5mm stereo audio jack PTH through-hole CUI
+0
+18
+12
+customlib_mj_fp
+SJ-3571N_panel_cutout
+Panel cut-out for CUI SJ-3571N 3.5mm audio jack
+CUI SJ-3571N 3.5mm audio jack panel cut-out
+0
+0
+0
+customlib_mj_fp
+SK6812mini_plcc4
+
+3535 PLCC4
+0
+4
+4
+customlib_mj_fp
+SKHU
+
+ALPS. SKHU-series, 6.2x6.3mm tact switch, 4-pin, SMD
+0
+4
+4
+customlib_mj_fp
+SKQY
+
+
+0
+2
+2
+customlib_mj_fp
+SMD_PUSHBTN_6x6mm
+6x6 mm 4-pin tactile switch pushbutton (e.g. TS-1102W-4316)
+LCSC: C111373 (ds: https://datasheet.lcsc.com/szlcsc/1808311432_SOFNG-TS-1102W-4316_C111373.pdf)
+0
+4
+4
+customlib_mj_fp
+SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+customlib_mj_fp
+SOD110
+
+
+0
+2
+2
+customlib_mj_fp
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+customlib_mj_fp
+SOT-416
+SOT-416, https://www.nxp.com/docs/en/package-information/SOT416.pdf
+SOT-416, SOT-523, SC-75, SC-89, SC-90, ESM, EMT3
+0
+3
+3
+customlib_mj_fp
+SOT-523
+SOT-523
+SOT-523, SOT-416, SC-75, SC-89, SC-90, ESM, EMT3
+0
+3
+3
+customlib_mj_fp
+STX3501_smd
+
+3.5mm audio jack Kycon
+0
+3
+3
+customlib_mj_fp
+SX_0402_RGB-CA-06
+
+
+0
+4
+4
+customlib_mj_fp
+SX_0402_RGB-CA-07
+
+
+0
+4
+4
+customlib_mj_fp
+SantaBack_EnhOutline
+
+
+0
+0
+0
+customlib_mj_fp
+Santa_EnhOutline
+
+
+0
+0
+0
+customlib_mj_fp
+Schurter_3101_0060_fuse_holder-panel_cutout
+
+
+0
+0
+0
+customlib_mj_fp
+SnowyBackSilk_v2
+
+
+0
+0
+0
+customlib_mj_fp
+SnowyFrontSilk_v2
+
+
+0
+0
+0
+customlib_mj_fp
+Symbol_Barrel_Polarity
+Barrel connector polarity indicator
+barrel polarity
+0
+0
+0
+customlib_mj_fp
+TE_1-292303-1
+TE USB Type A r/a receptacle, SMD with through-hole retention pins
+USB Type A TE 
+0
+6
+5
+customlib_mj_fp
+TE_1-292303-Panel_cutout
+Panel cut-out for TE-1-292303 USB-A host connector
+USB-A TE-1-292303 panel cut-out
+0
+0
+0
+customlib_mj_fp
+TE_1734346
+TE connectivity USB 2.0 TypeB R/A SMT
+
+0
+8
+6
+customlib_mj_fp
+TE_1734346-Panel_cutout
+Panel cut-out for TE-1734346 USB-B device connector
+USB-B TE-1734346 panel cut-out
+0
+0
+0
+customlib_mj_fp
+TJ-S1706_0603
+https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_TOGIALED-TJ-S1706SW6TGLC2G-A5_C273616.html
+0603 LED side-view
+0
+2
+2
+customlib_mj_fp
+TPS60400DCK_SOT23-5
+
+TPS60400DCK SOT23-5
+0
+5
+5
+customlib_mj_fp
+TP_SMD_0.8x2
+
+TP SMD 0,8x2mm
+0
+1
+1
+customlib_mj_fp
+TP_SMD_1.2c
+Circular TP, SMD 1.2mm
+
+0
+1
+1
+customlib_mj_fp
+TP_SMD_1.2r
+TP SMD, 1.2mm rectangular
+
+0
+1
+1
+customlib_mj_fp
+TP_SMD_small
+Small SMD TP (1.2 x 0.3mm)
+
+0
+1
+1
+customlib_mj_fp
+TXB0108PW_TSSOP20
+
+TXB0108PW TSSOP-20
+0
+20
+20
+customlib_mj_fp
+TantalC_SizeB_EIA-3528_Reflow
+Tantal Cap. , Size B, EIA-3528, Reflow
+Tantal Capacitor Size-B EIA-3528 Reflow
+0
+2
+2
+customlib_mj_fp
+TantalC_SizeB_EIA-3528_Reflow_copy
+Tantal Cap. , Size B, EIA-3528, Reflow
+Tantal Capacitor Size-B EIA-3528 Reflow
+0
+2
+2
+customlib_mj_fp
+TantalC_SizeB_EIA-3528_Wave
+Tantal Cap. , Size B, EIA-3528, Wave,
+Tantal Cap. , Size B, EIA-3528, Wave,
+0
+2
+2
+customlib_mj_fp
+TouchSlider-5_89x10mm
+
+
+0
+85
+5
+customlib_mj_fp
+TouchSlider-6_86x7.4mm
+
+
+0
+63
+6
+customlib_mj_fp
+Touch_rotary_test
+
+
+0
+1
+1
+customlib_mj_fp
+Touchsensor_linear_slider-5ch_H_85x9mm
+Linear slider touch sensor of 5 sensor elements, half-ends. 85 x 9.3 mm
+Capacitive touch sensor linear slider
+0
+6
+5
+customlib_mj_fp
+Touchsensor_linear_slider-5ch_H_90x8mm
+Linear slider touch sensor of 5 sensor elements, half-ends. 90 x 7.8 mm
+Capacitive touch sensor linear slider
+0
+6
+5
+customlib_mj_fp
+USB-LC6_SOT-23-6
+6-pin SOT-23 package
+SOT-23-6
+0
+6
+6
+customlib_mj_fp
+USBLC6_SOT23-6
+6-pin SOT23 package
+SOT-23-6
+0
+6
+6
+customlib_mj_fp
+Veroboard_3x1_pad
+Veroboard 1x3 strip, single-sided
+
+0
+3
+1
+customlib_mj_fp
+WEEE-Logo_4.2x6mm_SilkScreen
+Waste Electrical and Electronic Equipment Directive
+Logo WEEE
+0
+0
+0
+customlib_mj_fp
+ZL-YDW12055
+ZL-YDW12055-4005PA-6.5
+ZLFY ZL-YDW12055
+0
+2
+2
+customlib_mj_fp
+bluepill_dip40
+BluePill 40-pin DIP 600mil board pinout
+
+0
+44
+44
+customlib_mj_fp
+bob_10p_15mm-usbuart
+
+
+0
+10
+10
+customlib_mj_fp
+c_elec_6.3x5.3
+SMT capacitor, aluminium electrolytic, 6.3x5.3
+SMD El-cap 6.3mm
+0
+2
+2
+customlib_mj_fp
+conn_swd_4x1_2.54_pth
+
+
+0
+4
+4
+customlib_mj_fp
+db2_0402
+
+jumper 0402
+0
+3
+1
+customlib_mj_fp
+db2_0603
+
+jumper 0603
+0
+3
+1
+customlib_mj_fp
+db2_ud_0402
+'dog-bone' jumper, 0402 pads with optional user-defined default trace
+jumper 0402
+0
+2
+2
+customlib_mj_fp
+db2_ud_0603
+Jumper-pads 0603, with optional user-defined default trace
+jumper 0603
+0
+2
+2
+customlib_mj_fp
+db3_0402
+
+jumper 0402
+0
+4
+2
+customlib_mj_fp
+db3_0603
+
+jumper 0603
+0
+4
+2
+customlib_mj_fp
+db3_ud_0402
+3-way jumper 0402 pads, with optional user-defined default trace
+jumper 0402
+0
+3
+3
+customlib_mj_fp
+db3_ud_0603
+3-way jumper, 0603 pads, with optional user-defined default trace
+jumper 0603
+0
+3
+3
+customlib_mj_fp
+headphones_gfx
+Graphical symbol of headphones 4x3.5mm
+Headphone symbol 
+0
+0
+0
+customlib_mj_fp
+microUSB_5p-LCSC-Jing_Extension
+
+microUSB 5p, LCSC C40954
+0
+11
+11
+customlib_mj_fp
+mousebite_5mm_stampholes
+0.8mm stamp-holes for 5mm break-off tab
+
+0
+0
+0
+customlib_mj_fp
+mousebite_tab
+Mousebites tab 4mm 0.5 x 7 bites
+
+0
+0
+0
+customlib_mj_fp
+mousebite_tab2
+Mousebites tab 4mm 0.5 x 5 bites
+
+0
+0
+0
+customlib_mj_fp
+pcie_x4_edge_conn
+
+
+0
+64
+64
+customlib_mj_fp
+pinh_uart_1x4
+
+UART pin-header 1x4
+0
+3
+3
+customlib_mj_fp
+sd_micro_TFP09-2-12B
+https://www.aliexpress.com/item/10PCS-Push-Push-Type-TransFlash-TF-Micro-SD-Card-Socket-Adapter-Automatic-PCB-Connector/32699512544.html
+Micro SD connector TFP09-2-12B
+0
+13
+13
+customlib_mj_fp
+sd_micro_TFP09-2-12B_WRML
+https://www.aliexpress.com/item/10PCS-Push-Push-Type-TransFlash-TF-Micro-SD-Card-Socket-Adapter-Automatic-PCB-Connector/32699512544.html
+Micro SD connector TFP09-2-12B
+0
+13
+13
+customlib_mj_fp
+smd_pad_0.8
+
+TP0.8
+0
+1
+1
+customlib_mj_fp
+snowy_back_no_text_317dpi
+
+
+0
+0
+0
+customlib_mj_fp
+tp1.0
+
+
+0
+1
+1
+customlib_mj_fp
+tp1.2
+
+
+0
+1
+1
+customlib_mj_fp
+w25q64_SO8-208
+
+W25Q64FV SPI Flash SOIC8/VSOP8 208mil
+0
+8
+8
