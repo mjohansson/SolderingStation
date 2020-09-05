@@ -231,15 +231,4 @@ Text Notes 9100 2900 0    60   ~ 12
 DS3231 (TCXO RTC module) :
 Text Notes 9200 3150 0    50   ~ 10
 1101000 (DS3231)\n1010--- (24C32, addr customized with A2-A0)\n1010111 (24C32, default (A2-A0 open))
-$Comp
-L customlib_mj:FN283-1-06_Schaffner_AC-mainboard_cutout M101
-U 1 1 5F595E63
-P 1450 7450
-F 0 "M101" H 1450 7650 50  0000 C CNN
-F 1 "FN283-1-06_Schaffner_AC-mainboard_cutout" H 1450 7250 50  0000 C CNN
-F 2 "customlib_mj_fp:FN283_mainboard_cutout" H 1450 7450 50  0001 C CNN
-F 3 "" H 1450 7450 50  0001 C CNN
-	1    1450 7450
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

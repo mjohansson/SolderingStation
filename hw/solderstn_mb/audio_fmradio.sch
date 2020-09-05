@@ -835,53 +835,27 @@ $EndComp
 Wire Wire Line
 	3700 3850 3800 3850
 Wire Wire Line
-	3800 3850 3800 4150
+	3800 3850 3800 4250
 Wire Wire Line
-	3800 4150 5000 4150
+	3800 4250 5000 4250
 Wire Wire Line
 	3700 6850 3800 6850
 Wire Wire Line
-	3800 6850 3800 7150
+	3800 6850 3800 7250
 Wire Wire Line
-	3800 7150 5000 7150
+	3800 7250 5000 7250
 Wire Wire Line
 	4000 6850 3950 6850
 Wire Wire Line
 	3950 6850 3950 6950
 Wire Wire Line
-	3950 7050 5000 7050
-Wire Wire Line
 	4000 3850 3950 3850
 Wire Wire Line
 	3950 3850 3950 3950
-Wire Wire Line
-	3950 4050 5000 4050
 Text Notes 1000 6000 0    50   ~ 10
 Left channel
 Text Notes 1000 3150 0    50   ~ 10
 Right channel
-$Comp
-L Connector_Generic:Conn_01x02 J2103
-U 1 1 5F69C43E
-P 4750 3600
-F 0 "J2103" H 4750 3700 50  0000 C CNN
-F 1 "Conn_01x02" H 4750 3400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4750 3600 50  0001 C CNN
-F 3 "~" H 4750 3600 50  0001 C CNN
-	1    4750 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2104
-U 1 1 5F69C9D9
-P 4750 6600
-F 0 "J2104" H 4750 6700 50  0000 C CNN
-F 1 "Conn_01x02" H 4750 6400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4750 6600 50  0001 C CNN
-F 3 "~" H 4750 6600 50  0001 C CNN
-	1    4750 6600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 6600 4550 6350
 Wire Wire Line
@@ -916,17 +890,6 @@ Wire Wire Line
 Connection ~ 3800 3350
 Wire Wire Line
 	3800 3350 3800 3450
-$Comp
-L customlib_mj:CES-30207-158L120-67_mini_speaker_20x30x7mm LS2102
-U 1 1 5F6F8808
-P 4000 6650
-F 0 "LS2102" H 4100 7050 90  0000 C CNN
-F 1 "CES-30207-158L120-67_mini_speaker_20x30x7mm" H 4900 5700 90  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 4000 6650 90  0001 C CNN
-F 3 "https://www.cuidevices.com/product/audio/speakers/miniature-(10-mm~40-mm)/ces-30207-158l120-67" H 4000 6650 90  0001 C CNN
-	1    4000 6650
-	1    0    0    -1  
-$EndComp
 Text Notes 3750 3850 0    50   ~ 0
 -\n\n\n\n+
 Text Notes 3750 6850 0    50   ~ 0
@@ -989,27 +952,16 @@ F 3 "" H 3400 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 6050 3400 6000
-Text Notes 4050 4650 0    50   ~ 10
+Text Notes 4050 4800 0    50   ~ 10
 Using internal speakers until a\n3.5mm plug is inserted; then\nswitching to the external load.\nThe switch is integrated in the\nheadphone connector (rear panel)
-Text HLabel 5000 4150 2    50   Output ~ 0
+Text HLabel 5000 4250 2    50   Output ~ 0
 Audio_R_o
-Text HLabel 5000 7150 2    50   Output ~ 0
+Text HLabel 5000 7250 2    50   Output ~ 0
 Audio_L_o
 Text HLabel 5000 4050 2    50   Input ~ 0
 Audio_R_int
 Text HLabel 5000 7050 2    50   Input ~ 0
 Audio_L_int
-$Comp
-L customlib_mj:CES-30207-158L120-67_mini_speaker_20x30x7mm LS2101
-U 1 1 5F6F74E3
-P 4000 3650
-F 0 "LS2101" H 4100 4050 90  0000 C CNN
-F 1 "CES-30207-158L120-67_mini_speaker_20x30x7mm" H 3550 2500 90  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 4000 3650 90  0001 C CNN
-F 3 "https://www.cuidevices.com/product/audio/speakers/miniature-(10-mm~40-mm)/ces-30207-158l120-67" H 4000 3650 90  0001 C CNN
-	1    4000 3650
-	1    0    0    -1  
-$EndComp
 Text Notes 8450 2300 0    50   ~ 0
 (OTS cable assm: e.g. 151340203)
 Wire Wire Line
@@ -1185,4 +1137,140 @@ Connection ~ 2900 5750
 Connection ~ 2850 5600
 Wire Wire Line
 	2850 5600 2900 5600
+Wire Wire Line
+	4000 3450 4000 3600
+Wire Wire Line
+	4000 3850 4000 3700
+Wire Wire Line
+	4000 6450 4000 6600
+Wire Wire Line
+	4000 6850 4000 6700
+Text Notes 4700 3300 2    50   ~ 0
+Molex Picoblade 53398-0271\nfor CES-30207
+Text Notes 4600 3500 0    50   ~ 0
+JST JST_PH_S2B-PH-SM4-TB\nfor CES-703116
+$Comp
+L customlib_mj:CES-30207-158L120-67_Molex-PicoBlade_conn J2103
+U 1 1 5F5CC286
+P 4150 3650
+F 0 "J2103" H 4150 3800 50  0000 C CNN
+F 1 "CES-30207-158L120-67_Molex-PicoBlade_conn" H 4150 3450 90  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 4150 3300 90  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0533980271" H 4150 3650 90  0001 C CNN
+	1    4150 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L customlib_mj:CES-30207-158L120-67_Molex-PicoBlade_conn J2105
+U 1 1 5F5CCC1E
+P 4150 6650
+F 0 "J2105" H 4150 6500 50  0000 C CNN
+F 1 "CES-30207-158L120-67_Molex-PicoBlade_conn" H 4150 6450 90  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0271_1x02-1MP_P1.25mm_Vertical" H 4150 6300 90  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0533980271" H 4150 6650 90  0001 C CNN
+	1    4150 6650
+	1    0    0    1   
+$EndComp
+$Comp
+L customlib_mj:CES-703116-28PM_JST-conn J2106
+U 1 1 5F5D9839
+P 4700 6650
+F 0 "J2106" H 4700 6500 50  0000 C CNN
+F 1 "CES-703116-28PM_JST-conn" H 4700 6300 90  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 4700 6150 90  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf?5f53c6b596f2a" H 4700 6650 90  0001 C CNN
+	1    4700 6650
+	1    0    0    1   
+$EndComp
+$Comp
+L customlib_mj:CES-703116-28PM_JST-conn J2104
+U 1 1 5F5D9D8B
+P 4700 3650
+F 0 "J2104" H 4700 3800 50  0000 C CNN
+F 1 "CES-703116-28PM_JST-conn" H 4700 3300 90  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 4700 3150 90  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf?5f53c6b596f2a" H 4700 3650 90  0001 C CNN
+	1    4700 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L customlib_mj:CES-30207-158L120-67 LS2101
+U 1 1 5F5E9E8B
+P 6500 4000
+F 0 "LS2101" H 6550 4250 50  0000 R CNN
+F 1 "CES-30207-158L120-67" H 6500 3650 75  0000 C CNN
+F 2 "customlib_mj_fp:CUI_CES-30207" H 6500 3600 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/audio/speakers/miniature-(10-mm~40-mm)/ces-30207-158l120-67" H 6500 4000 90  0001 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:CES-30207-158L120-67 LS2103
+U 1 1 5F5EA826
+P 6500 6000
+F 0 "LS2103" H 6550 6250 50  0000 R CNN
+F 1 "CES-30207-158L120-67" H 6500 5700 75  0000 C CNN
+F 2 "customlib_mj_fp:CUI_CES-30207" H 6500 5600 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/audio/speakers/miniature-(10-mm~40-mm)/ces-30207-158l120-67" H 6500 6000 90  0001 C CNN
+	1    6500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:CES-703116-28PM LS2102
+U 1 1 5F5EB7EB
+P 8450 4000
+F 0 "LS2102" H 8500 4250 50  0000 R CNN
+F 1 "CES-703116-28PM" H 8450 3700 75  0000 C CNN
+F 2 "customlib_mj_fp:CUI_CES-703116-28PM" H 8600 3550 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/audio/speakers/standard-(41-mm~205-mm)/ces-703116-28pm" H 8450 4000 90  0001 C CNN
+	1    8450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:CES-703116-28PM LS2104
+U 1 1 5F5EC280
+P 8450 6000
+F 0 "LS2104" H 8500 6250 50  0000 R CNN
+F 1 "CES-703116-28PM" H 8450 5700 75  0000 C CNN
+F 2 "customlib_mj_fp:CUI_CES-703116-28PM" H 8600 5550 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/audio/speakers/standard-(41-mm~205-mm)/ces-703116-28pm" H 8450 6000 90  0001 C CNN
+	1    8450 6000
+	1    0    0    -1  
+$EndComp
+Text Notes 4500 7450 2    50   ~ 0
+Header for CES-30207 :\nMolex Picoblade 53398-0271\n
+Text Notes 4450 7000 0    50   ~ 0
+JST JST_PH_S2B-PH-SM4-TB\nfor CES-703116
+Text Notes 6800 4750 0    50   ~ 10
+Alternative interior enclosed speakers,\nCUI Devices CES-series; either 30x20x7mm\nor 70x31x16.5mm
+$Comp
+L Device:R_Small R2110
+U 1 1 5F5F9995
+P 4600 4050
+F 0 "R2110" V 4500 4050 50  0000 C CNN
+F 1 "0R" V 4600 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4600 4050 50  0001 C CNN
+F 3 "~" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4050 3950 4050
+Wire Wire Line
+	4700 4050 5000 4050
+$Comp
+L Device:R_Small R2111
+U 1 1 5F620F17
+P 4550 7050
+F 0 "R2111" V 4650 7050 50  0000 C CNN
+F 1 "0R" V 4550 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4550 7050 50  0001 C CNN
+F 3 "~" H 4550 7050 50  0001 C CNN
+	1    4550 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 7050 5000 7050
+Wire Wire Line
+	4450 7050 3950 7050
 $EndSCHEMATC
