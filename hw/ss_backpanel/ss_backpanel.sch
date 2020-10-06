@@ -178,4 +178,15 @@ F 3 "" H 4050 4750 50  0001 C CNN
 	1    4050 4750
 	1    0    0    -1  
 $EndComp
+$Comp
+L customlib_mj:4mm_banana_socket-LB_I4R_A-panelmnt J101
+U 1 1 5F7FEDE6
+P 5300 7600
+F 0 "J101" H 5350 7700 50  0000 C CNN
+F 1 "4mm_banana_socket-LB_I4R_A-panelmnt" H 5550 7500 50  0000 C CNN
+F 2 "customlib_mj_fp:LB_I4R_A-4mm_banana_socket_panelmnt" H 5300 7600 50  0001 C CNN
+F 3 "https://www.elfa.se/Web/Downloads/_t/ds/LB-I4R-A_B_eng_fre_ger_tds.pdf" H 5300 7600 50  0001 C CNN
+	1    5300 7600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

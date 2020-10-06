@@ -28,6 +28,21 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
+# customlib_mj_4mm_banana_socket-LB_I4R_A-panelmnt
+#
+DEF customlib_mj_4mm_banana_socket-LB_I4R_A-panelmnt J 0 40 Y Y 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "customlib_mj_4mm_banana_socket-LB_I4R_A-panelmnt" 0 -100 50 H V C CNN
+F2 "customlib_mj_fp:LB_I4R_A-4mm_banana_socket_panelmnt" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -65 0 38 -668 668 0 1 0 N -50 -35 -50 35
+C 190 0 10 0 1 0 N
+S -50 50 150 -50 0 1 0 N
+S 150 20 210 -20 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # customlib_mj_74980104400-Wurth_RJ45-Panel_cutout
 #
 DEF customlib_mj_74980104400-Wurth_RJ45-Panel_cutout M 0 40 Y Y 1 F N
