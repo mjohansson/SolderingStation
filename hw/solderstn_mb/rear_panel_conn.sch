@@ -54,17 +54,6 @@ MCU_BOOT0
 Text Notes 1750 1850 0    70   ~ 14
 Notes:\nRJ45 ethernet - located on ethernet page\n
 $Comp
-L customlib_mj:USB_A-TE_1-292303-1 J1204
-U 1 1 5F769C5C
-P 9250 5500
-F 0 "J1204" H 9100 5850 50  0000 L CNN
-F 1 "USB_A-TE_1-292303-1" V 8950 5500 50  0000 C CNN
-F 2 "customlib_mj_fp:TE_1-292303-1" H 9400 5450 50  0001 C CNN
-F 3 "https://www.te.com/usa-en/product-1-292303-1.html" H 9400 5450 50  0001 C CNN
-	1    9250 5500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:USB_B-TE_1734346-1 J1202
 U 1 1 5F76B363
 P 9150 4050
@@ -698,4 +687,15 @@ Text Notes 2650 2300 0    70   ~ 14
 ToDo:
 NoConn ~ 7050 1650
 NoConn ~ 7550 1650
+$Comp
+L customlib_mj:USB_A-CUI-UJ2-AH-1-SMT J1204
+U 1 1 5F7D7CD9
+P 9250 5500
+F 0 "J1204" H 9200 5850 50  0000 L CNN
+F 1 "USB_A-CUI-UJ2-AH-1-SMT" V 9000 4950 50  0000 L CNN
+F 2 "customlib_mj_fp:CUI-UJ2_AH_1_SMT" H 9400 5450 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/interconnect/connectors/usb-connectors/uj2-ah-smt-series/uj2-ah-1-smt" H 9400 5450 50  0001 C CNN
+	1    9250 5500
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -146,17 +146,6 @@ F 3 "" H 2850 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:TE-1-292303-Panel_cutout M107
-U 1 1 5F4D4611
-P 4000 4750
-F 0 "M107" H 4150 5050 50  0000 C CNN
-F 1 "TE-1-292303-Panel_cutout" H 4000 4450 50  0000 C CNN
-F 2 "customlib_mj_fp:TE_1-292303-Panel_cutout" H 4000 4750 50  0001 C CNN
-F 3 "" H 4000 4750 50  0001 C CNN
-	1    4000 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:DSub9-Kycon_K22X-E9P-N-panel_cutout-small M108
 U 1 1 5F4DCFFF
 P 5700 4750
@@ -176,6 +165,17 @@ F 1 "SJ-3571N_CUI_audio_jacket_panel_cutout" H 5600 5450 50  0000 C CNN
 F 2 "customlib_mj_fp:SJ-3571N_panel_cutout" H 5600 5750 50  0001 C CNN
 F 3 "" H 5600 5750 50  0001 C CNN
 	1    5600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:CUI-UJ2_AH_1_SMT-Panel_cutout M107
+U 1 1 5F7D0AEA
+P 4050 4750
+F 0 "M107" H 4150 5050 50  0000 C CNN
+F 1 "CUI-UJ2_AH_1_SMT-Panel_cutout" H 4050 4450 50  0000 C CNN
+F 2 "customlib_mj_fp:CUI-UJ2_AH_1_SMT-Panel_cutout" H 4050 4750 50  0001 C CNN
+F 3 "" H 4050 4750 50  0001 C CNN
+	1    4050 4750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

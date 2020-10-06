@@ -1,4 +1,4 @@
-19685868047904274
+19689072059829274
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81962,6 +81962,20 @@ Murata CSTCE series ceramicoscillators 3.2x1.3mm
 0
 3
 3
+customlib_mj_fp
+CUI-UJ2_AH_1_SMT
+CUI Devices USB-A right-angle SMT connector
+CUI USB-A SMT
+0
+6
+6
+customlib_mj_fp
+CUI-UJ2_AH_1_SMT-Panel_cutout
+Panel cut-out for CUI-UJ2_AH_1_SMT USB-A host connector
+USB-A CUI UJ2_AH_1_SMT panel cut-out
+0
+0
+0
 customlib_mj_fp
 CUI_CES-30207
 CUI Devices 30x20x7 mm enclosed mini-speaker, double-sided tape
