@@ -1,4 +1,4 @@
-19689072059829274
+19698696438531274
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82082,6 +82082,13 @@ DSUB-9 panel cut-out
 0
 0
 customlib_mj_fp
+DSub9-Kycon_K22X-EP9P-N
+9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, male, pitch 2.77x2.84mm, pin-PCB-offset 7.70mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 9.12mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
+9-pin D-Sub connector horizontal angled 90deg THT male pitch 2.77x2.84mm pin-PCB-offset 7.70mm mounting-holes-distance 25mm mounting-hole-offset 25mm
+0
+11
+10
+customlib_mj_fp
 D_SOD-123
 SOD-123
 SOD-123
@@ -82376,6 +82383,13 @@ www.st.com/resource/en/datasheet/l78.pdf
 3
 3
 customlib_mj_fp
+LB_I4R_A-4mm_banana_socket_panelmnt
+
+
+0
+0
+0
+customlib_mj_fp
 LD2981_SOT23-5
 5-pin SOT23 package
 SOT-23-5
@@ -82494,6 +82508,20 @@ MJ mini Cu
 0
 0
 0
+customlib_mj_fp
+Molex_NanoFit-1x02-Panel_cutout
+Panel cut-out for Molex Nano-Fit 1x02
+Molex NanoFit panel cut-out
+0
+0
+0
+customlib_mj_fp
+Molex_NanoFit_105430-1102_1x02_P2.50mm_Horizontal
+Molex NanoFit 1x02 right-angle SMD, 2.50mm pitch, 6.5A/250V max per contact
+Molex Nano-Fit
+0
+4
+4
 customlib_mj_fp
 MountingHole_3-2mm
 
@@ -82740,6 +82768,20 @@ SKQY
 2
 2
 customlib_mj_fp
+SMA_Bulkhead_jack-Panel_cutout
+SMA bulkhead jack connector cut-out
+SMA panel cutout
+0
+0
+0
+customlib_mj_fp
+SMA_Molex_73251-2200_Horizontal
+https://www.molex.com/webdocs/datasheets/pdf/en-us/0732512200_RF_COAX_CONNECTORS.pdf
+SMA THT Female Jack Horizontal
+0
+5
+2
+customlib_mj_fp
 SMD_PUSHBTN_6x6mm
 6x6 mm 4-pin tactile switch pushbutton (e.g. TS-1102W-4316)
 LCSC: C111373 (ds: https://datasheet.lcsc.com/szlcsc/1808311432_SOFNG-TS-1102W-4316_C111373.pdf)
@@ -82850,7 +82892,7 @@ TE USB Type A r/a receptacle, SMD with through-hole retention pins
 USB Type A TE 
 0
 6
-5
+6
 customlib_mj_fp
 TE_1-292303-Panel_cutout
 Panel cut-out for TE-1-292303 USB-A host connector
@@ -82864,7 +82906,7 @@ TE connectivity USB 2.0 TypeB R/A SMT
 
 0
 8
-6
+7
 customlib_mj_fp
 TE_1734346-Panel_cutout
 Panel cut-out for TE-1734346 USB-B device connector

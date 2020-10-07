@@ -189,4 +189,26 @@ F 3 "https://www.elfa.se/Web/Downloads/_t/ds/LB-I4R-A_B_eng_fre_ger_tds.pdf" H 5
 	1    5300 7600
 	1    0    0    -1  
 $EndComp
+$Comp
+L customlib_mj:SMA_bulkhead_jack_Panel_cutout M110
+U 1 1 5F881BCE
+P 7500 6000
+F 0 "M110" H 7500 6300 50  0000 C CNN
+F 1 "SMA_bulkhead_jack_Panel_cutout" H 7500 5750 50  0000 C CNN
+F 2 "customlib_mj_fp:SMA_Bulkhead_jack-Panel_cutout" H 7500 6000 50  0001 C CNN
+F 3 "" H 7500 6000 50  0001 C CNN
+	1    7500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:Molex_NanoFit-1x02-Panel_cutout M111
+U 1 1 5F88251B
+P 8850 6000
+F 0 "M111" H 8950 6300 50  0000 C CNN
+F 1 "Molex_NanoFit-1x02-Panel_cutout" H 8850 5700 50  0000 C CNN
+F 2 "customlib_mj_fp:Molex_NanoFit-1x02-Panel_cutout" H 8850 6000 50  0001 C CNN
+F 3 "" H 8850 6000 50  0001 C CNN
+	1    8850 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

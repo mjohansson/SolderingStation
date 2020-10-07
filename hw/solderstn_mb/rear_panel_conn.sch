@@ -45,8 +45,8 @@ Wire Wire Line
 	2250 3400 2450 3400
 Wire Wire Line
 	2250 3500 2450 3500
-Text Notes 4550 1900 0    70   ~ 14
-Audiojack 3.5mm (sub-PCB)\nDBGUART / SWD (dsub-9?)\nFM-ant? (AM-ferrit extern..?)\nUSB1 (device)\nUSB2 (host)\nForce Bootloader/rst\n2x Amphenol Weller-jacks!
+Text Notes 2400 1500 0    70   ~ 14
+Audiojack 3.5mm (sub-PCB)\nDBGUART / SWD (dsub-9?)\nFM-ant (SMA panel-mount) + 12V DC-out (ext. ant.amp)\nUSB1 (device)\nUSB2 (host)\nForce Bootloader/rst\n2x Amphenol Weller-jacks!
 Text GLabel 3150 5600 0    50   Output ~ 0
 ~EXT_RSTn~
 Text GLabel 3150 5000 0    50   Output ~ 0
@@ -154,9 +154,9 @@ $Comp
 L Connector:DB9_Male_MountingHoles J1203
 U 1 1 5F3A1DC2
 P 4350 5200
-F 0 "J1203" H 5002 5202 50  0000 C CNN
-F 1 "DB9_Male_MountingHoles" H 5002 5111 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 4350 5200 50  0001 C CNN
+F 0 "J1203" H 4350 5850 50  0000 C CNN
+F 1 "DB9_Male_MountingHoles" V 4600 5200 50  0000 C CNN
+F 2 "customlib_mj_fp:DSub9-Kycon_K22X-EP9P-N" H 4350 5200 50  0001 C CNN
 F 3 " ~" H 4350 5200 50  0001 C CNN
 	1    4350 5200
 	1    0    0    -1  
@@ -698,4 +698,85 @@ F 3 "https://www.cuidevices.com/product/interconnect/connectors/usb-connectors/u
 	1    9250 5500
 	-1   0    0    -1  
 $EndComp
+$Comp
+L customlib_mj:Molex_NanoFit-1x02 J1205
+U 1 1 5F7E9080
+P 6350 7300
+F 0 "J1205" H 6350 7500 50  0000 C CNN
+F 1 "Molex_NanoFit-1x02" V 6500 7300 50  0000 C CNN
+F 2 "customlib_mj_fp:Molex_NanoFit_105430-1102_1x02_P2.50mm_Horizontal" H 6350 7300 50  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/1054301102" H 6350 7300 50  0001 C CNN
+	1    6350 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01222
+U 1 1 5F7EA1DC
+P 6100 7500
+F 0 "#PWR01222" H 6100 7250 50  0001 C CNN
+F 1 "GND" H 6100 7350 50  0000 C CNN
+F 2 "" H 6100 7500 50  0001 C CNN
+F 3 "" H 6100 7500 50  0001 C CNN
+	1    6100 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7500 6100 7450
+Wire Wire Line
+	6100 7350 6250 7350
+$Comp
+L customlib_mj:VIN #PWR01221
+U 1 1 5F7FDE13
+P 6100 7100
+F 0 "#PWR01221" H 6100 6950 50  0001 C CNN
+F 1 "VIN" H 6100 7250 50  0000 C CNN
+F 2 "" H 6100 7100 50  0001 C CNN
+F 3 "" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 7250 6100 7250
+Wire Wire Line
+	6100 7250 6100 7150
+$Comp
+L Device:C_Small C1202
+U 1 1 5F80162E
+P 5900 7300
+F 0 "C1202" H 5950 7250 50  0000 L CNN
+F 1 "100n" H 5950 7350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 7300 50  0001 C CNN
+F 3 "~" H 5900 7300 50  0001 C CNN
+	1    5900 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 7200 5900 7150
+Wire Wire Line
+	5900 7150 6100 7150
+Connection ~ 6100 7150
+Wire Wire Line
+	6100 7150 6100 7100
+Wire Wire Line
+	5900 7400 5900 7450
+Wire Wire Line
+	5900 7450 6100 7450
+Connection ~ 6100 7450
+Wire Wire Line
+	6100 7450 6100 7350
+Text Notes 5450 6850 0    70   ~ 14
+FM-ant + 12V DC-out\nfor ext. ant.amp.
+$Comp
+L power:GND #PWR?
+U 1 1 5F8779FF
+P 6400 7500
+F 0 "#PWR?" H 6400 7250 50  0001 C CNN
+F 1 "GND" H 6400 7350 50  0000 C CNN
+F 2 "" H 6400 7500 50  0001 C CNN
+F 3 "" H 6400 7500 50  0001 C CNN
+	1    6400 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 7500 6400 7400
 $EndSCHEMATC

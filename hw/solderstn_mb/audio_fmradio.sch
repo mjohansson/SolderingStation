@@ -1016,7 +1016,7 @@ $Comp
 L customlib_mj:dogbone_2_ud JP2103
 U 1 1 5F49CC1B
 P 8700 2550
-F 0 "JP2103" H 8700 2684 50  0000 C CNN
+F 0 "JP2103" H 8750 2450 50  0000 C CNN
 F 1 "dogbone_2_ud" H 8700 2650 50  0001 C CNN
 F 2 "customlib_mj_fp:db2_ud_0402" H 8700 2550 50  0001 C CNN
 F 3 "" H 8700 2550 50  0001 C CNN
@@ -1273,4 +1273,47 @@ Wire Wire Line
 	4650 7050 5000 7050
 Wire Wire Line
 	4450 7050 3950 7050
+$Comp
+L Connector:Conn_Coaxial J2107
+U 1 1 5F81D28D
+P 10050 3500
+F 0 "J2107" H 10403 3475 50  0000 C CNN
+F 1 "Conn_Coaxial" H 10403 3384 50  0000 C CNN
+F 2 "customlib_mj_fp:SMA_Molex_73251-2200_Horizontal" H 10050 3500 50  0001 C CNN
+F 3 " ~" H 10050 3500 50  0001 C CNN
+	1    10050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02129
+U 1 1 5F81D746
+P 10050 3800
+F 0 "#PWR02129" H 10050 3550 50  0001 C CNN
+F 1 "GND" H 10050 3650 50  0000 C CNN
+F 2 "" H 10050 3800 50  0001 C CNN
+F 3 "" H 10050 3800 50  0001 C CNN
+	1    10050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3800 10050 3700
+Text Label 8400 2450 0    50   ~ 0
+FMI
+Wire Wire Line
+	9850 3500 9750 3500
+Text Label 9350 3500 0    50   ~ 0
+FMI
+$Comp
+L customlib_mj:dogbone_2_ud JP2106
+U 1 1 5F832C0D
+P 9650 3500
+F 0 "JP2106" H 9700 3400 50  0000 C CNN
+F 1 "dogbone_2_ud" H 9650 3600 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 9650 3500 50  0001 C CNN
+F 3 "" H 9650 3500 50  0001 C CNN
+	1    9650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3500 9350 3500
 $EndSCHEMATC
