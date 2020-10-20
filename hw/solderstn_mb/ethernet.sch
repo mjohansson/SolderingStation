@@ -1141,17 +1141,6 @@ F 3 "~" H 8300 3200 50  0001 C CNN
 	1    8300 3200
 	0    1    1    0   
 $EndComp
-$Comp
-L customlib_mj:Crystal_TSX3225_25MF10P-C Y201
-U 1 1 5F3EC90A
-P 4650 3400
-F 0 "Y201" V 4550 3500 50  0000 L CNN
-F 1 "TSX-3225 25.0000MF10P-C" V 4400 3050 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm_HandSoldering" H 4650 3400 50  0001 C CNN
-F 3 "https://www.mouser.se/datasheet/2/137/FA-238_en-932914.pdf" H 4650 3400 50  0001 C CNN
-	1    4650 3400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5050 3250 5050 3350
 Wire Wire Line
@@ -1334,4 +1323,15 @@ F 3 "~" H 10550 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 10550 2300
+$Comp
+L customlib_mj:Crystal_TSX3225_25MF10P-C Y201
+U 1 1 5F3EC90A
+P 4650 3400
+F 0 "Y201" V 4750 3500 50  0000 L CNN
+F 1 "TSX-3225 25.0000MF10P-C" V 4900 3050 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm_HandSoldering" H 4650 3400 50  0001 C CNN
+F 3 "https://www.mouser.se/datasheet/2/137/FA-238_en-932914.pdf" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

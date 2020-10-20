@@ -142,14 +142,10 @@ Wire Wire Line
 	8700 3700 8700 3850
 Wire Wire Line
 	8700 3850 8850 3850
-Text GLabel 7150 4300 0    50   BiDi ~ 0
-USB1_DM
 Text GLabel 7150 3900 0    50   BiDi ~ 0
+USB1_DM
+Text GLabel 7150 4300 0    50   BiDi ~ 0
 USB1_DP
-Wire Wire Line
-	8600 4050 8850 4050
-Wire Wire Line
-	8600 4150 8850 4150
 $Comp
 L Connector:DB9_Male_MountingHoles J1203
 U 1 1 5F3A1DC2
@@ -209,11 +205,7 @@ F 3 "" H 4000 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3150 5100 3650 5100
-Wire Wire Line
 	3150 5300 3450 5300
-Wire Wire Line
-	3150 5000 3750 5000
 Wire Wire Line
 	4050 5600 3150 5600
 Wire Wire Line
@@ -419,13 +411,13 @@ F 3 "" H 8400 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 4150 8600 4300
+	8650 4050 8650 4300
 Wire Wire Line
-	8600 4300 8300 4300
+	8650 4300 8300 4300
 Wire Wire Line
-	8600 4050 8600 3900
+	8550 4150 8550 3900
 Wire Wire Line
-	8600 3900 8300 3900
+	8550 3900 8300 3900
 Wire Wire Line
 	8300 4100 8400 4100
 Wire Wire Line
@@ -504,8 +496,6 @@ F 3 "~" H 2850 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 5200 2500 5200
-Wire Wire Line
-	2950 5200 3550 5200
 Wire Wire Line
 	1950 5200 1650 5200
 $Comp
@@ -623,21 +613,6 @@ Wire Wire Line
 Connection ~ 3450 5300
 Wire Wire Line
 	3450 5300 4050 5300
-Wire Wire Line
-	3550 5750 3550 5200
-Connection ~ 3550 5200
-Wire Wire Line
-	3550 5200 4050 5200
-Wire Wire Line
-	3650 5750 3650 5100
-Connection ~ 3650 5100
-Wire Wire Line
-	3650 5100 4050 5100
-Wire Wire Line
-	3750 5750 3750 5000
-Connection ~ 3750 5000
-Wire Wire Line
-	3750 5000 4050 5000
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J1201
 U 1 1 5FA2CF9B
@@ -703,11 +678,11 @@ L customlib_mj:Molex_NanoFit-1x02 J1205
 U 1 1 5F7E9080
 P 6350 7300
 F 0 "J1205" H 6350 7500 50  0000 C CNN
-F 1 "Molex_NanoFit-1x02" V 6500 7300 50  0000 C CNN
+F 1 "Molex_NanoFit-1x02" V 6600 7300 50  0000 C CNN
 F 2 "customlib_mj_fp:Molex_NanoFit_105430-1102_1x02_P2.50mm_Horizontal" H 6350 7300 50  0001 C CNN
 F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/1054301102" H 6350 7300 50  0001 C CNN
 	1    6350 7300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR01222
@@ -767,16 +742,45 @@ Wire Wire Line
 Text Notes 5450 6850 0    70   ~ 14
 FM-ant + 12V DC-out\nfor ext. ant.amp.
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5F8779FF
-P 6400 7500
-F 0 "#PWR?" H 6400 7250 50  0001 C CNN
-F 1 "GND" H 6400 7350 50  0000 C CNN
-F 2 "" H 6400 7500 50  0001 C CNN
-F 3 "" H 6400 7500 50  0001 C CNN
-	1    6400 7500
+P 6500 7200
+F 0 "#PWR0101" H 6500 6950 50  0001 C CNN
+F 1 "GND" H 6500 7050 50  0000 C CNN
+F 2 "" H 6500 7200 50  0001 C CNN
+F 3 "" H 6500 7200 50  0001 C CNN
+	1    6500 7200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 7500 6400 7400
+	8650 4050 8850 4050
+Wire Wire Line
+	8850 4150 8550 4150
+Wire Wire Line
+	6400 7200 6400 7100
+Wire Wire Line
+	6400 7100 6500 7100
+Wire Wire Line
+	6500 7100 6500 7200
+Wire Wire Line
+	3150 5100 3550 5100
+Wire Wire Line
+	3550 5750 3550 5100
+Connection ~ 3550 5100
+Wire Wire Line
+	3550 5100 4050 5100
+Wire Wire Line
+	3150 5000 3650 5000
+Wire Wire Line
+	2950 5200 3750 5200
+Wire Wire Line
+	3650 5750 3650 5000
+Connection ~ 3650 5000
+Wire Wire Line
+	3650 5000 4050 5000
+Wire Wire Line
+	3750 5750 3750 5200
+Connection ~ 3750 5200
+Wire Wire Line
+	3750 5200 4050 5200
 $EndSCHEMATC

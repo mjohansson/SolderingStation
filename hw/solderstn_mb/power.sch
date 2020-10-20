@@ -1926,7 +1926,7 @@ U 1 1 5FAF4A9D
 P 1350 1100
 F 0 "J301" H 1450 850 50  0000 L CNN
 F 1 "Molex_MicroFit_30-43045-0421" H 1400 1400 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 1350 1100 50  0001 C CNN
+F 2 "customlib_mj_fp:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 1350 1100 50  0001 C CNN
 F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0430450421" H 1350 1100 50  0001 C CNN
 	1    1350 1100
 	1    0    0    1   
