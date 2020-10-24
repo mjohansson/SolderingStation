@@ -992,7 +992,7 @@ ENDDEF
 DEF customlib_mj_CES-703116-28PM_JST-conn J 0 20 Y Y 1 F N
 F0 "J" 0 150 50 H V C CNN
 F1 "customlib_mj_CES-703116-28PM_JST-conn" 0 -150 50 H I C CNN
-F2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" 50 -250 50 H I C CNN
+F2 "customlib_mj_fp:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" 50 -250 50 H I C CNN
 F3 "" 0 0 90 H I C CNN
 DRAW
 S -50 100 50 -100 0 1 0 f
@@ -1586,7 +1586,7 @@ ENDDEF
 DEF customlib_mj_Si4497DY Q 0 20 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
 F1 "customlib_mj_Si4497DY" 200 0 50 H V L CNN
-F2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" 200 -75 50 H I L CIN
+F2 "customlib_mj_fp:SOIC-8_3.9x4.9mm_P1.27mm" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
  PowerPAK*SO*Single*
@@ -1764,7 +1764,7 @@ ENDDEF
 DEF customlib_mj_TS4990IDT U 0 0 Y Y 1 F N
 F0 "U" 200 550 60 H V C CNN
 F1 "customlib_mj_TS4990IDT" 300 -550 60 H V C CNN
-F2 "" -400 -200 60 H I C CNN
+F2 "customlib_mj_fp:SOIC-8_3.9x4.9mm_P1.27mm" -400 -200 60 H I C CNN
 F3 "" -400 -200 60 H I C CNN
 DRAW
 C 0 -200 5 0 0 10 N
@@ -2027,7 +2027,7 @@ ENDDEF
 DEF customlib_mj_W25Q64FV U 0 40 Y Y 1 F N
 F0 "U" 100 350 60 H V C CNN
 F1 "customlib_mj_W25Q64FV" 300 -350 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
+F2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
 S -200 300 200 -300 0 0 10 f

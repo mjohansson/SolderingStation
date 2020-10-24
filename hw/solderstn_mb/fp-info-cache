@@ -1,4 +1,4 @@
-332252939624597
+337063432455597
 customlib_mj_fp
 2MS1T2B2M2RE
 
@@ -553,6 +553,13 @@ IRM-3638 improvised SMD
 3
 3
 customlib_mj_fp
+JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal
+JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH top entry
+0
+4
+3
+customlib_mj_fp
 K2-1187SQ
 https://lcsc.com/product-detail/Tactile-Switches_Korean-Hroparts-Elec-K2-1187SQ-D4SW-06_C223821.html
 K2-1187SQ-D4SW-06
@@ -734,6 +741,13 @@ connector Molex Micro-Fit_3.0 horizontal
 0
 6
 5
+customlib_mj_fp
+Molex_MicroClasp_55935-0210_1x02_P2.00mm_Horizontal
+Molex MicroClasp Wire-to-Board System, 55935-0210, with PCB locator, 2 Pins (http://www.molex.com/pdm_docs/sd/559350210_sd.pdf), generated with kicad-footprint-generator
+connector Molex MicroClasp horizontal
+0
+2
+2
 customlib_mj_fp
 Molex_NanoFit-1x02-Panel_cutout
 Panel cut-out for Molex Nano-Fit 1x02
@@ -1028,6 +1042,13 @@ SOD110
 0
 2
 2
+customlib_mj_fp
+SOIC-8_3.9x4.9mm_P1.27mm
+SO, 8 Pin (https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SO SOIC
+0
+8
+8
 customlib_mj_fp
 SOT-23
 SOT-23, Standard

@@ -40,9 +40,9 @@ L Connector_Generic:Conn_01x02 J503
 U 1 1 5F46E2EB
 P 6750 6150
 F 0 "J503" H 6750 6300 50  0000 C CNN
-F 1 "Molex_MicroClasp-55935-0210" H 6800 5950 50  0000 C CNN
-F 2 "Connector_Molex:Molex_MicroClasp_55935-0210_1x02_P2.00mm_Horizontal" H 6750 6150 50  0001 C CNN
-F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0559350210" H 6750 6150 50  0001 C CNN
+F 1 "JST_S2B-PH-SM4-TB" H 7000 5900 50  0000 C CNN
+F 2 "customlib_mj_fp:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 6750 6150 50  0001 C CNN
+F 3 "" H 6750 6150 50  0001 C CNN
 	1    6750 6150
 	1    0    0    -1  
 $EndComp
@@ -846,8 +846,8 @@ Wire Wire Line
 	2650 3150 3000 3150
 Wire Wire Line
 	2650 3350 3000 3350
-Text Notes 6200 6450 0    50   ~ 0
-(OTS Cable: e.g. 15136-0203)
+Text Notes 7200 6900 0    50   ~ 0
+Alt: Molex Molex_MicroClasp-55935-0210 (OTS Cable: e.g. 15136-0203)\nhttps://www.molex.com/molex/products/part-detail/pcb_headers/0559350210
 Wire Wire Line
 	2750 2650 2750 3650
 Wire Wire Line

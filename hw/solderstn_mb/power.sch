@@ -1611,7 +1611,7 @@ U 1 1 5F4A258B
 P 1850 4150
 F 0 "Q302" V 2192 3970 50  0000 L CNN
 F 1 "Si4497DY" V 2101 3970 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2050 4075 50  0001 L CIN
+F 2 "customlib_mj_fp:SOIC-8_3.9x4.9mm_P1.27mm" H 2050 4075 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/65748/si4497dy.pdf" H 1850 4150 50  0001 L CNN
 	1    1850 4150
 	0    1    -1   0   
@@ -1795,7 +1795,7 @@ U 1 1 5F6AC6C1
 P 1050 2300
 F 0 "Q301" V 1392 2120 50  0000 L CNN
 F 1 "Si4497DY" V 1301 2120 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 1250 2225 50  0001 L CIN
+F 2 "customlib_mj_fp:SOIC-8_3.9x4.9mm_P1.27mm" H 1250 2225 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/65748/si4497dy.pdf" H 1050 2300 50  0001 L CNN
 	1    1050 2300
 	0    -1   -1   0   
