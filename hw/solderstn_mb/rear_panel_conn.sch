@@ -47,10 +47,6 @@ Wire Wire Line
 	2250 3500 2450 3500
 Text Notes 2400 1500 0    70   ~ 14
 Audiojack 3.5mm (sub-PCB)\nDBGUART / SWD (dsub-9?)\nFM-ant (SMA panel-mount) + 12V DC-out (ext. ant.amp)\nUSB1 (device)\nUSB2 (host)\nForce Bootloader/rst\n2x Amphenol Weller-jacks!
-Text GLabel 3150 5600 0    50   Output ~ 0
-~EXT_RSTn~
-Text GLabel 3150 5000 0    50   Output ~ 0
-MCU_BOOT0
 Text Notes 1750 1850 0    70   ~ 14
 Notes:\nRJ45 ethernet - located on ethernet page\n
 $Comp
@@ -146,66 +142,6 @@ Text GLabel 7150 3900 0    50   BiDi ~ 0
 USB1_DM
 Text GLabel 7150 4300 0    50   BiDi ~ 0
 USB1_DP
-$Comp
-L Connector:DB9_Male_MountingHoles J1203
-U 1 1 5F3A1DC2
-P 4350 5200
-F 0 "J1203" H 4350 5850 50  0000 C CNN
-F 1 "DB9_Male_MountingHoles" V 4600 5200 50  0000 C CNN
-F 2 "customlib_mj_fp:DSub9-Kycon_K22X-EP9P-N" H 4350 5200 50  0001 C CNN
-F 3 " ~" H 4350 5200 50  0001 C CNN
-	1    4350 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01210
-U 1 1 5F3B8CBB
-P 3800 4900
-F 0 "#PWR01210" H 3800 4650 50  0001 C CNN
-F 1 "GND" H 3800 4750 50  0000 C CNN
-F 2 "" H 3800 4900 50  0001 C CNN
-F 3 "" H 3800 4900 50  0001 C CNN
-	1    3800 4900
-	0    1    1    0   
-$EndComp
-Text GLabel 1650 5400 0    50   Output ~ 0
-DBGUART_RX
-Text GLabel 1650 5200 0    50   Input ~ 0
-DBGUART_TX
-Text GLabel 3150 5100 0    50   Output ~ 0
-SWCLK
-Text GLabel 3150 5300 0    50   BiDi ~ 0
-SWDIO
-$Comp
-L power:VDD #PWR01211
-U 1 1 5F3B9A5E
-P 3750 4700
-F 0 "#PWR01211" H 3750 4550 50  0001 C CNN
-F 1 "VDD" H 3750 4850 50  0000 C CNN
-F 2 "" H 3750 4700 50  0001 C CNN
-F 3 "" H 3750 4700 50  0001 C CNN
-	1    3750 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 4900 4050 4900
-$Comp
-L power:GND #PWR01214
-U 1 1 5F3BB41A
-P 4000 5500
-F 0 "#PWR01214" H 4000 5250 50  0001 C CNN
-F 1 "GND" H 4000 5350 50  0000 C CNN
-F 2 "" H 4000 5500 50  0001 C CNN
-F 3 "" H 4000 5500 50  0001 C CNN
-	1    4000 5500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3150 5300 3450 5300
-Wire Wire Line
-	4050 5600 3150 5600
-Wire Wire Line
-	4050 5500 4000 5500
 $Comp
 L customlib_mj:USBLC6-2SC6 U1203
 U 1 1 5F3C08E8
@@ -447,168 +383,78 @@ Wire Wire Line
 Wire Wire Line
 	7150 4300 7300 4300
 $Comp
-L customlib_mj:74LVC2G17 U1202
-U 1 1 5F9A79CF
-P 2250 5200
-F 0 "U1202" H 2225 5467 50  0000 C CNN
-F 1 "74LVC2G17gw" H 2225 5376 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 2250 5200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2250 5200 50  0001 C CNN
-	1    2250 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L customlib_mj:74LVC2G17 U1202
-U 2 1 5F9A89B3
-P 2500 5400
-F 0 "U1202" H 2700 5450 50  0000 C CNN
-F 1 "74LVC2G17gw" H 2550 5550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 2500 5400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2500 5400 50  0001 C CNN
-	2    2500 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L customlib_mj:74LVC2G17 U1202
-U 3 1 5F9A92DC
-P 1400 6450
-F 0 "U1202" H 1666 6496 50  0000 C CNN
-F 1 "74LVC2G17gw" H 1666 6405 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1400 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1400 6450 50  0001 C CNN
-	3    1400 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1205
-U 1 1 5F9AE0AD
-P 2850 5200
-F 0 "R1205" V 2800 5300 50  0000 L CNN
-F 1 "100" V 2900 5300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2850 5200 50  0001 C CNN
-F 3 "~" H 2850 5200 50  0001 C CNN
-	1    2850 5200
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	2750 5200 2500 5200
-Wire Wire Line
-	1950 5200 1650 5200
-$Comp
-L Device:R_Small R1206
-U 1 1 5F9B98A1
-P 2000 5400
-F 0 "R1206" V 1950 5500 50  0000 L CNN
-F 1 "100" V 2050 5500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 5400 50  0001 C CNN
-F 3 "~" H 2000 5400 50  0001 C CNN
-	1    2000 5400
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	2250 5400 2100 5400
-Wire Wire Line
-	1900 5400 1650 5400
-$Comp
 L power:VDD #PWR01218
 U 1 1 5F9C015F
-P 1400 6050
-F 0 "#PWR01218" H 1400 5900 50  0001 C CNN
-F 1 "VDD" H 1400 6200 50  0000 C CNN
-F 2 "" H 1400 6050 50  0001 C CNN
-F 3 "" H 1400 6050 50  0001 C CNN
-	1    1400 6050
+P 1100 5200
+F 0 "#PWR01218" H 1100 5050 50  0001 C CNN
+F 1 "VDD" H 1100 5350 50  0000 C CNN
+F 2 "" H 1100 5200 50  0001 C CNN
+F 3 "" H 1100 5200 50  0001 C CNN
+	1    1100 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01220
 U 1 1 5F9C062D
-P 1400 6900
-F 0 "#PWR01220" H 1400 6650 50  0001 C CNN
-F 1 "GND" H 1400 6750 50  0000 C CNN
-F 2 "" H 1400 6900 50  0001 C CNN
-F 3 "" H 1400 6900 50  0001 C CNN
-	1    1400 6900
+P 1100 6050
+F 0 "#PWR01220" H 1100 5800 50  0001 C CNN
+F 1 "GND" H 1100 5900 50  0000 C CNN
+F 2 "" H 1100 6050 50  0001 C CNN
+F 3 "" H 1100 6050 50  0001 C CNN
+	1    1100 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 6900 1400 6800
+	1100 6050 1100 5950
 Wire Wire Line
-	1400 6150 1400 6100
+	1100 5300 1100 5250
 $Comp
 L Device:C_Small C1201
 U 1 1 5F9C93AD
-P 1200 6500
-F 0 "C1201" H 1250 6450 50  0000 L CNN
-F 1 "100n" H 1250 6550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 6500 50  0001 C CNN
-F 3 "~" H 1200 6500 50  0001 C CNN
-	1    1200 6500
+P 900 5650
+F 0 "C1201" H 950 5600 50  0000 L CNN
+F 1 "100n" H 950 5700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 5650 50  0001 C CNN
+F 3 "~" H 900 5650 50  0001 C CNN
+	1    900  5650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1400 6800 1200 6800
+	1100 5950 900  5950
 Wire Wire Line
-	1200 6800 1200 6600
-Connection ~ 1400 6800
+	900  5950 900  5750
+Connection ~ 1100 5950
 Wire Wire Line
-	1400 6800 1400 6750
+	1100 5950 1100 5900
 Wire Wire Line
-	1200 6400 1200 6100
+	900  5550 900  5250
 Wire Wire Line
-	1200 6100 1400 6100
-Connection ~ 1400 6100
+	900  5250 1100 5250
+Connection ~ 1100 5250
 Wire Wire Line
-	1400 6100 1400 6050
-$Comp
-L power:GND #PWR01216
-U 1 1 5F9D5D95
-P 4350 5900
-F 0 "#PWR01216" H 4350 5650 50  0001 C CNN
-F 1 "GND" H 4350 5750 50  0000 C CNN
-F 2 "" H 4350 5900 50  0001 C CNN
-F 3 "" H 4350 5900 50  0001 C CNN
-	1    4350 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 5900 4350 5800
+	1100 5250 1100 5200
 $Comp
 L Power_Protection:SP0505BAHT D1201
 U 1 1 5F9D8F09
-P 3550 5950
-F 0 "D1201" H 3200 6000 50  0000 R CNN
-F 1 "SP0505BAHT" H 3200 5900 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3850 5900 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3675 6075 50  0001 C CNN
-	1    3550 5950
+P 4250 6300
+F 0 "D1201" H 3900 6250 50  0000 R CNN
+F 1 "SP0505BAHT" H 4150 6150 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4550 6250 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 4375 6425 50  0001 C CNN
+	1    4250 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01219
 U 1 1 5F9F5C0C
-P 3550 6250
-F 0 "#PWR01219" H 3550 6000 50  0001 C CNN
-F 1 "GND" H 3550 6100 50  0000 C CNN
-F 2 "" H 3550 6250 50  0001 C CNN
-F 3 "" H 3550 6250 50  0001 C CNN
-	1    3550 6250
+P 4250 6600
+F 0 "#PWR01219" H 4250 6350 50  0001 C CNN
+F 1 "GND" H 4250 6450 50  0000 C CNN
+F 2 "" H 4250 6600 50  0001 C CNN
+F 3 "" H 4250 6600 50  0001 C CNN
+	1    4250 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 6250 3550 6150
-Wire Wire Line
-	4050 5400 3350 5400
-Wire Wire Line
-	3350 5750 3350 5400
-Connection ~ 3350 5400
-Wire Wire Line
-	3350 5400 2800 5400
-Wire Wire Line
-	3450 5750 3450 5300
-Connection ~ 3450 5300
-Wire Wire Line
-	3450 5300 4050 5300
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J1201
 U 1 1 5FA2CF9B
@@ -753,32 +599,263 @@ Wire Wire Line
 Wire Wire Line
 	8850 4150 8550 4150
 Wire Wire Line
-	3150 5100 3550 5100
-Wire Wire Line
-	3550 5750 3550 5100
-Connection ~ 3550 5100
-Wire Wire Line
-	3550 5100 4050 5100
-Wire Wire Line
-	3150 5000 3650 5000
-Wire Wire Line
-	2950 5200 3750 5200
-Wire Wire Line
-	3650 5750 3650 5000
-Connection ~ 3650 5000
-Wire Wire Line
-	3650 5000 4050 5000
-Wire Wire Line
-	3750 5750 3750 5200
-Connection ~ 3750 5200
-Wire Wire Line
-	3750 5200 4050 5200
-Wire Wire Line
 	6450 7500 6450 7400
 Wire Wire Line
 	6450 7400 6400 7400
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1203
+U 1 1 5FA2EA12
+P 4200 5350
+F 0 "J1203" H 4250 5700 50  0000 C CNN
+F 1 "IDC_2x5" H 4250 5050 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" H 4200 5350 50  0001 C CNN
+F 3 "~" H 4200 5350 50  0001 C CNN
+	1    4200 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 5750 0    50   Output ~ 0
+~EXT_RSTn~
+$Comp
+L power:GND #PWR01211
+U 1 1 5FA30F07
+P 4600 5650
+F 0 "#PWR01211" H 4600 5400 50  0001 C CNN
+F 1 "GND" H 4600 5500 50  0000 C CNN
+F 2 "" H 4600 5650 50  0001 C CNN
+F 3 "" H 4600 5650 50  0001 C CNN
+	1    4600 5650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3750 4800 3750 4700
+	4500 5550 4600 5550
 Wire Wire Line
-	3750 4800 4050 4800
+	4600 5550 4600 5650
+Wire Wire Line
+	4500 5150 4600 5150
+Connection ~ 4600 5550
+$Comp
+L power:VDD #PWR01210
+U 1 1 5FA523A6
+P 3900 4950
+F 0 "#PWR01210" H 3900 4800 50  0001 C CNN
+F 1 "VDD" H 3900 5100 50  0000 C CNN
+F 2 "" H 3900 4950 50  0001 C CNN
+F 3 "" H 3900 4950 50  0001 C CNN
+	1    3900 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4950 3900 5150
+Wire Wire Line
+	3900 5150 4000 5150
+Text GLabel 2350 5150 0    50   Output ~ 0
+MCU_BOOT0
+Text GLabel 2000 5350 0    50   Output ~ 0
+DBGUART_RX
+Text GLabel 2000 5550 0    50   Input ~ 0
+DBGUART_TX
+$Comp
+L customlib_mj:74LVC2G17 U1202
+U 1 1 5FA66929
+P 2950 5350
+F 0 "U1202" H 3125 5275 50  0000 C CNN
+F 1 "74LVC2G17gw" H 2900 5200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 2950 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2950 5350 50  0001 C CNN
+	1    2950 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L customlib_mj:74LVC2G17 U1202
+U 3 1 5FA67D45
+P 1100 5600
+F 0 "U1202" H 1250 5600 50  0000 C CNN
+F 1 "74LVC2G17gw" H 1400 5800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1100 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1100 5600 50  0001 C CNN
+	3    1100 5600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3250 5350 3550 5350
+Wire Wire Line
+	2700 5350 2350 5350
+Wire Wire Line
+	2150 5350 2000 5350
+$Comp
+L customlib_mj:74LVC2G17 U1202
+U 2 1 5FA81986
+P 2550 5550
+F 0 "U1202" H 2650 5650 50  0000 C CNN
+F 1 "74LVC2G17gw" H 2725 5450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 2550 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2550 5550 50  0001 C CNN
+	2    2550 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5250 3400 5250
+Wire Wire Line
+	3300 5250 3300 5150
+Wire Wire Line
+	3300 5150 2350 5150
+Wire Wire Line
+	4000 5550 3850 5550
+Wire Wire Line
+	3850 5550 3850 5750
+Wire Wire Line
+	3850 5750 3750 5750
+$Comp
+L Device:R_Small R1206
+U 1 1 5FAA6D7E
+P 3150 5550
+F 0 "R1206" V 3225 5425 50  0000 L CNN
+F 1 "100" V 3075 5475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3150 5550 50  0001 C CNN
+F 3 "~" H 3150 5550 50  0001 C CNN
+	1    3150 5550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2000 5550 2250 5550
+Wire Wire Line
+	2800 5550 3050 5550
+Wire Wire Line
+	3250 5550 3300 5550
+Wire Wire Line
+	3300 5550 3300 5450
+Wire Wire Line
+	3300 5450 3650 5450
+Wire Wire Line
+	5250 5450 4800 5450
+Text GLabel 5250 5450 2    50   BiDi ~ 0
+SWDIO
+Wire Wire Line
+	4500 5250 4950 5250
+Text GLabel 5250 5250 2    50   Output ~ 0
+SWCLK
+Wire Wire Line
+	4800 5450 4800 5950
+Wire Wire Line
+	4800 5950 4350 5950
+Wire Wire Line
+	4350 5950 4350 6100
+Wire Wire Line
+	4800 5450 4500 5450
+Wire Wire Line
+	4950 5250 4950 6050
+Wire Wire Line
+	4950 6050 4450 6050
+Wire Wire Line
+	4450 6050 4450 6100
+Wire Wire Line
+	4950 5250 5250 5250
+Wire Wire Line
+	3750 5750 3750 5850
+Wire Wire Line
+	3750 5850 4250 5850
+Wire Wire Line
+	4250 5850 4250 6100
+Connection ~ 3750 5750
+Wire Wire Line
+	3750 5750 2350 5750
+Wire Wire Line
+	3650 5450 3650 5950
+Wire Wire Line
+	3650 5950 4150 5950
+Wire Wire Line
+	4150 5950 4150 6100
+Connection ~ 3650 5450
+Wire Wire Line
+	3650 5450 4000 5450
+Wire Wire Line
+	3550 5350 3550 6050
+Wire Wire Line
+	3550 6050 4050 6050
+Wire Wire Line
+	4050 6050 4050 6100
+Connection ~ 3550 5350
+Wire Wire Line
+	3550 5350 4000 5350
+Wire Wire Line
+	4250 6500 4250 6600
+Text GLabel 5200 5350 2    50   Input ~ 0
+DBGLEDn
+$Comp
+L customlib_mj:SLESD5Z5V D1202
+U 1 1 5FC3EF5B
+P 3400 6150
+F 0 "D1202" V 3350 6050 50  0000 R CNN
+F 1 "SLESD5Z5V" V 3500 5900 50  0000 C CNN
+F 2 "customlib_mj_fp:D_SOD-523" H 3350 6150 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/TVS_SLKORMICRO-Elec-SLESD5Z5V_C268188.html" H 3350 6150 50  0001 C CNN
+	1    3400 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01214
+U 1 1 5FC4049C
+P 3400 6350
+F 0 "#PWR01214" H 3400 6100 50  0001 C CNN
+F 1 "GND" H 3400 6200 50  0000 C CNN
+F 2 "" H 3400 6350 50  0001 C CNN
+F 3 "" H 3400 6350 50  0001 C CNN
+	1    3400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6350 3400 6250
+Wire Wire Line
+	3400 6050 3400 5250
+Connection ~ 3400 5250
+Wire Wire Line
+	3400 5250 3300 5250
+$Comp
+L customlib_mj:SLESD5Z5V D1203
+U 1 1 5FC4BECB
+P 5100 6150
+F 0 "D1203" V 5054 6440 50  0000 C CNN
+F 1 "SLESD5Z5V" V 5145 6440 50  0000 C CNN
+F 2 "customlib_mj_fp:D_SOD-523" H 5050 6150 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/TVS_SLKORMICRO-Elec-SLESD5Z5V_C268188.html" H 5050 6150 50  0001 C CNN
+	1    5100 6150
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 5450
+Wire Wire Line
+	4600 5150 4600 5550
+Connection ~ 4950 5250
+Wire Wire Line
+	5200 5350 5100 5350
+Wire Wire Line
+	5100 6050 5100 5350
+Connection ~ 5100 5350
+Wire Wire Line
+	5100 5350 4500 5350
+$Comp
+L power:GND #PWR01216
+U 1 1 5FC692E7
+P 5100 6350
+F 0 "#PWR01216" H 5100 6100 50  0001 C CNN
+F 1 "GND" H 5100 6200 50  0000 C CNN
+F 2 "" H 5100 6350 50  0001 C CNN
+F 3 "" H 5100 6350 50  0001 C CNN
+	1    5100 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6350 5100 6250
+$Comp
+L Device:R_Small R1205
+U 1 1 5FA65C16
+P 2250 5350
+F 0 "R1205" V 2175 5250 50  0000 L CNN
+F 1 "100" V 2325 5300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 5350 50  0001 C CNN
+F 3 "~" H 2250 5350 50  0001 C CNN
+	1    2250 5350
+	0    -1   1    0   
+$EndComp
+Text Notes 1700 6600 0    70   ~ 14
+Externally accessible Debug\nand bootstrap connector
 $EndSCHEMATC

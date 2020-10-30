@@ -91,17 +91,6 @@ F 3 "" H 3400 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L customlib_mj:Schurter-3101_0060-fuse_holder-Panel_cutout M103
-U 1 1 5F50285E
-P 1500 7200
-F 0 "M103" H 1650 7550 50  0000 C CNN
-F 1 "Schurter-3101_0060-fuse_holder-Panel_cutout" H 1500 6750 50  0000 C CNN
-F 2 "customlib_mj_fp:Schurter_3101_0060_fuse_holder-panel_cutout" H 1500 7200 50  0001 C CNN
-F 3 "" H 1500 7200 50  0001 C CNN
-	1    1500 7200
-	1    0    0    -1  
-$EndComp
-$Comp
 L customlib_mj:Amphenol_T3437000-DIN7_panel_cutout M101
 U 1 1 5F50426A
 P 2050 5700
@@ -143,17 +132,6 @@ F 1 "TE-1734346-Panel_cutout" H 2850 4450 50  0000 C CNN
 F 2 "customlib_mj_fp:TE_1734346-Panel_cutout" H 2850 4750 50  0001 C CNN
 F 3 "" H 2850 4750 50  0001 C CNN
 	1    2850 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L customlib_mj:DSub9-Kycon_K22X-E9P-N-panel_cutout-small M108
-U 1 1 5F4DCFFF
-P 5700 4750
-F 0 "M108" H 5900 5050 50  0000 C CNN
-F 1 "DSub9-Kycon_K22X-E9P-N-panel_cutout-small" H 5700 4450 50  0000 C CNN
-F 2 "customlib_mj_fp:DSub9-Kycon_K22X-E9P-N_panel_cutout_behind" H 5700 4750 50  0001 C CNN
-F 3 "" H 5700 4750 50  0001 C CNN
-	1    5700 4750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -209,6 +187,17 @@ F 1 "Molex_NanoFit-1x02-Panel_cutout" H 8850 5700 50  0000 C CNN
 F 2 "customlib_mj_fp:Molex_NanoFit-1x02-Panel_cutout" H 8850 6000 50  0001 C CNN
 F 3 "" H 8850 6000 50  0001 C CNN
 	1    8850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:Mech_cutout_IDC_2x5 M103
+U 1 1 5FCE88A4
+P 5650 4750
+F 0 "M103" H 6280 4796 50  0000 C CNN
+F 1 "Mech_cutout_IDC_2x5" H 6280 4705 50  0000 C CNN
+F 2 "customlib_mj_fp:Mech_cutout_IDC_2x5" H 5650 4750 50  0001 C CNN
+F 3 "" H 5650 4750 50  0001 C CNN
+	1    5650 4750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
