@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 22
+Sheet 5 21
 Title "Front-side and internal connectors"
 Date "2020-08-03"
 Rev "R0.1"

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 22
+Sheet 12 21
 Title "Backside connectors"
 Date "2020-08-14"
 Rev "R0.1"
@@ -13,41 +13,25 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2300 2350 0    50   Input ~ 0
+Text HLabel 2000 2550 0    50   Input ~ 0
 CH_A_HEATER_1
-Text HLabel 2300 2450 0    50   Input ~ 0
+Text HLabel 2000 2750 0    50   Input ~ 0
 CH_A_HEATER_2
-Text HLabel 2250 2650 0    50   Output ~ 0
+Text HLabel 2200 4000 0    50   Output ~ 0
 CH_A_TC1
-Text HLabel 2250 2750 0    50   Output ~ 0
+Text HLabel 2200 3800 0    50   Output ~ 0
 CH_A_TC2_KTY
-Text HLabel 2250 3100 0    50   Input ~ 0
+Text HLabel 4000 2550 0    50   Input ~ 0
 CH_B_HEATER_1
-Text HLabel 2250 3200 0    50   Input ~ 0
+Text HLabel 4000 2750 0    50   Input ~ 0
 CH_B_HEATER_2
-Text HLabel 2250 3400 0    50   Output ~ 0
+Text HLabel 4200 4000 0    50   Output ~ 0
 CH_B_TC1
-Text HLabel 2250 3500 0    50   Output ~ 0
+Text HLabel 4200 3800 0    50   Output ~ 0
 CH_B_TC2_KTY
-Wire Wire Line
-	2300 2350 2500 2350
-Wire Wire Line
-	2300 2450 2500 2450
-Wire Wire Line
-	2250 2650 2450 2650
-Wire Wire Line
-	2250 2750 2450 2750
-Wire Wire Line
-	2250 3100 2450 3100
-Wire Wire Line
-	2250 3200 2450 3200
-Wire Wire Line
-	2250 3400 2450 3400
-Wire Wire Line
-	2250 3500 2450 3500
-Text Notes 2400 1500 0    70   ~ 14
-Audiojack 3.5mm (sub-PCB)\nDBGUART / SWD (dsub-9?)\nFM-ant (SMA panel-mount) + 12V DC-out (ext. ant.amp)\nUSB1 (device)\nUSB2 (host)\nForce Bootloader/rst\n2x Amphenol Weller-jacks!
-Text Notes 1750 1850 0    70   ~ 14
+Text Notes 900  1350 0    70   ~ 14
+Audiojack 3.5mm\nDBGUART / SWD (IDC 2x5)\nFM-ant (SMA panel-mount) + 12V DC-out (ext. ant.amp)\nUSB1 (device)\nUSB2 (host)\n2x Amphenol Weller-jacks
+Text Notes 900  1700 0    70   ~ 14
 Notes:\nRJ45 ethernet - located on ethernet page\n
 $Comp
 L customlib_mj:USB_B-TE_1734346-1 J1202
@@ -164,144 +148,6 @@ F 3 "" H 7550 4450 50  0001 C CNN
 	1    7800 4100
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 8850 950  550  700 
-U 5F907915
-F0 "Headphone connector asm" 50
-F1 "headphone_carrier.sch" 50
-F2 "Audio_R_ch" I R 9400 1050 50 
-F3 "Audio_L_ch" I R 9400 1200 50 
-F4 "Audio_int_L" O R 9400 1350 50 
-F5 "Audio_int_R" O R 9400 1500 50 
-$EndSheet
-Text HLabel 6800 1250 0    50   Input ~ 0
-Audio_L
-Text HLabel 7800 1250 2    50   Output ~ 0
-Audio_L_int
-Text HLabel 6800 1450 0    50   Input ~ 0
-Audio_R
-Text HLabel 7800 1450 2    50   Output ~ 0
-Audio_R_int
-Wire Wire Line
-	6800 1250 7050 1250
-Wire Wire Line
-	7550 1250 7800 1250
-Wire Wire Line
-	7800 1450 7550 1450
-Wire Wire Line
-	7050 1450 6800 1450
-$Comp
-L power:GND #PWR01201
-U 1 1 5F924C25
-P 7000 1350
-F 0 "#PWR01201" H 7000 1100 50  0001 C CNN
-F 1 "GND" H 7000 1200 50  0000 C CNN
-F 2 "" H 7000 1350 50  0001 C CNN
-F 3 "" H 7000 1350 50  0001 C CNN
-	1    7000 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01202
-U 1 1 5F925961
-P 7600 1350
-F 0 "#PWR01202" H 7600 1100 50  0001 C CNN
-F 1 "GND" H 7600 1200 50  0000 C CNN
-F 2 "" H 7600 1350 50  0001 C CNN
-F 3 "" H 7600 1350 50  0001 C CNN
-	1    7600 1350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7600 1350 7550 1350
-Wire Wire Line
-	7050 1350 7000 1350
-$Comp
-L Device:R_Small R1201
-U 1 1 5F929D46
-P 9600 1050
-F 0 "R1201" V 9550 1150 50  0000 L CNN
-F 1 "1k" V 9600 1000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9600 1050 50  0001 C CNN
-F 3 "~" H 9600 1050 50  0001 C CNN
-	1    9600 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1202
-U 1 1 5F92A4C3
-P 9600 1200
-F 0 "R1202" V 9550 1300 50  0000 L CNN
-F 1 "1k" V 9600 1150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9600 1200 50  0001 C CNN
-F 3 "~" H 9600 1200 50  0001 C CNN
-	1    9600 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1203
-U 1 1 5F92A665
-P 9600 1350
-F 0 "R1203" V 9550 1450 50  0000 L CNN
-F 1 "1k" V 9600 1300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9600 1350 50  0001 C CNN
-F 3 "~" H 9600 1350 50  0001 C CNN
-	1    9600 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1204
-U 1 1 5F92A880
-P 9600 1500
-F 0 "R1204" V 9550 1600 50  0000 L CNN
-F 1 "1k" V 9600 1450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9600 1500 50  0001 C CNN
-F 3 "~" H 9600 1500 50  0001 C CNN
-	1    9600 1500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01205
-U 1 1 5F92BA81
-P 9950 1600
-F 0 "#PWR01205" H 9950 1350 50  0001 C CNN
-F 1 "GND" H 9950 1450 50  0000 C CNN
-F 2 "" H 9950 1600 50  0001 C CNN
-F 3 "" H 9950 1600 50  0001 C CNN
-	1    9950 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 1050 9950 1050
-Wire Wire Line
-	9950 1050 9950 1200
-Wire Wire Line
-	9700 1200 9950 1200
-Connection ~ 9950 1200
-Wire Wire Line
-	9950 1200 9950 1350
-Wire Wire Line
-	9700 1350 9950 1350
-Connection ~ 9950 1350
-Wire Wire Line
-	9950 1350 9950 1500
-Wire Wire Line
-	9700 1500 9950 1500
-Connection ~ 9950 1500
-Wire Wire Line
-	9950 1500 9950 1600
-Wire Wire Line
-	9500 1050 9400 1050
-Wire Wire Line
-	9400 1200 9500 1200
-Wire Wire Line
-	9400 1350 9500 1350
-Wire Wire Line
-	9400 1500 9500 1500
-Text Notes 10100 1500 1    50   ~ 0
-(Dummies!)
-Text Notes 7500 2350 0    50   ~ 10
-Headphone 3.5mm connector on\na break-away sub-PCB.\nAudio signals get routed out to\nthe 3.5mm connector, through\nthe plug-switches and optionally\nback to internal speakers conns\nif there's no plug inserted
 Wire Wire Line
 	8550 5500 8550 5350
 Wire Wire Line
@@ -455,55 +301,6 @@ F 3 "" H 4250 6600 50  0001 C CNN
 	1    4250 6600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1201
-U 1 1 5FA2CF9B
-P 7250 1450
-F 0 "J1201" H 7300 1867 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 7300 1776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 7250 1450 50  0001 C CNN
-F 3 "~" H 7250 1450 50  0001 C CNN
-	1    7250 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01203
-U 1 1 5FA2DA97
-P 7000 1550
-F 0 "#PWR01203" H 7000 1300 50  0001 C CNN
-F 1 "GND" H 7000 1400 50  0000 C CNN
-F 2 "" H 7000 1550 50  0001 C CNN
-F 3 "" H 7000 1550 50  0001 C CNN
-	1    7000 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01204
-U 1 1 5FA2DDB5
-P 7600 1550
-F 0 "#PWR01204" H 7600 1300 50  0001 C CNN
-F 1 "GND" H 7600 1400 50  0000 C CNN
-F 2 "" H 7600 1550 50  0001 C CNN
-F 3 "" H 7600 1550 50  0001 C CNN
-	1    7600 1550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7600 1550 7550 1550
-Wire Wire Line
-	7050 1550 7000 1550
-Text Notes 2550 2750 0    50   ~ 0
-5x1 or 4x1 pin picoblade/pico-clasp/micro-clasp..?\ngnd/tc1_reed/gnd/tc2_kty/(ESD ref. pin 5?)
-Text Notes 2550 2450 0    50   ~ 0
-4x solderable quick-disconnect cable tabs (6.35x0.81), right-angle:\nHT1 / GND / HT2 / GND\n
-Text Notes 2550 3500 0    50   ~ 0
-5x1 or 4x1 pin picoblade/pico-clasp/micro-clasp..?\ngnd/tc1_reed/gnd/tc2_kty/(ESD ref. pin 5?)
-Text Notes 2550 3200 0    50   ~ 0
-4x solderable quick-disconnect cable tabs (6.35x0.81), right-angle:\nHT1 / GND / HT2 / GND\n
-Text Notes 2650 2300 0    70   ~ 14
-ToDo:
-NoConn ~ 7050 1650
-NoConn ~ 7550 1650
 $Comp
 L customlib_mj:USB_A-CUI-UJ2-AH-1-SMT J1204
 U 1 1 5F7D7CD9
@@ -858,4 +655,432 @@ F 3 "~" H 2250 5350 50  0001 C CNN
 $EndComp
 Text Notes 1700 6600 0    70   ~ 14
 Externally accessible Debug\nand bootstrap connector
+$Comp
+L Device:R_Small R?
+U 1 1 5FA36C17
+P 8650 1250
+AR Path="/5FAFD5BA/5FA36C17" Ref="R?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C17" Ref="R?"  Part="1" 
+AR Path="/5F4730B9/5FA36C17" Ref="R1201"  Part="1" 
+F 0 "R1201" V 8550 1250 50  0000 C CNN
+F 1 "100" V 8750 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8650 1250 50  0001 C CNN
+F 3 "~" H 8650 1250 50  0001 C CNN
+	1    8650 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5FA36C1D
+P 8300 1250
+AR Path="/5FAFD5BA/5FA36C1D" Ref="C?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C1D" Ref="C?"  Part="1" 
+AR Path="/5F4730B9/5FA36C1D" Ref="C1203"  Part="1" 
+F 0 "C1203" V 8400 1250 50  0000 C CNN
+F 1 "47u/10V" V 8200 1050 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.8" H 8300 1250 50  0001 C CNN
+F 3 "~" H 8300 1250 50  0001 C CNN
+	1    8300 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 1250 8550 1250
+$Comp
+L Device:R_Small R?
+U 1 1 5FA36C24
+P 8650 1550
+AR Path="/5FAFD5BA/5FA36C24" Ref="R?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C24" Ref="R?"  Part="1" 
+AR Path="/5F4730B9/5FA36C24" Ref="R1202"  Part="1" 
+F 0 "R1202" V 8550 1550 50  0000 C CNN
+F 1 "100" V 8750 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8650 1550 50  0001 C CNN
+F 3 "~" H 8650 1550 50  0001 C CNN
+	1    8650 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5FA36C2A
+P 8300 1550
+AR Path="/5FAFD5BA/5FA36C2A" Ref="C?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C2A" Ref="C?"  Part="1" 
+AR Path="/5F4730B9/5FA36C2A" Ref="C1204"  Part="1" 
+F 0 "C1204" V 8400 1550 50  0000 C CNN
+F 1 "47u/10V" V 8200 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.8" H 8300 1550 50  0001 C CNN
+F 3 "~" H 8300 1550 50  0001 C CNN
+	1    8300 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 1550 8550 1550
+$Comp
+L customlib_mj:SJ-3571N J?
+U 1 1 5FA36C31
+P 9950 1400
+AR Path="/5FAFD5BA/5FA36C31" Ref="J?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C31" Ref="J?"  Part="1" 
+AR Path="/5F4730B9/5FA36C31" Ref="J1201"  Part="1" 
+F 0 "J1201" H 9374 1474 50  0000 C CNN
+F 1 "SJ-3571N" H 9374 1383 50  0000 C CNN
+F 2 "customlib_mj_fp:SJ-3571N" H 9950 1400 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-357xn-series/sj-3571n" H 9950 1400 50  0001 C CNN
+	1    9950 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1550 8850 1550
+Wire Wire Line
+	8750 1250 9500 1250
+Text Notes 9550 1000 0    50   ~ 10
+Sleeve (1) : Gnd\nRing (3) : R ch\nTip (2) : L ch
+$Comp
+L power:GND #PWR?
+U 1 1 5FA36C3A
+P 8850 950
+AR Path="/5FAFD5BA/5FA36C3A" Ref="#PWR?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C3A" Ref="#PWR?"  Part="1" 
+AR Path="/5F4730B9/5FA36C3A" Ref="#PWR01201"  Part="1" 
+F 0 "#PWR01201" H 8850 700 50  0001 C CNN
+F 1 "GND" H 8850 800 50  0000 C CNN
+F 2 "" H 8850 950 50  0001 C CNN
+F 3 "" H 8850 950 50  0001 C CNN
+	1    8850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1150 9050 1150
+Wire Wire Line
+	9050 1150 9050 850 
+Wire Wire Line
+	9050 850  8850 850 
+Wire Wire Line
+	8850 850  8850 950 
+Text Label 9300 1550 2    50   ~ 0
+L_ch_out
+Text Label 9300 1250 2    50   ~ 0
+R_ch_out
+$Comp
+L customlib_mj:SJ-3571N J?
+U 2 1 5FA36C46
+P 7650 900
+AR Path="/5F4730B9/5F907915/5FA36C46" Ref="J?"  Part="2" 
+AR Path="/5F4730B9/5FA36C46" Ref="J1201"  Part="2" 
+F 0 "J1201" V 7650 700 50  0000 R CNN
+F 1 "SJ-3571N" V 7550 900 50  0000 C CNN
+F 2 "customlib_mj_fp:SJ-3571N" H 7650 900 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-357xn-series/sj-3571n" H 7650 900 50  0001 C CNN
+	2    7650 900 
+	0    -1   1    0   
+$EndComp
+$Comp
+L customlib_mj:SJ-3571N J?
+U 3 1 5FA36C4C
+P 7650 1900
+AR Path="/5F4730B9/5F907915/5FA36C4C" Ref="J?"  Part="3" 
+AR Path="/5F4730B9/5FA36C4C" Ref="J1201"  Part="3" 
+F 0 "J1201" V 7650 1700 50  0000 R CNN
+F 1 "SJ-3571N" V 7550 1850 50  0000 C CNN
+F 2 "customlib_mj_fp:SJ-3571N" H 7650 1900 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-357xn-series/sj-3571n" H 7650 1900 50  0001 C CNN
+	3    7650 1900
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7250 1250 0    50   Input ~ 0
+Audio_R_ch
+Text HLabel 7250 1550 0    50   Input ~ 0
+Audio_L_ch
+Text HLabel 7250 1650 0    50   Output ~ 0
+Audio_int_L
+Text HLabel 7250 1150 0    50   Output ~ 0
+Audio_int_R
+Wire Wire Line
+	7750 1050 7750 1250
+Wire Wire Line
+	7750 1250 8200 1250
+Wire Wire Line
+	7750 1750 7750 1550
+Wire Wire Line
+	7750 1550 8200 1550
+Wire Wire Line
+	7250 1250 7650 1250
+Wire Wire Line
+	7650 1250 7650 1050
+Wire Wire Line
+	7250 1550 7650 1550
+Wire Wire Line
+	7650 1550 7650 1750
+Wire Wire Line
+	7550 1050 7550 1150
+Wire Wire Line
+	7550 1150 7250 1150
+Wire Wire Line
+	7550 1750 7550 1650
+Wire Wire Line
+	7550 1650 7250 1650
+Text Label 7650 1250 2    50   ~ 0
+R_ch
+Text Label 7650 1550 2    50   ~ 0
+L_ch
+Text Label 7550 1650 2    50   ~ 0
+L_int
+Text Label 7550 1150 2    50   ~ 0
+R_int
+$Comp
+L customlib_mj:SLESD5Z5V D?
+U 1 1 5FA36C66
+P 8850 2000
+AR Path="/5F4730B9/5F907915/5FA36C66" Ref="D?"  Part="1" 
+AR Path="/5F4730B9/5FA36C66" Ref="D1204"  Part="1" 
+F 0 "D1204" V 8804 2290 50  0000 C CNN
+F 1 "SLESD5Z5V" V 8895 2290 50  0000 C CNN
+F 2 "customlib_mj_fp:D_SOD-523" H 8800 2000 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/TVS_SLKORMICRO-Elec-SLESD5Z5V_C268188.html" H 8800 2000 50  0001 C CNN
+	1    8850 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L customlib_mj:SLESD5Z5V D?
+U 1 1 5FA36C6C
+P 9500 2000
+AR Path="/5F4730B9/5F907915/5FA36C6C" Ref="D?"  Part="1" 
+AR Path="/5F4730B9/5FA36C6C" Ref="D1205"  Part="1" 
+F 0 "D1205" V 9454 2290 50  0000 C CNN
+F 1 "SLESD5Z5V" V 9545 2290 50  0000 C CNN
+F 2 "customlib_mj_fp:D_SOD-523" H 9450 2000 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/TVS_SLKORMICRO-Elec-SLESD5Z5V_C268188.html" H 9450 2000 50  0001 C CNN
+	1    9500 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 1900 8850 1550
+Connection ~ 8850 1550
+Wire Wire Line
+	8850 1550 9650 1550
+Wire Wire Line
+	9500 1900 9500 1250
+Connection ~ 9500 1250
+Wire Wire Line
+	9500 1250 9650 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5FA36C78
+P 8850 2250
+AR Path="/5FAFD5BA/5FA36C78" Ref="#PWR?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C78" Ref="#PWR?"  Part="1" 
+AR Path="/5F4730B9/5FA36C78" Ref="#PWR01202"  Part="1" 
+F 0 "#PWR01202" H 8850 2000 50  0001 C CNN
+F 1 "GND" H 8850 2100 50  0000 C CNN
+F 2 "" H 8850 2250 50  0001 C CNN
+F 3 "" H 8850 2250 50  0001 C CNN
+	1    8850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA36C7E
+P 9500 2250
+AR Path="/5FAFD5BA/5FA36C7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F4730B9/5F907915/5FA36C7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F4730B9/5FA36C7E" Ref="#PWR01203"  Part="1" 
+F 0 "#PWR01203" H 9500 2000 50  0001 C CNN
+F 1 "GND" H 9500 2100 50  0000 C CNN
+F 2 "" H 9500 2250 50  0001 C CNN
+F 3 "" H 9500 2250 50  0001 C CNN
+	1    9500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2250 9500 2100
+Wire Wire Line
+	8850 2250 8850 2100
+NoConn ~ 9650 1350
+NoConn ~ 9650 1450
+Text Notes 7100 2750 0    50   ~ 10
+Audio signals get routed out to\nthe 3.5mm connector, through\nthe plug-switches and optionally\nback to internal speakers conns\nif there's no plug inserted
+Text Notes 6900 2300 0    70   ~ 14
+Headphone 3.5mm connector :
+$Comp
+L power:GND #PWR01223
+U 1 1 5FA64C5B
+P 2500 2900
+F 0 "#PWR01223" H 2500 2650 50  0001 C CNN
+F 1 "GND" H 2500 2750 50  0000 C CNN
+F 2 "" H 2500 2900 50  0001 C CNN
+F 3 "" H 2500 2900 50  0001 C CNN
+	1    2500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01204
+U 1 1 5FA65CB0
+P 4500 2900
+F 0 "#PWR01204" H 4500 2650 50  0001 C CNN
+F 1 "GND" H 4500 2750 50  0000 C CNN
+F 2 "" H 4500 2900 50  0001 C CNN
+F 3 "" H 4500 2900 50  0001 C CNN
+	1    4500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth_Protective #PWR01205
+U 1 1 5FB6357D
+P 4600 4200
+F 0 "#PWR01205" H 4850 3950 50  0001 C CNN
+F 1 "Earth_Protective" H 5050 4050 50  0001 C CNN
+F 2 "" H 4600 4100 50  0001 C CNN
+F 3 "~" H 4600 4100 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth_Protective #PWR01224
+U 1 1 5FB65A2F
+P 2600 4200
+F 0 "#PWR01224" H 2850 3950 50  0001 C CNN
+F 1 "Earth_Protective" H 3050 4050 50  0001 C CNN
+F 2 "" H 2600 4100 50  0001 C CNN
+F 3 "~" H 2600 4100 50  0001 C CNN
+	1    2600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1204
+U 1 1 5FB6640C
+P 4800 4100
+F 0 "R1204" V 4850 4000 50  0000 R CNN
+F 1 "1M" V 4800 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 4100 50  0001 C CNN
+F 3 "~" H 4800 4100 50  0001 C CNN
+	1    4800 4100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1203
+U 1 1 5FB679BD
+P 2800 4100
+F 0 "R1203" V 2850 4000 50  0000 R CNN
+F 1 "1M" V 2800 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 4100 50  0001 C CNN
+F 3 "~" H 2800 4100 50  0001 C CNN
+	1    2800 4100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5000 4100 4900 4100
+Wire Wire Line
+	4600 4200 4600 4100
+Wire Wire Line
+	4600 4100 4700 4100
+Wire Wire Line
+	2600 4200 2600 4100
+Wire Wire Line
+	2600 4100 2700 4100
+Wire Wire Line
+	2900 4100 3000 4100
+Wire Wire Line
+	2000 2550 2800 2550
+Wire Wire Line
+	2000 2750 2800 2750
+Wire Wire Line
+	2200 3800 3000 3800
+Wire Wire Line
+	2200 4000 3000 4000
+Wire Wire Line
+	4000 2550 4800 2550
+Wire Wire Line
+	4000 2750 4800 2750
+Wire Wire Line
+	4200 3800 5000 3800
+Wire Wire Line
+	4200 4000 5000 4000
+Text Notes 2850 2200 0    70   ~ 14
+7p DIN "Weller connector"\nfor each channel
+Text Notes 1350 2450 0    50   ~ 10
+PWR: 6.35x0.8 mm quick-connect\ncable-shoe blades.\n(Vertical or angled TBD)
+$Comp
+L customlib_mj:Conn_WR-FAST_01x03 J1206
+U 1 1 5FD22D43
+P 3000 2650
+F 0 "J1206" H 3000 2900 50  0000 C CNN
+F 1 "Conn_WR-FAST_01x03" V 3150 2650 50  0000 C CNN
+F 2 "customlib_mj_fp:WR-FAST_508_3_V" H 3000 2650 50  0001 C CNN
+F 3 "https://www.we-online.com/catalog/en/em/connectors/wire-to-board/wr-fast" H 3000 2650 50  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:Conn_WR-FAST_01x03 J1207
+U 1 1 5FD241A6
+P 5000 2650
+F 0 "J1207" H 5000 2850 50  0000 C CNN
+F 1 "Conn_WR-FAST_01x03" V 5150 2650 50  0000 C CNN
+F 2 "customlib_mj_fp:WR-FAST_508_3_V" H 5000 2650 50  0001 C CNN
+F 3 "https://www.we-online.com/catalog/en/em/connectors/wire-to-board/wr-fast" H 5000 2650 50  0001 C CNN
+	1    5000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2650 2500 2650
+Wire Wire Line
+	2500 2650 2500 2900
+Wire Wire Line
+	4800 2650 4500 2650
+Wire Wire Line
+	4500 2650 4500 2900
+$Comp
+L power:GND #PWR01225
+U 1 1 5FDA0230
+P 2350 4200
+F 0 "#PWR01225" H 2350 3950 50  0001 C CNN
+F 1 "GND" H 2350 4050 50  0000 C CNN
+F 2 "" H 2350 4200 50  0001 C CNN
+F 3 "" H 2350 4200 50  0001 C CNN
+	1    2350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01226
+U 1 1 5FDA0685
+P 4350 4200
+F 0 "#PWR01226" H 4350 3950 50  0001 C CNN
+F 1 "GND" H 4350 4050 50  0000 C CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4200 2350 3900
+Wire Wire Line
+	2350 3900 3000 3900
+Wire Wire Line
+	4350 4200 4350 3900
+Wire Wire Line
+	4350 3900 5000 3900
+$Comp
+L Connector_Generic:Conn_01x04 J1209
+U 1 1 5FDB4BCB
+P 5200 3900
+F 0 "J1209" H 5200 4100 50  0000 C CNN
+F 1 "Molex_PicoBlade_v4p_0533980471" V 5350 3850 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0471_1x04-1MP_P1.25mm_Vertical" H 5200 3900 50  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0533980471" H 5200 3900 50  0001 C CNN
+	1    5200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1208
+U 1 1 5FDB5D67
+P 3200 3900
+F 0 "J1208" H 3200 4100 50  0000 C CNN
+F 1 "Molex_PicoBlade_v4p_0533980471" V 3350 3850 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0471_1x04-1MP_P1.25mm_Vertical" H 3200 3900 50  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/pcb_headers/0533980471" H 3200 3900 50  0001 C CNN
+	1    3200 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 1550 3700 0    50   ~ 10
+SENSE: 4p PicoBlade\n
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 18 22
+Sheet 18 21
 Title "Weller channel (2 elements) pwr-driver and TC/CJ sense amp"
 Date "2020-08-07"
 Rev "R0.1"

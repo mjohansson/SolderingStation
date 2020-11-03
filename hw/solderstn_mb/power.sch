@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 22
+Sheet 3 21
 Title "DC/DC Buck, LDOs & master load-switches"
 Date "2020-05-08"
 Rev "R0.1"
@@ -72,8 +72,6 @@ Wire Wire Line
 	2750 2550 2750 2650
 Wire Wire Line
 	1900 2550 1900 2650
-Text Notes 2250 950  0    71   ~ 14
-ToDo: TBD Alternative - Solderable\n through-holes? Cable-shoe spades (6.36x0.81)?
 $Comp
 L power:GND #PWR0338
 U 1 1 5F47864D
@@ -1883,11 +1881,11 @@ $EndComp
 Wire Wire Line
 	1150 1000 1000 1000
 Wire Wire Line
-	1000 1000 1000 900 
+	1000 1000 1000 950 
 Wire Wire Line
 	1650 1000 1800 1000
 Wire Wire Line
-	1800 1000 1800 900 
+	1800 1000 1800 950 
 $Comp
 L power:GND #PWR0304
 U 1 1 5FABA7DC
@@ -1940,15 +1938,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0301
 U 1 1 5FB42D99
-P 1800 1000
-F 0 "#FLG0301" H 1800 1075 50  0001 C CNN
-F 1 "PWR_FLAG" V 1800 1316 50  0000 C CNN
-F 2 "" H 1800 1000 50  0001 C CNN
-F 3 "~" H 1800 1000 50  0001 C CNN
-	1    1800 1000
-	0    1    1    0   
+P 1000 950
+F 0 "#FLG0301" H 1000 1025 50  0001 C CNN
+F 1 "PWR_FLAG" V 1000 1266 50  0000 C CNN
+F 2 "" H 1000 950 50  0001 C CNN
+F 3 "~" H 1000 950 50  0001 C CNN
+	1    1000 950 
+	0    -1   -1   0   
 $EndComp
-Connection ~ 1800 1000
 $Comp
 L power:PWR_FLAG #FLG0303
 U 1 1 5FB530BD
@@ -2100,4 +2097,117 @@ Wire Wire Line
 	900  2200 650  2200
 Text Notes 700  2450 0    60   ~ 12
 5x20mm\nSchurter OGN
+$Comp
+L customlib_mj:Conn_WR-FAST_01x04 J302
+U 1 1 5FAA122C
+P 2700 1000
+F 0 "J302" H 2700 1250 50  0000 C CNN
+F 1 "Conn_WR-FAST_01x04" H 2700 700 50  0000 C CNN
+F 2 "customlib_mj_fp:WR-FAST_508_4_V" H 2700 1000 50  0001 C CNN
+F 3 "https://www.we-online.com/catalog/en/em/connectors/wire-to-board/wr-fast" H 2700 1000 50  0001 C CNN
+	1    2700 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 950 
+Wire Wire Line
+	1000 950  1000 900 
+Wire Wire Line
+	1800 950  2400 950 
+Wire Wire Line
+	2400 950  2400 1000
+Wire Wire Line
+	2400 1000 2500 1000
+Connection ~ 1800 950 
+Wire Wire Line
+	1800 950  1800 900 
+Wire Wire Line
+	2500 900  2400 900 
+Wire Wire Line
+	2400 900  2400 950 
+Connection ~ 2400 950 
+Wire Wire Line
+	2500 1100 2400 1100
+Connection ~ 1750 1100
+Wire Wire Line
+	2500 1200 2400 1200
+Wire Wire Line
+	2400 1200 2400 1100
+Connection ~ 2400 1100
+Wire Wire Line
+	2400 1100 1750 1100
+Text Notes 2150 1250 0    60   ~ 12
+Alt.:
+Text Notes 2300 1500 0    50   ~ 0
+Cable-shoe 6.35mm\nfast-connect blades\n
+$Comp
+L power:Earth_Protective #PWR0375
+U 1 1 5FAE3480
+P 6350 7100
+F 0 "#PWR0375" H 6600 6850 50  0001 C CNN
+F 1 "Earth_Protective" H 6800 6950 50  0001 C CNN
+F 2 "" H 6350 7000 50  0001 C CNN
+F 3 "~" H 6350 7000 50  0001 C CNN
+	1    6350 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 7100 6350 7050
+$Comp
+L power:PWR_FLAG #FLG0306
+U 1 1 5FAF42A2
+P 6300 7050
+F 0 "#FLG0306" H 6300 7125 50  0001 C CNN
+F 1 "PWR_FLAG" V 6300 7366 50  0000 C CNN
+F 2 "" H 6300 7050 50  0001 C CNN
+F 3 "~" H 6300 7050 50  0001 C CNN
+	1    6300 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 7050 6350 7050
+Connection ~ 6350 7050
+Wire Wire Line
+	6350 7050 6350 6950
+Text GLabel 6400 6950 2    50   UnSpc ~ 0
+PE
+Wire Wire Line
+	6400 6950 6350 6950
+Connection ~ 6350 6950
+Wire Wire Line
+	6350 6950 6350 6850
+Text Notes 5800 7700 0    50   ~ 0
+Place near DIN-connectors\nnear rear panel. Connect\nto common PE (AC-inlet,\nMW PSU, rear PE-terminal)
+$Comp
+L customlib_mj:Conn_WR-FAST_01x02 J303
+U 1 1 5FC366ED
+P 6250 6600
+F 0 "J303" V 6450 6550 50  0000 C CNN
+F 1 "Conn_WR-FAST_01x02" V 6350 6550 50  0000 C CNN
+F 2 "customlib_mj_fp:WR-FAST_508_2_V" H 6250 6600 50  0001 C CNN
+F 3 "https://www.we-online.com/catalog/en/em/connectors/wire-to-board/wr-fast" H 6250 6600 50  0001 C CNN
+	1    6250 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 6800 6250 6850
+Wire Wire Line
+	6250 6850 6350 6850
+Connection ~ 6350 6850
+Wire Wire Line
+	6350 6850 6350 6800
+$Comp
+L Mechanical:MountingHole_Pad H301
+U 1 1 5FC75494
+P 6800 6350
+F 0 "H301" H 6800 6550 50  0000 C CNN
+F 1 "MountingHole_Pad" H 7150 6300 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 6800 6350 50  0001 C CNN
+F 3 "~" H 6800 6350 50  0001 C CNN
+	1    6800 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6850 6800 6850
+Wire Wire Line
+	6800 6850 6800 6450
 $EndSCHEMATC
