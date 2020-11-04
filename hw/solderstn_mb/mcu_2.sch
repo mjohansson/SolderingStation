@@ -749,7 +749,7 @@ Wire Wire Line
 Text Notes 7650 3900 0    70   ~ 14
 MCU decoupling - place close to MCU power pins
 Text Notes 2350 4500 0    70   ~ 14
-Precisin Vref. Place close\nto MCU. See REF6125 ds\nfor layout suggestions.
+Precision 2.5V Vref.\nPlace close to MCU.\nSee REF6125 ds for\nlayout suggestions.
 Text Notes 3050 7050 0    70   ~ 14
 Switchable Vref for biasing KTY sensors\n(for cold-junction compensation), one\nper channel. The KTY's can then be\nmeassured through the ordinary TC \namps.\n
 Text HLabel 5850 5500 0    50   Input ~ 0

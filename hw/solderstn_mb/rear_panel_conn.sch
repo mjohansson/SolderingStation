@@ -788,13 +788,13 @@ F 3 "https://www.cuidevices.com/product/interconnect/connectors/audio-connectors
 	0    -1   -1   0   
 $EndComp
 Text HLabel 7250 1250 0    50   Input ~ 0
-Audio_R_ch
+Audio_R
 Text HLabel 7250 1550 0    50   Input ~ 0
-Audio_L_ch
+Audio_L
 Text HLabel 7250 1650 0    50   Output ~ 0
-Audio_int_L
+Audio_L_int
 Text HLabel 7250 1150 0    50   Output ~ 0
-Audio_int_R
+Audio_R_int
 Wire Wire Line
 	7750 1050 7750 1250
 Wire Wire Line
