@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 21
+Sheet 1 23
 Title "DIY Soldering station, top level"
 Date "2020-04-26"
 Rev "R0.1"
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1550 4850 1400 1400
+S 6100 4850 1400 1400
 U 5ED59CBF
 F0 "Ethernet" 50
 F1 "ethernet.sch" 50
@@ -79,14 +79,14 @@ F11 "CH_A_KTY_REED_BIAS" I R 7500 3150 50
 F12 "CH_B_KTY_REED_BIAS" I R 7500 2950 50 
 $EndSheet
 $Sheet
-S 1550 2850 1400 1400
+S 1550 4800 1400 1400
 U 5FAFD5BA
-F0 "Audio & FM-radio" 50
-F1 "audio_fmradio.sch" 50
-F2 "Audio_R_o" O R 2950 4050 50 
-F3 "Audio_L_o" O R 2950 3800 50 
-F4 "Audio_R_int" I R 2950 4150 50 
-F5 "Audio_L_int" I R 2950 3900 50 
+F0 "Audio & int. speakers" 50
+F1 "audio.sch" 50
+F2 "Audio_R_o" O R 2950 5150 50 
+F3 "Audio_L_o" O R 2950 4950 50 
+F4 "Audio_R_int" I R 2950 5250 50 
+F5 "Audio_L_int" I R 2950 5050 50 
 $EndSheet
 $Sheet
 S 3800 2850 1400 1400
@@ -204,31 +204,21 @@ Wire Wire Line
 Wire Wire Line
 	5700 3250 6100 3250
 Wire Wire Line
-	2950 4150 3050 4150
+	2950 5150 3800 5150
 Wire Wire Line
-	3050 4150 3050 5250
+	2950 5050 3800 5050
 Wire Wire Line
-	3050 5250 3800 5250
-Wire Wire Line
-	2950 4050 3150 4050
-Wire Wire Line
-	3150 4050 3150 5150
-Wire Wire Line
-	3150 5150 3800 5150
-Wire Wire Line
-	2950 3900 3300 3900
-Wire Wire Line
-	3300 3900 3300 5050
-Wire Wire Line
-	3300 5050 3800 5050
-Wire Wire Line
-	2950 3800 3400 3800
-Wire Wire Line
-	3400 3800 3400 4950
-Wire Wire Line
-	3400 4950 3800 4950
+	2950 4950 3800 4950
 Text Notes 9100 2900 0    60   ~ 12
 DS3231 (TCXO RTC module) :
 Text Notes 9200 3150 0    50   ~ 10
 1101000 (DS3231)\n1010--- (24C32, addr customized with A2-A0)\n1010111 (24C32, default (A2-A0 open))
+Wire Wire Line
+	2950 5250 3800 5250
+$Sheet
+S 1550 2850 1400 1400
+U 5FE3F0D8
+F0 "FM-radio rx" 50
+F1 "fm_radio.sch" 50
+$EndSheet
 $EndSCHEMATC

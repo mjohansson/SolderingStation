@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 21
+Sheet 4 23
 Title "STM32F429 MCU power, decoupling, Vref"
 Date "2020-04-26"
 Rev "R0.1"
