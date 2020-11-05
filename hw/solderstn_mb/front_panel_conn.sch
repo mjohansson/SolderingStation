@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 23
+Sheet 5 21
 Title "Front-side and internal connectors"
 Date "2020-08-03"
 Rev "R0.1"
@@ -77,22 +77,6 @@ F0 "Chassis fan 1" 50
 F1 "fan_ctrl.sch" 50
 F2 "PWM" I L 9650 800 50 
 F3 "Tacho" O L 9650 1000 50 
-$EndSheet
-$Sheet
-S 9650 1550 500  550 
-U 5F472468
-F0 "Chassis fan 2" 50
-F1 "fan_ctrl.sch" 50
-F2 "PWM" I L 9650 1650 50 
-F3 "Tacho" O L 9650 1850 50 
-$EndSheet
-$Sheet
-S 9650 2400 500  550 
-U 5F472567
-F0 "Chassis fan 3" 50
-F1 "fan_ctrl.sch" 50
-F2 "PWM" I L 9650 2500 50 
-F3 "Tacho" O L 9650 2700 50 
 $EndSheet
 $Sheet
 S 9350 3900 500  450 
@@ -667,22 +651,6 @@ Wire Wire Line
 	9500 800  9650 800 
 Wire Wire Line
 	9650 1000 9500 1000
-Text GLabel 9500 1650 0    50   Input ~ 0
-FAN2_PWM
-Text GLabel 9500 1850 0    50   Output ~ 0
-FAN2_RPM
-Wire Wire Line
-	9500 1650 9650 1650
-Wire Wire Line
-	9650 1850 9500 1850
-Text GLabel 9500 2500 0    50   Input ~ 0
-FAN3_PWM
-Text GLabel 9500 2700 0    50   Output ~ 0
-FAN3_RPM
-Wire Wire Line
-	9500 2500 9650 2500
-Wire Wire Line
-	9650 2700 9500 2700
 Text GLabel 8950 3750 0    50   Input ~ 0
 I2C1_SCL
 Text GLabel 8950 3950 0    50   BiDi ~ 0

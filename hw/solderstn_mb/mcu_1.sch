@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 21 23
+Sheet 20 21
 Title "STM22F429 MCU pinout, clks, reset"
 Date "2020-04-26"
 Rev "R0.1"
@@ -160,8 +160,6 @@ Wire Wire Line
 Wire Wire Line
 	600  7450 800  7450
 Connection ~ 800  7450
-Wire Wire Line
-	10550 2400 10800 2400
 $Comp
 L customlib_mj:STM32_bootmodes #TXT02201
 U 1 1 5EBF9055
@@ -620,8 +618,6 @@ Text GLabel 1400 3400 0    50   BiDi ~ 0
 I2C1_SDA
 Text GLabel 6250 6900 2    50   Output ~ 0
 ~DISP_CSn~
-Text GLabel 1400 3600 0    50   Input ~ 0
-FAN3_RPM
 Text GLabel 1400 3800 0    50   Output ~ 0
 RMII_TX_EN
 Text GLabel 1400 3900 0    50   Output ~ 0
@@ -640,10 +636,8 @@ Text GLabel 6250 6300 2    50   Output ~ 0
 AUX_BOOT0
 Text GLabel 6250 6500 2    50   Output ~ 0
 ~AUDIO_MUTEn~
-Text GLabel 6250 6600 2    50   Input ~ 0
-FAN1_RPM
 Text GLabel 6250 6700 2    50   Input ~ 0
-FAN2_RPM
+FAN1_RPM
 Text GLabel 6250 7000 2    50   Input ~ 0
 FP_ENC_A
 Text GLabel 6250 7200 2    50   Input ~ 0
@@ -698,12 +692,8 @@ Text GLabel 10150 3700 2    50   Output ~ 0
 VBUS2_ENABLE
 Text GLabel 10150 3800 2    50   Output ~ 0
 PWRDRV_ENABLE
-Text GLabel 1400 3100 0    50   Output ~ 0
+Text GLabel 1400 3600 0    50   Output ~ 0
 FAN1_PWM
-Text GLabel 1400 3200 0    50   Output ~ 0
-FAN2_PWM
-Text GLabel 1400 3000 0    50   Output ~ 0
-FAN3_PWM
 Text GLabel 1400 3500 0    50   Output ~ 0
 PWRBTN_LED_PWM
 Text HLabel 10150 4100 2    50   Output ~ 0
@@ -903,11 +893,9 @@ Text Notes 700  3650 0    50   ~ 0
 TIM11
 Text Notes 450  3550 0    50   ~ 0
 TIM10
-Text Notes 800  3150 0    50   ~ 0
-TIM2,\nTIM3
 Text HLabel 6250 6400 2    50   Output ~ 0
 HWID_ADC_SELECT
-Text Notes 6700 6700 0    50   ~ 0
+Text Notes 6700 6750 0    50   ~ 0
 TIM9
 Text Label 6250 7300 2    50   ~ 0
 Flash_SCK
@@ -1060,8 +1048,6 @@ Wire Wire Line
 	8250 6000 8250 5950
 Wire Wire Line
 	8250 6250 8250 6200
-Text Label 10800 2400 2    50   ~ 0
-32kHz
 Wire Wire Line
 	6350 7650 6250 7650
 Wire Wire Line
@@ -1076,47 +1062,6 @@ Text Notes 10350 6250 2    60   ~ 12
 DS3231\nRTC module\n
 Text Notes 10850 6500 2    60   ~ 12
 I2C addr: 1101000\n(+24C32 eeprom: 1010111)
-$Comp
-L customlib_mj:dogbone_3_ud JP2201
-U 1 1 5F8B373D
-P 10450 2400
-F 0 "JP2201" V 10550 2450 50  0000 L CNN
-F 1 "dogbone_3_ud" H 10475 2550 50  0001 C CNN
-F 2 "customlib_mj_fp:db3_ud_0603" H 10450 2400 50  0001 C CNN
-F 3 "" H 10450 2400 50  0001 C CNN
-	1    10450 2400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10350 2400 9700 2400
-Wire Wire Line
-	10450 2500 9700 2500
-Wire Wire Line
-	10550 2400 10550 2300
-Wire Wire Line
-	10550 2300 10450 2300
-$Comp
-L Device:C_Small C2209
-U 1 1 5F918167
-P 9850 2600
-F 0 "C2209" V 9800 2550 50  0000 R CNN
-F 1 "10p" V 9800 2650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 9850 2600 50  0001 C CNN
-F 3 "~" H 9850 2600 50  0001 C CNN
-	1    9850 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C2208
-U 1 1 5F919A57
-P 9850 2300
-F 0 "C2208" V 9800 2250 50  0000 R CNN
-F 1 "10p" V 9800 2350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 9850 2300 50  0001 C CNN
-F 3 "~" H 9850 2300 50  0001 C CNN
-	1    9850 2300
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_Small R2201
 U 1 1 5F91A4FA
@@ -1188,50 +1133,8 @@ Wire Wire Line
 	4250 5450 4550 5450
 Text Label 4250 5450 0    50   ~ 0
 DLED_WDT
-Wire Wire Line
-	9750 2300 9700 2300
-Wire Wire Line
-	9700 2300 9700 2400
-Connection ~ 9700 2400
-Wire Wire Line
-	9700 2400 9650 2400
-Wire Wire Line
-	9750 2600 9700 2600
-Wire Wire Line
-	9700 2600 9700 2500
-Connection ~ 9700 2500
-Wire Wire Line
-	9700 2500 9650 2500
-$Comp
-L power:GND #PWR02201
-U 1 1 5F9A955B
-P 10050 2300
-F 0 "#PWR02201" H 10050 2050 50  0001 C CNN
-F 1 "GND" H 10050 2175 50  0000 C CNN
-F 2 "" H 10050 2300 50  0001 C CNN
-F 3 "" H 10050 2300 50  0001 C CNN
-	1    10050 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR02224
-U 1 1 5F9B630E
-P 10000 2600
-F 0 "#PWR02224" H 10000 2350 50  0001 C CNN
-F 1 "GND" H 10000 2475 50  0000 C CNN
-F 2 "" H 10000 2600 50  0001 C CNN
-F 3 "" H 10000 2600 50  0001 C CNN
-	1    10000 2600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10000 2600 9950 2600
-Wire Wire Line
-	9950 2300 10050 2300
 Text Notes 4600 5650 2    60   ~ 12
 DbgLED
-Text Notes 11200 2450 2    50   ~ 10
-DNP (LSE\nnot used)
 $Comp
 L customlib_mj:DS3231_Module_6pins RTC2201
 U 1 1 5FA4E1CC
@@ -1250,4 +1153,62 @@ Wire Wire Line
 Connection ~ 4850 5200
 Wire Wire Line
 	4850 5200 4850 5250
+Text GLabel 1400 3000 0    50   Output ~ 0
+VS1063_SCK
+Text GLabel 1400 3200 0    50   Output ~ 0
+VS1063_MOSI
+Text GLabel 1400 3100 0    50   Input ~ 0
+VS1063_MISO
+Text Notes 850  3150 2    50   ~ 0
+SPI1
+Text GLabel 6250 6600 2    50   Output ~ 0
+AUDIO_PATH_SEL
+Wire Wire Line
+	10450 2400 11050 2400
+Text Label 11050 2400 2    50   ~ 0
+32kHz
+$Comp
+L customlib_mj:dogbone_3_ud JP2201
+U 1 1 5F8B373D
+P 10450 2300
+F 0 "JP2201" V 10450 2350 50  0000 L CNN
+F 1 "dogbone_3_ud" H 10475 2450 50  0001 C CNN
+F 2 "customlib_mj_fp:db3_ud_0603" H 10450 2300 50  0001 C CNN
+F 3 "" H 10450 2300 50  0001 C CNN
+	1    10450 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 2400 10150 2400
+Wire Wire Line
+	10150 2400 10150 2300
+Wire Wire Line
+	10150 2300 10300 2300
+Text GLabel 10150 2500 2    50   Output ~ 0
+~VS1063_CSn~
+Wire Wire Line
+	10150 2500 9650 2500
+Text GLabel 10600 2200 2    50   Input ~ 0
+VS1063_DREQ
+Wire Wire Line
+	10600 2200 10450 2200
+Wire Wire Line
+	10450 2200 10300 2200
+Wire Wire Line
+	10300 2200 10300 2300
+Connection ~ 10450 2200
+Connection ~ 10300 2300
+Wire Wire Line
+	10300 2300 10350 2300
+$Comp
+L customlib_mj:TP TP2001
+U 1 1 5FF96FBD
+P 9650 5250
+F 0 "TP2001" H 9592 5144 60  0000 C CNN
+F 1 "TP" H 9650 5300 60  0001 C CNN
+F 2 "customlib_mj_fp:TP_SMD_1.2c" H 9650 5250 60  0001 C CNN
+F 3 "" H 9650 5250 60  0001 C CNN
+	1    9650 5250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

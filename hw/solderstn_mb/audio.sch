@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 20 23
+Sheet 20 21
 Title "Audio & MP3/OGG/FLAC :)"
 Date "2020-11-04"
 Rev "R0.1"
@@ -166,8 +166,8 @@ Wire Wire Line
 	4050 2300 4050 2700
 Connection ~ 4050 2700
 Wire Wire Line
-	4200 2500 3650 2500
-Text GLabel 3650 2500 0    50   Input ~ 0
+	4200 2500 3950 2500
+Text GLabel 3950 2500 0    50   Input ~ 0
 ~AUDIO_MUTEn~
 Text GLabel 950  2100 0    50   Input ~ 0
 DAC_OUT2
@@ -331,8 +331,8 @@ Wire Wire Line
 	4050 5300 4050 5700
 Connection ~ 4050 5700
 Wire Wire Line
-	4200 5500 3650 5500
-Text GLabel 3650 5500 0    50   Input ~ 0
+	4200 5500 3950 5500
+Text GLabel 3950 5500 0    50   Input ~ 0
 ~AUDIO_MUTEn~
 Text GLabel 950  5100 0    50   Input ~ 0
 DAC_OUT1
@@ -709,4 +709,12 @@ Connection ~ 4100 2100
 Connection ~ 4100 5100
 Wire Wire Line
 	4100 3950 4100 5100
+$Sheet
+S 1700 3100 1450 1000
+U 5FEE4431
+F0 "VLSI VS1063 DSP/codec" 50
+F1 "vs1063.sch" 50
+$EndSheet
+Text Notes 600  4450 0    70   ~ 14
+DAC -> [in] VS1063 [out] -> A-mux -> Audio amp\n      |-------------/        ^-- audio_path_select
 $EndSCHEMATC

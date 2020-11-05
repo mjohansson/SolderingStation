@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 23
+Sheet 12 21
 Title "Backside connectors"
 Date "2020-08-14"
 Rev "R0.1"

@@ -1782,6 +1782,19 @@ X S2 6 -200 0 50 R 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
+# customlib_mj_TP
+#
+DEF customlib_mj_TP TP 0 0 N N 1 F N
+F0 "TP" 0 -75 60 H V C CNN
+F1 "customlib_mj_TP" 0 50 60 H I C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+C -25 0 25 0 1 0 N
+X ~ 1 -100 0 50 R 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 # customlib_mj_TPS2HB16AQ1
 #
 DEF customlib_mj_TPS2HB16AQ1 U 0 40 Y Y 1 F N
