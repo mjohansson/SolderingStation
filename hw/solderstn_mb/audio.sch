@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 20 21
+Sheet 18 21
 Title "Audio & MP3/OGG/FLAC :)"
 Date "2020-11-04"
 Rev "R0.1"
@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:C_Small C2108
 U 1 1 5F3BDCEE
-P 1200 2100
-F 0 "C2108" V 1300 2100 50  0000 C CNN
-F 1 "470n" V 1100 2100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 2100 50  0001 C CNN
-F 3 "~" H 1200 2100 50  0001 C CNN
-	1    1200 2100
+P 3600 2100
+F 0 "C2108" V 3700 2100 50  0000 C CNN
+F 1 "470n" V 3500 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 2100 50  0001 C CNN
+F 3 "~" H 3600 2100 50  0001 C CNN
+	1    3600 2100
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -51,7 +51,7 @@ L Device:R_Small R2105
 U 1 1 5F3C3145
 P 4750 950
 F 0 "R2105" V 4650 950 50  0000 C CNN
-F 1 "2k2" V 4850 950 50  0000 C CNN
+F 1 "1k5" V 4850 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4750 950 50  0001 C CNN
 F 3 "~" H 4750 950 50  0001 C CNN
 	1    4750 950 
@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L Device:R_Small R2106
 U 1 1 5F3C4084
-P 1600 2100
-F 0 "R2106" V 1500 2100 50  0000 C CNN
-F 1 "10k" V 1700 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 2100 50  0001 C CNN
-F 3 "~" H 1600 2100 50  0001 C CNN
-	1    1600 2100
+P 3900 2100
+F 0 "R2106" V 3800 2100 50  0000 C CNN
+F 1 "10k" V 4000 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 2100 50  0001 C CNN
+F 3 "~" H 3900 2100 50  0001 C CNN
+	1    3900 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -134,13 +134,13 @@ Wire Wire Line
 Wire Wire Line
 	4200 2100 4100 2100
 Wire Wire Line
-	1500 2100 1300 2100
+	3800 2100 3700 2100
 Wire Wire Line
 	4100 950  4100 2100
 Wire Wire Line
 	4100 950  4300 950 
 Wire Wire Line
-	4100 2100 1700 2100
+	4100 2100 4000 2100
 Wire Wire Line
 	4500 950  4650 950 
 Wire Wire Line
@@ -172,7 +172,7 @@ Text GLabel 3950 2500 0    50   Input ~ 0
 Text GLabel 950  2100 0    50   Input ~ 0
 DAC_OUT2
 Wire Wire Line
-	950  2100 1100 2100
+	950  2100 1300 2100
 $Comp
 L customlib_mj:TS4990IDT U2103
 U 1 1 5F416928
@@ -187,12 +187,12 @@ $EndComp
 $Comp
 L Device:C_Small C2112
 U 1 1 5F416932
-P 1200 5100
-F 0 "C2112" V 1300 5100 50  0000 C CNN
-F 1 "470n" V 1100 5100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 5100 50  0001 C CNN
-F 3 "~" H 1200 5100 50  0001 C CNN
-	1    1200 5100
+P 3600 5100
+F 0 "C2112" V 3700 5100 50  0000 C CNN
+F 1 "470n" V 3500 5100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 5100 50  0001 C CNN
+F 3 "~" H 3600 5100 50  0001 C CNN
+	1    3600 5100
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -211,7 +211,7 @@ L Device:R_Small R2108
 U 1 1 5F416946
 P 4750 3950
 F 0 "R2108" V 4650 3950 50  0000 C CNN
-F 1 "2k2" V 4850 3950 50  0000 C CNN
+F 1 "1k5" V 4850 3950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4750 3950 50  0001 C CNN
 F 3 "~" H 4750 3950 50  0001 C CNN
 	1    4750 3950
@@ -220,12 +220,12 @@ $EndComp
 $Comp
 L Device:R_Small R2109
 U 1 1 5F416950
-P 1600 5100
-F 0 "R2109" V 1500 5100 50  0000 C CNN
-F 1 "10k" V 1700 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 5100 50  0001 C CNN
-F 3 "~" H 1600 5100 50  0001 C CNN
-	1    1600 5100
+P 3900 5100
+F 0 "R2109" V 3800 5100 50  0000 C CNN
+F 1 "10k" V 4000 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 5100 50  0001 C CNN
+F 3 "~" H 3900 5100 50  0001 C CNN
+	1    3900 5100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -303,7 +303,7 @@ F 3 "" H 4900 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 5100 1300 5100
+	3800 5100 3700 5100
 Wire Wire Line
 	4100 3950 4300 3950
 Wire Wire Line
@@ -337,7 +337,7 @@ Text GLabel 3950 5500 0    50   Input ~ 0
 Text GLabel 950  5100 0    50   Input ~ 0
 DAC_OUT1
 Wire Wire Line
-	950  5100 1100 5100
+	950  5100 1300 5100
 Wire Wire Line
 	5800 2600 5900 2600
 Wire Wire Line
@@ -469,7 +469,7 @@ Audio_R_int
 Text HLabel 7100 5800 2    50   Input ~ 0
 Audio_L_int
 Wire Wire Line
-	1700 5100 4100 5100
+	4000 5100 4100 5100
 Wire Wire Line
 	4100 5100 4200 5100
 $Comp
@@ -710,11 +710,101 @@ Connection ~ 4100 5100
 Wire Wire Line
 	4100 3950 4100 5100
 $Sheet
-S 1700 3100 1450 1000
+S 1550 3100 1450 1000
 U 5FEE4431
 F0 "VLSI VS1063 DSP/codec" 50
 F1 "vs1063.sch" 50
+F2 "VS_L_in" I L 1550 3850 50 
+F3 "VS_R_in" I L 1550 3350 50 
+F4 "VS_L_out" O R 3000 3850 50 
+F5 "VS_R_out" O R 3000 3350 50 
 $EndSheet
-Text Notes 600  4450 0    70   ~ 14
-DAC -> [in] VS1063 [out] -> A-mux -> Audio amp\n      |-------------/        ^-- audio_path_select
+Text Notes 1600 4400 0    70   ~ 14
+Optional MP3/Ogg codec
+Wire Wire Line
+	1550 3350 1300 3350
+Wire Wire Line
+	1300 3350 1300 2100
+Wire Wire Line
+	1550 3850 1300 3850
+Wire Wire Line
+	1300 3850 1300 5100
+Wire Wire Line
+	3000 3350 3300 3350
+Wire Wire Line
+	3300 2100 3500 2100
+Wire Wire Line
+	3000 3850 3300 3850
+Wire Wire Line
+	3300 3850 3300 5100
+Wire Wire Line
+	3300 5100 3500 5100
+Text Notes 1450 4900 0    60   ~ 12
+Can encode MCU DAC-output to Ogg\nor MP3 (e.g. to record FM-radio data)\nOr decode MP3/Ogg/FLAC/etc \ncompressed audio files, e.g. from\nUSB storage or network streams
+Text Notes 3000 1900 0    50   ~ 0
+F_AC [470n, 10k] = 34Hz
+Text Notes 3200 1700 0    50   ~ 0
+A = Rf/Ri = 1,65\nVi = 3,0 * 1,65\n -> Vo_max = 4,95
+$Comp
+L power:GND #PWR01840
+U 1 1 603DF358
+P 3700 3250
+F 0 "#PWR01840" H 3700 3000 50  0001 C CNN
+F 1 "GND" H 3700 3100 50  0000 C CNN
+F 2 "" H 3700 3250 50  0001 C CNN
+F 3 "" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1823
+U 1 1 603DFCE1
+P 3500 3000
+F 0 "R1823" V 3400 3000 50  0000 C CNN
+F 1 "DNM" V 3600 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 3000 50  0001 C CNN
+F 3 "~" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3000 3700 3000
+Wire Wire Line
+	3700 3000 3700 3250
+Wire Wire Line
+	3300 2100 3300 3000
+Wire Wire Line
+	3400 3000 3300 3000
+Connection ~ 3300 3000
+Wire Wire Line
+	3300 3000 3300 3350
+$Comp
+L power:GND #PWR01841
+U 1 1 603F2EB2
+P 2900 5350
+F 0 "#PWR01841" H 2900 5100 50  0001 C CNN
+F 1 "GND" H 2900 5200 50  0000 C CNN
+F 2 "" H 2900 5350 50  0001 C CNN
+F 3 "" H 2900 5350 50  0001 C CNN
+	1    2900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1824
+U 1 1 603F3260
+P 3100 5100
+F 0 "R1824" V 3000 5100 50  0000 C CNN
+F 1 "DNM" V 3200 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 5100 50  0001 C CNN
+F 3 "~" H 3100 5100 50  0001 C CNN
+	1    3100 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 5100 2900 5350
+Wire Wire Line
+	3200 5100 3300 5100
+Connection ~ 3300 5100
+Wire Wire Line
+	3000 5100 2900 5100
 $EndSCHEMATC

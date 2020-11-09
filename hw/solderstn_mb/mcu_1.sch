@@ -770,7 +770,7 @@ U 1 1 5F477B99
 P 6800 5250
 F 0 "U2201" H 7050 5150 50  0000 L CNN
 F 1 "MCP1316T-26LE-OT" H 6850 5050 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6800 5250 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6800 5250 50  0001 C CNN
 F 3 "https://www.microchip.com/wwwproducts/en/MCP1316" H 6800 5250 50  0001 C CNN
 	1    6800 5250
 	1    0    0    -1  
@@ -1090,7 +1090,7 @@ U 1 1 5F94779B
 P 4750 5450
 F 0 "Q2201" H 4956 5496 50  0000 L CNN
 F 1 "DMG1012T" H 5152 5405 50  0000 C CNN
-F 2 "customlib_mj_fp:SOT-523" H 4950 5550 50  0001 C CNN
+F 2 "customlib_mj_fp:SOT-523_handsoldering" H 4950 5550 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 4750 5450 50  0001 C CNN
 	1    4750 5450
 	1    0    0    -1  

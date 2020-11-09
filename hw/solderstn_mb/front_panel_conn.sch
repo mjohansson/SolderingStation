@@ -591,7 +591,7 @@ U 1 1 5F5A8A8B
 P 6800 1100
 F 0 "U501" H 6534 733 50  0000 L CNN
 F 1 "TLV9051SIDBV" H 6534 824 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 6800 1100 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6800 1100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/gpn/tlv9051" H 6850 1300 50  0001 C CNN
 	1    6800 1100
 	1    0    0    1   
@@ -602,7 +602,7 @@ U 2 1 5F5AF0E9
 P 8000 1250
 F 0 "U501" H 7950 1300 50  0000 R CNN
 F 1 "TLV9051SIDBV" H 7950 1200 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 8000 1250 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8000 1250 50  0001 C CNN
 F 3 "https://www.ti.com/lit/gpn/tlv9051" H 8050 1450 50  0001 C CNN
 	2    8000 1250
 	1    0    0    -1  
@@ -749,7 +749,7 @@ U 1 1 5F4241F8
 P 5950 6650
 F 0 "Q501" H 6156 6696 50  0000 L CNN
 F 1 "DMG1012T" H 6352 6605 50  0000 C CNN
-F 2 "customlib_mj_fp:SOT-523" H 6150 6750 50  0001 C CNN
+F 2 "customlib_mj_fp:SOT-523_handsoldering" H 6150 6750 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 5950 6650 50  0001 C CNN
 	1    5950 6650
 	1    0    0    -1  

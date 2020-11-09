@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 20 21
+Sheet 17 21
 Title "HW PWM stuck-high detection with latched flag"
 Date "2020-08-12"
 Rev "R0.1"
@@ -87,7 +87,7 @@ AR Path="/5F785D6E/5F788A8E/5F5A79BB/5F5AB671" Ref="Q1901"  Part="1"
 AR Path="/5F785D6E/5F788A8E/5F5A8042/5F5AB671" Ref="Q2001"  Part="1" 
 F 0 "Q2001" H 5156 3654 50  0000 L CNN
 F 1 "DMG1013T" H 5352 3745 50  0000 C CNN
-F 2 "customlib_mj_fp:SOT-523" H 5150 3800 50  0001 C CNN
+F 2 "customlib_mj_fp:SOT-523_handsoldering" H 5150 3800 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31784.pdf" H 4950 3700 50  0001 C CNN
 	1    4950 3700
 	1    0    0    1   

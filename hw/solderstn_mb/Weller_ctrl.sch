@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 21
+Sheet 11 21
 Title "Dual Weller WMRP or WMRT capable channels"
 Date "2020-08-07"
 Rev "R0.1"
@@ -313,28 +313,6 @@ Text Label 6850 2500 2    50   ~ 0
 CH_A_KTY_SNS
 Text Label 6850 4950 2    50   ~ 0
 CH_B_KTY_SNS
-$Comp
-L customlib_mj:TMUX1219 U1401
-U 1 1 5F6627CA
-P 9300 2950
-F 0 "U1401" H 9300 3265 50  0000 C CNN
-F 1 "TMUX1219" H 9300 3174 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 9300 2950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tmux1219.pdf" H 9300 2950 50  0001 C CNN
-	1    9300 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L customlib_mj:TMUX1219 U1402
-U 1 1 5F663745
-P 9300 5400
-F 0 "U1402" H 9300 5715 50  0000 C CNN
-F 1 "TMUX1219" H 9300 5624 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 9300 5400 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tmux1219.pdf" H 9300 5400 50  0001 C CNN
-	1    9300 5400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8800 2950 9100 2950
 Wire Wire Line
@@ -589,4 +567,26 @@ Wire Wire Line
 Connection ~ 9500 4900
 Wire Wire Line
 	9500 4900 9750 4900
+$Comp
+L customlib_mj:TS5A3159A U1102
+U 1 1 5FFB169F
+P 9300 2950
+F 0 "U1102" H 9300 3265 50  0000 C CNN
+F 1 "TS5A3159A" H 9300 3174 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 9300 2950 50  0001 C CNN
+F 3 "https://www.ti.com/product/TS5A3159A" H 9300 2950 50  0001 C CNN
+	1    9300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:TS5A3159A U1103
+U 1 1 5FFB1EE2
+P 9300 5400
+F 0 "U1103" H 9300 5715 50  0000 C CNN
+F 1 "TS5A3159A" H 9300 5624 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 9300 5400 50  0001 C CNN
+F 3 "https://www.ti.com/product/TS5A3159A" H 9300 5400 50  0001 C CNN
+	1    9300 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

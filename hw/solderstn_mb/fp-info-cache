@@ -1,4 +1,4 @@
-20072196810718274
+20075422934703274
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83643,6 +83643,13 @@ resistor array, 4x0402, convex
 8
 8
 customlib_mj_fp
+SC-74-6
+SC-74, 6 Pin, for e.g. CM1213A-02SO
+SC-74 SO
+0
+6
+6
+customlib_mj_fp
 SD_card_holder
 https://www.aliexpress.com/item/100Pcs-PUSH-PUSH-Type-SD-Menory-Card-Solder-Socket-Connector-PCB-Mount/32737358299.html
 SD card full-size
@@ -83749,6 +83756,13 @@ SOT-416, SOT-523, SC-75, SC-89, SC-90, ESM, EMT3
 3
 customlib_mj_fp
 SOT-523
+SOT-523
+SOT-523, SOT-416, SC-75, SC-89, SC-90, ESM, EMT3
+0
+3
+3
+customlib_mj_fp
+SOT-523_handsoldering
 SOT-523
 SOT-523, SOT-416, SC-75, SC-89, SC-90, ESM, EMT3
 0

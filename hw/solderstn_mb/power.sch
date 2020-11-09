@@ -1113,7 +1113,7 @@ U 1 1 5F56DB7E
 P 9300 4800
 F 0 "U305" H 9300 5414 50  0000 C CNN
 F 1 "AP22811AW5" H 9300 5291 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9300 4700 71  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 9300 4700 71  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP22811.pdf" H 9300 4800 71  0001 C CNN
 	1    9300 4800
 	1    0    0    -1  
@@ -1751,7 +1751,7 @@ U 1 1 5F54602E
 P 1750 4800
 F 0 "Q303" H 1956 4846 50  0000 L CNN
 F 1 "DMG1012T" H 2152 4755 50  0000 C CNN
-F 2 "customlib_mj_fp:SOT-523" H 1950 4900 50  0001 C CNN
+F 2 "customlib_mj_fp:SOT-523_handsoldering" H 1950 4900 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 1750 4800 50  0001 C CNN
 	1    1750 4800
 	1    0    0    -1  

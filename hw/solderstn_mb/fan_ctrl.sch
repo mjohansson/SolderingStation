@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 21
+Sheet 6 21
 Title "Fan controller"
 Date "2020-08-09"
 Rev "R0.1"
@@ -142,7 +142,7 @@ AR Path="/5F472FC2/5F472468/5F473D01" Ref="Q701"  Part="1"
 AR Path="/5F472FC2/5F472567/5F473D01" Ref="Q801"  Part="1" 
 F 0 "Q601" H 4906 4696 50  0000 L CNN
 F 1 "DMG1012T" H 5102 4605 50  0000 C CNN
-F 2 "customlib_mj_fp:SOT-523" H 4900 4750 50  0001 C CNN
+F 2 "customlib_mj_fp:SOT-523_handsoldering" H 4900 4750 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 4700 4650 50  0001 C CNN
 	1    4700 4650
 	1    0    0    -1  

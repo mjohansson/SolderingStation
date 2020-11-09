@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 21
+Sheet 7 21
 Title ""
 Date ""
 Rev "R0.1"
@@ -38,7 +38,7 @@ AR Path="/5F472FC2/5F4B6CAA/5F4C3A03" Ref="U1001"  Part="1"
 AR Path="/5F472FC2/5F4B6E36/5F4C3A03" Ref="U1101"  Part="1" 
 F 0 "U1101" H 2550 3000 50  0000 C CNN
 F 1 "TMP100" H 2650 2300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2400 2300 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 2400 2300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/tmp100" H 2350 2650 50  0001 C CNN
 	1    2400 2650
 	1    0    0    -1  
