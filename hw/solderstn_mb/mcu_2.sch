@@ -64,67 +64,67 @@ $EndComp
 $Comp
 L customlib_mj:TLV9052SIDGS U?
 U 1 1 5F392B98
-P 3150 5900
+P 2150 5900
 AR Path="/5F785D6E/5F392B98" Ref="U?"  Part="1" 
 AR Path="/5EAEB4B5/5F392B98" Ref="U403"  Part="1" 
-F 0 "U403" H 2882 5625 50  0000 L CNN
-F 1 "TLV9052SIDGS" H 2882 5534 50  0000 L CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 3150 5900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tlv9052" H 3200 6100 50  0001 C CNN
-	1    3150 5900
+F 0 "U403" H 1882 5625 50  0000 L CNN
+F 1 "TLV9052SIDGS" H 1882 5534 50  0000 L CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 2150 5900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tlv9052" H 2200 6100 50  0001 C CNN
+	1    2150 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L customlib_mj:TLV9052SIDGS U?
 U 2 1 5F392B9E
-P 6000 5900
+P 5000 5900
 AR Path="/5F785D6E/5F392B9E" Ref="U?"  Part="2" 
 AR Path="/5EAEB4B5/5F392B9E" Ref="U403"  Part="2" 
-F 0 "U403" H 5732 5625 50  0000 L CNN
-F 1 "TLV9052SIDGS" H 5732 5534 50  0000 L CNN
-F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6000 5900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tlv9052" H 6050 6100 50  0001 C CNN
-	2    6000 5900
+F 0 "U403" H 4732 5625 50  0000 L CNN
+F 1 "TLV9052SIDGS" H 4732 5534 50  0000 L CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 5000 5900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tlv9052" H 5050 6100 50  0001 C CNN
+	2    5000 5900
 	1    0    0    -1  
 $EndComp
-Text HLabel 2800 5500 0    50   Input ~ 0
+Text HLabel 1800 5500 0    50   Input ~ 0
 CH_A_KTY_REED_BIAS_ENABLE
 Wire Wire Line
-	3150 5500 2800 5500
+	2150 5500 1800 5500
 Wire Wire Line
-	3450 5900 3550 5900
+	2450 5900 2550 5900
 Wire Wire Line
-	3550 5900 3550 6300
+	2550 5900 2550 6300
 Wire Wire Line
-	3550 6300 2750 6300
+	2550 6300 1750 6300
 Wire Wire Line
-	2750 6300 2750 6000
+	1750 6300 1750 6000
 Wire Wire Line
-	2750 6000 2850 6000
+	1750 6000 1850 6000
 Wire Wire Line
-	6300 5900 6400 5900
+	5300 5900 5400 5900
 Wire Wire Line
-	6400 5900 6400 6300
+	5400 5900 5400 6300
 Wire Wire Line
-	6400 6300 5600 6300
+	5400 6300 4600 6300
 Wire Wire Line
-	5600 6300 5600 6000
+	4600 6300 4600 6000
 Wire Wire Line
-	5600 6000 5700 6000
+	4600 6000 4700 6000
 Wire Wire Line
-	2850 5800 2450 5800
+	1850 5800 1450 5800
 Wire Wire Line
-	5700 5800 5250 5800
-Text Label 5250 5800 0    50   ~ 0
+	4700 5800 4250 5800
+Text Label 4250 5800 0    50   ~ 0
 Vref_2v5
-Text Label 2450 5800 0    50   ~ 0
+Text Label 1450 5800 0    50   ~ 0
 Vref_2v5
 Wire Wire Line
-	6400 5900 6550 5900
-Connection ~ 6400 5900
+	5400 5900 5550 5900
+Connection ~ 5400 5900
 Wire Wire Line
-	3550 5900 3650 5900
-Connection ~ 3550 5900
+	2550 5900 2650 5900
+Connection ~ 2550 5900
 $Comp
 L Device:C_Small C414
 U 1 1 5F398C87
@@ -180,7 +180,7 @@ $Comp
 L Device:C_Small C417
 U 1 1 5F3A7C86
 P 2200 3550
-F 0 "C417" H 2292 3596 50  0000 L CNN
+F 0 "C417" H 2292 3596 50  0001 L CNN
 F 1 "100n" H 2292 3505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2200 3550 50  0001 C CNN
 F 3 "~" H 2200 3550 50  0001 C CNN
@@ -271,9 +271,9 @@ Wire Wire Line
 	6350 3300 6200 3300
 Text Label 3900 3300 2    50   ~ 0
 Vref_2v5
-Text HLabel 3650 5900 2    50   Output ~ 0
+Text HLabel 2650 5900 2    50   Output ~ 0
 KTY_REED_BIAS_CH_A
-Text HLabel 6550 5900 2    50   Output ~ 0
+Text HLabel 5550 5900 2    50   Output ~ 0
 KTY_REED_BIAS_CH_B
 Wire Wire Line
 	6200 2700 6350 2700
@@ -750,16 +750,16 @@ Text Notes 7650 3900 0    70   ~ 14
 MCU decoupling - place close to MCU power pins
 Text Notes 2350 4500 0    70   ~ 14
 Precision 2.5V Vref.\nPlace close to MCU.\nSee REF6125 ds for\nlayout suggestions.
-Text Notes 3050 7050 0    70   ~ 14
+Text Notes 2050 7050 0    70   ~ 14
 Switchable Vref for biasing KTY sensors\n(for cold-junction compensation), one\nper channel. The KTY's can then be\nmeassured through the ordinary TC \namps.\n
-Text HLabel 5850 5500 0    50   Input ~ 0
+Text HLabel 4850 5500 0    50   Input ~ 0
 CH_B_KTY_REED_BIAS_ENABLE
 Wire Wire Line
-	3150 5500 3150 5700
+	2150 5500 2150 5700
 Wire Wire Line
-	5850 5500 6000 5500
+	4850 5500 5000 5500
 Wire Wire Line
-	6000 5500 6000 5700
+	5000 5500 5000 5700
 $Comp
 L power:PWR_FLAG #FLG0401
 U 1 1 5F4FFBF9
@@ -774,4 +774,72 @@ $EndComp
 Connection ~ 3950 3700
 Wire Wire Line
 	3950 3700 3650 3700
+$Comp
+L customlib_mj:TLV9052SIDGS U403
+U 3 1 5FD6206A
+P 6150 7050
+F 0 "U403" H 6208 7096 50  0000 L CNN
+F 1 "TLV9052SIDGS" H 6208 7005 50  0000 L CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6150 7050 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tlv9052" H 6200 7250 50  0001 C CNN
+	3    6150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR0416
+U 1 1 5FD63B80
+P 6150 6650
+F 0 "#PWR0416" H 6150 6500 50  0001 C CNN
+F 1 "VDDA" H 6150 6800 50  0000 C CNN
+F 2 "" H 6150 6650 50  0001 C CNN
+F 3 "" H 6150 6650 50  0001 C CNN
+	1    6150 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0418
+U 1 1 5FD643A2
+P 6150 7450
+F 0 "#PWR0418" H 6150 7200 50  0001 C CNN
+F 1 "GND" H 6150 7300 50  0000 C CNN
+F 2 "" H 6150 7450 50  0001 C CNN
+F 3 "" H 6150 7450 50  0001 C CNN
+	1    6150 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 7450 6150 7350
+Wire Wire Line
+	6150 6750 6150 6700
+$Comp
+L Device:C_Small C418
+U 1 1 5FD75033
+P 5750 7050
+F 0 "C418" H 5842 7096 50  0000 L CNN
+F 1 "100n" H 5842 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5750 7050 50  0001 C CNN
+F 3 "~" H 5750 7050 50  0001 C CNN
+	1    5750 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6700 5750 6700
+Wire Wire Line
+	5750 6700 5750 6950
+Connection ~ 6150 6700
+Wire Wire Line
+	6150 6700 6150 6650
+$Comp
+L power:GND #PWR0417
+U 1 1 5FD7A724
+P 5750 7450
+F 0 "#PWR0417" H 5750 7200 50  0001 C CNN
+F 1 "GND" H 5750 7300 50  0000 C CNN
+F 2 "" H 5750 7450 50  0001 C CNN
+F 3 "" H 5750 7450 50  0001 C CNN
+	1    5750 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7450 5750 7150
 $EndSCHEMATC
