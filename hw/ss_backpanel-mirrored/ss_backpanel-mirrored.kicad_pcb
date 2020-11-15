@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.7-a382d34a8~87~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.8-db9833491~87~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
-    (drawings 49)
+    (drawings 48)
     (tracks 0)
     (zones 0)
     (modules 17)
@@ -113,8 +113,8 @@
     (uvia_drill 0.1)
   )
 
-  (module customlib_mj_fp:Mech_cutout_IDC_2x5 locked (layer F.Cu) (tedit 5F9C9365) (tstamp 5F9EF65F)
-    (at 190.92 61.3 180)
+  (module customlib_mj_fp:Mech_cutout_IDC_2x5 locked (layer F.Cu) (tedit 5F9C9365) (tstamp 5FB27F09)
+    (at 205.92 61.3 180)
     (descr "Panel cut-out for a right-angled IDC 2x5")
     (tags "IDC 2x5")
     (path /5FCE88A4)
@@ -141,7 +141,7 @@
   )
 
   (module customlib_mj_fp:Molex_NanoFit-1x02-Panel_cutout locked (layer B.Cu) (tedit 5F7DBA11) (tstamp 5F7F0D41)
-    (at 206.5 59.5 180)
+    (at 220 59.5 180)
     (descr "Panel cut-out for Molex Nano-Fit 1x02")
     (tags "Molex NanoFit panel cut-out")
     (path /5F88251B)
@@ -175,8 +175,8 @@
     )
   )
 
-  (module customlib_mj_fp:SMA_Bulkhead_jack-Panel_cutout (layer B.Cu) (tedit 5F7DBA76) (tstamp 5F7F0E3A)
-    (at 222 69 90)
+  (module customlib_mj_fp:SMA_Bulkhead_jack-Panel_cutout locked (layer B.Cu) (tedit 5F7DBA76) (tstamp 5F7F0E3A)
+    (at 223 70 90)
     (descr "SMA bulkhead jack connector cut-out")
     (tags "SMA panel cutout")
     (path /5F881BCE)
@@ -198,7 +198,7 @@
   )
 
   (module customlib_mj_fp:LB_I4R_A-4mm_banana_socket_panelmnt locked (layer B.Cu) (tedit 5F7CCD62) (tstamp 5F7DF82B)
-    (at 148 89 180)
+    (at 146 89 180)
     (path /5F7FEDE6)
     (fp_text reference J101 (at 0 5) (layer B.SilkS) hide
       (effects (font (size 1.2 0.8) (thickness 0.16)) (justify mirror))
@@ -215,7 +215,7 @@
   )
 
   (module customlib_mj_fp:CUI-UJ2_AH_1_SMT-Panel_cutout locked (layer B.Cu) (tedit 5F7CAEF1) (tstamp 5F7D196E)
-    (at 168 59.5 180)
+    (at 166 59.5 180)
     (descr "Panel cut-out for CUI-UJ2_AH_1_SMT USB-A host connector")
     (tags "USB-A CUI UJ2_AH_1_SMT panel cut-out")
     (path /5F7D0AEA)
@@ -250,7 +250,7 @@
   )
 
   (module customlib_mj_fp:SJ-3571N_panel_cutout locked (layer B.Cu) (tedit 5F4D2DB5) (tstamp 5F4D7C96)
-    (at 219 59.5 180)
+    (at 146 61.1)
     (descr "Panel cut-out for CUI SJ-3571N 3.5mm audio jack")
     (tags "CUI SJ-3571N 3.5mm audio jack panel cut-out")
     (path /5F4E1D6C)
@@ -261,7 +261,7 @@
     (fp_text value SJ-3571N_CUI_audio_jacket_panel_cutout (at 0 -1.5) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (pad "" np_thru_hole circle (at 0 2.5 180) (size 6 6) (drill 6) (layers *.Cu *.Mask))
+    (pad "" np_thru_hole circle (at 0 2.5) (size 6 6) (drill 6) (layers *.Cu *.Mask))
     (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/CUI_DEVICES_SJ-3571N.step
       (offset (xyz 0 2.5 0.3))
       (scale (xyz 1 1 1))
@@ -270,7 +270,7 @@
   )
 
   (module customlib_mj_fp:74980104400_WE_RJ45_LAN-Panel_cutout locked (layer B.Cu) (tedit 5F4CD9BC) (tstamp 5F4D3980)
-    (at 148 61.1)
+    (at 186 61.1)
     (descr "Panel cut-out for WE RJ45 Ethernet connector")
     (tags "RJ45 panel cut-out")
     (path /5F4D2201)
@@ -297,7 +297,7 @@
   )
 
   (module customlib_mj_fp:TE_1734346-Panel_cutout locked (layer B.Cu) (tedit 5F4CD938) (tstamp 5F4D398C)
-    (at 168 61.1)
+    (at 166 61.1)
     (descr "Panel cut-out for TE-1734346 USB-B device connector")
     (tags "USB-B TE-1734346 panel cut-out")
     (path /5F4D36E9)
@@ -359,7 +359,7 @@
   )
 
   (module customlib_mj_fp:Amphenol_T3437000-DIN7-panel_cutout locked (layer B.Cu) (tedit 5F45A1C4) (tstamp 5F460FB6)
-    (at 175 86 180)
+    (at 166 86 180)
     (descr "Amphenol T3437000 DIN7 (Weller connector) panel cutout")
     (tags "Amphenol T3437000 DIN7 panel cutout")
     (path /5F504C41)
@@ -381,7 +381,7 @@
   )
 
   (module customlib_mj_fp:Amphenol_T3437000-DIN7-panel_cutout locked (layer B.Cu) (tedit 5F45A1C4) (tstamp 5F460FAE)
-    (at 210 86 180)
+    (at 206 86 180)
     (descr "Amphenol T3437000 DIN7 (Weller connector) panel cutout")
     (tags "Amphenol T3437000 DIN7 panel cutout")
     (path /5F50426A)
@@ -486,8 +486,8 @@
       (solder_mask_margin -0.1) (clearance 1.25))
   )
 
-  (module Symbol:KiCad-Logo_5mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5F9EEE0C)
-    (at 192.5 95)
+  (module Symbol:KiCad-Logo_5mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5FB286A4)
+    (at 186 95)
     (descr "KiCad Logo")
     (tags "Logo KiCad")
     (path /5F41F53B)
@@ -740,7 +740,7 @@
   )
 
   (module customlib_mj_fp:MJ_Mini (layer F.Cu) (tedit 5A3DAB63) (tstamp 5F420F82)
-    (at 149.5 54)
+    (at 145 54)
     (tags "MJ mini")
     (path /5F41EFE7)
     (fp_text reference Logo103 (at 0 3.8) (layer F.SilkS) hide
@@ -852,10 +852,7 @@
       (xy -1.83067 -2.546882)) (layer F.SilkS) (width 0.01))
   )
 
-  (gr_text "TODO: \n*) Rotate DINs for the hacked Weller orientation\n(135 degrees CW, seen from outer side)\n*) DSUB-9 --> IDC-10" (at 164 113) (layer F.Cu)
-    (effects (font (size 3 2) (thickness 0.5)) (justify left))
-  )
-  (gr_text "Back panel" (at 185 57.5) (layer F.SilkS) (tstamp 5F7DFAC7)
+  (gr_text "Back panel" (at 183 57.5) (layer F.SilkS) (tstamp 5F7DFAC7)
     (effects (font (size 2 1.8) (thickness 0.4)))
   )
   (gr_text JLCJLCJLCJLC (at 231.5 80 90) (layer F.SilkS)
@@ -873,10 +870,10 @@
   (gr_line (start 70 59.5) (end 70 61.1) (layer Dwgs.User) (width 0.15) (tstamp 5F4D39F6))
   (gr_line (start 70 59.5) (end 230 59.5) (layer Dwgs.User) (width 0.15) (tstamp 5F4D39E9))
   (gr_line (start 230 61.1) (end 70 61.1) (layer Dwgs.User) (width 0.15))
-  (gr_text "Solder Station" (at 151 57.5) (layer F.SilkS) (tstamp 5F7DFACF)
+  (gr_text "Solder Station" (at 146.5 57.5) (layer F.SilkS) (tstamp 5F7DFACF)
     (effects (font (size 2 1.8) (thickness 0.4)))
   )
-  (gr_text "Mathias J 2020-10-30" (at 150 96) (layer F.SilkS)
+  (gr_text "Mathias J 2020-10/11" (at 150 96) (layer F.SilkS) (tstamp 5FB28689)
     (effects (font (size 1.7 1.5) (thickness 0.3)))
   )
   (gr_line (start 223.8 51.3) (end 152.8 51.300001) (layer F.SilkS) (width 0.2))
