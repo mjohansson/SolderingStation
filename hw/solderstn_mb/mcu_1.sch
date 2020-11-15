@@ -568,13 +568,13 @@ Wire Wire Line
 	1850 3400 1400 3400
 Wire Wire Line
 	1850 3500 1400 3500
-Text GLabel 1400 900  0    50   Input ~ 0
+Text GLabel 1400 1200 0    50   Input ~ 0
 CH_A_KTY_HWID_MB_ADC2
 Text GLabel 1400 1000 0    50   Input ~ 0
 RMII_REF_CLK
 Text GLabel 1400 1100 0    50   BiDi ~ 0
 ETH_MDIO
-Text GLabel 1400 1200 0    50   Input ~ 0
+Text GLabel 1400 900  0    50   Input ~ 0
 CH_B_KTY_HWID_FP_ADC2
 Text GLabel 1400 1300 0    50   Output ~ 0
 DAC_OUT1

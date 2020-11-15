@@ -532,11 +532,8 @@ Wire Wire Line
 	8150 3300 8250 3300
 Wire Wire Line
 	6350 3700 6350 3350
-Connection ~ 6350 3350
 Wire Wire Line
 	6350 3350 5800 3350
-Wire Wire Line
-	6350 3350 6850 3350
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FE6F567
@@ -565,12 +562,6 @@ F 3 "" H 6500 3550 50  0001 C CNN
 $EndComp
 Text Notes 6400 3200 0    50   ~ 0
 (OTS cable assm: e.g. 151340203)
-Wire Wire Line
-	6500 3550 6500 3500
-Wire Wire Line
-	6500 3450 6550 3450
-Wire Wire Line
-	6750 3450 6800 3450
 Wire Wire Line
 	2600 2650 2800 2650
 Connection ~ 2600 2650
@@ -620,26 +611,16 @@ Wire Wire Line
 $Comp
 L customlib_mj:dogbone_2_ud JP?
 U 1 1 5FE6F58F
-P 6650 3450
+P 6650 3350
 AR Path="/5FAFD5BA/5FE6F58F" Ref="JP?"  Part="1" 
 AR Path="/5FE3F0D8/5FE6F58F" Ref="JP2103"  Part="1" 
-F 0 "JP2103" H 6700 3350 50  0000 C CNN
-F 1 "dogbone_2_ud" H 6650 3550 50  0001 C CNN
-F 2 "customlib_mj_fp:db2_ud_0402" H 6650 3450 50  0001 C CNN
-F 3 "" H 6650 3450 50  0001 C CNN
-	1    6650 3450
+F 0 "JP2103" H 6650 3300 50  0000 C CNN
+F 1 "dogbone_2_ud" H 6650 3450 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 6650 3350 50  0001 C CNN
+F 3 "" H 6650 3350 50  0001 C CNN
+	1    6650 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 3500 6800 3500
-Wire Wire Line
-	6800 3500 6800 3450
-Connection ~ 6500 3500
-Wire Wire Line
-	6500 3500 6500 3450
-Connection ~ 6800 3450
-Wire Wire Line
-	6800 3450 6850 3450
 NoConn ~ 5050 2850
 NoConn ~ 5050 2950
 $Comp
@@ -691,4 +672,25 @@ F 3 "" H 8050 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7950 4850 7750 4850
+Connection ~ 6350 3350
+Wire Wire Line
+	6350 3350 6500 3350
+Wire Wire Line
+	6750 3350 6800 3350
+Wire Wire Line
+	6500 3350 6500 3300
+Wire Wire Line
+	6500 3300 6800 3300
+Wire Wire Line
+	6800 3300 6800 3350
+Connection ~ 6500 3350
+Wire Wire Line
+	6500 3350 6550 3350
+Connection ~ 6800 3350
+Wire Wire Line
+	6800 3350 6850 3350
+Wire Wire Line
+	6850 3450 6500 3450
+Wire Wire Line
+	6500 3450 6500 3550
 $EndSCHEMATC
