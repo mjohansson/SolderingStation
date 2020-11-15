@@ -1,0 +1,15 @@
+[From : https://www.mikrocontroller.net/topic/143288#1500669]
+
+by SniperSL ⚡ D. ( snipersl ) 11/29/2009 4:22 PM
+
+Loosen the clips and remove the inner part, turning the inner part like this 
+that shows the indentation to the left from the front, then at the bottom 
+Mill a 2x1mm path (Dremel), finally some of the pegs at the back 
+remove so that the part can be inserted offset by 90 degrees. if
+you want to cast epoxy on the left as shown in the picture above (is a 
+optical correction).
+
+Hope that helps…
+
+if someone finds the original, he should write it down briefly
+
