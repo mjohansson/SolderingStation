@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 21
+Sheet 4 22
 Title "STM32F429 MCU power, decoupling, Vref"
 Date "2020-04-26"
 Rev "R0.1"
@@ -165,8 +165,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 3500 4050 3700
 Connection ~ 4050 3700
-Wire Wire Line
-	4050 3700 3950 3700
 Wire Wire Line
 	3700 3500 3500 3500
 Wire Wire Line
@@ -761,20 +759,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 5500 5000 5700
 $Comp
-L power:PWR_FLAG #FLG0401
-U 1 1 5F4FFBF9
-P 3950 3700
-F 0 "#FLG0401" H 3950 3775 50  0001 C CNN
-F 1 "PWR_FLAG" H 3950 3873 50  0000 C CNN
-F 2 "" H 3950 3700 50  0001 C CNN
-F 3 "~" H 3950 3700 50  0001 C CNN
-	1    3950 3700
-	-1   0    0    1   
-$EndComp
-Connection ~ 3950 3700
-Wire Wire Line
-	3950 3700 3650 3700
-$Comp
 L customlib_mj:TLV9052SIDGS U403
 U 3 1 5FD6206A
 P 6150 7050
@@ -842,4 +826,6 @@ F 3 "" H 5750 7450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 7450 5750 7150
+Wire Wire Line
+	3650 3700 4050 3700
 $EndSCHEMATC

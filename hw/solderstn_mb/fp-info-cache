@@ -1,4 +1,4 @@
-20075422934703274
+20078634986741274
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82845,6 +82845,13 @@ DMF682A LCD Connector 1x14 2.54mm
 14
 14
 customlib_mj_fp
+CR2032_coincell_holder
+Coincell holder CR2032. E.g. LCSC.com pn C70378 (or alternative Eagle Plastic Devices pn 122-1020-GR )
+CR2032 Coincell holder SMT
+0
+2
+2
+customlib_mj_fp
 CSTCE_3213MM_SMD
 
 Murata CSTCE series ceramicoscillators 3.2x1.3mm
@@ -83740,6 +83747,13 @@ SO SOIC
 0
 8
 8
+customlib_mj_fp
+SOIC-16W_7.5x10.3mm_and_SOIC8_3.9x4.9mm_P1.27mm2
+Combined SOIC-16 Pin wide and SOIC-8 pin narrow for either DS3231M or DS3232MZ
+SOIC SO dual
+0
+16
+16
 customlib_mj_fp
 SOT-23
 SOT-23, Standard

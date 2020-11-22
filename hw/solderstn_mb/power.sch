@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 21
+Sheet 3 22
 Title "DC/DC Buck, LDOs & master load-switches"
 Date "2020-05-08"
 Rev "R0.1"

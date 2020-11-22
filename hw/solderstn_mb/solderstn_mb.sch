@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 21
+Sheet 1 22
 Title "DIY Soldering station, top level"
 Date "2020-04-26"
 Rev "R0.1"
