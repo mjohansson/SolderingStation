@@ -1329,7 +1329,7 @@ U 1 1 5F3EC90A
 P 4650 3400
 F 0 "Y201" V 4750 3500 50  0000 L CNN
 F 1 "TSX-3225 25.0000MF10P-C" V 4900 3050 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm_HandSoldering" H 4650 3400 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 4650 3400 50  0001 C CNN
 F 3 "https://www.mouser.se/datasheet/2/137/FA-238_en-932914.pdf" H 4650 3400 50  0001 C CNN
 	1    4650 3400
 	0    -1   1    0   

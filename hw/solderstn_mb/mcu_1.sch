@@ -352,7 +352,7 @@ U 1 1 5F429432
 P 1150 7450
 F 0 "Y2001" V 1350 7450 50  0000 L CNN
 F 1 "TSX-3225 16.0000MF18X-AC3" V 1450 7400 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm_HandSoldering" H 1150 7450 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 1150 7450 50  0001 C CNN
 F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&lang=en" H 1150 7450 50  0001 C CNN
 	1    1150 7450
 	0    1    1    0   
