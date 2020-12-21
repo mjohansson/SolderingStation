@@ -449,6 +449,22 @@ X VDDA 9 200 1500 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Memory_EEPROM_CAT24C256
 #
 DEF Memory_EEPROM_CAT24C256 U 0 20 Y Y 1 F N
@@ -641,6 +657,28 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# customlib_mj_B5819W
+#
+DEF customlib_mj_B5819W D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "customlib_mj_B5819W" -280 -80 50 H V L CNN
+F2 "Diode_SMD:D_SOD-123" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 10 30 -40 -30 0 30 40 30 -40 N
+P 6 0 1 10 -50 30 -50 40 -30 40 -30 -40 -10 -40 -10 -30 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # customlib_mj_Conn_WR-FAST_01x04
 #
 DEF customlib_mj_Conn_WR-FAST_01x04 J 0 40 Y N 1 F N
@@ -765,20 +803,6 @@ X 9 9 -100 -150 50 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# customlib_mj_FFC_retention_clamp
-#
-DEF customlib_mj_FFC_retention_clamp M 0 40 Y Y 1 F N
-F0 "M" 0 100 50 H V C CNN
-F1 "customlib_mj_FFC_retention_clamp" 0 -50 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 4 0 1 0 -50 0 -50 20 50 20 50 0 N
-X ~ 1 -100 0 50 R 50 50 1 1 P
-X ~ 2 100 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # customlib_mj_KLD-0202-A
 #
 DEF customlib_mj_KLD-0202-A J 0 40 Y Y 1 F N
@@ -798,6 +822,18 @@ P 4 0 0 0 -100 -100 -95 -80 -105 -80 -100 -100 F
 X ~ 1 100 100 50 L 50 50 0 1 W
 X ~ 2 100 -100 50 L 50 50 0 1 W
 X ~ 3 100 0 50 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# customlib_mj_Logo_MJ
+#
+DEF customlib_mj_Logo_MJ Logo 0 40 Y Y 1 F N
+F0 "Logo" 0 100 50 H V C CNN
+F1 "customlib_mj_Logo_MJ" 0 -100 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 0 75 0 0 0 MJ Normal 1 C C
 ENDDRAW
 ENDDEF
 #
