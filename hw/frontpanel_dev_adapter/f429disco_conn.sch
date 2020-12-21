@@ -748,8 +748,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 5300 2850 5300
 Wire Wire Line
-	2350 5400 2850 5400
-Wire Wire Line
 	2350 5500 2850 5500
 Wire Wire Line
 	2350 5600 2850 5600
@@ -791,8 +789,6 @@ Wire Wire Line
 	2350 7400 2850 7400
 Wire Wire Line
 	2350 7500 2850 7500
-Wire Wire Line
-	4350 4400 3850 4400
 Wire Wire Line
 	4350 4500 3850 4500
 Wire Wire Line
@@ -855,8 +851,6 @@ Wire Wire Line
 	4350 7400 3850 7400
 Wire Wire Line
 	4350 7500 3850 7500
-Wire Wire Line
-	4850 4400 5350 4400
 Wire Wire Line
 	4850 4600 5350 4600
 Wire Wire Line
@@ -1534,4 +1528,85 @@ Wire Wire Line
 	8650 800  8500 800 
 Wire Wire Line
 	8850 800  9000 800 
+$Comp
+L customlib_mj:dogbone_2_ud JP604
+U 1 1 5FE9A9E3
+P 4100 4400
+F 0 "JP604" H 4100 4350 50  0000 C CNN
+F 1 "dogbone_2_ud" H 4100 4500 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 4100 4400 50  0001 C CNN
+F 3 "" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:dogbone_2_ud JP605
+U 1 1 5FE9B7C0
+P 5100 4400
+F 0 "JP605" H 5100 4350 50  0000 C CNN
+F 1 "dogbone_2_ud" H 5100 4500 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 5100 4400 50  0001 C CNN
+F 3 "" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4400 4950 4400
+Wire Wire Line
+	4350 4400 4300 4400
+Wire Wire Line
+	3850 4400 3950 4400
+Wire Wire Line
+	3950 4400 3950 4300
+Wire Wire Line
+	3950 4300 4300 4300
+Wire Wire Line
+	4300 4300 4300 4400
+Connection ~ 3950 4400
+Wire Wire Line
+	3950 4400 4000 4400
+Connection ~ 4300 4400
+Wire Wire Line
+	4300 4400 4200 4400
+Wire Wire Line
+	5350 4400 5250 4400
+Wire Wire Line
+	5250 4400 5250 4300
+Wire Wire Line
+	5250 4300 4950 4300
+Wire Wire Line
+	4950 4300 4950 4400
+Connection ~ 5250 4400
+Wire Wire Line
+	5250 4400 5200 4400
+Connection ~ 4950 4400
+Wire Wire Line
+	4950 4400 5000 4400
+$Comp
+L customlib_mj:dogbone_2_ud JP606
+U 1 1 5FFA3733
+P 2550 5400
+F 0 "JP606" H 2550 5350 50  0000 C CNN
+F 1 "dogbone_2_ud" H 2550 5500 50  0001 C CNN
+F 2 "customlib_mj_fp:db2_ud_0402" H 2550 5400 50  0001 C CNN
+F 3 "" H 2550 5400 50  0001 C CNN
+	1    2550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5400 2400 5400
+Wire Wire Line
+	2650 5400 2700 5400
+Wire Wire Line
+	2400 5400 2400 5350
+Wire Wire Line
+	2400 5350 2700 5350
+Wire Wire Line
+	2700 5350 2700 5400
+Connection ~ 2400 5400
+Wire Wire Line
+	2400 5400 2350 5400
+Connection ~ 2700 5400
+Wire Wire Line
+	2700 5400 2850 5400
 $EndSCHEMATC

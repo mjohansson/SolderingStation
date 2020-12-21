@@ -49,28 +49,6 @@ $EndComp
 Text Notes 4700 7400 0    60   ~ 12
 FancyBtn LED connector \n(PWM ctrl low-side; 5V/12V selectable V+)
 $Comp
-L customlib_mj:FFC_retention_clamp M301
-U 1 1 5F4700B4
-P 3600 3600
-F 0 "M301" H 3600 3825 50  0000 C CNN
-F 1 "FFC_retention_clamp" H 3600 3734 50  0000 C CNN
-F 2 "customlib_mj_fp:FFC_retention_clamp_14pin_7_5mm" H 3600 3600 50  0001 C CNN
-F 3 "" H 3600 3600 50  0001 C CNN
-	1    3600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L customlib_mj:FFC_retention_clamp M302
-U 1 1 5F4709C2
-P 3600 6000
-F 0 "M302" H 3600 6225 50  0000 C CNN
-F 1 "FFC_retention_clamp" H 3600 6134 50  0000 C CNN
-F 2 "customlib_mj_fp:FFC_retention_clamp_14pin_7_5mm" H 3600 6000 50  0001 C CNN
-F 3 "" H 3600 6000 50  0001 C CNN
-	1    3600 6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R308
 U 1 1 5F4C1178
 P 6050 5900
@@ -597,17 +575,6 @@ Wire Wire Line
 	6050 6150 6550 6150
 Wire Wire Line
 	6050 5800 6050 5700
-$Comp
-L customlib_mj:DMG1012T Q301
-U 1 1 5F4241F8
-P 5950 6650
-F 0 "Q301" H 6156 6696 50  0000 L CNN
-F 1 "DMG1012T" H 6352 6605 50  0000 C CNN
-F 2 "customlib_mj_fp:SOT-523_handsoldering" H 6150 6750 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 5950 6650 50  0001 C CNN
-	1    5950 6650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 6450 6050 6250
 Wire Wire Line
@@ -625,17 +592,6 @@ F 3 "" H 6050 6950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 6850 6050 6950
-$Comp
-L Device:R_Small R309
-U 1 1 5F43274E
-P 5650 6800
-F 0 "R309" H 5709 6846 50  0000 L CNN
-F 1 "10k" H 5709 6755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 6800 50  0001 C CNN
-F 3 "~" H 5650 6800 50  0001 C CNN
-	1    5650 6800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0312
 U 1 1 5F43306E
@@ -697,10 +653,6 @@ F 3 "" H 6050 5550 50  0001 C CNN
 	1    6050 5550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3500 3600
-NoConn ~ 3700 3600
-NoConn ~ 3500 6000
-NoConn ~ 3700 6000
 $Sheet
 S 9850 900  500  550 
 U 5FDAF153
@@ -709,4 +661,26 @@ F1 "fan_ctrl.sch" 50
 F2 "PWM" I L 9850 1000 50 
 F3 "Tacho" O L 9850 1200 50 
 $EndSheet
+$Comp
+L customlib_mj:DMG1012T Q301
+U 1 1 5F4241F8
+P 5950 6650
+F 0 "Q301" H 6156 6696 50  0000 L CNN
+F 1 "DMG1012T" H 6352 6605 50  0000 C CNN
+F 2 "customlib_mj_fp:SOT-523_handsoldering" H 6150 6750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31783.pdf" H 5950 6650 50  0001 C CNN
+	1    5950 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R309
+U 1 1 5F43274E
+P 5650 6800
+F 0 "R309" H 5709 6846 50  0000 L CNN
+F 1 "10k" H 5709 6755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 6800 50  0001 C CNN
+F 3 "~" H 5650 6800 50  0001 C CNN
+	1    5650 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

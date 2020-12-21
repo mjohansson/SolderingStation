@@ -82,4 +82,103 @@ Wire Wire Line
 Wire Wire Line
 	5200 4000 4500 4000
 Connection ~ 4500 4000
+$Comp
+L customlib_mj:Logo_MJ Logo101
+U 1 1 6013DA6B
+P 8700 7050
+F 0 "Logo101" H 8959 7048 50  0000 C CNN
+F 1 "Logo_MJ" H 8700 6950 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_10.3x12.7" H 8700 7050 50  0001 C CNN
+F 3 "" H 8700 7050 50  0001 C CNN
+	1    8700 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 6013E8CF
+P 8650 5600
+F 0 "H101" H 9093 5649 50  0000 C CNN
+F 1 "MountingHole_Pad" H 9093 5558 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 8650 5600 50  0001 C CNN
+F 3 "~" H 8650 5600 50  0001 C CNN
+	1    8650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 6013EAA9
+P 9600 5600
+F 0 "H102" H 10043 5649 50  0000 C CNN
+F 1 "MountingHole_Pad" H 10043 5558 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 9600 5600 50  0001 C CNN
+F 3 "~" H 9600 5600 50  0001 C CNN
+	1    9600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 6013EFE6
+P 8650 6100
+F 0 "H103" H 9093 6149 50  0000 C CNN
+F 1 "MountingHole_Pad" H 9093 6058 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 8650 6100 50  0001 C CNN
+F 3 "~" H 8650 6100 50  0001 C CNN
+	1    8650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 6013F3E3
+P 9600 6100
+F 0 "H104" H 10043 6149 50  0000 C CNN
+F 1 "MountingHole_Pad" H 10043 6058 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 9600 6100 50  0001 C CNN
+F 3 "~" H 9600 6100 50  0001 C CNN
+	1    9600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6013F9C1
+P 8650 5700
+F 0 "#PWR0101" H 8650 5450 50  0001 C CNN
+F 1 "GND" H 8650 5550 50  0000 C CNN
+F 2 "" H 8650 5700 50  0001 C CNN
+F 3 "" H 8650 5700 50  0001 C CNN
+	1    8650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6013FECA
+P 9600 5700
+F 0 "#PWR0102" H 9600 5450 50  0001 C CNN
+F 1 "GND" H 9600 5550 50  0000 C CNN
+F 2 "" H 9600 5700 50  0001 C CNN
+F 3 "" H 9600 5700 50  0001 C CNN
+	1    9600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60140260
+P 9600 6200
+F 0 "#PWR0104" H 9600 5950 50  0001 C CNN
+F 1 "GND" H 9600 6050 50  0000 C CNN
+F 2 "" H 9600 6200 50  0001 C CNN
+F 3 "" H 9600 6200 50  0001 C CNN
+	1    9600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60140486
+P 8650 6200
+F 0 "#PWR0103" H 8650 5950 50  0001 C CNN
+F 1 "GND" H 8650 6050 50  0000 C CNN
+F 2 "" H 8650 6200 50  0001 C CNN
+F 3 "" H 8650 6200 50  0001 C CNN
+	1    8650 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
