@@ -1550,38 +1550,6 @@ F 3 "" H 5100 4400 50  0001 C CNN
 	1    5100 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 4400 4950 4400
-Wire Wire Line
-	4350 4400 4300 4400
-Wire Wire Line
-	3850 4400 3950 4400
-Wire Wire Line
-	3950 4400 3950 4300
-Wire Wire Line
-	3950 4300 4300 4300
-Wire Wire Line
-	4300 4300 4300 4400
-Connection ~ 3950 4400
-Wire Wire Line
-	3950 4400 4000 4400
-Connection ~ 4300 4400
-Wire Wire Line
-	4300 4400 4200 4400
-Wire Wire Line
-	5350 4400 5250 4400
-Wire Wire Line
-	5250 4400 5250 4300
-Wire Wire Line
-	5250 4300 4950 4300
-Wire Wire Line
-	4950 4300 4950 4400
-Connection ~ 5250 4400
-Wire Wire Line
-	5250 4400 5200 4400
-Connection ~ 4950 4400
-Wire Wire Line
-	4950 4400 5000 4400
 $Comp
 L customlib_mj:dogbone_2_ud JP606
 U 1 1 5FFA3733
@@ -1594,19 +1562,15 @@ F 3 "" H 2550 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 5400 2400 5400
+	4850 4400 5000 4400
 Wire Wire Line
-	2650 5400 2700 5400
+	5200 4400 5350 4400
 Wire Wire Line
-	2400 5400 2400 5350
+	4200 4400 4350 4400
 Wire Wire Line
-	2400 5350 2700 5350
+	3850 4400 4000 4400
 Wire Wire Line
-	2700 5350 2700 5400
-Connection ~ 2400 5400
+	2350 5400 2450 5400
 Wire Wire Line
-	2400 5400 2350 5400
-Connection ~ 2700 5400
-Wire Wire Line
-	2700 5400 2850 5400
+	2650 5400 2850 5400
 $EndSCHEMATC
