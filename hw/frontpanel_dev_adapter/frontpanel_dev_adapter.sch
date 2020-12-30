@@ -181,4 +181,37 @@ F 3 "" H 8650 6200 50  0001 C CNN
 	1    8650 6200
 	1    0    0    -1  
 $EndComp
+$Comp
+L customlib_mj:JLC_tooling_hole M101
+U 1 1 609221CE
+P 7050 6450
+F 0 "M101" H 7443 6496 50  0000 C CNN
+F 1 "JLC_tooling_hole" H 7443 6405 50  0000 C CNN
+F 2 "customlib_mj_fp:JLC_tooling-hole" H 7050 6450 50  0001 C CNN
+F 3 "https://support.jlcpcb.com/article/92-how-to-add-tooling-holes-for-smt-assembly-order" H 7050 6450 50  0001 C CNN
+	1    7050 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:JLC_tooling_hole M103
+U 1 1 60922604
+P 8650 6450
+F 0 "M103" H 9043 6496 50  0000 C CNN
+F 1 "JLC_tooling_hole" H 9043 6405 50  0000 C CNN
+F 2 "customlib_mj_fp:JLC_tooling-hole" H 8650 6450 50  0001 C CNN
+F 3 "https://support.jlcpcb.com/article/92-how-to-add-tooling-holes-for-smt-assembly-order" H 8650 6450 50  0001 C CNN
+	1    8650 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L customlib_mj:JLC_tooling_hole M102
+U 1 1 609226CE
+P 7850 6450
+F 0 "M102" H 8243 6496 50  0000 C CNN
+F 1 "JLC_tooling_hole" H 8243 6405 50  0000 C CNN
+F 2 "customlib_mj_fp:JLC_tooling-hole" H 7850 6450 50  0001 C CNN
+F 3 "https://support.jlcpcb.com/article/92-how-to-add-tooling-holes-for-smt-assembly-order" H 7850 6450 50  0001 C CNN
+	1    7850 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
