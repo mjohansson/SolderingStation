@@ -651,9 +651,9 @@ Text Label 10550 1300 2    50   ~ 0
 32kHz
 Text GLabel 10550 2200 2    50   Output ~ 0
 DISP_D~Cn~
-Text GLabel 10550 1800 2    50   Input ~ 0
+Text GLabel 6850 1900 0    50   Input ~ 0
 ~FP_BTN_1An~
-Text GLabel 10550 1900 2    50   Input ~ 0
+Text GLabel 6850 1800 0    50   Input ~ 0
 ~FP_BTN_1Bn~
 Text GLabel 6850 1200 0    50   Input ~ 0
 ~FP_BTN_2An~
@@ -683,9 +683,9 @@ Text GLabel 10550 2300 2    50   Output ~ 0
 PWRBTN_LED_PWM
 Text Notes 10100 2300 0    50   ~ 0
 TIM3_CH3
-Text GLabel 10550 2000 2    50   Input ~ 0
-HWID_FP
 Text GLabel 10550 2100 2    50   Input ~ 0
+HWID_FP
+Text GLabel 10550 2000 2    50   Input ~ 0
 HWID_MB
 Text Notes 10100 2000 0    50   ~ 0
 ADC1_IN5
@@ -1193,11 +1193,6 @@ Wire Wire Line
 	1750 1100 1750 1050
 Wire Wire Line
 	1750 1050 1850 1050
-Wire Wire Line
-	1750 1050 1650 1050
-Wire Wire Line
-	1650 1050 1650 1100
-Connection ~ 1750 1050
 Wire Wire Line
 	1650 1300 1650 1350
 Wire Wire Line
@@ -2036,9 +2031,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 7150 5450 7100
 Text Notes 6950 1800 0    50   ~ 0
-USB_DM
-Text Notes 6950 1900 0    50   ~ 0
-USB_DP
+(USB_DM)
 Wire Wire Line
 	5800 7100 5450 7100
 Connection ~ 5450 7100
@@ -2248,4 +2241,46 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 1970 7100 50  000
 	1    1700 7050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C517
+U 1 1 60495DC1
+P 3400 7000
+F 0 "C517" H 3492 7046 50  0000 L CNN
+F 1 "100n" H 3492 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3400 7000 50  0001 C CNN
+F 3 "~" H 3400 7000 50  0001 C CNN
+	1    3400 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0566
+U 1 1 60496669
+P 3400 7150
+F 0 "#PWR0566" H 3400 6900 50  0001 C CNN
+F 1 "GND" H 3400 7000 50  0000 C CNN
+F 2 "" H 3400 7150 50  0001 C CNN
+F 3 "" H 3400 7150 50  0001 C CNN
+	1    3400 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7150 3400 7100
+$Comp
+L power:VDD #PWR0565
+U 1 1 60496674
+P 3400 6850
+F 0 "#PWR0565" H 3400 6700 50  0001 C CNN
+F 1 "VDD" H 3400 7000 50  0000 C CNN
+F 2 "" H 3400 6850 50  0001 C CNN
+F 3 "" H 3400 6850 50  0001 C CNN
+	1    3400 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6850 3400 6900
+NoConn ~ 1650 1050
+Wire Wire Line
+	1650 1100 1650 1050
+Text Notes 6950 1900 0    50   ~ 0
+(USB_DP)
 $EndSCHEMATC

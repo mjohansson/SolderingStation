@@ -1453,4 +1453,8 @@ F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO4407A_C16072.pd
 	1    2050 4500
 	0    -1   -1   0   
 $EndComp
+Text Notes 4450 1200 0    60   ~ 12
+Ren1=390k, Ren2=68k ->\nVstart=8,029V,\nVstop=6,859V,\nVhys=1,17V
+Text Notes 5750 1200 0    60   ~ 0
+(Lower Vin alt.: \nRen1=220k, Ren2=56k ->\nVstart=5,94V,\nVstop=5,28V,\nVhys=0,66V)
 $EndSCHEMATC

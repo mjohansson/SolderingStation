@@ -1441,7 +1441,7 @@ Text GLabel 1850 1000 0    50   Output ~ 0
 ~SYS_RSTn~
 Text Label 2350 1000 2    50   ~ 0
 PF2
-Text GLabel 9800 3400 2    50   Input ~ 0
+Text GLabel 4750 3600 2    50   Input ~ 0
 ~FP_ENC2_SWn~
 Text Label 9300 1400 0    50   ~ 0
 PC0
@@ -1462,9 +1462,7 @@ TIM9_CH2
 Text Label 7200 2900 2    50   ~ 0
 PE13
 Wire Wire Line
-	9300 3400 9800 3400
-Text Label 9300 3400 0    50   ~ 0
-PD8
+	4250 3600 4750 3600
 Text Label 2400 2000 2    50   ~ 0
 PB4
 Text Label 4250 2000 0    50   ~ 0
@@ -1573,4 +1571,6 @@ Wire Wire Line
 	2350 5400 2450 5400
 Wire Wire Line
 	2650 5400 2850 5400
+Text Label 4250 3600 0    50   ~ 0
+PG8
 $EndSCHEMATC

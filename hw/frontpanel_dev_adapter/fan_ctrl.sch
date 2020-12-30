@@ -45,8 +45,6 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 5500 42
 	1    5500 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 3700 5500 3750
 $Comp
 L power:GND #PWR?
 U 1 1 5F47BC77
@@ -99,8 +97,6 @@ F 3 "" H 5300 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 3450 5300 3600
-Wire Wire Line
-	5300 3600 5350 3600
 Wire Wire Line
 	5700 3450 5700 3600
 Wire Wire Line
@@ -363,16 +359,6 @@ Text Notes 4200 5550 0    70   ~ 14
 Fan pin4 (PWM) supplies \npull-up resistor in fan hub\n(max 5.5V)
 Text Notes 2450 3700 0    70   ~ 14
 Fan pin3 (Tacho) is open-drain,\n2 pulses/revolution. The voltage\ndivider should ensure that the\ninactive (high) level is between\n2.2 .. 5.5V for the Schmitt buffer\ninput, regardless of 12V or 5V fan
-Wire Wire Line
-	5350 3750 5500 3750
-Wire Wire Line
-	5350 3600 5350 3750
-Connection ~ 5350 3600
-Wire Wire Line
-	5350 3600 5400 3600
-Connection ~ 5500 3750
-Wire Wire Line
-	5500 3750 5500 3800
 $Comp
 L customlib_mj:dogbone_3_ud JP?
 U 1 1 5F478739
@@ -437,4 +423,8 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 4700 4650 50  0001 L CNN
 	1    4700 4650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5500 3700 5500 3800
+Wire Wire Line
+	5300 3600 5400 3600
 $EndSCHEMATC
