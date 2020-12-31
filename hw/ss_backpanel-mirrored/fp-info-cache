@@ -1,4 +1,4 @@
-20075422934703274
+20130251965077308
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82845,6 +82845,13 @@ DMF682A LCD Connector 1x14 2.54mm
 14
 14
 customlib_mj_fp
+CR2032_coincell_holder
+Coincell holder CR2032. E.g. LCSC.com pn C70378 (or alternative Eagle Plastic Devices pn 122-1020-GR )
+CR2032 Coincell holder SMT
+0
+2
+2
+customlib_mj_fp
 CSTCE_3213MM_SMD
 
 Murata CSTCE series ceramicoscillators 3.2x1.3mm
@@ -83229,6 +83236,13 @@ IRM-3638 improvised SMD
 0
 3
 3
+customlib_mj_fp
+JLC_tooling-hole
+
+
+0
+0
+0
 customlib_mj_fp
 JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal
 JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
@@ -83741,6 +83755,13 @@ SO SOIC
 8
 8
 customlib_mj_fp
+SOIC-16W_7.5x10.3mm_and_SOIC8_3.9x4.9mm_P1.27mm2
+Combined SOIC-16 Pin wide and SOIC-8 pin narrow for either DS3231M or DS3232MZ
+SOIC SO dual
+0
+16
+16
+customlib_mj_fp
 SOT-23
 SOT-23, Standard
 SOT-23
@@ -84211,6 +84232,160 @@ TP0.8
 1
 customlib_mj_fp
 snowy_back_no_text_317dpi
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_12Vout
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_12Vout-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_LAN
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_LAN-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_a
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_a-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_b
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_b-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_debugconn
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_debugconn-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_equipotential_symbol
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_equipotential_symbol-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_fmantenna
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_fmantenna-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_protective_earth_sym
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_protective_earth_sym-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_speakers
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_speakers-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_usb
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_usb-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_wellercomp
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_wellercomp-f_mask
 
 
 0
@@ -87485,325 +87660,3 @@ Zigbee_Module_MRF24J40MD
 0
 12
 12
-prevas_fp
-74HC1G125_SOT23-5
-5-pin SOT23 package
-SOT-23-5 74xx1G125
-0
-5
-5
-prevas_fp
-74HC595(D)_SOIC-16
-
-SOIC-16, SN74HC595D
-0
-16
-16
-prevas_fp
-ALPS_EC11E
-https://lcsc.com/product-detail/Others_ALPS-Electric_EC11E18244A5_ALPS-Electric-EC11E18244A5_C255515.html
-Rotary Encoder ALPS EC11E18244A5
-0
-7
-6
-prevas_fp
-Arduino_1pin
-module 1 pin (ou trou mecanique de percage)
-DEV
-0
-1
-1
-prevas_fp
-Conn_3x1_100mil
-
-
-0
-3
-3
-prevas_fp
-D_SOD-523
-http://www.diodes.com/datasheets/ap02001.pdf p.144
-Diode SOD523
-0
-2
-2
-prevas_fp
-Fuse_1206_3216Metric
-Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-PTC poly-fuse
-0
-2
-2
-prevas_fp
-HTSSOP-56_hs
-
-Handsolder, 14 x 8.2 x 1.2 mm
-0
-58
-57
-prevas_fp
-IRF7329_SO8
-
-SO-8
-0
-8
-8
-prevas_fp
-K2-1187SQ
-https://lcsc.com/product-detail/Tactile-Switches_Korean-Hroparts-Elec-K2-1187SQ-D4SW-06_C223821.html
-K2-1187SQ-D4SW-06
-0
-4
-4
-prevas_fp
-KLD-0202-A
-http://www.mouser.com/ds/2/222/kld-0202-a%20%20b-299280.pdf
-6.4/2.0mm DC-jack, 5A/20V
-0
-3
-3
-prevas_fp
-KLJ1325
-https://lcsc.com/product-detail/Buzzers_KELIKING-KLJ-1325_C201043.html
-13x13x2.5mm buzzer
-0
-2
-2
-prevas_fp
-KiCad-Logo_5mm_Silk
-KiCad Logo
-Logo KiCad
-0
-0
-0
-prevas_fp
-LED_D3.0mm
-LED, diameter 3.0mm, 2 pins
-LED diameter 3.0mm 2 pins
-0
-2
-2
-prevas_fp
-LED_PTH_universal
-LED, diameter 3.0mm, 2 pins
-LED diameter 3.0mm 2 pins
-0
-2
-2
-prevas_fp
-LOGO_MJ_Medium
-
-Logo MJ Medium
-0
-0
-0
-prevas_fp
-MJ_Mini
-
-MJ mini
-0
-0
-0
-prevas_fp
-Minimized_pin-strip_1x8
-Through hole socket strip
-socket strip
-0
-8
-8
-prevas_fp
-Minimized_pin-strip_1x10
-Through hole socket strip
-socket strip
-0
-10
-10
-prevas_fp
-O705030MGDA4SC
-https://lcsc.com/product-detail/SMD-Oscillators-XO_Yangxing-Tech-O705030MGDA4SC_C70643.html
-7050 Xtal Osc, LCSC:C70643 
-0
-4
-4
-prevas_fp
-PCIe_x4
-https://www.mouser.se/ProductDetail/Amphenol-FCI/10018784-10210TLF?qs=sGAEpiMZZMtWxQ3D3EXBNw3nQbjtjJvkffHGiLXPOzo%3d
-Amphenol-FCI 10018784-10210TLF
-0
-64
-64
-prevas_fp
-PinHeader_1x02_P2.54mm_Vertical
-Through hole straight pin header, 1x02, 2.54mm pitch, single row
-Through hole pin header THT 1x02 2.54mm single row
-0
-2
-2
-prevas_fp
-PinHeader_1x04_P2.54mm_Vertical
-Through hole straight pin header, 1x04, 2.54mm pitch, single row
-Through hole pin header THT 1x04 2.54mm single row
-0
-4
-4
-prevas_fp
-PinSocket_2x03_P2.54mm_Vertical_SMD
-surface-mounted straight socket strip, 2x03, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
-Surface mounted socket strip SMD 2x03 2.54mm double row
-0
-6
-6
-prevas_fp
-PinSocket_2x05_P2.54mm_Vertical_SMD
-surface-mounted straight socket strip, 2x05, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
-Surface mounted socket strip SMD 2x05 2.54mm double row
-0
-10
-10
-prevas_fp
-PrevasLogo-cent_16x5.4mm
-
-
-0
-0
-0
-prevas_fp
-PrevasLogo-cent_19.5x6.5mm
-
-
-0
-0
-0
-prevas_fp
-PrevasLogo-cent_21.6x7.3mm
-
-
-0
-0
-0
-prevas_fp
-PrevasLogo-cent_26x8.7mm
-
-
-0
-0
-0
-prevas_fp
-PrevasLogo-cent_32.5x10.9mm
-
-
-0
-0
-0
-prevas_fp
-PrevasLogo-cent_43x14.5mm
-
-
-0
-0
-0
-prevas_fp
-R_0603_1608Metric
-Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
-0
-2
-2
-prevas_fp
-Socket_Strip_Arduino_1x06
-Through hole socket strip
-socket strip
-0
-6
-6
-prevas_fp
-Socket_Strip_Arduino_1x08
-Through hole socket strip
-socket strip
-0
-8
-8
-prevas_fp
-Socket_Strip_Arduino_1x08-rev
-Through hole socket strip
-socket strip
-0
-8
-8
-prevas_fp
-Socket_Strip_Arduino_1x10
-Through hole socket strip
-socket strip
-0
-10
-10
-prevas_fp
-Socket_Strip_Arduino_2x18
-Through hole socket strip
-socket strip
-0
-36
-36
-prevas_fp
-TJ-S1706_0603
-https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_TOGIALED-TJ-S1706SW6TGLC2G-A5_C273616.html
-0603 LED side-view
-0
-2
-2
-prevas_fp
-TantalC_SizeB_EIA-3528_Wave
-Tantal Cap. , Size B, EIA-3528, Wave,
-Tantal Cap. , Size B, EIA-3528, Wave,
-0
-2
-2
-prevas_fp
-USB-LC6_SOT-23-6
-6-pin SOT-23 package
-SOT-23-6
-0
-6
-6
-prevas_fp
-ZL-YDW12055
-ZL-YDW12055-4005PA-6.5
-ZLFY ZL-YDW12055
-0
-2
-2
-prevas_fp
-carrot_mask
-
-
-0
-0
-0
-prevas_fp
-microUSB_5p-LCSC-Jing_Extension
-
-microUSB 5p, LCSC C40954
-0
-11
-11
-prevas_fp
-pcie_x4_edge_conn
-
-
-0
-64
-64
-prevas_fp
-smd_pad_0.8
-
-TP0.8
-0
-1
-1
-prevas_fp
-snowy_back_no_text_317dpi
-
-
-0
-0
-0
