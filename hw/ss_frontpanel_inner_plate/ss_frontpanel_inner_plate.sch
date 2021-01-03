@@ -482,7 +482,7 @@ U 1 1 5F35623C
 P 2950 3200
 F 0 "OLED1" H 2950 3550 50  0000 C CNN
 F 1 "NHD-3.12-25664" H 2950 3450 50  0000 C CNN
-F 2 "customlib_mj_fp:NHD3_12-Flush_with_bridge_cutouts" H 2950 3200 50  0001 C CNN
+F 2 "customlib_mj_fp:NHD3_12-Flush_without_bridge_cutouts" H 2950 3200 50  0001 C CNN
 F 3 "https://www.newhavendisplay.com/specs/NHD-3.12-25664UCW2.pdf" H 2950 3200 50  0001 C CNN
 	1    2950 3200
 	1    0    0    -1  
@@ -1238,56 +1238,11 @@ Wire Notes Line
 	7250 6200 7250 4400
 Wire Notes Line
 	7250 4400 4650 4400
-$Sheet
-S 8750 6100 500  250 
-U 5F94C41C
-F0 "BridgeAdapter 1" 50
-F1 "cutout_bridge_board.sch" 50
-$EndSheet
-$Sheet
-S 10000 6100 500  250 
-U 5F94C9C0
-F0 "BridgeAdapter 2" 50
-F1 "cutout_bridge_board.sch" 50
-$EndSheet
 Wire Wire Line
 	10050 3200 9900 3200
 Connection ~ 9900 3200
 Wire Wire Line
 	9900 3200 9900 3000
-$Comp
-L customlib_mj:Mousebite_stamp_holes M2
-U 1 1 5FAD9C7F
-P 9100 5950
-F 0 "M2" H 9100 5850 50  0000 C CNN
-F 1 "Mousebite_stamp_holes" H 9100 5900 50  0000 C CNN
-F 2 "customlib_mj_fp:mousebite_5mm_stampholes" H 9100 5950 50  0001 C CNN
-F 3 "" H 9100 5950 50  0001 C CNN
-	1    9100 5950
-	-1   0    0    1   
-$EndComp
-$Comp
-L customlib_mj:Mousebite_stamp_holes M1
-U 1 1 5FADA5BC
-P 10350 5700
-F 0 "M1" H 10350 5600 50  0000 C CNN
-F 1 "Mousebite_stamp_holes" H 10350 5650 50  0000 C CNN
-F 2 "customlib_mj_fp:mousebite_5mm_stampholes" H 10350 5700 50  0001 C CNN
-F 3 "" H 10350 5700 50  0001 C CNN
-	1    10350 5700
-	-1   0    0    1   
-$EndComp
-$Comp
-L customlib_mj:Mousebite_stamp_holes M3
-U 1 1 5FADAC8E
-P 10350 5950
-F 0 "M3" H 10350 5850 50  0000 C CNN
-F 1 "Mousebite_stamp_holes" H 10350 5900 50  0000 C CNN
-F 2 "customlib_mj_fp:mousebite_5mm_stampholes" H 10350 5950 50  0001 C CNN
-F 3 "" H 10350 5950 50  0001 C CNN
-	1    10350 5950
-	-1   0    0    1   
-$EndComp
 $Comp
 L customlib_mj:FFC_14p_50mm_folded_x2 FFC1
 U 1 1 5FB5497A
@@ -1597,6 +1552,50 @@ F 1 "Frontpanel_L_Powerbtn_Pushbtns_holder" H 7658 2474 50  0000 C CNN
 F 2 "customlib_mj_fp:Frontpanel_L_Powerbtn_Pushbtns_holder" H 7575 1995 50  0001 C CNN
 F 3 "" H 7575 1995 50  0001 C CNN
 	1    7600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 60CF69EE
+P 7300 1600
+F 0 "#PWR0107" H 7300 1350 50  0001 C CNN
+F 1 "GND" H 7300 1450 50  0000 C CNN
+F 2 "" H 7300 1600 50  0001 C CNN
+F 3 "" H 7300 1600 50  0001 C CNN
+	1    7300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 60CF6CD0
+P 7900 1600
+F 0 "#PWR0108" H 7900 1350 50  0001 C CNN
+F 1 "GND" H 7900 1450 50  0000 C CNN
+F 2 "" H 7900 1600 50  0001 C CNN
+F 3 "" H 7900 1600 50  0001 C CNN
+	1    7900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 60CF7164
+P 9650 1600
+F 0 "#PWR0109" H 9650 1350 50  0001 C CNN
+F 1 "GND" H 9650 1450 50  0000 C CNN
+F 2 "" H 9650 1600 50  0001 C CNN
+F 3 "" H 9650 1600 50  0001 C CNN
+	1    9650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60CF7511
+P 10250 1600
+F 0 "#PWR0110" H 10250 1350 50  0001 C CNN
+F 1 "GND" H 10250 1450 50  0000 C CNN
+F 2 "" H 10250 1600 50  0001 C CNN
+F 3 "" H 10250 1600 50  0001 C CNN
+	1    10250 1600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
