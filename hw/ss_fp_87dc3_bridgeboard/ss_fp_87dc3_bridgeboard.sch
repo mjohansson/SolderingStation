@@ -16,357 +16,535 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5F96373E
-P 2600 2750
+P 950 950
 AR Path="/5F94C41C/5F96373E" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5F96373E" Ref="J?"  Part="1" 
 AR Path="/5F96373E" Ref="J101"  Part="1" 
-F 0 "J101" V 2600 2500 50  0000 C CNN
-F 1 "Conn_01x02" V 2700 2700 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2600 2750 50  0001 C CNN
-F 3 "~" H 2600 2750 50  0001 C CNN
-	1    2600 2750
+F 0 "J101" V 950 700 50  0000 C CNN
+F 1 "Conn_01x02" V 1050 900 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 950 950 50  0001 C CNN
+F 3 "~" H 950 950 50  0001 C CNN
+	1    950  950 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5F963F4E
-P 3450 2750
+P 1800 950
 AR Path="/5F94C41C/5F963F4E" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5F963F4E" Ref="J?"  Part="1" 
 AR Path="/5F963F4E" Ref="J102"  Part="1" 
-F 0 "J102" V 3450 2400 50  0000 C CNN
-F 1 "Conn_01x04" V 3550 2700 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 2750 50  0001 C CNN
-F 3 "~" H 3450 2750 50  0001 C CNN
-	1    3450 2750
+F 0 "J102" V 1800 600 50  0000 C CNN
+F 1 "Conn_01x04" V 1900 900 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1800 950 50  0001 C CNN
+F 3 "~" H 1800 950 50  0001 C CNN
+	1    1800 950 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5F9656C4
-P 3100 3550
+P 1450 1750
 AR Path="/5F94C41C/5F9656C4" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5F9656C4" Ref="J?"  Part="1" 
 AR Path="/5F9656C4" Ref="J103"  Part="1" 
-F 0 "J103" V 3100 3300 50  0000 C CNN
-F 1 "Conn_01x03" V 3200 3550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3100 3550 50  0001 C CNN
-F 3 "~" H 3100 3550 50  0001 C CNN
-	1    3100 3550
+F 0 "J103" V 1450 1500 50  0000 C CNN
+F 1 "Conn_01x03" V 1550 1750 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1450 1750 50  0001 C CNN
+F 3 "~" H 1450 1750 50  0001 C CNN
+	1    1450 1750
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	2600 2950 2600 3050
+	950  1150 950  1250
 Wire Wire Line
-	2600 3150 3000 3150
+	950  1350 1350 1350
 Wire Wire Line
-	3000 3150 3000 3350
+	1350 1350 1350 1550
 Wire Wire Line
-	3350 2950 3350 3150
+	1700 1150 1700 1350
 Wire Wire Line
-	3350 3150 3100 3150
+	1700 1350 1450 1350
 Wire Wire Line
-	3100 3150 3100 3350
+	1450 1350 1450 1550
 Wire Wire Line
-	3650 2950 3650 3250
+	2000 1150 2000 1450
 Wire Wire Line
-	3650 3250 3200 3250
+	2000 1450 1550 1450
 Wire Wire Line
-	3200 3250 3200 3350
-Text Notes 3150 3100 0    50   ~ 0
+	1550 1450 1550 1550
+Text Notes 1500 1300 0    50   ~ 0
 A
-Text Notes 3550 3200 0    50   ~ 0
+Text Notes 1900 1400 0    50   ~ 0
 B
-Text Label 3000 3150 2    50   ~ 0
+Text Label 1350 1350 2    50   ~ 0
 COM_1
 Wire Wire Line
-	2600 3050 2700 3050
+	950  1250 1050 1250
 Wire Wire Line
-	2700 3050 2700 2950
-Connection ~ 2600 3050
+	1050 1250 1050 1150
+Connection ~ 950  1250
 Wire Wire Line
-	2600 3050 2600 3150
-NoConn ~ 3450 2950
-NoConn ~ 3550 2950
+	950  1250 950  1350
+NoConn ~ 1800 1150
+NoConn ~ 1900 1150
 $Comp
 L customlib_mj:Logo_MJ Logo?
 U 1 1 6027E0F4
-P 3600 3400
+P 1950 1600
 AR Path="/5F94C41C/6027E0F4" Ref="Logo?"  Part="1" 
 AR Path="/5F94C9C0/6027E0F4" Ref="Logo?"  Part="1" 
 AR Path="/6027E0F4" Ref="Logo101"  Part="1" 
-F 0 "Logo101" H 3600 3300 50  0000 C CNN
-F 1 "Logo_MJ" H 3600 3300 50  0001 C CNN
-F 2 "customlib_mj_fp:MJ_Mini" H 3600 3400 50  0001 C CNN
-F 3 "" H 3600 3400 50  0001 C CNN
-	1    3600 3400
+F 0 "Logo101" H 1950 1500 50  0000 C CNN
+F 1 "Logo_MJ" H 1950 1500 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_Mini" H 1950 1600 50  0001 C CNN
+F 3 "" H 1950 1600 50  0001 C CNN
+	1    1950 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FCF5869
-P 5000 2750
+P 3350 950
 AR Path="/5F94C41C/5FCF5869" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCF5869" Ref="J?"  Part="1" 
 AR Path="/5FCF5869" Ref="J104"  Part="1" 
-F 0 "J104" V 5000 2500 50  0000 C CNN
-F 1 "Conn_01x02" V 5100 2700 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5000 2750 50  0001 C CNN
-F 3 "~" H 5000 2750 50  0001 C CNN
-	1    5000 2750
+F 0 "J104" V 3350 700 50  0000 C CNN
+F 1 "Conn_01x02" V 3450 900 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3350 950 50  0001 C CNN
+F 3 "~" H 3350 950 50  0001 C CNN
+	1    3350 950 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5FCF58D5
-P 5850 2750
+P 4200 950
 AR Path="/5F94C41C/5FCF58D5" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCF58D5" Ref="J?"  Part="1" 
 AR Path="/5FCF58D5" Ref="J105"  Part="1" 
-F 0 "J105" V 5850 2400 50  0000 C CNN
-F 1 "Conn_01x04" V 5950 2700 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5850 2750 50  0001 C CNN
-F 3 "~" H 5850 2750 50  0001 C CNN
-	1    5850 2750
+F 0 "J105" V 4200 600 50  0000 C CNN
+F 1 "Conn_01x04" V 4300 900 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4200 950 50  0001 C CNN
+F 3 "~" H 4200 950 50  0001 C CNN
+	1    4200 950 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5FCF58DF
-P 5500 3550
+P 3850 1750
 AR Path="/5F94C41C/5FCF58DF" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCF58DF" Ref="J?"  Part="1" 
 AR Path="/5FCF58DF" Ref="J106"  Part="1" 
-F 0 "J106" V 5500 3300 50  0000 C CNN
-F 1 "Conn_01x03" V 5600 3550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5500 3550 50  0001 C CNN
-F 3 "~" H 5500 3550 50  0001 C CNN
-	1    5500 3550
+F 0 "J106" V 3850 1500 50  0000 C CNN
+F 1 "Conn_01x03" V 3950 1750 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3850 1750 50  0001 C CNN
+F 3 "~" H 3850 1750 50  0001 C CNN
+	1    3850 1750
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5000 2950 5000 3050
+	3350 1150 3350 1250
 Wire Wire Line
-	5000 3150 5400 3150
+	3350 1350 3750 1350
 Wire Wire Line
-	5400 3150 5400 3350
+	3750 1350 3750 1550
 Wire Wire Line
-	5750 2950 5750 3150
+	4100 1150 4100 1350
 Wire Wire Line
-	5750 3150 5500 3150
+	4100 1350 3850 1350
 Wire Wire Line
-	5500 3150 5500 3350
+	3850 1350 3850 1550
 Wire Wire Line
-	6050 2950 6050 3250
+	4400 1150 4400 1450
 Wire Wire Line
-	6050 3250 5600 3250
+	4400 1450 3950 1450
 Wire Wire Line
-	5600 3250 5600 3350
-Text Notes 5550 3100 0    50   ~ 0
+	3950 1450 3950 1550
+Text Notes 3900 1300 0    50   ~ 0
 A
-Text Notes 5950 3200 0    50   ~ 0
+Text Notes 4300 1400 0    50   ~ 0
 B
-Text Label 5400 3150 2    50   ~ 0
+Text Label 3750 1350 2    50   ~ 0
 COM_2
 Wire Wire Line
-	5000 3050 5100 3050
+	3350 1250 3450 1250
 Wire Wire Line
-	5100 3050 5100 2950
-Connection ~ 5000 3050
+	3450 1250 3450 1150
+Connection ~ 3350 1250
 Wire Wire Line
-	5000 3050 5000 3150
-NoConn ~ 5850 2950
-NoConn ~ 5950 2950
+	3350 1250 3350 1350
+NoConn ~ 4200 1150
+NoConn ~ 4300 1150
 $Comp
 L customlib_mj:Logo_MJ Logo?
 U 1 1 5FCF58FB
-P 6000 3400
+P 4350 1600
 AR Path="/5F94C41C/5FCF58FB" Ref="Logo?"  Part="1" 
 AR Path="/5F94C9C0/5FCF58FB" Ref="Logo?"  Part="1" 
 AR Path="/5FCF58FB" Ref="Logo102"  Part="1" 
-F 0 "Logo102" H 6000 3300 50  0000 C CNN
-F 1 "Logo_MJ" H 6000 3300 50  0001 C CNN
-F 2 "customlib_mj_fp:MJ_Mini" H 6000 3400 50  0001 C CNN
-F 3 "" H 6000 3400 50  0001 C CNN
-	1    6000 3400
+F 0 "Logo102" H 4350 1500 50  0000 C CNN
+F 1 "Logo_MJ" H 4350 1500 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_Mini" H 4350 1600 50  0001 C CNN
+F 3 "" H 4350 1600 50  0001 C CNN
+	1    4350 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FCFADED
-P 2600 4300
+P 950 2500
 AR Path="/5F94C41C/5FCFADED" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCFADED" Ref="J?"  Part="1" 
 AR Path="/5FCFADED" Ref="J107"  Part="1" 
-F 0 "J107" V 2600 4050 50  0000 C CNN
-F 1 "Conn_01x02" V 2700 4250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2600 4300 50  0001 C CNN
-F 3 "~" H 2600 4300 50  0001 C CNN
-	1    2600 4300
+F 0 "J107" V 950 2250 50  0000 C CNN
+F 1 "Conn_01x02" V 1050 2450 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 950 2500 50  0001 C CNN
+F 3 "~" H 950 2500 50  0001 C CNN
+	1    950  2500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5FCFAEAB
-P 3450 4300
+P 1800 2500
 AR Path="/5F94C41C/5FCFAEAB" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAEAB" Ref="J?"  Part="1" 
 AR Path="/5FCFAEAB" Ref="J108"  Part="1" 
-F 0 "J108" V 3450 3950 50  0000 C CNN
-F 1 "Conn_01x04" V 3550 4250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 4300 50  0001 C CNN
-F 3 "~" H 3450 4300 50  0001 C CNN
-	1    3450 4300
+F 0 "J108" V 1800 2150 50  0000 C CNN
+F 1 "Conn_01x04" V 1900 2450 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1800 2500 50  0001 C CNN
+F 3 "~" H 1800 2500 50  0001 C CNN
+	1    1800 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5FCFAEB5
-P 3100 5100
+P 1450 3300
 AR Path="/5F94C41C/5FCFAEB5" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAEB5" Ref="J?"  Part="1" 
 AR Path="/5FCFAEB5" Ref="J111"  Part="1" 
-F 0 "J111" V 3100 4850 50  0000 C CNN
-F 1 "Conn_01x03" V 3200 5100 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3100 5100 50  0001 C CNN
-F 3 "~" H 3100 5100 50  0001 C CNN
-	1    3100 5100
+F 0 "J111" V 1450 3050 50  0000 C CNN
+F 1 "Conn_01x03" V 1550 3300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1450 3300 50  0001 C CNN
+F 3 "~" H 1450 3300 50  0001 C CNN
+	1    1450 3300
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	2600 4500 2600 4600
+	950  2700 950  2800
 Wire Wire Line
-	2600 4700 3000 4700
+	950  2900 1350 2900
 Wire Wire Line
-	3000 4700 3000 4900
+	1350 2900 1350 3100
 Wire Wire Line
-	3350 4500 3350 4700
+	1700 2700 1700 2900
 Wire Wire Line
-	3350 4700 3100 4700
+	1700 2900 1450 2900
 Wire Wire Line
-	3100 4700 3100 4900
+	1450 2900 1450 3100
 Wire Wire Line
-	3650 4500 3650 4800
+	2000 2700 2000 3000
 Wire Wire Line
-	3650 4800 3200 4800
+	2000 3000 1550 3000
 Wire Wire Line
-	3200 4800 3200 4900
-Text Notes 3150 4650 0    50   ~ 0
+	1550 3000 1550 3100
+Text Notes 1500 2850 0    50   ~ 0
 A
-Text Notes 3550 4750 0    50   ~ 0
+Text Notes 1900 2950 0    50   ~ 0
 B
-Text Label 3000 4700 2    50   ~ 0
+Text Label 1350 2900 2    50   ~ 0
 COM_3
 Wire Wire Line
-	2600 4600 2700 4600
+	950  2800 1050 2800
 Wire Wire Line
-	2700 4600 2700 4500
-Connection ~ 2600 4600
+	1050 2800 1050 2700
+Connection ~ 950  2800
 Wire Wire Line
-	2600 4600 2600 4700
-NoConn ~ 3450 4500
-NoConn ~ 3550 4500
+	950  2800 950  2900
+NoConn ~ 1800 2700
+NoConn ~ 1900 2700
 $Comp
 L customlib_mj:Logo_MJ Logo?
 U 1 1 5FCFAED1
-P 3600 4950
+P 1950 3150
 AR Path="/5F94C41C/5FCFAED1" Ref="Logo?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAED1" Ref="Logo?"  Part="1" 
 AR Path="/5FCFAED1" Ref="Logo103"  Part="1" 
-F 0 "Logo103" H 3600 4850 50  0000 C CNN
-F 1 "Logo_MJ" H 3600 4850 50  0001 C CNN
-F 2 "customlib_mj_fp:MJ_Mini" H 3600 4950 50  0001 C CNN
-F 3 "" H 3600 4950 50  0001 C CNN
-	1    3600 4950
+F 0 "Logo103" H 1950 3050 50  0000 C CNN
+F 1 "Logo_MJ" H 1950 3050 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_Mini" H 1950 3150 50  0001 C CNN
+F 3 "" H 1950 3150 50  0001 C CNN
+	1    1950 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FCFAEDB
-P 5000 4300
+P 3350 2500
 AR Path="/5F94C41C/5FCFAEDB" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAEDB" Ref="J?"  Part="1" 
 AR Path="/5FCFAEDB" Ref="J109"  Part="1" 
-F 0 "J109" V 5000 4050 50  0000 C CNN
-F 1 "Conn_01x02" V 5100 4250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5000 4300 50  0001 C CNN
-F 3 "~" H 5000 4300 50  0001 C CNN
-	1    5000 4300
+F 0 "J109" V 3350 2250 50  0000 C CNN
+F 1 "Conn_01x02" V 3450 2450 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3350 2500 50  0001 C CNN
+F 3 "~" H 3350 2500 50  0001 C CNN
+	1    3350 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5FCFAEE5
-P 5850 4300
+P 4200 2500
 AR Path="/5F94C41C/5FCFAEE5" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAEE5" Ref="J?"  Part="1" 
 AR Path="/5FCFAEE5" Ref="J110"  Part="1" 
-F 0 "J110" V 5850 3950 50  0000 C CNN
-F 1 "Conn_01x04" V 5950 4250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5850 4300 50  0001 C CNN
-F 3 "~" H 5850 4300 50  0001 C CNN
-	1    5850 4300
+F 0 "J110" V 4200 2150 50  0000 C CNN
+F 1 "Conn_01x04" V 4300 2450 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4200 2500 50  0001 C CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+	1    4200 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5FCFAEEF
-P 5500 5100
+P 3850 3300
 AR Path="/5F94C41C/5FCFAEEF" Ref="J?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAEEF" Ref="J?"  Part="1" 
 AR Path="/5FCFAEEF" Ref="J112"  Part="1" 
-F 0 "J112" V 5500 4850 50  0000 C CNN
-F 1 "Conn_01x03" V 5600 5100 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5500 5100 50  0001 C CNN
-F 3 "~" H 5500 5100 50  0001 C CNN
-	1    5500 5100
+F 0 "J112" V 3850 3050 50  0000 C CNN
+F 1 "Conn_01x03" V 3950 3300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3850 3300 50  0001 C CNN
+F 3 "~" H 3850 3300 50  0001 C CNN
+	1    3850 3300
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5000 4500 5000 4600
+	3350 2700 3350 2800
 Wire Wire Line
-	5000 4700 5400 4700
+	3350 2900 3750 2900
 Wire Wire Line
-	5400 4700 5400 4900
+	3750 2900 3750 3100
 Wire Wire Line
-	5750 4500 5750 4700
+	4100 2700 4100 2900
 Wire Wire Line
-	5750 4700 5500 4700
+	4100 2900 3850 2900
 Wire Wire Line
-	5500 4700 5500 4900
+	3850 2900 3850 3100
 Wire Wire Line
-	6050 4500 6050 4800
+	4400 2700 4400 3000
 Wire Wire Line
-	6050 4800 5600 4800
+	4400 3000 3950 3000
 Wire Wire Line
-	5600 4800 5600 4900
-Text Notes 5550 4650 0    50   ~ 0
+	3950 3000 3950 3100
+Text Notes 3900 2850 0    50   ~ 0
 A
-Text Notes 5950 4750 0    50   ~ 0
+Text Notes 4300 2950 0    50   ~ 0
 B
-Text Label 5400 4700 2    50   ~ 0
+Text Label 3750 2900 2    50   ~ 0
 COM_4
 Wire Wire Line
-	5000 4600 5100 4600
+	3350 2800 3450 2800
 Wire Wire Line
-	5100 4600 5100 4500
-Connection ~ 5000 4600
+	3450 2800 3450 2700
+Connection ~ 3350 2800
 Wire Wire Line
-	5000 4600 5000 4700
-NoConn ~ 5850 4500
-NoConn ~ 5950 4500
+	3350 2800 3350 2900
+NoConn ~ 4200 2700
+NoConn ~ 4300 2700
 $Comp
 L customlib_mj:Logo_MJ Logo?
 U 1 1 5FCFAF0B
-P 6000 4950
+P 4350 3150
 AR Path="/5F94C41C/5FCFAF0B" Ref="Logo?"  Part="1" 
 AR Path="/5F94C9C0/5FCFAF0B" Ref="Logo?"  Part="1" 
 AR Path="/5FCFAF0B" Ref="Logo104"  Part="1" 
-F 0 "Logo104" H 6000 4850 50  0000 C CNN
-F 1 "Logo_MJ" H 6000 4850 50  0001 C CNN
-F 2 "customlib_mj_fp:MJ_Mini" H 6000 4950 50  0001 C CNN
-F 3 "" H 6000 4950 50  0001 C CNN
-	1    6000 4950
+F 0 "Logo104" H 4350 3050 50  0000 C CNN
+F 1 "Logo_MJ" H 4350 3050 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_Mini" H 4350 3150 50  0001 C CNN
+F 3 "" H 4350 3150 50  0001 C CNN
+	1    4350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60D452C2
+P 1050 3900
+AR Path="/5F94C41C/60D452C2" Ref="J?"  Part="1" 
+AR Path="/5F94C9C0/60D452C2" Ref="J?"  Part="1" 
+AR Path="/60D452C2" Ref="J113"  Part="1" 
+F 0 "J113" V 1050 3650 50  0000 C CNN
+F 1 "Conn_01x02" V 1150 3850 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1050 3900 50  0001 C CNN
+F 3 "~" H 1050 3900 50  0001 C CNN
+	1    1050 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60D45424
+P 1900 3900
+AR Path="/5F94C41C/60D45424" Ref="J?"  Part="1" 
+AR Path="/5F94C9C0/60D45424" Ref="J?"  Part="1" 
+AR Path="/60D45424" Ref="J114"  Part="1" 
+F 0 "J114" V 1900 3550 50  0000 C CNN
+F 1 "Conn_01x04" V 2000 3850 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1900 3900 50  0001 C CNN
+F 3 "~" H 1900 3900 50  0001 C CNN
+	1    1900 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 60D4542E
+P 1550 4700
+AR Path="/5F94C41C/60D4542E" Ref="J?"  Part="1" 
+AR Path="/5F94C9C0/60D4542E" Ref="J?"  Part="1" 
+AR Path="/60D4542E" Ref="J117"  Part="1" 
+F 0 "J117" V 1550 4450 50  0000 C CNN
+F 1 "Conn_01x03" V 1650 4700 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1550 4700 50  0001 C CNN
+F 3 "~" H 1550 4700 50  0001 C CNN
+	1    1550 4700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1050 4100 1050 4200
+Wire Wire Line
+	1050 4300 1450 4300
+Wire Wire Line
+	1450 4300 1450 4500
+Wire Wire Line
+	1800 4100 1800 4300
+Wire Wire Line
+	1800 4300 1550 4300
+Wire Wire Line
+	1550 4300 1550 4500
+Wire Wire Line
+	2100 4100 2100 4400
+Wire Wire Line
+	2100 4400 1650 4400
+Wire Wire Line
+	1650 4400 1650 4500
+Text Notes 1600 4250 0    50   ~ 0
+A
+Text Notes 2000 4350 0    50   ~ 0
+B
+Text Label 1450 4300 2    50   ~ 0
+COM_5
+Wire Wire Line
+	1050 4200 1150 4200
+Wire Wire Line
+	1150 4200 1150 4100
+Connection ~ 1050 4200
+Wire Wire Line
+	1050 4200 1050 4300
+NoConn ~ 1900 4100
+NoConn ~ 2000 4100
+$Comp
+L customlib_mj:Logo_MJ Logo?
+U 1 1 60D4544A
+P 2050 4550
+AR Path="/5F94C41C/60D4544A" Ref="Logo?"  Part="1" 
+AR Path="/5F94C9C0/60D4544A" Ref="Logo?"  Part="1" 
+AR Path="/60D4544A" Ref="Logo105"  Part="1" 
+F 0 "Logo105" H 2050 4450 50  0000 C CNN
+F 1 "Logo_MJ" H 2050 4450 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_Mini" H 2050 4550 50  0001 C CNN
+F 3 "" H 2050 4550 50  0001 C CNN
+	1    2050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60D45454
+P 3450 3900
+AR Path="/5F94C41C/60D45454" Ref="J?"  Part="1" 
+AR Path="/5F94C9C0/60D45454" Ref="J?"  Part="1" 
+AR Path="/60D45454" Ref="J115"  Part="1" 
+F 0 "J115" V 3450 3650 50  0000 C CNN
+F 1 "Conn_01x02" V 3550 3850 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3450 3900 50  0001 C CNN
+F 3 "~" H 3450 3900 50  0001 C CNN
+	1    3450 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60D4545E
+P 4300 3900
+AR Path="/5F94C41C/60D4545E" Ref="J?"  Part="1" 
+AR Path="/5F94C9C0/60D4545E" Ref="J?"  Part="1" 
+AR Path="/60D4545E" Ref="J116"  Part="1" 
+F 0 "J116" V 4300 3550 50  0000 C CNN
+F 1 "Conn_01x04" V 4400 3850 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4300 3900 50  0001 C CNN
+F 3 "~" H 4300 3900 50  0001 C CNN
+	1    4300 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 60D45468
+P 3950 4700
+AR Path="/5F94C41C/60D45468" Ref="J?"  Part="1" 
+AR Path="/5F94C9C0/60D45468" Ref="J?"  Part="1" 
+AR Path="/60D45468" Ref="J118"  Part="1" 
+F 0 "J118" V 3950 4450 50  0000 C CNN
+F 1 "Conn_01x03" V 4050 4700 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3950 4700 50  0001 C CNN
+F 3 "~" H 3950 4700 50  0001 C CNN
+	1    3950 4700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 4100 3450 4200
+Wire Wire Line
+	3450 4300 3850 4300
+Wire Wire Line
+	3850 4300 3850 4500
+Wire Wire Line
+	4200 4100 4200 4300
+Wire Wire Line
+	4200 4300 3950 4300
+Wire Wire Line
+	3950 4300 3950 4500
+Wire Wire Line
+	4500 4100 4500 4400
+Wire Wire Line
+	4500 4400 4050 4400
+Wire Wire Line
+	4050 4400 4050 4500
+Text Notes 4000 4250 0    50   ~ 0
+A
+Text Notes 4400 4350 0    50   ~ 0
+B
+Text Label 3850 4300 2    50   ~ 0
+COM_6
+Wire Wire Line
+	3450 4200 3550 4200
+Wire Wire Line
+	3550 4200 3550 4100
+Connection ~ 3450 4200
+Wire Wire Line
+	3450 4200 3450 4300
+NoConn ~ 4300 4100
+NoConn ~ 4400 4100
+$Comp
+L customlib_mj:Logo_MJ Logo?
+U 1 1 60D45484
+P 4450 4550
+AR Path="/5F94C41C/60D45484" Ref="Logo?"  Part="1" 
+AR Path="/5F94C9C0/60D45484" Ref="Logo?"  Part="1" 
+AR Path="/60D45484" Ref="Logo106"  Part="1" 
+F 0 "Logo106" H 4450 4450 50  0000 C CNN
+F 1 "Logo_MJ" H 4450 4450 50  0001 C CNN
+F 2 "customlib_mj_fp:MJ_Mini" H 4450 4550 50  0001 C CNN
+F 3 "" H 4450 4550 50  0001 C CNN
+	1    4450 4550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
