@@ -168,7 +168,7 @@ U 1 1 5F483485
 P 6050 2050
 F 0 "R304" H 6109 2096 50  0000 L CNN
 F 1 "10k" H 6109 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 2050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6050 2050 50  0001 C CNN
 F 3 "~" H 6050 2050 50  0001 C CNN
 	1    6050 2050
 	1    0    0    -1  
@@ -364,7 +364,7 @@ U 1 1 5F4926FE
 P 8850 1950
 F 0 "R302" H 8909 1996 50  0000 L CNN
 F 1 "10k" H 8909 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8850 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8850 1950 50  0001 C CNN
 F 3 "~" H 8850 1950 50  0001 C CNN
 	1    8850 1950
 	1    0    0    -1  
@@ -2004,7 +2004,7 @@ Wire Wire Line
 	2450 4200 2450 4300
 Text Notes 5650 2250 0    50   ~ 0
 (ff:4p7)
-Text Notes 6350 2400 0    50   ~ 0
+Text Notes 6350 2100 0    50   ~ 0
 (ff:150k)
 $Comp
 L Device:C_Small C311
@@ -2017,7 +2017,7 @@ F 3 "~" H 6050 2350 50  0001 C CNN
 	1    6050 2350
 	1    0    0    -1  
 $EndComp
-Text Notes 6350 2100 0    50   ~ 0
+Text Notes 6350 2350 0    50   ~ 0
 (ff:470pF)
 Wire Wire Line
 	6050 2250 6050 2150
