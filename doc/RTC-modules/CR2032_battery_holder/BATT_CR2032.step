@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION (( 'STEP AP214' ),
     '1' );
-FILE_NAME ('CircuitWorks-BATT CR2032.STEP',
+FILE_NAME ('BATT_CR2032.STEP',
     '2018-12-16T19:31:49',
     ( '' ),
     ( '' ),
