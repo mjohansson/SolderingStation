@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/mjoh/projects/stm32/projects/SolderingStation/hw/ds3231_RTC_module/ds3231_RTC_module.sch)
+    (source ../../../SolderingStation/hw/ds3231_RTC_module/ds3231_RTC_module.sch)
     (date "Mon 23 Nov 2020 02:09:39 AM CET")
     (tool "Eeschema 5.1.8-db9833491~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
@@ -376,7 +376,7 @@
     (library (logical Transistor_FET)
       (uri /usr/share/kicad/library/Transistor_FET.lib))
     (library (logical customlib_mj)
-      (uri /home/mjoh/projects/stm32/projects/customlib_mj/v5/customlib_mj_lib_sch/customlib_mj.lib)))
+      (uri ../../../customlib_mj/v5/customlib_mj_lib_sch/customlib_mj.lib)))
   (nets
     (net (code 1) (name VDD)
       (node (ref C2102) (pin 2))

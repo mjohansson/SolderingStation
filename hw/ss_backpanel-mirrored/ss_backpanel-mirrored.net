@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/mjoh/projects/stm32/projects/SolderingStation/hw/ss_backpanel-mirrored/ss_backpanel-mirrored.sch)
+    (source ../../../SolderingStation/hw/ss_backpanel-mirrored/ss_backpanel-mirrored.sch)
     (date "Tue 27 Oct 2020 02:55:49 AM CET")
     (tool "Eeschema 5.1.7-a382d34a8~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
@@ -222,5 +222,5 @@
     (library (logical Mechanical)
       (uri /usr/share/kicad/library/Mechanical.lib))
     (library (logical customlib_mj)
-      (uri /home/mjoh/projects/stm32/projects/customlib_mj/v5/customlib_mj_lib_sch/customlib_mj.lib)))
+      (uri ../../../customlib_mj/v5/customlib_mj_lib_sch/customlib_mj.lib)))
   (nets))

@@ -2945,7 +2945,7 @@
       (net 17 "Net-(J2-Pad15)") (solder_paste_margin_ratio -0.2))
     (pad 16 smd rect (at 4.4 -2.5 90) (size 0.8 1.2) (layers B.Cu B.Paste B.Mask)
       (net 18 "Net-(J2-Pad16)") (solder_paste_margin_ratio -0.2))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p-WE_687114182122_rev1.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p-WE_687114182122_rev1.stp
       (offset (xyz 0 -1.35 0.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

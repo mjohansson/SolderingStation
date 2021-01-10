@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/mjoh/projects/stm32/projects/SolderingStation/hw/ss_frontpanel_outer_plate_2nd_rotary/ss_frontpanel_outer_plate_alternate.sch)
+    (source ../../../SolderingStation/hw/ss_frontpanel_outer_plate_2nd_rotary/ss_frontpanel_outer_plate_alternate.sch)
     (date "Sat 29 Aug 2020 07:52:06 PM CEST")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
@@ -569,7 +569,7 @@
     (library (logical Mechanical)
       (uri /usr/share/kicad/library/Mechanical.lib))
     (library (logical customlib_mj)
-      (uri /home/mjoh/projects/stm32/projects/customlib_mj/v5/customlib_mj_lib_sch/customlib_mj.lib)))
+      (uri ../../../customlib_mj/v5/customlib_mj_lib_sch/customlib_mj.lib)))
   (nets
     (net (code 1) (name "Net-(U1-Pad29)")
       (node (ref U1) (pin 29)))

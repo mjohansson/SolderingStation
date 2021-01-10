@@ -1115,7 +1115,7 @@
     (fp_line (start 3 7.1) (end 3 4) (layer Edge.Cuts) (width 0.12))
     (fp_line (start 3 4) (end 3.8 4) (layer Edge.Cuts) (width 0.12))
     (fp_line (start 3.8 4) (end 3.8 0) (layer Edge.Cuts) (width 0.12))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/Molex_NanoFit-1x02_receptacle-1053071202.stp
+    (model ../../../customlib_mj/3d_models/Molex_NanoFit-1x02_receptacle-1053071202.stp
       (offset (xyz 0 1.74 -1.7))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1137,7 +1137,7 @@
     (fp_line (start 3.013 -1.2175) (end 3.013 1.2175) (layer Dwgs.User) (width 0.1))
     (fp_arc (start 0 0) (end 3.013 -1.2175) (angle -316) (layer Edge.Cuts) (width 0.1))
     (fp_arc (start 0 0) (end 3.013 -1.2175) (angle -316) (layer Dwgs.User) (width 0.1))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/SMA_bulkhead_jack_and_cable_assy.stp
+    (model ../../../customlib_mj/3d_models/SMA_bulkhead_jack_and_cable_assy.stp
       (offset (xyz 0 0 -68.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 -90))
@@ -1154,7 +1154,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad "" np_thru_hole circle (at 0 0 180) (size 8.3 8.3) (drill 8.3) (layers *.Cu *.Mask))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/LB_I4R_A-black.stp
+    (model ../../../customlib_mj/3d_models/LB_I4R_A-black.stp
       (offset (xyz 0 0 -20.5))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
@@ -1189,7 +1189,7 @@
     (fp_arc (start 5.75 2) (end 5.75 0.5) (angle 90) (layer Edge.Cuts) (width 0.12))
     (fp_arc (start -5.75 2) (end -7.25 2) (angle 90) (layer Edge.Cuts) (width 0.12))
     (fp_arc (start -5.75 6.1) (end -5.75 7.6) (angle 90) (layer Edge.Cuts) (width 0.12))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/CUI_DEVICES_UJ2-AH-1-SMT.step
+    (model ../../../customlib_mj/3d_models/CUI_DEVICES_UJ2-AH-1-SMT.step
       (offset (xyz 0 0 -15))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1209,7 +1209,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad "" np_thru_hole circle (at 0 2.5) (size 6 6) (drill 6) (layers *.Cu *.Mask))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/CUI_DEVICES_SJ-3571N.step
+    (model ../../../customlib_mj/3d_models/CUI_DEVICES_SJ-3571N.step
       (offset (xyz 0 2.5 0.3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 90 90))
@@ -1236,7 +1236,7 @@
     (fp_line (start 8.3 14.15) (end -8.3 14.15) (layer Edge.Cuts) (width 0.2))
     (fp_line (start 8.3 0) (end 8.3 14.15) (layer Edge.Cuts) (width 0.2))
     (fp_line (start -8.3 0) (end 8.3 0) (layer Edge.Cuts) (width 0.2))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/74980104400_WE-RJ45_LAN_rev1.stp
+    (model ../../../customlib_mj/3d_models/74980104400_WE-RJ45_LAN_rev1.stp
       (offset (xyz 0 7.075 0.4))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 180))
@@ -1263,7 +1263,7 @@
     (fp_line (start 6.1 0.2) (end 6.1 11) (layer Dwgs.User) (width 0.12))
     (fp_line (start 6.1 11) (end -6.1 11) (layer Dwgs.User) (width 0.12))
     (fp_line (start -6.1 11) (end -6.1 0.2) (layer Dwgs.User) (width 0.12))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/TE_1734346-1-c-3d.stp
+    (model ../../../customlib_mj/3d_models/TE_1734346-1-c-3d.stp
       (offset (xyz 0 5.6 0.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1298,7 +1298,7 @@
     (fp_arc (start 28.5 13) (end 30 13) (angle 90) (layer Dwgs.User) (width 0.12))
     (pad "" np_thru_hole circle (at 0 20) (size 3 3) (drill 3) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 -20) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/Schaffner-FN283-1-06.stp
+    (model ../../../customlib_mj/3d_models/Schaffner-FN283-1-06.stp
       (offset (xyz -18 0 19.7))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 90))
@@ -1320,7 +1320,7 @@
     (fp_line (start -1.6 -9.9) (end -1.598511 -8.800271) (layer Edge.Cuts) (width 0.12))
     (fp_line (start 1.6 -9.9) (end -1.6 -9.9) (layer Edge.Cuts) (width 0.12))
     (fp_arc (start 0 0) (end 1.6 -8.8) (angle 339.4) (layer Edge.Cuts) (width 0.12))
-    (model /home/mjoh/projects/stm32/projects/SolderingStation/mech/DIN7_done.stp
+    (model ../../../SolderingStation/mech/DIN7_done.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1342,7 +1342,7 @@
     (fp_line (start -1.6 -9.9) (end -1.598511 -8.800271) (layer Edge.Cuts) (width 0.12))
     (fp_line (start 1.6 -9.9) (end -1.6 -9.9) (layer Edge.Cuts) (width 0.12))
     (fp_arc (start 0 0) (end 1.6 -8.8) (angle 339.4) (layer Edge.Cuts) (width 0.12))
-    (model /home/mjoh/projects/stm32/projects/SolderingStation/mech/DIN7_done.stp
+    (model ../../../SolderingStation/mech/DIN7_done.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

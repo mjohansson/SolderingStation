@@ -245,7 +245,7 @@
       (net 7 GND))
     (pad 9 thru_hole circle (at -11 -11 180) (size 6 6) (drill 3.2) (layers *.Cu *.Mask)
       (net 7 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/3dholder_left_asm.stp
+    (model ../../../customlib_mj/3d_models/3dholder_left_asm.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -313,7 +313,7 @@
       (net 10 /PB_2A))
     (pad 6 thru_hole roundrect (at 5.08 -31 180) (size 1.6 2.2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.125)
       (net 7 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/3dholder_right_asm-1xM3.stp
+    (model ../../../customlib_mj/3d_models/3dholder_right_asm-1xM3.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -473,7 +473,7 @@
       (net 14 VDD_IO))
     (pad 1 thru_hole rect (at 24.13 -19.5 180) (size 2 2) (drill 1.2) (layers *.Cu *.Mask)
       (net 7 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/NHD-3.12-25664UCxx.STEP
+    (model ../../../customlib_mj/3d_models/NHD-3.12-25664UCxx.STEP
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1775,7 +1775,7 @@
     (fp_line (start 10 3.75) (end 0 3.75) (layer F.Fab) (width 0.12))
     (fp_line (start 10 -3.75) (end 10 3.75) (layer F.Fab) (width 0.12))
     (fp_line (start 0 -3.75) (end 10 -3.75) (layer F.Fab) (width 0.12))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p_50mm_folded_x2.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p_50mm_folded_x2.stp
       (offset (xyz 0 0 0.35))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1852,7 +1852,7 @@
       (net 7 GND) (solder_paste_margin_ratio -0.15))
     (pad 1 smd rect (at -3.25 -0.2 90) (size 0.3 1.6) (layers F.Cu F.Paste F.Mask)
       (net 14 VDD_IO) (solder_paste_margin_ratio -0.15))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p-WE_687114182122_rev1.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p-WE_687114182122_rev1.stp
       (offset (xyz 0 -1.35 0.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2691,7 +2691,7 @@
       (net 14 VDD_IO) (solder_paste_margin_ratio -0.15))
     (pad 1 smd rect (at -3.25 0.2 180) (size 0.3 1.5) (layers B.Cu B.Paste B.Mask)
       (net 23 /D~Cn~) (solder_paste_margin_ratio -0.15))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
       (offset (xyz 0 -3.9 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -2765,7 +2765,7 @@
       (net 15 /ENC_SWn) (solder_paste_margin_ratio -0.15))
     (pad 1 smd rect (at -3.25 0.2 180) (size 0.3 1.5) (layers B.Cu B.Paste B.Mask)
       (net 17 /AUX_BOOT0) (solder_paste_margin_ratio -0.15))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
       (offset (xyz 0 -3.9 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))

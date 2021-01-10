@@ -622,7 +622,7 @@
       (net 10 +VDC))
     (pad 1 thru_hole rect (at -7.62 2.54 180) (size 3.1 3.1) (drill 1.5) (layers *.Cu *.Mask)
       (net 10 +VDC))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/WR-FAST_4v_638263222004_rev1.stp
+    (model ../../../customlib_mj/3d_models/WR-FAST_4v_638263222004_rev1.stp
       (offset (xyz 0 5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 90 90))
@@ -737,7 +737,7 @@
       (net 62 DBGUART_RX))
     (pad "" np_thru_hole circle (at 0 0) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 7) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/STX-3501-3N_rA3.wrl
+    (model ../../../customlib_mj/3d_models/STX-3501-3N_rA3.wrl
       (offset (xyz 0 3.5 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz -90 0 180))
@@ -4017,7 +4017,7 @@
     (pad "" np_thru_hole circle (at 31.75 -9.525 90) (size 3 3) (drill 3) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 5.08 9.525 90) (size 3 3) (drill 3) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 5.08 -9.525 90) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/DS3231_Module_MJ-assembly.stp
+    (model ../../../customlib_mj/3d_models/DS3231_Module_MJ-assembly.stp
       (offset (xyz 0 0 10))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4299,7 +4299,7 @@
       (net 6 VMAIN))
     (pad 1 smd rect (at -3.025 0 180) (size 2.35 3.5) (layers F.Cu F.Paste F.Mask)
       (net 4 "Net-(C201-Pad1)"))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/ASPI-0603LR.stp
+    (model ../../../customlib_mj/3d_models/ASPI-0603LR.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5390,7 +5390,7 @@
       (net 51 "Net-(J303-Pad2)"))
     (pad 1 smd roundrect (at -1 -2.85) (size 1 3.5) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 52 "Net-(J303-Pad1)"))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/JST_S2B-PH-SM4-TB.STEP
+    (model ../../../customlib_mj/3d_models/JST_S2B-PH-SM4-TB.STEP
       (offset (xyz -7.9 12.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -5460,7 +5460,7 @@
       (net 49 ~FP_ENC_SWn~) (solder_paste_margin_ratio -0.15))
     (pad 1 smd rect (at -3.25 -0.2) (size 0.3 1.5) (layers F.Cu F.Paste F.Mask)
       (net 50 AUX_BOOT0) (solder_paste_margin_ratio -0.15))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
       (offset (xyz 0 -3.9 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -5530,7 +5530,7 @@
       (net 11 VDD_OLED) (solder_paste_margin_ratio -0.15))
     (pad 1 smd rect (at -3.25 -0.2) (size 0.3 1.5) (layers F.Cu F.Paste F.Mask)
       (net 37 DISP_D~Cn~) (solder_paste_margin_ratio -0.15))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
+    (model ../../../customlib_mj/3d_models/FFC_14p-Molex_5052781433.stp
       (offset (xyz 0 -3.9 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -5601,7 +5601,7 @@
       (net 2 GND))
     (pad MP thru_hole circle (at -2.15 -4.32) (size 3.41 3.41) (drill 2.41) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/Molex_MicroFit_430450421.stp
+    (model ../../../customlib_mj/3d_models/Molex_MicroFit_430450421.stp
       (offset (xyz 1.5 4 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 0))
@@ -5633,7 +5633,7 @@
       (net 10 +VDC))
     (pad 2 thru_hole rect (at 0 0 270) (size 1.3 3.5) (drill oval 0.8 3) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/Kycon_KLD-0202-A.wrl
+    (model ../../../customlib_mj/3d_models/Kycon_KLD-0202-A.wrl
       (offset (xyz -7.5 0 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz -90 0 90))
@@ -5656,7 +5656,7 @@
       (net 24 "Net-(F201-Pad2)"))
     (pad 1 thru_hole circle (at -11.1 0 270) (size 2.3 2.3) (drill 1.3) (layers *.Cu *.Mask)
       (net 10 +VDC))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/Schurter_0031_8201.step
+    (model ../../../customlib_mj/3d_models/Schurter_0031_8201.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -6659,12 +6659,12 @@
       (net 1 +BATT))
     (pad 2 smd roundrect (at -8.35 0 270) (size 4.5 2.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.1)
       (net 2 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/CoinCellHolder_CR2032.step
+    (model ../../../customlib_mj/3d_models/CoinCellHolder_CR2032.step
       (offset (xyz 0.5 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
     )
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/BATT_CR2032.step
+    (model ../../../customlib_mj/3d_models/BATT_CR2032.step
       (offset (xyz 0.5 0 4.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 0))

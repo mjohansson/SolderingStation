@@ -1632,12 +1632,12 @@
       (net 1 +BATT))
     (pad 2 smd roundrect (at -8.35 0 180) (size 4.5 2.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.1)
       (net 2 GND))
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/CoinCellHolder_CR2032.step
+    (model ../../../customlib_mj/3d_models/CoinCellHolder_CR2032.step
       (offset (xyz 0.5 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
     )
-    (model /home/mjoh/projects/stm32/projects/customlib_mj/3d_models/BATT_CR2032.step
+    (model ../../../customlib_mj/3d_models/BATT_CR2032.step
       (offset (xyz 0.5 0 4.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 0))
