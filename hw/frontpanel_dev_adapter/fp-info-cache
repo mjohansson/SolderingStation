@@ -1,4 +1,4 @@
-20094844939655308
+20132809510016308
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83095,7 +83095,7 @@ Front-panel assembly of a 3d-printed holder for either Pwrbutton OR a 2nd Rotary
 Front-panel left-hand generic variant holder
 0
 10
-8
+10
 customlib_mj_fp
 Frontpanel_L_Hybrid_Rotary_Pushbtns_outer_cutouts
 Front-panel cutouts for Hybrid 2nd rotary enc + Grayhill 87DC3-201 dual pushbuttons
@@ -83109,7 +83109,7 @@ Front-panel assembly of a 3d-printed holder for Power push-button + Grayhill 87D
 Front-panel left-hand buttons holder
 0
 10
-8
+10
 customlib_mj_fp
 Frontpanel_L_Powerbtn_Pushbtns_outer_cutouts
 Front-panel cutouts for Power push-button + Grayhill 87DC3-201 dual pushbuttons
@@ -83123,14 +83123,14 @@ Front-panel assembly of a 3d-printed holder for Rotary Encoder + Grayhill 87DC3-
 Front-panel right-side holder
 0
 10
-8
+10
 customlib_mj_fp
 Frontpanel_R_RotaryEnc_Pushbtns_holder-one_M3_removed
 Front-panel assembly of a 3d-printed holder for Rotary Encoder + Grayhill 87DC3-201 dual pushbuttons
 Front-panel right-side holder
 0
 10
-8
+10
 customlib_mj_fp
 Frontpanel_R_RotaryEnc_Pushbtns_outer_cutouts
 Front-panel cutouts for Rotary Encoder + Grayhill 87DC3-201 dual pushbuttons
@@ -83511,6 +83511,13 @@ NHD-3.12-25664UCW2 NewHaven OLED display module
 21
 customlib_mj_fp
 NHD3_12-Flush_with_bridge_cutouts-extra_tab
+Newhaven Display 3.12" intended for module mounted flush on a carrier PCB
+NHD-3.12-25664UCW2 NewHaven OLED display module
+0
+24
+21
+customlib_mj_fp
+NHD3_12-Flush_without_bridge_cutouts
 Newhaven Display 3.12" intended for module mounted flush on a carrier PCB
 NHD-3.12-25664UCW2 NewHaven OLED display module
 0
@@ -84232,6 +84239,160 @@ TP0.8
 1
 customlib_mj_fp
 snowy_back_no_text_317dpi
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_12Vout
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_12Vout-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_LAN
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_LAN-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_a
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_a-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_b
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_chan_b-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_debugconn
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_debugconn-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_equipotential_symbol
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_equipotential_symbol-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_fmantenna
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_fmantenna-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_protective_earth_sym
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_protective_earth_sym-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_speakers
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_speakers-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_usb
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_usb-f_mask
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_wellercomp
+
+
+0
+0
+0
+customlib_mj_fp
+ss_logo_wellercomp-f_mask
 
 
 0

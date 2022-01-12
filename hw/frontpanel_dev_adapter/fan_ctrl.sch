@@ -31,7 +31,7 @@ F 4 "C80500" H 3250 4150 50  0001 C CNN "LCSC (DNM)"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Motor:Fan_4pin M?
+L customlib_mj:Fan_4pin M?
 U 1 1 5F47830A
 P 5500 4250
 AR Path="/5F472FC2/5F4722BA/5F47830A" Ref="M?"  Part="1" 
