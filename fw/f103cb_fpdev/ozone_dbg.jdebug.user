@@ -1,0 +1,30 @@
+
+
+Breakpoint=ssd1322_data, State=Disabled
+OpenDocument="startup_stm32f103xb.s", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/startup_stm32f103xb.s", Line=54
+OpenDocument="buttons.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Src/buttons.c", Line=110
+OpenDocument="usart.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Src/usart.c", Line=238
+OpenDocument="main.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Src/main.c", Line=93
+OpenDocument="stm32f1xx_hal.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c", Line=288
+OpenDocument="stm32f1xx_hal_uart.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c", Line=315
+OpenDocument="stm32f1xx_hal_spi.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c", Line=878
+OpenDocument="ssd1322.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Src/ssd1322.c", Line=1311
+OpenDocument="stm32f1xx_hal_gpio.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c", Line=193
+OpenDocument="stm32f1xx_it.c", FilePath="/home/mjoh/projects/stm32/projects/SolderingStation/fw/f103cb_fpdev/Src/stm32f1xx_it.c", Line=76
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=RIGHT, x=0, y=1, w=720, h=211, FilterBarShown=0, ToolBarShown=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=3, w=720, h=146, FilterBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=2, w=720, h=91, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0, InstEncodingsShown=0
+OpenWindow="Source", x=0, y=0, w=0, h=0, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=1, y=0, w=958, h=318, FilterBarShown=0, ToolBarShown=0, EditorAddress=0x2000BF40
+OpenWindow="Watched Data", DockArea=RIGHT, x=0, y=0, w=720, h=202, FilterBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=300, h=668, FilterBarShown=1, ToolBarShown=0
+OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=972, h=318, FilterBarShown=0, ToolBarShown=0
+TableHeader="Watched Data", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[71;42;98;509]
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[301;77;49;57;203]
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[357;112;182;77;168;73]
+TableHeader="Power Graph", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Channel 0"], ColWidths=[84;119;126]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[140;160;405]
+TableHeader="RegisterSelectionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Auto";"Name";"Address";"Description"], ColWidths=[27;27;27;27]
+WatchedExpression="length"
+WatchedExpression="data"

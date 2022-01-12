@@ -1,0 +1,2 @@
+All files in this dir and subdirs matching *.* will be blobbed and linked to the fw image.
+Linker garbage collection MAY be trusted to remove items which are not actually refered to in the code. Maybe.
