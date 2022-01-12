@@ -412,8 +412,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 5550 8000 5550
 Wire Wire Line
-	8450 5350 8000 5350
-Wire Wire Line
 	9100 5450 9050 5450
 Wire Wire Line
 	9100 5550 9050 5550
@@ -445,8 +443,6 @@ F 3 "" H 8750 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8750 5950 8750 5850
-Wire Wire Line
-	8750 5050 8750 4950
 Wire Wire Line
 	5600 7600 6250 7600
 Text Label 6250 7100 2    50   ~ 0
@@ -1147,4 +1143,33 @@ Wire Wire Line
 Connection ~ 10200 2300
 Wire Wire Line
 	10200 2300 10500 2300
+$Comp
+L Device:R_Small R?
+U 1 1 6029EB28
+P 8400 5150
+F 0 "R?" V 8325 5125 50  0000 L CNN
+F 1 "10k" V 8475 5075 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8400 5150 50  0001 C CNN
+F 3 "~" H 8400 5150 50  0001 C CNN
+F 4 "Basic" H 8400 5150 50  0001 C CNN "JLC_part"
+F 5 "C25744" H 8400 5150 50  0001 C CNN "LCSC"
+	1    8400 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8450 5350 8400 5350
+Wire Wire Line
+	8750 5050 8750 5000
+Wire Wire Line
+	8400 5250 8400 5350
+Connection ~ 8400 5350
+Wire Wire Line
+	8400 5350 8000 5350
+Wire Wire Line
+	8400 5050 8400 5000
+Wire Wire Line
+	8400 5000 8750 5000
+Connection ~ 8750 5000
+Wire Wire Line
+	8750 5000 8750 4950
 $EndSCHEMATC

@@ -30,7 +30,7 @@ F 5 "C50714" H 3250 4150 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Motor:Fan_4pin M601
+L customlib_mj:Fan_4pin M601
 U 1 1 5F47830A
 P 5500 4250
 AR Path="/5F472FC2/5F4722BA/5F47830A" Ref="M601"  Part="1" 
@@ -40,6 +40,8 @@ F 0 "M601" H 5658 4346 50  0000 L CNN
 F 1 "Fan_4pin" H 5658 4255 50  0000 L TNN
 F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 5500 4260 50  0001 C CNN
 F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 5500 4260 50  0001 C CNN
+F 4 "Molex 47053-1000" H 5500 4250 50  0001 C CNN "Mfg_pn"
+F 5 "https://www.mouser.se/datasheet/2/276/3/0470531000_PCB_HEADERS-2846062.pdf" H 5500 4250 50  0001 C CNN "Molex_part"
 	1    5500 4250
 	1    0    0    -1  
 $EndComp
