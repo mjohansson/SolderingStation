@@ -1608,7 +1608,7 @@
     (fp_line (start -1.6 -9.9) (end -1.598511 -8.800271) (layer "Edge.Cuts") (width 0.12) (tstamp 24a654c7-ea59-4600-aeb2-4963fad7b573))
     (fp_line (start 1.6 -9.9) (end -1.6 -9.9) (layer "Edge.Cuts") (width 0.12) (tstamp 39121cda-2cb7-4461-a483-0dda91a28ab8))
     (fp_line (start 1.6 -9.9) (end 1.6 -8.8) (layer "Edge.Cuts") (width 0.12) (tstamp e365334a-9b24-441c-9c4e-82464a47a03c))
-    (fp_arc (start 1.6 -8.8) (mid -0.000757 8.944272) (end -1.598511 -8.800271) (layer "Edge.Cuts") (width 0.12) (tstamp 0f0eb63b-57fa-407a-9b13-204a7a0c8c5e))
+    (fp_arc (start 1.6 -8.8) (mid -0.000759 8.944272) (end -1.598511 -8.800271) (layer "Edge.Cuts") (width 0.12) (tstamp 0f0eb63b-57fa-407a-9b13-204a7a0c8c5e))
     (model "/home/mjoh/projects/stm32/projects/SolderingStation/mech/DIN7_done.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -1634,7 +1634,7 @@
     (fp_line (start 1.6 -9.9) (end -1.6 -9.9) (layer "Edge.Cuts") (width 0.12) (tstamp 32706400-3474-469d-a53c-79d91398f34c))
     (fp_line (start 1.6 -9.9) (end 1.6 -8.8) (layer "Edge.Cuts") (width 0.12) (tstamp 403df5c3-9296-4e57-9eb2-73ccbcd04e94))
     (fp_line (start -1.6 -9.9) (end -1.598511 -8.800271) (layer "Edge.Cuts") (width 0.12) (tstamp ee37e5a2-768d-4846-925d-6c415ff172b1))
-    (fp_arc (start 1.6 -8.8) (mid -0.000757 8.944272) (end -1.598511 -8.800271) (layer "Edge.Cuts") (width 0.12) (tstamp a92abeac-ebb3-4a6f-ae5e-41050fb74189))
+    (fp_arc (start 1.6 -8.8) (mid -0.000759 8.944272) (end -1.598511 -8.800271) (layer "Edge.Cuts") (width 0.12) (tstamp a92abeac-ebb3-4a6f-ae5e-41050fb74189))
     (model "/home/mjoh/projects/stm32/projects/SolderingStation/mech/DIN7_done.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -1796,7 +1796,7 @@
     (fp_arc (start -7.25 2) (mid -6.81066 0.93934) (end -5.75 0.5) (layer "Edge.Cuts") (width 0.12) (tstamp 83f3526b-98f5-4b5d-ab2d-74f37ebc336d))
     (fp_arc (start 5.75 0.5) (mid 6.81066 0.93934) (end 7.25 2) (layer "Edge.Cuts") (width 0.12) (tstamp 9b6e1a8a-2d53-47fe-b32d-fffe2548b697))
     (model "/home/mjoh/projects/stm32/projects/customlib_mj/3d_models/CUI_DEVICES_UJ2-AH-1-SMT.step"
-      (offset (xyz 0 0 -15))
+      (offset (xyz 0 0 -16.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1877,9 +1877,9 @@
       (tstamp 5fb7aa94-9b77-4a5d-a3b3-e79eff69861c)
     )
     (fp_line (start 3.013 -1.2175) (end 3.013 1.2175) (layer "Dwgs.User") (width 0.1) (tstamp ff38c9d0-6bfe-441a-b254-19643bbebac4))
-    (fp_arc (start 3.013117 1.217209) (mid -3.249688 0.000157) (end 3.013 -1.2175) (layer "Dwgs.User") (width 0.1) (tstamp ae794fd1-8298-4bf7-92bd-7658bac928b5))
+    (fp_arc (start 3.013117 1.217209) (mid -3.249688 0.000155) (end 3.013 -1.2175) (layer "Dwgs.User") (width 0.1) (tstamp ae794fd1-8298-4bf7-92bd-7658bac928b5))
     (fp_line (start 3.013 -1.2175) (end 3.013117 1.217209) (layer "Edge.Cuts") (width 0.1) (tstamp 6ce18499-2103-468b-9ede-e0550cc5165e))
-    (fp_arc (start 3.013117 1.217209) (mid -3.249688 0.000157) (end 3.013 -1.2175) (layer "Edge.Cuts") (width 0.1) (tstamp 8d9c9fe1-71c5-4c15-bbfa-120127e7cd60))
+    (fp_arc (start 3.013117 1.217209) (mid -3.249688 0.000155) (end 3.013 -1.2175) (layer "Edge.Cuts") (width 0.1) (tstamp 8d9c9fe1-71c5-4c15-bbfa-120127e7cd60))
     (model "/home/mjoh/projects/stm32/projects/customlib_mj/3d_models/SMA_bulkhead_jack_and_cable_assy.stp"
       (offset (xyz 0 0 -68.5))
       (scale (xyz 1 1 1))

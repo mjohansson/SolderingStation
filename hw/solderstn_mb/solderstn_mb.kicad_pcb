@@ -10638,7 +10638,7 @@
 
   (footprint "customlib_mj_fp:CUI-UJ2_AH_1_SMT" locked (layer "F.Cu")
     (tedit 5F7CA39B) (tstamp 00000000-0000-0000-0000-00005f7d7dd2)
-    (at 134 242.75)
+    (at 134 241.65)
     (descr "CUI Devices USB-A right-angle SMT connector")
     (tags "CUI USB-A SMT")
     (path "/00000000-0000-0000-0000-00005f4730b9/00000000-0000-0000-0000-00005f7d7cd9")
@@ -15905,7 +15905,7 @@
 
   (footprint "customlib_mj_fp:74980104400_WE-RJ45_LAN_trx" locked (layer "B.Cu")
     (tedit 5EB098CC) (tstamp 00000000-0000-0000-0000-00005f433529)
-    (at 114 242)
+    (at 114 243)
     (descr "WE-RJ45 Ethernet LAN jack with integrated transformer,  through-hole (Würth 74980104400)")
     (tags "Würth RJ45 Ethernet jack integrated magnetics (WE: 74980104400)")
     (path "/00000000-0000-0000-0000-00005ed59cbf/00000000-0000-0000-0000-00005ed5dea7")
@@ -19558,7 +19558,7 @@
 
   (footprint "customlib_mj_fp:SJ-3571N" locked (layer "B.Cu")
     (tedit 5F397A3E) (tstamp 00000000-0000-0000-0000-00005fa239dc)
-    (at 154 242 90)
+    (at 154 242.1 90)
     (descr "CUI devices 3.5mm stereo audio jack, right-angle w. isolated DPDT switch and tip- & ring switches")
     (tags "3.5mm stereo audio jack PTH through-hole CUI")
     (path "/00000000-0000-0000-0000-00005f4730b9/00000000-0000-0000-0000-00005fa36c31")
