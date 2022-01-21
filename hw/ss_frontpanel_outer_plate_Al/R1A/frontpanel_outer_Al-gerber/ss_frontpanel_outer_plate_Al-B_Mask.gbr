@@ -1,0 +1,34 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.1-79c1e3a40b~116~ubuntu18.04.1*%
+%TF.CreationDate,2022-01-19T06:10:37+01:00*%
+%TF.ProjectId,ss_frontpanel_outer_plate_Al,73735f66-726f-46e7-9470-616e656c5f6f,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 6.0.1-79c1e3a40b~116~ubuntu18.04.1) date 2022-01-19 06:10:37*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,7.102000*%
+%ADD11C,3.300000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,M3*%
+X212000000Y-65000000D03*
+%TD*%
+D11*
+%TO.C,H2*%
+X227750000Y-52670000D03*
+%TD*%
+%TO.C,H3*%
+X72250000Y-96200000D03*
+%TD*%
+%TO.C,H4*%
+X227750000Y-96200000D03*
+%TD*%
+%TO.C,H1*%
+X72250000Y-52670000D03*
+%TD*%
+M02*

@@ -1,0 +1,45 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.1-79c1e3a40b~116~ubuntu18.04.1*%
+%TF.CreationDate,2022-01-19T05:38:23+01:00*%
+%TF.ProjectId,ss_backpanel-mirrored_Al,73735f62-6163-46b7-9061-6e656c2d6d69,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 6.0.1-79c1e3a40b~116~ubuntu18.04.1) date 2022-01-19 05:38:23*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,3.000000*%
+%ADD11C,6.000000*%
+%ADD12C,8.300000*%
+%ADD13C,3.300000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,M104*%
+X194000000Y-94500000D03*
+X194000000Y-54500000D03*
+%TD*%
+D11*
+%TO.C,M109*%
+X154000000Y-63600000D03*
+%TD*%
+D12*
+%TO.C,J101*%
+X154000000Y-89000000D03*
+%TD*%
+D13*
+%TO.C,H101*%
+X227750000Y-52670000D03*
+%TD*%
+%TO.C,H102*%
+X72250000Y-52670000D03*
+%TD*%
+%TO.C,H103*%
+X227750000Y-96200000D03*
+%TD*%
+%TO.C,H104*%
+X72250000Y-96200000D03*
+%TD*%
+M02*
