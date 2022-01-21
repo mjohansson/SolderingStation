@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "bobs")(type "KiCad")(uri "/home/mjoh/projects/stm32/projects/misc_adapterboards/hw/bobs.pretty")(options "")(descr ""))
+  (lib (name "prevas_fp")(type "KiCad")(uri "/home/mjoh/projects/Arduino_AVR_misc/Prevas_julkort_2018/hw/prevas_fp.pretty")(options "")(descr ""))
+)
