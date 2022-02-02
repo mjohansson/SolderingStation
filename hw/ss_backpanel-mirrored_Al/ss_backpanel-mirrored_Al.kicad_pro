@@ -402,7 +402,7 @@
       "netlist": "ss_backpanel.net",
       "specctra_dsn": "",
       "step": "ss_backpanel-mirrored_Al.step",
-      "vrml": "ss_backpanel-mirrored_Al.wrl"
+      "vrml": "3d_export/ss_backpanel-mirrored_Al.wrl"
     },
     "page_layout_descr_file": ""
   },

@@ -4072,7 +4072,7 @@
     (pin "1" (uuid 2da756fc-3e25-4f7a-99f1-e53c9ab80195))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 204.47 31.75 270)
+  (symbol (lib_id "Device:R_Small") (at 204.47 31.75 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c17)
     (property "Reference" "R1002" (id 0) (at 204.47 29.21 90))
@@ -4093,7 +4093,7 @@
     (pin "2" (uuid 19fd9685-b681-4ba1-8e12-49689e0a58de))
   )
 
-  (symbol (lib_id "Device:CP_Small") (at 212.09 31.75 90)
+  (symbol (lib_id "Device:CP_Small") (at 212.09 31.75 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c1d)
     (property "Reference" "C1001" (id 0) (at 212.09 29.21 90))
@@ -4110,7 +4110,7 @@
     (pin "2" (uuid eca75337-9233-4f07-9aa1-bd6bf2a70c66))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 204.47 39.37 270)
+  (symbol (lib_id "Device:R_Small") (at 204.47 39.37 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c24)
     (property "Reference" "R1003" (id 0) (at 204.47 36.83 90))
@@ -4131,7 +4131,7 @@
     (pin "2" (uuid d2702a82-74c8-4b65-97f6-b335a7fa4972))
   )
 
-  (symbol (lib_id "Device:CP_Small") (at 212.09 39.37 90)
+  (symbol (lib_id "Device:CP_Small") (at 212.09 39.37 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c2a)
     (property "Reference" "C1002" (id 0) (at 212.09 36.83 90))
@@ -4148,7 +4148,7 @@
     (pin "2" (uuid 890db6f2-bfb0-4f1b-b620-2fd5602ec02c))
   )
 
-  (symbol (lib_id "customlib_mj:SJ-3571N") (at 252.73 35.56 0) (mirror y)
+  (symbol (lib_id "customlib_mj:SJ-3571N") (at 252.73 35.56 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c31)
     (property "Reference" "J1001" (id 0) (at 267.3604 33.6804 0))
@@ -4167,7 +4167,7 @@
     (pin "3" (uuid a062bf8f-5349-4b5a-a1f8-ced9d07d761e))
   )
 
-  (symbol (lib_id "power:GND") (at 224.79 24.13 0)
+  (symbol (lib_id "power:GND") (at 224.79 24.13 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c3a)
     (property "Reference" "#PWR01002" (id 0) (at 224.79 30.48 0)
@@ -4183,7 +4183,7 @@
     (pin "1" (uuid f5aef5f3-2ab6-4ab9-a155-b3d9a836cfec))
   )
 
-  (symbol (lib_id "customlib_mj:SJ-3571N") (at 194.31 22.86 90) (mirror x)
+  (symbol (lib_id "customlib_mj:SJ-3571N") (at 194.31 22.86 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c46)
     (property "Reference" "J1001" (id 0) (at 199.39 22.86 90)
@@ -4201,7 +4201,7 @@
     (pin "6" (uuid 42d3f9d6-c846-4ebf-9dab-4eef603d3922))
   )
 
-  (symbol (lib_id "customlib_mj:SJ-3571N") (at 194.31 48.26 90)
+  (symbol (lib_id "customlib_mj:SJ-3571N") (at 194.31 48.26 90) (unit 3)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005fa36c4c)
     (property "Reference" "J1001" (id 0) (at 199.39 48.26 90)
@@ -5186,7 +5186,7 @@
     (pin "1" (uuid a4881a42-9822-46ba-9ad9-2b170f6f7719))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 218.44 45.72 0) (mirror y)
+  (symbol (lib_id "Device:R_Small") (at 218.44 45.72 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006045ae0f)
     (property "Reference" "R1004" (id 0) (at 220.98 45.72 90))
@@ -5201,7 +5201,7 @@
     (pin "2" (uuid 69aa10cb-203b-4584-a074-ca60dde609b3))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 218.44 25.4 0) (mirror y)
+  (symbol (lib_id "Device:R_Small") (at 218.44 25.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000604762d5)
     (property "Reference" "R1001" (id 0) (at 220.98 25.4 90))

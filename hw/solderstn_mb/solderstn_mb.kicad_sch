@@ -12,6 +12,145 @@
   )
 
   (lib_symbols
+    (symbol "customlib_mj:MECH_FrontPanel" (in_bom no) (on_board yes)
+      (property "Reference" "MEK_FP" (id 0) (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MECH_FrontPanel" (id 1) (at 0 1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "customlib_mj_fp:Mech_frontpanel" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Placeholder for mechanical 3d-model of Frontpanel assembly" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MECH_FrontPanel_0_1"
+        (polyline
+          (pts
+            (xy -8.89 3.81)
+            (xy -8.89 -3.81)
+            (xy 10.16 -3.81)
+            (xy 10.16 3.81)
+            (xy -8.89 3.81)
+          )
+          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "customlib_mj:MECH_RearPanel" (in_bom no) (on_board yes)
+      (property "Reference" "MECH_REAR" (id 0) (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MECH_RearPanel" (id 1) (at 0 1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "customlib_mj_fp:Mech_RearPanel" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mechanical placeholder prepresenting the rear-panel with connectors" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MECH_RearPanel_0_0"
+        (text "Mech. placeholder" (at 1.27 -5.08 0)
+          (effects (font (size 1.27 1.27) bold))
+        )
+      )
+      (symbol "MECH_RearPanel_0_1"
+        (rectangle (start -7.62 3.81) (end 7.62 -3.81)
+          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "customlib_mj:MECH_frontpanel-CapTouch" (in_bom no) (on_board yes)
+      (property "Reference" "MEK_FP_OUT" (id 0) (at 0 1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MECH_frontpanel-CapTouch" (id 1) (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "customlib_mj_fp:Mech_Frontpanel_CapTouch" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mechanical placeholder for 3d-model of outer front-panel with cap-touch" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MECH_frontpanel-CapTouch_0_1"
+        (polyline
+          (pts
+            (xy -13.97 3.81)
+            (xy -13.97 -3.81)
+            (xy 13.97 -3.81)
+            (xy 13.97 3.81)
+            (xy -13.97 3.81)
+          )
+          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "customlib_mj:MW_PSU" (pin_names (offset 0)) (in_bom no) (on_board yes)
+      (property "Reference" "PSU" (id 0) (at 0 1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MW_PSU" (id 1) (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "customlib_mj_fp:MW_PSU" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mechanical placeholder representing the volume occupied by the Meanwell PSU" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MW_PSU_0_0"
+        (text "Mech.Placeholder" (at 0 -7.62 0)
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (symbol "MW_PSU_0_1"
+        (rectangle (start -6.35 3.81) (end 6.35 -6.35)
+          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "customlib_mj:Mech_bottom_plate" (in_bom yes) (on_board yes)
+      (property "Reference" "MECH" (id 0) (at 0 1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Mech_bottom_plate" (id 1) (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "customlib_mj_fp:MECH_BTM_PLATE" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mechanical placeholder for Hammond box bottom-plate with POF-50185 rubber feet" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Mech_bottom_plate_0_1"
+        (rectangle (start -10.16 3.81) (end 10.16 -5.08)
+          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
   )
 
 
@@ -251,6 +390,71 @@
     (at 233.68 69.85 0)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid f7161deb-d265-4803-ab6d-3576c1d8028a)
+  )
+
+  (symbol (lib_id "customlib_mj:MECH_RearPanel") (at 228.6 137.16 0) (unit 1)
+    (in_bom no) (on_board yes)
+    (uuid 4d9ece6b-359f-43bb-9099-2bd2946d206c)
+    (property "Reference" "MECH_REAR101" (id 0) (at 228.6 135.89 0))
+    (property "Value" "MECH_RearPanel" (id 1) (at 228.6 139.7 0))
+    (property "Footprint" "customlib_mj_fp:Mech_RearPanel" (id 2) (at 228.6 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 228.6 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "customlib_mj:MW_PSU") (at 250.19 133.35 0) (unit 1)
+    (in_bom no) (on_board yes)
+    (uuid 5bbd6e4f-9e6b-4482-a2b1-5bac82ea9e34)
+    (property "Reference" "PSU101" (id 0) (at 250.19 133.35 0))
+    (property "Value" "MW_PSU" (id 1) (at 250.19 137.16 0))
+    (property "Footprint" "customlib_mj_fp:MW_PSU" (id 2) (at 250.19 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 250.19 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "customlib_mj:Mech_bottom_plate") (at 270.51 134.62 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 63b27424-65cf-4576-aae0-9c3aa81dada6)
+    (property "Reference" "MECH101" (id 0) (at 270.51 133.35 0))
+    (property "Value" "Mech_bottom_plate" (id 1) (at 270.51 137.16 0))
+    (property "Footprint" "customlib_mj_fp:MECH_BTM_PLATE" (id 2) (at 270.51 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 270.51 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "customlib_mj:MECH_frontpanel-CapTouch") (at 228.6 116.84 0) (unit 1)
+    (in_bom no) (on_board yes)
+    (uuid 80bf297f-2fe3-49c0-b509-523d280e1d4e)
+    (property "Reference" "MEK_FP_OUT101" (id 0) (at 228.6 115.57 0))
+    (property "Value" "MECH_frontpanel-CapTouch" (id 1) (at 228.6 119.38 0))
+    (property "Footprint" "customlib_mj_fp:Mech_Frontpanel_CapTouch" (id 2) (at 228.6 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 228.6 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "customlib_mj:MECH_FrontPanel") (at 228.6 125.73 0) (unit 1)
+    (in_bom no) (on_board yes)
+    (uuid fba761e9-e0a6-403c-b290-83a8de123db4)
+    (property "Reference" "MEK_FP101" (id 0) (at 228.6 124.46 0))
+    (property "Value" "MECH_FrontPanel" (id 1) (at 229.87 128.27 0))
+    (property "Footprint" "customlib_mj_fp:Mech_frontpanel" (id 2) (at 228.6 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 228.6 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
   )
 
   (sheet (at 96.52 72.39) (size 35.56 35.56) (fields_autoplaced)
@@ -655,9 +859,6 @@
     )
     (path "/00000000-0000-0000-0000-00005ed59cbf/00000000-0000-0000-0000-00005ed75ce0"
       (reference "#PWR0230") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005f472b62/00000000-0000-0000-0000-00005fa83e97"
-      (reference "#PWR0301") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005f472b62/00000000-0000-0000-0000-00005fb3ddd8"
       (reference "#PWR0302") (unit 1) (value "+VDC") (footprint "")
@@ -1066,6 +1267,12 @@
     )
     (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00005f4b6e36/00000000-0000-0000-0000-00005f4c3a04"
       (reference "#PWR0904") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00006030e740"
+      (reference "#PWR0905") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00006032797d"
+      (reference "#PWR0906") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005f4730b9/00000000-0000-0000-0000-000060476b76"
       (reference "#PWR01001") (unit 1) (value "GND") (footprint "")
@@ -1958,9 +2165,6 @@
     (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00005fb940e3/00000000-0000-0000-0000-00005fbdd46e"
       (reference "#PWR02112") (unit 1) (value "VDD") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00005fb940e3/00000000-0000-0000-0000-00005fbba67b"
-      (reference "#PWR02113") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00005fb940e3/00000000-0000-0000-0000-00005fbb8da6"
       (reference "#PWR02114") (unit 1) (value "VDD") (footprint "")
     )
@@ -2042,17 +2246,8 @@
     (path "/00000000-0000-0000-0000-00005fe3f0d8/00000000-0000-0000-0000-00005fe6f5a3"
       (reference "#PWR02217") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00006030e740"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00006032797d"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00005ebf9055"
       (reference "#TXT02001") (unit 1) (value "STM32_bootmodes") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00005fb940e3/00000000-0000-0000-0000-00005fbb86e2"
-      (reference "BT2101") (unit 1) (value "CR2032_Backup") (footprint "customlib_mj_fp:CR2032_coincell_holder")
     )
     (path "/00000000-0000-0000-0000-00005ed59cbf/00000000-0000-0000-0000-00005f1778c2"
       (reference "C201") (unit 1) (value "DNP") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -2669,9 +2864,6 @@
     (path "/00000000-0000-0000-0000-00005ed59cbf/00000000-0000-0000-0000-00005ed5dea7"
       (reference "J201") (unit 1) (value "74980104400") (footprint "customlib_mj_fp:74980104400_WE-RJ45_LAN_trx")
     )
-    (path "/00000000-0000-0000-0000-00005f472b62/00000000-0000-0000-0000-00005faa122c"
-      (reference "J301") (unit 1) (value "Conn_WR-FAST_01x04") (footprint "customlib_mj_fp:WR-FAST_508_4_V")
-    )
     (path "/00000000-0000-0000-0000-00005f472b62/00000000-0000-0000-0000-00005faf4a9d"
       (reference "J302") (unit 1) (value "Molex_MicroFit_30-43045-0421") (footprint "customlib_mj_fp:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal")
     )
@@ -2686,6 +2878,9 @@
     )
     (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00005f46e2eb"
       (reference "J503") (unit 1) (value "JST_S2B-PH-SM4-TB") (footprint "customlib_mj_fp:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal")
+    )
+    (path "/00000000-0000-0000-0000-00005fe3f0d8/e17ced33-6495-4a76-be4f-a3ba73c29ce8"
+      (reference "J801") (unit 1) (value "alt-placement") (footprint "customlib_mj_fp:SMA_Molex_73251-2200_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00005f4730b9/00000000-0000-0000-0000-00005fa36c31"
       (reference "J1001") (unit 1) (value "SJ-3571N") (footprint "customlib_mj_fp:SJ-3571N")
@@ -2813,8 +3008,23 @@
     (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00005f4722ba/00000000-0000-0000-0000-00005f47830a"
       (reference "M601") (unit 1) (value "Fan_4pin") (footprint "Connector:FanPinHeader_1x04_P2.54mm_Vertical")
     )
+    (path "/63b27424-65cf-4576-aae0-9c3aa81dada6"
+      (reference "MECH101") (unit 1) (value "Mech_bottom_plate") (footprint "customlib_mj_fp:MECH_BTM_PLATE")
+    )
+    (path "/4d9ece6b-359f-43bb-9099-2bd2946d206c"
+      (reference "MECH_REAR101") (unit 1) (value "MECH_RearPanel") (footprint "customlib_mj_fp:Mech_RearPanel")
+    )
+    (path "/fba761e9-e0a6-403c-b290-83a8de123db4"
+      (reference "MEK_FP101") (unit 1) (value "MECH_FrontPanel") (footprint "customlib_mj_fp:Mech_frontpanel")
+    )
+    (path "/80bf297f-2fe3-49c0-b509-523d280e1d4e"
+      (reference "MEK_FP_OUT101") (unit 1) (value "MECH_frontpanel-CapTouch") (footprint "customlib_mj_fp:Mech_Frontpanel_CapTouch")
+    )
     (path "/00000000-0000-0000-0000-00005eaeb4b5/00000000-0000-0000-0000-00005f4d1a74"
       (reference "NT401") (unit 1) (value "Net-Tie_2") (footprint "NetTie:NetTie-2_SMD_Pad2.0mm")
+    )
+    (path "/5bbd6e4f-9e6b-4482-a2b1-5bac82ea9e34"
+      (reference "PSU101") (unit 1) (value "MW_PSU") (footprint "customlib_mj_fp:MW_PSU")
     )
     (path "/00000000-0000-0000-0000-00005f472b62/00000000-0000-0000-0000-00005f6ac6c1"
       (reference "Q301") (unit 1) (value "Si4497DY") (footprint "customlib_mj_fp:SOIC-8_3.9x4.9mm_P1.27mm")
@@ -2983,6 +3193,12 @@
     )
     (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00005f4722ba/00000000-0000-0000-0000-00005f4806de"
       (reference "R603") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-0000602ecb37"
+      (reference "R901") (unit 1) (value "27k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00006031fb43"
+      (reference "R902") (unit 1) (value "27k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f4730b9/00000000-0000-0000-0000-0000604762d5"
       (reference "R1001") (unit 1) (value "DNM") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -3182,6 +3398,9 @@
     (path "/00000000-0000-0000-0000-00005f785d6e/00000000-0000-0000-0000-00005f788a8e/00000000-0000-0000-0000-00005f5a79bb/00000000-0000-0000-0000-00005f5d2dc0"
       (reference "R1604") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
+    (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00006029eb28"
+      (reference "R1605") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
     (path "/00000000-0000-0000-0000-00005f785d6e/00000000-0000-0000-0000-00005f788a8e/00000000-0000-0000-0000-00005f5a8042/00000000-0000-0000-0000-00005f5b486d"
       (reference "R1701") (unit 1) (value "15k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
@@ -3298,15 +3517,6 @@
     )
     (path "/00000000-0000-0000-0000-00005fe3f0d8/00000000-0000-0000-0000-00005fe6f4cc"
       (reference "R2203") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00006029eb28"
-      (reference "R?") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-0000602ecb37"
-      (reference "R?") (unit 1) (value "27k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/00000000-0000-0000-0000-00005f472fc2/00000000-0000-0000-0000-00006031fb43"
-      (reference "R?") (unit 1) (value "27k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005eacd927/00000000-0000-0000-0000-00005fb940e3/00000000-0000-0000-0000-00005ff29fef"
       (reference "RN2101") (unit 1) (value "4x10k_0402") (footprint "Resistor_SMD:R_Array_Convex_4x0402")

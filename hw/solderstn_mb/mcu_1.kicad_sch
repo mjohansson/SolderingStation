@@ -3828,7 +3828,7 @@
   (symbol (lib_id "Device:R_Small") (at 213.36 130.81 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006029eb28)
-    (property "Reference" "R?" (id 0) (at 211.455 130.175 90)
+    (property "Reference" "R1605" (id 0) (at 211.455 130.175 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (id 1) (at 215.265 128.905 90)

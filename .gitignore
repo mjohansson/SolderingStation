@@ -2,9 +2,12 @@
 *-bak
 *.zip
 *.7z
+*.?~
+*~
 mech/*.gcode
 mech/*.stl
 mech/*.wrl
 mech/*.x3g
-mech/*.FCStd?
-mech/*.fcstd?
+*.FCStd?
+*.fcstd?
+*-backups/*.*
