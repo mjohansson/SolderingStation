@@ -3,14 +3,16 @@
  *
  * Description
  *
+ * DTW cycle-counter for e.g. microsecond delays inspired by (among others):
+ *  https://deepbluembedded.com/stm32-delay-microsecond-millisecond-utility-dwt-delay-timer-delay
  *
  * @author Mathias Johansson
  *
  *
  */
 
-#ifndef INCLUDE_UTIL_H
-#define INCLUDE_UTIL_H
+#ifndef __UTIL_H__
+#define __UTIL_H__
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -18,6 +20,13 @@
  * @name Includes
  */
 //@{
+
+// CMSIS
+#include "cmsis_compiler.h"
+#include "core_cm3.h"
+
+// HAL
+#include "stm32f1xx_hal.h"
 
 //@} End of Includes
 
@@ -98,6 +107,41 @@ extern const char hex_str[];
  */
 //@{
 
+/** Setup & enable the clk-cycle counter in Core debug DWT block as a free-running
+    high-res counter for simple us-delays and/or performance profiling.
+*/
+int util_dwt_cycle_counter_init(void);
+
+/** Read current cycle counter value */
+__STATIC_INLINE uint32_t util_dwt_get_cycle_count(void)
+{
+    return DWT->CYCCNT;
+}
+
+__STATIC_INLINE void util_dwt_cycle_counter_reset(void)
+{
+    DWT->CYCCNT = 0;
+}
+
+__STATIC_INLINE void util_dwt_cycle_counter_disable(void)
+{
+    DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk;
+}
+
+__STATIC_INLINE void util_dwt_cycle_counter_enable(void)
+{
+    DWT->CTRL |=  DWT_CTRL_CYCCNTENA_Msk;
+}
+
+/** Simple busy-wait for micro-seconds delay, using the Coredebug DWT counter */
+__STATIC_INLINE void util_dwt_delay_us(volatile uint32_t delay_us)
+{
+    uint32_t start = DWT->CYCCNT;
+    uint32_t wait_cycles = delay_us * (HAL_RCC_GetHCLKFreq() / 1000000UL);
+    while ((DWT->CYCCNT - start) < wait_cycles) { };
+}
+
+
 /**
  * Convert an integer to BCD.
  *
@@ -169,4 +213,4 @@ util_days_and_hours_t util_time_to_days_and_hours(uint16_t elapsed_time);
 
 //@} End of Implemented callback functions
 
-#endif  // INCLUDE_UTIL_H
+#endif  // __UTIL_H__

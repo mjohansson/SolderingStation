@@ -114,6 +114,29 @@ static const char digits[] = "ZYXWVUTSRQPONMLKJIHGFEDCBA9876543210123456789ABCDE
 //@{
 
 
+int util_dwt_cycle_counter_init(void)
+{
+    /* TRACE must be enabled */
+    CoreDebug->DEMCR |=  CoreDebug_DEMCR_TRCENA_Msk;
+
+    __disable_irq();
+#if defined(__CORTEX_M) && (__CORTEX_M >= 7U)
+    DWT->LAR = 0xC5ACCE55; /* Unlock DWT access on CM7 */
+#endif
+
+    /* Disable, reset, enable cycle counter */
+    util_dwt_cycle_counter_disable();
+    util_dwt_cycle_counter_reset();
+    util_dwt_cycle_counter_enable();
+
+    __NOP();
+    __enable_irq();
+    __NOP();
+
+    return (DWT->CYCCNT != 0) ? 1 : 0;
+}
+
+
 /**
  * Convert an integer to BCD, right justified.
  *
