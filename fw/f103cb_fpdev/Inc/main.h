@@ -73,6 +73,10 @@ void Error_Handler(void);
 #define MSC_MEDIA_PACKET 1
 #define BRD_LED_AUX_BOOT0_Pin GPIO_PIN_13
 #define BRD_LED_AUX_BOOT0_GPIO_Port GPIOC
+#define FAN1_RPM_TIM2_ETR_Pin GPIO_PIN_0
+#define FAN1_RPM_TIM2_ETR_GPIO_Port GPIOA
+#define RTC_INTn_SQW_Pin GPIO_PIN_1
+#define RTC_INTn_SQW_GPIO_Port GPIOA
 #define AUX_INTn_Pin GPIO_PIN_2
 #define AUX_INTn_GPIO_Port GPIOA
 #define ADC1_IN5_HWID_MB_Pin GPIO_PIN_5
@@ -81,6 +85,14 @@ void Error_Handler(void);
 #define ADC1_IN6_HWID_FP_GPIO_Port GPIOA
 #define DISP_DCn_Pin GPIO_PIN_7
 #define DISP_DCn_GPIO_Port GPIOA
+#define PWRBTN_LED_PWM_TIM3_CH3_Pin GPIO_PIN_0
+#define PWRBTN_LED_PWM_TIM3_CH3_GPIO_Port GPIOB
+#define FAN1_PWM_TIM3_CH4_Pin GPIO_PIN_1
+#define FAN1_PWM_TIM3_CH4_GPIO_Port GPIOB
+#define AUX_RX_USART3_TX_Pin GPIO_PIN_10
+#define AUX_RX_USART3_TX_GPIO_Port GPIOB
+#define AUX_TX_USART3_RX_Pin GPIO_PIN_11
+#define AUX_TX_USART3_RX_GPIO_Port GPIOB
 #define SYS_RSTn_Pin GPIO_PIN_12
 #define SYS_RSTn_GPIO_Port GPIOB
 #define FP_BTN_2An_Pin GPIO_PIN_13
@@ -101,6 +113,10 @@ void Error_Handler(void);
 #define FP_ENC_A_TIM4_CH1_GPIO_Port GPIOB
 #define FP_ENC_B_TIM4_CH2_Pin GPIO_PIN_7
 #define FP_ENC_B_TIM4_CH2_GPIO_Port GPIOB
+#define SW_I2C_SCL_Pin GPIO_PIN_8
+#define SW_I2C_SCL_GPIO_Port GPIOB
+#define SW_I2C_SDA_Pin GPIO_PIN_9
+#define SW_I2C_SDA_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -110,5 +126,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

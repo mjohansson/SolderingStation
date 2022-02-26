@@ -30,6 +30,8 @@
 
 #include "asm_utils.h"
 #include "buttons.h"
+#include "sw_i2c.h"
+#include "tmp100.h"
 #include "ssd1322.h"
 #include "util.h"
 
@@ -122,6 +124,8 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+    util_dwt_cycle_counter_init();
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -140,13 +144,23 @@ int main(void)
 
     HAL_ADCEx_Calibration_Start(&hadc1);
 
+    sw_i2c_init();
+
     print_device_info();
     print_hwids();
 //    uart_printf("This is an int: %d - test: %s!\n", 42, "SUCCESSFUL");
 
     uart_enable_rx_irq();
 
-    /* USER CODE END 2 */
+    uint8_t tmp100_devs[8] = { 0 };
+    int nbr_tmp100_found = tmp100_probe_all(tmp100_devs, NULL, 8);
+
+    uart_printf("Nbr TMP100 sensors found: %d\n", nbr_tmp100_found);
+    for (int i = 0; i < nbr_tmp100_found; i++) {
+        uart_printf("  ID[%d] = 0x%02X\n", i+1, tmp100_devs[i]);
+    }
+
+  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -180,7 +194,10 @@ int main(void)
             case 'h':
                 uart_puts("\n-== DebugUART menu ==-\n");
                 uart_puts("  h: help menu\n");
-                uart_puts("  t: toggle PB%(MOSI)\n");
+                uart_puts("  r: read TMP100 temps\n");
+                uart_puts("  R: oneshot TMP100s\n");
+                uart_puts("  P: re-init TMP100s\n");
+                uart_puts("  t: toggle PB5(MOSI)\n");
                 uart_puts("  T: toggle FlashCSn\n");
                 uart_puts("  o: display init\n");
                 uart_puts("  O: display off\n");
@@ -198,6 +215,37 @@ int main(void)
                 uart_puts("  !: device info\n");
                 uart_puts("  x: warm reset\n");
                 break;
+                case 'r': {
+                    if (nbr_tmp100_found == 0) {
+                        uart_puts("No TMP100s found!\n");
+                        break;
+                    }
+                    uart_puts("Reading temps...\n");
+                    for (int i = 0; i < nbr_tmp100_found; i++) {
+                        int t = tmp100_read_temp(tmp100_devs[i]);
+                        uint8_t s = tmp100_read_status(tmp100_devs[i]);
+                        uart_printf("  %d (TMP100<0x%02X>): T = 0x%04X CFG=0x%02X\n", i+1, tmp100_devs[i], t, s);
+                    }
+                    break;
+                }
+                case 'R': {
+                    if (nbr_tmp100_found == 0) {
+                        uart_puts("No TMP100s found!\n");
+                        break;
+                    }
+                    uart_puts("One-shot temps...\n");
+                    for (int i = 0; i < nbr_tmp100_found; i++) {
+                        int t = tmp100_oneshot(tmp100_devs[i]);
+                        uint8_t s = tmp100_read_status(tmp100_devs[i]);
+                        uart_printf("  %d (TMP100<0x%02X>): T = 0x%04X CFG=0x%02X\n", i+1, tmp100_devs[i], t, s);
+                    }
+                    break;
+                }
+                case 'P': {
+                    int nbr_tmp100_found = tmp100_probe_all(tmp100_devs, NULL, 8);
+                    uart_printf("%d TMP100 sensors found\n", nbr_tmp100_found);
+                    break;
+                }
                 case 'p': {
                     uint32_t unpacked[256/4] = { 0 };
                     uint32_t packed[128/4] = { 0 };
@@ -458,4 +506,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
