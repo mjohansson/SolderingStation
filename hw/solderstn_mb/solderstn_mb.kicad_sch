@@ -1,823 +1,1986 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 31eb4b33-3d27-430b-bb64-77ee431fbdc4)
-
-  (paper "A4")
-
-  (title_block
-    (title "DIY Soldering station, top level")
-    (date "2020-04-26")
-    (rev "R0.1")
-    (company "SolderingStationGroup : Jonny Svärd / Mathias Johansson / Magnus Thulesius")
-  )
-
-  (lib_symbols
-    (symbol "customlib_mj:MECH_FrontPanel" (in_bom no) (on_board yes)
-      (property "Reference" "MEK_FP" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MECH_FrontPanel" (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "customlib_mj_fp:Mech_frontpanel" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Placeholder for mechanical 3d-model of Frontpanel assembly" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MECH_FrontPanel_0_1"
-        (polyline
-          (pts
-            (xy -8.89 3.81)
-            (xy -8.89 -3.81)
-            (xy 10.16 -3.81)
-            (xy 10.16 3.81)
-            (xy -8.89 3.81)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "customlib_mj:MECH_RearPanel" (in_bom no) (on_board yes)
-      (property "Reference" "MECH_REAR" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MECH_RearPanel" (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "customlib_mj_fp:Mech_RearPanel" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mechanical placeholder prepresenting the rear-panel with connectors" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MECH_RearPanel_0_0"
-        (text "Mech. placeholder" (at 1.27 -5.08 0)
-          (effects (font (size 1.27 1.27) bold))
-        )
-      )
-      (symbol "MECH_RearPanel_0_1"
-        (rectangle (start -7.62 3.81) (end 7.62 -3.81)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "customlib_mj:MECH_frontpanel-CapTouch" (in_bom no) (on_board yes)
-      (property "Reference" "MEK_FP_OUT" (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MECH_frontpanel-CapTouch" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "customlib_mj_fp:Mech_Frontpanel_CapTouch" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mechanical placeholder for 3d-model of outer front-panel with cap-touch" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MECH_frontpanel-CapTouch_0_1"
-        (polyline
-          (pts
-            (xy -13.97 3.81)
-            (xy -13.97 -3.81)
-            (xy 13.97 -3.81)
-            (xy 13.97 3.81)
-            (xy -13.97 3.81)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "customlib_mj:MW_PSU" (pin_names (offset 0)) (in_bom no) (on_board yes)
-      (property "Reference" "PSU" (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MW_PSU" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "customlib_mj_fp:MW_PSU" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mechanical placeholder representing the volume occupied by the Meanwell PSU" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MW_PSU_0_0"
-        (text "Mech.Placeholder" (at 0 -7.62 0)
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (symbol "MW_PSU_0_1"
-        (rectangle (start -6.35 3.81) (end 6.35 -6.35)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "customlib_mj:Mech_bottom_plate" (in_bom yes) (on_board yes)
-      (property "Reference" "MECH" (at 0 1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Mech_bottom_plate" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "customlib_mj_fp:MECH_BTM_PLATE" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mechanical placeholder for Hammond box bottom-plate with POF-50185 rubber feet" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Mech_bottom_plate_0_1"
-        (rectangle (start -10.16 3.81) (end 10.16 -5.08)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-
-  (wire (pts (xy 134.62 49.53) (xy 154.94 49.53))
-    (stroke (width 0) (type default))
-    (uuid 0fcec4e3-48b5-4c9b-bc66-169f0a1da4b8)
-  )
-  (wire (pts (xy 154.94 87.63) (xy 137.16 87.63))
-    (stroke (width 0) (type default))
-    (uuid 10414b0e-0388-4964-883c-9be0a10fc203)
-  )
-  (wire (pts (xy 154.94 102.87) (xy 151.13 102.87))
-    (stroke (width 0) (type default))
-    (uuid 16fda715-2fee-4781-b25b-742b54e560dd)
-  )
-  (wire (pts (xy 198.12 80.01) (xy 190.5 80.01))
-    (stroke (width 0) (type default))
-    (uuid 1706f6fc-52b5-4b89-8085-e610b25f12af)
-  )
-  (wire (pts (xy 90.17 77.47) (xy 96.52 77.47))
-    (stroke (width 0) (type default))
-    (uuid 18314066-1a7b-4328-98d2-a90d321feef6)
-  )
-  (wire (pts (xy 153.67 148.59) (xy 132.08 148.59))
-    (stroke (width 0) (type default))
-    (uuid 1b523a4c-83e6-4215-bd0b-b0e05c7b3f77)
-  )
-  (wire (pts (xy 144.78 133.35) (xy 132.08 133.35))
-    (stroke (width 0) (type default))
-    (uuid 1c5f4fdc-9bd3-4138-9abd-9cec43b9f425)
-  )
-  (wire (pts (xy 132.08 85.09) (xy 144.78 85.09))
-    (stroke (width 0) (type default))
-    (uuid 21337d6b-450c-44d0-b387-9035ef75ab5d)
-  )
-  (wire (pts (xy 137.16 54.61) (xy 154.94 54.61))
-    (stroke (width 0) (type default))
-    (uuid 2e0fd5ae-12f8-4593-b987-97cb8dbd10cc)
-  )
-  (wire (pts (xy 92.71 74.93) (xy 96.52 74.93))
-    (stroke (width 0) (type default))
-    (uuid 315b6a6a-e97c-4d2c-bf2c-130f77187dde)
-  )
-  (wire (pts (xy 151.13 102.87) (xy 151.13 146.05))
-    (stroke (width 0) (type default))
-    (uuid 3e1f56cb-3b4b-4c03-a7aa-f7fb107d5f43)
-  )
-  (wire (pts (xy 74.93 125.73) (xy 96.52 125.73))
-    (stroke (width 0) (type default))
-    (uuid 43d1e71a-bcb8-4baa-888e-f91f4da0c094)
-  )
-  (wire (pts (xy 132.08 82.55) (xy 137.16 82.55))
-    (stroke (width 0) (type default))
-    (uuid 4ad5832d-cd3e-4537-8534-7054bf3ae590)
-  )
-  (wire (pts (xy 139.7 90.17) (xy 139.7 128.27))
-    (stroke (width 0) (type default))
-    (uuid 4beec05e-fdfb-4a67-b65b-e1d1be513376)
-  )
-  (wire (pts (xy 146.05 97.79) (xy 146.05 140.97))
-    (stroke (width 0) (type default))
-    (uuid 4c3de96e-0b07-4feb-ba5a-9643f623cde1)
-  )
-  (wire (pts (xy 151.13 146.05) (xy 132.08 146.05))
-    (stroke (width 0) (type default))
-    (uuid 4d622de8-1ad7-4693-b371-6944810bbed2)
-  )
-  (wire (pts (xy 144.78 82.55) (xy 154.94 82.55))
-    (stroke (width 0) (type default))
-    (uuid 4e974bd5-6e0e-40d1-8458-cc3281548167)
-  )
-  (wire (pts (xy 144.78 95.25) (xy 144.78 133.35))
-    (stroke (width 0) (type default))
-    (uuid 50c973cc-de3f-4b73-a36b-7eb2a7d5b7d5)
-  )
-  (wire (pts (xy 148.59 100.33) (xy 148.59 143.51))
-    (stroke (width 0) (type default))
-    (uuid 514764bd-3939-4c63-992c-5a6005f86420)
-  )
-  (wire (pts (xy 146.05 140.97) (xy 132.08 140.97))
-    (stroke (width 0) (type default))
-    (uuid 57f9ca16-44e9-4ab2-a535-c3b2451af302)
-  )
-  (wire (pts (xy 137.16 82.55) (xy 137.16 54.61))
-    (stroke (width 0) (type default))
-    (uuid 5de6d869-b27a-4bd9-8988-f407e9e71949)
-  )
-  (wire (pts (xy 154.94 105.41) (xy 153.67 105.41))
-    (stroke (width 0) (type default))
-    (uuid 6aaa8cfa-e0da-416a-b679-f7034a59c742)
-  )
-  (wire (pts (xy 139.7 128.27) (xy 132.08 128.27))
-    (stroke (width 0) (type default))
-    (uuid 7694e64c-d82d-401e-8f3c-8fe92547fb99)
-  )
-  (wire (pts (xy 134.62 80.01) (xy 134.62 49.53))
-    (stroke (width 0) (type default))
-    (uuid 783726f4-777b-4447-ace0-0ce571c7fa82)
-  )
-  (wire (pts (xy 194.31 57.15) (xy 194.31 74.93))
-    (stroke (width 0) (type default))
-    (uuid 7a419640-1ca2-47f2-86a3-f8056ab59d7f)
-  )
-  (wire (pts (xy 132.08 80.01) (xy 134.62 80.01))
-    (stroke (width 0) (type default))
-    (uuid 7e58428d-b7d8-4485-9d1a-254fedb00a87)
-  )
-  (wire (pts (xy 198.12 52.07) (xy 198.12 80.01))
-    (stroke (width 0) (type default))
-    (uuid 8280f0b9-303a-4aec-9d44-6013924f54bd)
-  )
-  (wire (pts (xy 154.94 92.71) (xy 142.24 92.71))
-    (stroke (width 0) (type default))
-    (uuid 8cd57eaf-875b-43c7-a397-b3159e310b83)
-  )
-  (wire (pts (xy 137.16 125.73) (xy 132.08 125.73))
-    (stroke (width 0) (type default))
-    (uuid 8ed67656-67fc-4bb3-a15b-5784a66566ed)
-  )
-  (wire (pts (xy 96.52 54.61) (xy 90.17 54.61))
-    (stroke (width 0) (type default))
-    (uuid 8eefe0ac-0dfa-436d-9d3b-7d4c4548df43)
-  )
-  (wire (pts (xy 74.93 130.81) (xy 96.52 130.81))
-    (stroke (width 0) (type default))
-    (uuid 8f29ac59-6817-4daf-a4e1-66555da7e526)
-  )
-  (wire (pts (xy 142.24 92.71) (xy 142.24 130.81))
-    (stroke (width 0) (type default))
-    (uuid 92897b34-7208-47c4-80c9-103665df6ca3)
-  )
-  (wire (pts (xy 148.59 143.51) (xy 132.08 143.51))
-    (stroke (width 0) (type default))
-    (uuid 9a421a55-7b08-424a-abca-a13838be2fd3)
-  )
-  (wire (pts (xy 190.5 57.15) (xy 194.31 57.15))
-    (stroke (width 0) (type default))
-    (uuid a9e735e3-a2fe-4654-968b-27c653bad981)
-  )
-  (wire (pts (xy 190.5 52.07) (xy 198.12 52.07))
-    (stroke (width 0) (type default))
-    (uuid b16c2710-3802-4e9d-ba15-80d351c61063)
-  )
-  (wire (pts (xy 154.94 90.17) (xy 139.7 90.17))
-    (stroke (width 0) (type default))
-    (uuid c18d1dc1-0444-4845-b295-50bce9ef7839)
-  )
-  (wire (pts (xy 144.78 85.09) (xy 144.78 82.55))
-    (stroke (width 0) (type default))
-    (uuid c431fa28-94f2-4b35-aec9-9c0f8be87844)
-  )
-  (wire (pts (xy 90.17 54.61) (xy 90.17 77.47))
-    (stroke (width 0) (type default))
-    (uuid cbcef34f-cfcf-47ed-b369-d950e86a3761)
-  )
-  (wire (pts (xy 153.67 105.41) (xy 153.67 148.59))
-    (stroke (width 0) (type default))
-    (uuid cf4e5a06-0eac-4ad6-b03f-441cd67e41a8)
-  )
-  (wire (pts (xy 92.71 57.15) (xy 92.71 74.93))
-    (stroke (width 0) (type default))
-    (uuid d42ae427-1f59-42e2-b8c9-016d3455f906)
-  )
-  (wire (pts (xy 74.93 128.27) (xy 96.52 128.27))
-    (stroke (width 0) (type default))
-    (uuid d87e5817-175e-47df-865a-2ca815d351a4)
-  )
-  (wire (pts (xy 154.94 95.25) (xy 144.78 95.25))
-    (stroke (width 0) (type default))
-    (uuid ddca55cf-c166-4ea9-905d-84f004da6615)
-  )
-  (wire (pts (xy 194.31 74.93) (xy 190.5 74.93))
-    (stroke (width 0) (type default))
-    (uuid de289673-cf9b-43a0-96ab-22181348a18d)
-  )
-  (wire (pts (xy 142.24 130.81) (xy 132.08 130.81))
-    (stroke (width 0) (type default))
-    (uuid e3751900-7818-4a67-85cd-5c714b5a99db)
-  )
-  (wire (pts (xy 154.94 100.33) (xy 148.59 100.33))
-    (stroke (width 0) (type default))
-    (uuid e5c283d6-aa1d-44d8-b2d3-c15c382b4c9c)
-  )
-  (wire (pts (xy 137.16 87.63) (xy 137.16 125.73))
-    (stroke (width 0) (type default))
-    (uuid e8759c16-099f-499b-8334-975a1fe7491b)
-  )
-  (wire (pts (xy 96.52 57.15) (xy 92.71 57.15))
-    (stroke (width 0) (type default))
-    (uuid e9ceca37-86ff-4f00-b046-32a6c305318d)
-  )
-  (wire (pts (xy 154.94 97.79) (xy 146.05 97.79))
-    (stroke (width 0) (type default))
-    (uuid f0c68055-8d8d-42ab-be67-2ca10042c2d4)
-  )
-  (wire (pts (xy 74.93 133.35) (xy 96.52 133.35))
-    (stroke (width 0) (type default))
-    (uuid fc0d4879-9307-4ea5-958b-e53d28319651)
-  )
-
-  (text "1000000 (ch A, heater 1)\n1000001 (ch A, heater 2)\n1000100 (ch B, heater 1)\n1000101 (ch B, heater 2)"
-    (at 233.68 60.96 0)
-    (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
-    (uuid 129b2e88-5bf4-4bad-a20d-3aa75939a1a0)
-  )
-  (text "1001000 (Front panel, outside left)\n1001010 (FP, outside right)\n1001100 (FP, inside left)\n1001101 (FP, inside middle)\n1001110 (FP, inside right)\n1001001 (Main board #1)\n1001011 (MB #2)\n1001111 (MB #3)"
-    (at 233.68 48.26 0)
-    (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
-    (uuid 25ea7945-ff3d-487f-aa84-46420ba7800a)
-  )
-  (text "INA226 (power-channel current sensors) :" (at 231.14 52.07 0)
-    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
-    (uuid 2a88079b-1790-4201-a50a-68a01fd94fe1)
-  )
-  (text "DS3231 (TCXO RTC module) :" (at 231.14 73.66 0)
-    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
-    (uuid 323e953f-c942-41cf-b63d-ce6dad603ddd)
-  )
-  (text "I2C-addresses (on I2C1)" (at 228.6 27.94 0)
-    (effects (font (size 1.778 1.778) (thickness 0.3556) bold italic) (justify left bottom))
-    (uuid 36a2a846-aa6e-4e27-b8db-84db2e79aacd)
-  )
-  (text "TMP100 (temperature sensors) :" (at 231.14 30.48 0)
-    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
-    (uuid 9bb167d3-2cab-418a-a51c-93a8e79d1703)
-  )
-  (text "1101000 (DS3231)\n1010--- (24C32, addr customized with A2-A0)\n1010111 (24C32, default (A2-A0 open))"
-    (at 233.68 80.01 0)
-    (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
-    (uuid e0df79fa-56f8-4d27-a89c-46d0e76c981b)
-  )
-  (text "SI4735 (FM-radio rx) :" (at 231.14 64.77 0)
-    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
-    (uuid e7415c1e-251f-45e8-a61e-e4d7d282b2fc)
-  )
-  (text "0010001 (if ~{SEN} pulled low [default])\n1100011 (alternative, if ~{SEN} pulled high)"
-    (at 233.68 69.85 0)
-    (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
-    (uuid f7161deb-d265-4803-ab6d-3576c1d8028a)
-  )
-
-  (symbol (lib_id "customlib_mj:MECH_RearPanel") (at 228.6 137.16 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid 4d9ece6b-359f-43bb-9099-2bd2946d206c)
-    (property "Reference" "MECH_REAR101" (at 228.6 135.89 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MECH_RearPanel" (at 228.6 139.7 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "customlib_mj_fp:Mech_RearPanel" (at 228.6 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 228.6 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
-          (reference "MECH_REAR101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "customlib_mj:MW_PSU") (at 250.19 133.35 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid 5bbd6e4f-9e6b-4482-a2b1-5bac82ea9e34)
-    (property "Reference" "PSU101" (at 250.19 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MW_PSU" (at 250.19 137.16 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "customlib_mj_fp:MW_PSU" (at 250.19 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 250.19 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
-          (reference "PSU101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "customlib_mj:Mech_bottom_plate") (at 270.51 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 63b27424-65cf-4576-aae0-9c3aa81dada6)
-    (property "Reference" "MECH101" (at 270.51 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Mech_bottom_plate" (at 270.51 137.16 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "customlib_mj_fp:MECH_BTM_PLATE" (at 270.51 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 270.51 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
-          (reference "MECH101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "customlib_mj:MECH_frontpanel-CapTouch") (at 228.6 116.84 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid 80bf297f-2fe3-49c0-b509-523d280e1d4e)
-    (property "Reference" "MEK_FP_OUT101" (at 228.6 115.57 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MECH_frontpanel-CapTouch" (at 228.6 119.38 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "customlib_mj_fp:Mech_Frontpanel_CapTouch" (at 228.6 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 228.6 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
-          (reference "MEK_FP_OUT101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "customlib_mj:MECH_FrontPanel") (at 228.6 125.73 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid fba761e9-e0a6-403c-b290-83a8de123db4)
-    (property "Reference" "MEK_FP101" (at 228.6 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MECH_FrontPanel" (at 229.87 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "customlib_mj_fp:Mech_frontpanel" (at 228.6 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 228.6 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
-          (reference "MEK_FP101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 96.52 72.39) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005eacd927)
-    (property "Sheetname" "STM32F429 MCU" (at 96.52 71.6784 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "mcu_1.kicad_sch" (at 96.52 108.5346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "AUX_HOST_RX" input (at 96.52 74.93 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 2ccbcc85-824a-42b1-85a7-61dc4eaa5161)
-    )
-    (pin "AUX_HOST_TX" output (at 96.52 77.47 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 75c28e23-b718-484f-96e0-573ae74430fa)
-    )
-    (pin "HWID_ADC_SELECT" output (at 132.08 85.09 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 57364991-9209-4a04-99b0-6e69114cde9e)
-    )
-    (pin "CH_A_KTY_REED_BIAS_EN" output (at 132.08 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f7bcbb72-e90c-4f10-9f6d-3886c9458efd)
-    )
-    (pin "CH_B_KTY_REED_BIAS_EN" output (at 132.08 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 4fd25be7-ed2c-4fe2-80a1-d64f9d90b73e)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "16"))
-      )
-    )
-  )
-
-  (sheet (at 154.94 25.4) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005eaeb4b5)
-    (property "Sheetname" "STM32F429 PWR" (at 154.94 24.6884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "mcu_2.kicad_sch" (at 154.94 61.5446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "CH_A_KTY_REED_BIAS_ENABLE" input (at 154.94 49.53 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid a872c1aa-fae8-439b-8bc3-65de42b40b5b)
-    )
-    (pin "KTY_REED_BIAS_CH_A" output (at 190.5 52.07 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f87c88fc-234a-43ae-97c3-3e92e359406b)
-    )
-    (pin "KTY_REED_BIAS_CH_B" output (at 190.5 57.15 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 09e5a258-0d42-4fe4-99cf-4ea4ed947d8a)
-    )
-    (pin "CH_B_KTY_REED_BIAS_ENABLE" input (at 154.94 54.61 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 54988064-0b6d-4f93-98d3-8dfc69258953)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "17"))
-      )
-    )
-  )
-
-  (sheet (at 154.94 123.19) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005ed59cbf)
-    (property "Sheetname" "Ethernet" (at 154.94 122.4784 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "ethernet.kicad_sch" (at 154.94 159.3346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 39.37 24.13) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005f472b62)
-    (property "Sheetname" "Power ctrl" (at 39.37 23.4184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 39.37 60.2746 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "14"))
-      )
-    )
-  )
-
-  (sheet (at 96.52 24.13) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005f472fc2)
-    (property "Sheetname" "Front panel connections" (at 96.52 23.4184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "front_panel_conn.kicad_sch" (at 96.52 60.2746 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "AUX_TX" output (at 96.52 57.15 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid f24fed7d-685a-4e34-ba90-d192769c1c44)
-    )
-    (pin "AUX_RX" input (at 96.52 54.61 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 3fbe56b1-4066-4602-be35-92d8d3d97235)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "9"))
-      )
-    )
-  )
-
-  (sheet (at 96.52 123.19) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005f4730b9)
-    (property "Sheetname" "Rear panel connections" (at 96.52 122.4784 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "rear_panel_conn.kicad_sch" (at 96.52 159.3346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "CH_A_HEATER_1" input (at 132.08 130.81 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 2e59bda1-04c5-491f-9379-486eae243955)
-    )
-    (pin "CH_A_HEATER_2" input (at 132.08 133.35 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 4d5b4119-b68b-4420-a981-41d30b5b527a)
-    )
-    (pin "CH_A_TC1" output (at 132.08 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 489602fd-40ff-4c13-ab77-9eed966565a4)
-    )
-    (pin "CH_A_TC2_KTY" output (at 132.08 128.27 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 3896922b-8e05-42f2-b705-112ce2ff0f59)
-    )
-    (pin "CH_B_HEATER_1" input (at 132.08 146.05 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 389437d7-13e7-47df-8712-83112617da3a)
-    )
-    (pin "CH_B_HEATER_2" input (at 132.08 148.59 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 63329af6-4918-4a6f-b5b9-258df2ed28d5)
-    )
-    (pin "CH_B_TC1" output (at 132.08 140.97 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 9ec0f3a5-6e1a-4b81-a03d-dc33ec0c7e9b)
-    )
-    (pin "CH_B_TC2_KTY" output (at 132.08 143.51 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 950993ca-eef0-4d93-a675-516ab5d946fc)
-    )
-    (pin "Audio_L" input (at 96.52 125.73 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 56d5af94-f1b1-44cb-8664-c34825aa4551)
-    )
-    (pin "Audio_L_int" output (at 96.52 128.27 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 5726b979-10c5-47d8-a110-a7b62a65f9af)
-    )
-    (pin "Audio_R" input (at 96.52 130.81 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b20f66b9-8eda-4bb1-8361-79b8e95ab92c)
-    )
-    (pin "Audio_R_int" output (at 96.52 133.35 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 3667c38a-f5cb-4e0f-914c-6b574c5e9968)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "15"))
-      )
-    )
-  )
-
-  (sheet (at 154.94 72.39) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005f785d6e)
-    (property "Sheetname" "Weller contol" (at 154.94 71.6784 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Weller_ctrl.kicad_sch" (at 154.94 108.5346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "CH_A_HEATER_1" output (at 154.94 92.71 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0827af44-4322-4d72-a6e3-e7c3047cd15c)
-    )
-    (pin "CH_A_HEATER_2" output (at 154.94 95.25 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid be151297-df17-485d-96f5-978d6d2980b7)
-    )
-    (pin "CH_B_HEATER_1" output (at 154.94 102.87 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid bf6ad63e-7f9e-4e09-b9e7-6c8a956ab6fc)
-    )
-    (pin "CH_B_HEATER_2" output (at 154.94 105.41 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 4a39b959-ec4a-4d96-b22c-5e4032ba4270)
-    )
-    (pin "CH_A_TC1" input (at 154.94 87.63 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 62a59f2a-e011-4cff-8ffe-e4c79743f6ad)
-    )
-    (pin "CH_A_TC2_KTY" input (at 154.94 90.17 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 4e89a2bc-006c-4460-af0f-1a961fd2f860)
-    )
-    (pin "CH_B_TC1" input (at 154.94 97.79 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 4ef1bb0f-1a9f-4cd1-9024-9e7cd23a02e1)
-    )
-    (pin "CH_B_TC2_KTY" input (at 154.94 100.33 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid a261e553-8145-43bb-b5d7-56e85704c69e)
-    )
-    (pin "HWID_ADC_SEL" input (at 154.94 82.55 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 816fa2c5-158b-40c8-89fb-15d06637eb4e)
-    )
-    (pin "CH_A_KTY_REED_BIAS" input (at 190.5 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 7e256f2c-418a-493a-827a-4fb5b73bf0be)
-    )
-    (pin "CH_B_KTY_REED_BIAS" input (at 190.5 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 9daaa4cb-d7df-4f39-81dc-323fdad1f066)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "22"))
-      )
-    )
-  )
-
-  (sheet (at 39.37 121.92) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005fafd5ba)
-    (property "Sheetname" "Audio & int. speakers" (at 39.37 121.2084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "audio.kicad_sch" (at 39.37 158.0646 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "Audio_R_o" output (at 74.93 130.81 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f58bfb19-d846-4194-93f4-84b18d758604)
-    )
-    (pin "Audio_L_o" output (at 74.93 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid ad68cc18-c870-4085-8960-7887c39bfc60)
-    )
-    (pin "Audio_R_int" input (at 74.93 133.35 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid afcdb98f-700b-47ed-a652-e3ff8860d23d)
-    )
-    (pin "Audio_L_int" input (at 74.93 128.27 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 14714f16-3725-4a66-aa67-aa69b59b424f)
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 39.37 72.39) (size 35.56 35.56) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005fe3f0d8)
-    (property "Sheetname" "FM-radio rx" (at 39.37 71.6784 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "fm_radio.kicad_sch" (at 39.37 108.5346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "solderstn_mb"
-        (path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4" (page "8"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "31eb4b33-3d27-430b-bb64-77ee431fbdc4")
+	(paper "A4")
+	(title_block
+		(title "DIY Soldering station, top level")
+		(date "2020-04-26")
+		(rev "R0.1")
+		(company "SolderingStationGroup : Jonny Svärd / Mathias Johansson / Magnus Thulesius")
+	)
+	(lib_symbols
+		(symbol "customlib_mj:MECH_FrontPanel"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "MEK_FP"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MECH_FrontPanel"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "customlib_mj_fp:Mech_frontpanel"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Placeholder for mechanical 3d-model of Frontpanel assembly"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_FrontPanel_0_1"
+				(polyline
+					(pts
+						(xy -8.89 3.81) (xy -8.89 -3.81) (xy 10.16 -3.81) (xy 10.16 3.81) (xy -8.89 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "customlib_mj:MECH_RearPanel"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "MECH_REAR"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MECH_RearPanel"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "customlib_mj_fp:Mech_RearPanel"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mechanical placeholder prepresenting the rear-panel with connectors"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_RearPanel_0_0"
+				(text "Mech. placeholder"
+					(at 1.27 -5.08 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(bold yes)
+						)
+					)
+				)
+			)
+			(symbol "MECH_RearPanel_0_1"
+				(rectangle
+					(start -7.62 3.81)
+					(end 7.62 -3.81)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "customlib_mj:MECH_frontpanel-CapTouch"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "MEK_FP_OUT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MECH_frontpanel-CapTouch"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "customlib_mj_fp:Mech_Frontpanel_CapTouch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mechanical placeholder for 3d-model of outer front-panel with cap-touch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_frontpanel-CapTouch_0_1"
+				(polyline
+					(pts
+						(xy -13.97 3.81) (xy -13.97 -3.81) (xy 13.97 -3.81) (xy 13.97 3.81) (xy -13.97 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "customlib_mj:MW_PSU"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "PSU"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MW_PSU"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "customlib_mj_fp:MW_PSU"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mechanical placeholder representing the volume occupied by the Meanwell PSU"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MW_PSU_0_0"
+				(text "Mech.Placeholder"
+					(at 0 -7.62 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "MW_PSU_0_1"
+				(rectangle
+					(start -6.35 3.81)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "customlib_mj:Mech_bottom_plate"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MECH"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Mech_bottom_plate"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "customlib_mj_fp:MECH_BTM_PLATE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mechanical placeholder for Hammond box bottom-plate with POF-50185 rubber feet"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Mech_bottom_plate_0_1"
+				(rectangle
+					(start -10.16 3.81)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 134.62 49.53) (xy 154.94 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fcec4e3-48b5-4c9b-bc66-169f0a1da4b8")
+	)
+	(wire
+		(pts
+			(xy 154.94 87.63) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10414b0e-0388-4964-883c-9be0a10fc203")
+	)
+	(wire
+		(pts
+			(xy 154.94 102.87) (xy 151.13 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16fda715-2fee-4781-b25b-742b54e560dd")
+	)
+	(wire
+		(pts
+			(xy 198.12 80.01) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1706f6fc-52b5-4b89-8085-e610b25f12af")
+	)
+	(wire
+		(pts
+			(xy 90.17 77.47) (xy 96.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18314066-1a7b-4328-98d2-a90d321feef6")
+	)
+	(wire
+		(pts
+			(xy 153.67 148.59) (xy 132.08 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b523a4c-83e6-4215-bd0b-b0e05c7b3f77")
+	)
+	(wire
+		(pts
+			(xy 144.78 133.35) (xy 132.08 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c5f4fdc-9bd3-4138-9abd-9cec43b9f425")
+	)
+	(wire
+		(pts
+			(xy 132.08 85.09) (xy 144.78 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21337d6b-450c-44d0-b387-9035ef75ab5d")
+	)
+	(wire
+		(pts
+			(xy 137.16 54.61) (xy 154.94 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e0fd5ae-12f8-4593-b987-97cb8dbd10cc")
+	)
+	(wire
+		(pts
+			(xy 92.71 74.93) (xy 96.52 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "315b6a6a-e97c-4d2c-bf2c-130f77187dde")
+	)
+	(wire
+		(pts
+			(xy 151.13 102.87) (xy 151.13 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1f56cb-3b4b-4c03-a7aa-f7fb107d5f43")
+	)
+	(wire
+		(pts
+			(xy 74.93 125.73) (xy 96.52 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43d1e71a-bcb8-4baa-888e-f91f4da0c094")
+	)
+	(wire
+		(pts
+			(xy 132.08 82.55) (xy 137.16 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad5832d-cd3e-4537-8534-7054bf3ae590")
+	)
+	(wire
+		(pts
+			(xy 139.7 90.17) (xy 139.7 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4beec05e-fdfb-4a67-b65b-e1d1be513376")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 146.05 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c3de96e-0b07-4feb-ba5a-9643f623cde1")
+	)
+	(wire
+		(pts
+			(xy 151.13 146.05) (xy 132.08 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d622de8-1ad7-4693-b371-6944810bbed2")
+	)
+	(wire
+		(pts
+			(xy 144.78 82.55) (xy 154.94 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e974bd5-6e0e-40d1-8458-cc3281548167")
+	)
+	(wire
+		(pts
+			(xy 144.78 95.25) (xy 144.78 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50c973cc-de3f-4b73-a36b-7eb2a7d5b7d5")
+	)
+	(wire
+		(pts
+			(xy 148.59 100.33) (xy 148.59 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "514764bd-3939-4c63-992c-5a6005f86420")
+	)
+	(wire
+		(pts
+			(xy 146.05 140.97) (xy 132.08 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57f9ca16-44e9-4ab2-a535-c3b2451af302")
+	)
+	(wire
+		(pts
+			(xy 137.16 82.55) (xy 137.16 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5de6d869-b27a-4bd9-8988-f407e9e71949")
+	)
+	(wire
+		(pts
+			(xy 154.94 105.41) (xy 153.67 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aaa8cfa-e0da-416a-b679-f7034a59c742")
+	)
+	(wire
+		(pts
+			(xy 139.7 128.27) (xy 132.08 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7694e64c-d82d-401e-8f3c-8fe92547fb99")
+	)
+	(wire
+		(pts
+			(xy 134.62 80.01) (xy 134.62 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "783726f4-777b-4447-ace0-0ce571c7fa82")
+	)
+	(wire
+		(pts
+			(xy 194.31 57.15) (xy 194.31 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a419640-1ca2-47f2-86a3-f8056ab59d7f")
+	)
+	(wire
+		(pts
+			(xy 132.08 80.01) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e58428d-b7d8-4485-9d1a-254fedb00a87")
+	)
+	(wire
+		(pts
+			(xy 198.12 52.07) (xy 198.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8280f0b9-303a-4aec-9d44-6013924f54bd")
+	)
+	(wire
+		(pts
+			(xy 154.94 92.71) (xy 142.24 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd57eaf-875b-43c7-a397-b3159e310b83")
+	)
+	(wire
+		(pts
+			(xy 137.16 125.73) (xy 132.08 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ed67656-67fc-4bb3-a15b-5784a66566ed")
+	)
+	(wire
+		(pts
+			(xy 96.52 54.61) (xy 90.17 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eefe0ac-0dfa-436d-9d3b-7d4c4548df43")
+	)
+	(wire
+		(pts
+			(xy 74.93 130.81) (xy 96.52 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f29ac59-6817-4daf-a4e1-66555da7e526")
+	)
+	(wire
+		(pts
+			(xy 142.24 92.71) (xy 142.24 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92897b34-7208-47c4-80c9-103665df6ca3")
+	)
+	(wire
+		(pts
+			(xy 148.59 143.51) (xy 132.08 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a421a55-7b08-424a-abca-a13838be2fd3")
+	)
+	(wire
+		(pts
+			(xy 190.5 57.15) (xy 194.31 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9e735e3-a2fe-4654-968b-27c653bad981")
+	)
+	(wire
+		(pts
+			(xy 190.5 52.07) (xy 198.12 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b16c2710-3802-4e9d-ba15-80d351c61063")
+	)
+	(wire
+		(pts
+			(xy 154.94 90.17) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c18d1dc1-0444-4845-b295-50bce9ef7839")
+	)
+	(wire
+		(pts
+			(xy 144.78 85.09) (xy 144.78 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c431fa28-94f2-4b35-aec9-9c0f8be87844")
+	)
+	(wire
+		(pts
+			(xy 90.17 54.61) (xy 90.17 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbcef34f-cfcf-47ed-b369-d950e86a3761")
+	)
+	(wire
+		(pts
+			(xy 153.67 105.41) (xy 153.67 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf4e5a06-0eac-4ad6-b03f-441cd67e41a8")
+	)
+	(wire
+		(pts
+			(xy 92.71 57.15) (xy 92.71 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42ae427-1f59-42e2-b8c9-016d3455f906")
+	)
+	(wire
+		(pts
+			(xy 74.93 128.27) (xy 96.52 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d87e5817-175e-47df-865a-2ca815d351a4")
+	)
+	(wire
+		(pts
+			(xy 154.94 95.25) (xy 144.78 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddca55cf-c166-4ea9-905d-84f004da6615")
+	)
+	(wire
+		(pts
+			(xy 194.31 74.93) (xy 190.5 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de289673-cf9b-43a0-96ab-22181348a18d")
+	)
+	(wire
+		(pts
+			(xy 142.24 130.81) (xy 132.08 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3751900-7818-4a67-85cd-5c714b5a99db")
+	)
+	(wire
+		(pts
+			(xy 154.94 100.33) (xy 148.59 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5c283d6-aa1d-44d8-b2d3-c15c382b4c9c")
+	)
+	(wire
+		(pts
+			(xy 137.16 87.63) (xy 137.16 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8759c16-099f-499b-8334-975a1fe7491b")
+	)
+	(wire
+		(pts
+			(xy 96.52 57.15) (xy 92.71 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9ceca37-86ff-4f00-b046-32a6c305318d")
+	)
+	(wire
+		(pts
+			(xy 154.94 97.79) (xy 146.05 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0c68055-8d8d-42ab-be67-2ca10042c2d4")
+	)
+	(wire
+		(pts
+			(xy 74.93 133.35) (xy 96.52 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc0d4879-9307-4ea5-958b-e53d28319651")
+	)
+	(text "1000000 (ch A, heater 1)\n1000001 (ch A, heater 2)\n1000100 (ch B, heater 1)\n1000101 (ch B, heater 2)"
+		(exclude_from_sim no)
+		(at 233.68 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "129b2e88-5bf4-4bad-a20d-3aa75939a1a0")
+	)
+	(text "1001000 (Front panel, outside left)\n1001010 (FP, outside right)\n1001100 (FP, inside left)\n1001101 (FP, inside middle)\n1001110 (FP, inside right)\n1001001 (Main board #1)\n1001011 (MB #2)\n1001111 (MB #3)"
+		(exclude_from_sim no)
+		(at 233.68 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "25ea7945-ff3d-487f-aa84-46420ba7800a")
+	)
+	(text "INA226 (power-channel current sensors) :"
+		(exclude_from_sim no)
+		(at 231.14 52.07 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a88079b-1790-4201-a50a-68a01fd94fe1")
+	)
+	(text "DS3231 (TCXO RTC module) :"
+		(exclude_from_sim no)
+		(at 231.14 73.66 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "323e953f-c942-41cf-b63d-ce6dad603ddd")
+	)
+	(text "I2C-addresses (on I2C1)"
+		(exclude_from_sim no)
+		(at 228.6 27.94 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "36a2a846-aa6e-4e27-b8db-84db2e79aacd")
+	)
+	(text "TMP100 (temperature sensors) :"
+		(exclude_from_sim no)
+		(at 231.14 30.48 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9bb167d3-2cab-418a-a51c-93a8e79d1703")
+	)
+	(text "1101000 (DS3231)\n1010--- (24C32, addr customized with A2-A0)\n1010111 (24C32, default (A2-A0 open))"
+		(exclude_from_sim no)
+		(at 233.68 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e0df79fa-56f8-4d27-a89c-46d0e76c981b")
+	)
+	(text "SI4735 (FM-radio rx) :"
+		(exclude_from_sim no)
+		(at 231.14 64.77 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7415c1e-251f-45e8-a61e-e4d7d282b2fc")
+	)
+	(text "0010001 (if ~{SEN} pulled low [default])\n1100011 (alternative, if ~{SEN} pulled high)"
+		(exclude_from_sim no)
+		(at 233.68 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7161deb-d265-4803-ab6d-3576c1d8028a")
+	)
+	(symbol
+		(lib_id "customlib_mj:MECH_RearPanel")
+		(at 228.6 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d9ece6b-359f-43bb-9099-2bd2946d206c")
+		(property "Reference" "MECH_REAR101"
+			(at 228.6 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MECH_RearPanel"
+			(at 228.6 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "customlib_mj_fp:Mech_RearPanel"
+			(at 228.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(reference "MECH_REAR101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "customlib_mj:MW_PSU")
+		(at 250.19 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bbd6e4f-9e6b-4482-a2b1-5bac82ea9e34")
+		(property "Reference" "PSU101"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MW_PSU"
+			(at 250.19 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "customlib_mj_fp:MW_PSU"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(reference "PSU101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "customlib_mj:Mech_bottom_plate")
+		(at 270.51 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "63b27424-65cf-4576-aae0-9c3aa81dada6")
+		(property "Reference" "MECH101"
+			(at 270.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Mech_bottom_plate"
+			(at 270.51 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "customlib_mj_fp:MECH_BTM_PLATE"
+			(at 270.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 270.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(reference "MECH101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "customlib_mj:MECH_frontpanel-CapTouch")
+		(at 228.6 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "80bf297f-2fe3-49c0-b509-523d280e1d4e")
+		(property "Reference" "MEK_FP_OUT101"
+			(at 228.6 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MECH_frontpanel-CapTouch"
+			(at 228.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "customlib_mj_fp:Mech_Frontpanel_CapTouch"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(reference "MEK_FP_OUT101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "customlib_mj:MECH_FrontPanel")
+		(at 228.6 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "fba761e9-e0a6-403c-b290-83a8de123db4")
+		(property "Reference" "MEK_FP101"
+			(at 228.6 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MECH_FrontPanel"
+			(at 229.87 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "customlib_mj_fp:Mech_frontpanel"
+			(at 228.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(reference "MEK_FP101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 72.39)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005eacd927")
+		(property "Sheetname" "STM32F429 MCU"
+			(at 96.52 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_1.kicad_sch"
+			(at 96.52 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "AUX_HOST_RX" input
+			(at 96.52 74.93 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2ccbcc85-824a-42b1-85a7-61dc4eaa5161")
+		)
+		(pin "AUX_HOST_TX" output
+			(at 96.52 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "75c28e23-b718-484f-96e0-573ae74430fa")
+		)
+		(pin "HWID_ADC_SELECT" output
+			(at 132.08 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "57364991-9209-4a04-99b0-6e69114cde9e")
+		)
+		(pin "CH_A_KTY_REED_BIAS_EN" output
+			(at 132.08 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f7bcbb72-e90c-4f10-9f6d-3886c9458efd")
+		)
+		(pin "CH_B_KTY_REED_BIAS_EN" output
+			(at 132.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4fd25be7-ed2c-4fe2-80a1-d64f9d90b73e")
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 25.4)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005eaeb4b5")
+		(property "Sheetname" "STM32F429 PWR"
+			(at 154.94 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_2.kicad_sch"
+			(at 154.94 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_A_KTY_REED_BIAS_ENABLE" input
+			(at 154.94 49.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a872c1aa-fae8-439b-8bc3-65de42b40b5b")
+		)
+		(pin "KTY_REED_BIAS_CH_A" output
+			(at 190.5 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f87c88fc-234a-43ae-97c3-3e92e359406b")
+		)
+		(pin "KTY_REED_BIAS_CH_B" output
+			(at 190.5 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "09e5a258-0d42-4fe4-99cf-4ea4ed947d8a")
+		)
+		(pin "CH_B_KTY_REED_BIAS_ENABLE" input
+			(at 154.94 54.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "54988064-0b6d-4f93-98d3-8dfc69258953")
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 123.19)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005ed59cbf")
+		(property "Sheetname" "Ethernet"
+			(at 154.94 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet.kicad_sch"
+			(at 154.94 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 39.37 24.13)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005f472b62")
+		(property "Sheetname" "Power ctrl"
+			(at 39.37 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 39.37 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 24.13)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005f472fc2")
+		(property "Sheetname" "Front panel connections"
+			(at 96.52 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "front_panel_conn.kicad_sch"
+			(at 96.52 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "AUX_TX" output
+			(at 96.52 57.15 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f24fed7d-685a-4e34-ba90-d192769c1c44")
+		)
+		(pin "AUX_RX" input
+			(at 96.52 54.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3fbe56b1-4066-4602-be35-92d8d3d97235")
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 123.19)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005f4730b9")
+		(property "Sheetname" "Rear panel connections"
+			(at 96.52 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rear_panel_conn.kicad_sch"
+			(at 96.52 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_A_HEATER_1" input
+			(at 132.08 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2e59bda1-04c5-491f-9379-486eae243955")
+		)
+		(pin "CH_A_HEATER_2" input
+			(at 132.08 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4d5b4119-b68b-4420-a981-41d30b5b527a")
+		)
+		(pin "CH_A_TC1" output
+			(at 132.08 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "489602fd-40ff-4c13-ab77-9eed966565a4")
+		)
+		(pin "CH_A_TC2_KTY" output
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3896922b-8e05-42f2-b705-112ce2ff0f59")
+		)
+		(pin "CH_B_HEATER_1" input
+			(at 132.08 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "389437d7-13e7-47df-8712-83112617da3a")
+		)
+		(pin "CH_B_HEATER_2" input
+			(at 132.08 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "63329af6-4918-4a6f-b5b9-258df2ed28d5")
+		)
+		(pin "CH_B_TC1" output
+			(at 132.08 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9ec0f3a5-6e1a-4b81-a03d-dc33ec0c7e9b")
+		)
+		(pin "CH_B_TC2_KTY" output
+			(at 132.08 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "950993ca-eef0-4d93-a675-516ab5d946fc")
+		)
+		(pin "Audio_L" input
+			(at 96.52 125.73 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "56d5af94-f1b1-44cb-8664-c34825aa4551")
+		)
+		(pin "Audio_L_int" output
+			(at 96.52 128.27 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5726b979-10c5-47d8-a110-a7b62a65f9af")
+		)
+		(pin "Audio_R" input
+			(at 96.52 130.81 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b20f66b9-8eda-4bb1-8361-79b8e95ab92c")
+		)
+		(pin "Audio_R_int" output
+			(at 96.52 133.35 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3667c38a-f5cb-4e0f-914c-6b574c5e9968")
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 72.39)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005f785d6e")
+		(property "Sheetname" "Weller contol"
+			(at 154.94 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Weller_ctrl.kicad_sch"
+			(at 154.94 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_A_HEATER_1" output
+			(at 154.94 92.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0827af44-4322-4d72-a6e3-e7c3047cd15c")
+		)
+		(pin "CH_A_HEATER_2" output
+			(at 154.94 95.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "be151297-df17-485d-96f5-978d6d2980b7")
+		)
+		(pin "CH_B_HEATER_1" output
+			(at 154.94 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bf6ad63e-7f9e-4e09-b9e7-6c8a956ab6fc")
+		)
+		(pin "CH_B_HEATER_2" output
+			(at 154.94 105.41 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4a39b959-ec4a-4d96-b22c-5e4032ba4270")
+		)
+		(pin "CH_A_TC1" input
+			(at 154.94 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "62a59f2a-e011-4cff-8ffe-e4c79743f6ad")
+		)
+		(pin "CH_A_TC2_KTY" input
+			(at 154.94 90.17 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4e89a2bc-006c-4460-af0f-1a961fd2f860")
+		)
+		(pin "CH_B_TC1" input
+			(at 154.94 97.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4ef1bb0f-1a9f-4cd1-9024-9e7cd23a02e1")
+		)
+		(pin "CH_B_TC2_KTY" input
+			(at 154.94 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a261e553-8145-43bb-b5d7-56e85704c69e")
+		)
+		(pin "HWID_ADC_SEL" input
+			(at 154.94 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "816fa2c5-158b-40c8-89fb-15d06637eb4e")
+		)
+		(pin "CH_A_KTY_REED_BIAS" input
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7e256f2c-418a-493a-827a-4fb5b73bf0be")
+		)
+		(pin "CH_B_KTY_REED_BIAS" input
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9daaa4cb-d7df-4f39-81dc-323fdad1f066")
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 39.37 121.92)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005fafd5ba")
+		(property "Sheetname" "Audio & int. speakers"
+			(at 39.37 121.2084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 39.37 158.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Audio_R_o" output
+			(at 74.93 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f58bfb19-d846-4194-93f4-84b18d758604")
+		)
+		(pin "Audio_L_o" output
+			(at 74.93 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ad68cc18-c870-4085-8960-7887c39bfc60")
+		)
+		(pin "Audio_R_int" input
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "afcdb98f-700b-47ed-a652-e3ff8860d23d")
+		)
+		(pin "Audio_L_int" input
+			(at 74.93 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "14714f16-3725-4a66-aa67-aa69b59b424f")
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 39.37 72.39)
+		(size 35.56 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005fe3f0d8")
+		(property "Sheetname" "FM-radio rx"
+			(at 39.37 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "fm_radio.kicad_sch"
+			(at 39.37 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "solderstn_mb"
+				(path "/31eb4b33-3d27-430b-bb64-77ee431fbdc4"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
