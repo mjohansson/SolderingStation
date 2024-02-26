@@ -1,0 +1,44 @@
+{
+    "type": "InteractiveHtmlBom settings",
+    "version": 1,
+    "pcbmetadata": {
+        "title": "ss_frontpanel_outer_plate",
+        "revision": "",
+        "company": "",
+        "date": "2022-02-24 01:42:01"
+    },
+    "settings": {
+        "canvaslayout": "B",
+        "bomlayout": "left-right",
+        "bommode": "grouped",
+        "checkboxes": [
+            "Sourced",
+            "Placed"
+        ],
+        "checkboxStoredRefs": {
+            "Sourced": "8,9,14,15,41,16,36,17,18,46,21,27,19,30,31,28,20,32,22,34,35,45,40,37,38,39,48,50,49,26,47,25,29,10,11,12,13,33",
+            "Placed": "8,9,14,15,41,16,36,17,18,46,21,27,19,30,31,28,20,32,22,34,35,45,40,37,38,39,48,50,49,26,47,25,29,10,11,12,13,33"
+        },
+        "darkMode": false,
+        "highlightpin1": true,
+        "redrawOnDrag": true,
+        "boardRotation": 0,
+        "renderPads": true,
+        "renderReferences": true,
+        "renderValues": true,
+        "renderSilkscreen": true,
+        "renderFabrication": false,
+        "renderDnpOutline": false,
+        "renderTracks": true,
+        "renderZones": true,
+        "columnOrder": [
+            "checkboxes",
+            "References",
+            "Value",
+            "Footprint",
+            "Quantity"
+        ],
+        "hiddenColumns": [],
+        "markWhenChecked": "Placed"
+    }
+}
