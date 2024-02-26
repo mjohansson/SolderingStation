@@ -137,7 +137,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM4_Init();
-  MX_USART3_UART_Init();
+//  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 
     uart_puts("\nHello, World!\n");
@@ -150,20 +150,31 @@ int main(void)
     print_hwids();
 //    uart_printf("This is an int: %d - test: %s!\n", 42, "SUCCESSFUL");
 
-    uart_enable_rx_irq();
-
     uint8_t tmp100_devs[8] = { 0 };
+    int nbr_tmp100_found = 0;
+/*
     int nbr_tmp100_found = tmp100_probe_all(tmp100_devs, NULL, 8);
 
     uart_printf("Nbr TMP100 sensors found: %d\n", nbr_tmp100_found);
     for (int i = 0; i < nbr_tmp100_found; i++) {
         uart_printf("  ID[%d] = 0x%02X\n", i+1, tmp100_devs[i]);
     }
+*/
+    HAL_Delay(250);
+
+//    uart_puts("Releasing FP-MCU from reset...\n");
+//    HAL_GPIO_WritePin(BRD_LED_AUX_BOOT0_GPIO_Port, BRD_LED_AUX_BOOT0_Pin, GPIO_PIN_RESET);  // Ensure AUX_BOOT0 = 0 !
+//    HAL_GPIO_WritePin(SYS_RSTn_GPIO_Port, SYS_RSTn_Pin, GPIO_PIN_SET);  // rls from active low
+    // BOOT0 is latched on 4th clk-edge from rising-edge of RESET
+    HAL_Delay(1);
+
+    uart_puts("skipped i2c TMP100 probe, skipped FP-MCU reset...\n");
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+//    uart_ctx_t* uart3 = find_uart(USART3);
     while (1) {
         static uint8_t oled_master_contrast = 0x0F;
         static uint8_t oled_contrast_iseg = 112;
@@ -171,10 +182,22 @@ int main(void)
         static uint8_t display_is_on = 0;
         static uint8_t mosi_pin_state = 1;
         static uint8_t flash_cs = 1;
+        static uint8_t aux_rst = 0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
 
+        // Check if rx-data received on UART3, from front-panel AUX MCU
+/*
+        if (g_uart3_dump) {
+            __disable_irq();
+            uint32_t len = g_uart3_dump;
+            g_uart3_dump = 0;
+            __enable_irq();
+            uart_puts("U3: ");
+            uart_dump_buffer(USART1, uart3, len);
+        }
+*/
         // Check if button-handler is triggered for periodic processing?
         if (buttons_is_periodic_handler_triggered()) {
             buttons_periodic_debounce_handler(NULL);
@@ -188,33 +211,34 @@ int main(void)
             HAL_GPIO_TogglePin(BRD_LED_AUX_BOOT0_GPIO_Port, BRD_LED_AUX_BOOT0_Pin);
         }
 
-        while (uart_rx_queue() != 0) {
-            uint8_t ch = uart_getc();
+        while (uart_rx_queue(USART1) != 0) {
+            uint8_t ch = uart_getc(USART1);
             switch (ch) {
-            case 'h':
-                uart_puts("\n-== DebugUART menu ==-\n");
-                uart_puts("  h: help menu\n");
-                uart_puts("  r: read TMP100 temps\n");
-                uart_puts("  R: oneshot TMP100s\n");
-                uart_puts("  P: re-init TMP100s\n");
-                uart_puts("  t: toggle PB5(MOSI)\n");
-                uart_puts("  T: toggle FlashCSn\n");
-                uart_puts("  o: display init\n");
-                uart_puts("  O: display off\n");
-                uart_puts("  l: display logo\n");
-                uart_puts("  m: disp.mode\n");
-                uart_puts("  c: disp clr\n");
-                uart_puts("  f/F: disp. fill\n");
-                uart_puts("  i: disp. inv.\n");
-                uart_puts("  p: pack/unpack test\n");
-                uart_puts("  ,; inc contrast\n");
-                uart_puts("  .: dec contrast\n");
-                uart_puts("  +: inc brightness\n");
-                uart_puts("  -: dec brightness\n");
-                uart_puts("  ?: analog HWIDs\n");
-                uart_puts("  !: device info\n");
-                uart_puts("  x: warm reset\n");
-                break;
+                case 'h':
+                    uart_puts("\n-== DebugUART menu ==-\n");
+                    uart_puts("  h: help menu\n");
+                    uart_puts("  r: read TMP100 temps\n");
+                    uart_puts("  R: oneshot TMP100s\n");
+                    uart_puts("  P: re-init TMP100s\n");
+                    uart_puts("  X: toggle AUX rst\n");
+                    uart_puts("  t: toggle PB5(MOSI)\n");
+                    uart_puts("  T: toggle FlashCSn\n");
+                    uart_puts("  o: display init\n");
+                    uart_puts("  O: display off\n");
+                    uart_puts("  l: display logo\n");
+                    uart_puts("  m: disp.mode\n");
+                    uart_puts("  c: disp clr\n");
+                    uart_puts("  f/F: disp. fill\n");
+                    uart_puts("  i: disp. inv.\n");
+                    uart_puts("  p: pack/unpack test\n");
+                    uart_puts("  ,; inc contrast\n");
+                    uart_puts("  .: dec contrast\n");
+                    uart_puts("  +: inc brightness\n");
+                    uart_puts("  -: dec brightness\n");
+                    uart_puts("  ?: analog HWIDs\n");
+                    uart_puts("  !: device info\n");
+                    uart_puts("  x: warm reset\n");
+                    break;
                 case 'r': {
                     if (nbr_tmp100_found == 0) {
                         uart_puts("No TMP100s found!\n");
@@ -291,131 +315,145 @@ int main(void)
                     } else {
                         uart_puts("\nUnpack/repack test completed OK!\n");
                     }
+                    break;
                 }
-                break;
-            case ',':
-                if (oled_master_contrast < 0x0F)
-                    oled_master_contrast++;
-                else
-                    uart_puts("Contrast MAX (15)\n");
-                ssd1322_set_dimming(oled_master_contrast);
-                uart_printf("Contrast: %u\n", oled_master_contrast);
-                break;
-            case '.':
-                if (oled_master_contrast != 0)
-                    oled_master_contrast--;
-                else
-                    uart_puts("Contrast MIN (0)\n");
-                ssd1322_set_dimming(oled_master_contrast);
-                uart_printf("Contrast: %u\n", oled_master_contrast);
-                break;
-            case '+':
-                if (oled_contrast_iseg < 0xFF)
-                    oled_contrast_iseg++;
-                else
-                    uart_puts("Brightness MAX (255)\n");
-                ssd1322_set_brightness(oled_contrast_iseg);
-                uart_printf("Brightness: %u\n", oled_contrast_iseg);
-                break;
-            case '-':
-                if (oled_contrast_iseg != 0)
-                    oled_contrast_iseg--;
-                else
-                    uart_puts("Brightness MIN (0)\n");
-                ssd1322_set_brightness(oled_contrast_iseg);
-                uart_printf("Brightness: %u\n", oled_contrast_iseg);
-                break;
-            case 't': {
-                GPIO_InitTypeDef GPIO_InitStruct = {0};
-                GPIO_InitStruct.Pin = GPIO_PIN_5;
-                GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-                GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-                HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-                HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, mosi_pin_state);
-                uart_printf("PB5(MOSI) %s\n", mosi_pin_state ? "HIGH" : "LOW");
-                mosi_pin_state = mosi_pin_state ? 0 : 1;
+                case ',':
+                    if (oled_master_contrast < 0x0F)
+                        oled_master_contrast++;
+                    else
+                        uart_puts("Contrast MAX (15)\n");
+                    ssd1322_set_dimming(oled_master_contrast);
+                    uart_printf("Contrast: %u\n", oled_master_contrast);
+                    break;
+                case '.':
+                    if (oled_master_contrast != 0)
+                        oled_master_contrast--;
+                    else
+                        uart_puts("Contrast MIN (0)\n");
+                    ssd1322_set_dimming(oled_master_contrast);
+                    uart_printf("Contrast: %u\n", oled_master_contrast);
+                    break;
+                case '+':
+                    if (oled_contrast_iseg < 0xFF)
+                        oled_contrast_iseg++;
+                    else
+                        uart_puts("Brightness MAX (255)\n");
+                    ssd1322_set_brightness(oled_contrast_iseg);
+                    uart_printf("Brightness: %u\n", oled_contrast_iseg);
+                    break;
+                case '-':
+                    if (oled_contrast_iseg != 0)
+                        oled_contrast_iseg--;
+                    else
+                        uart_puts("Brightness MIN (0)\n");
+                    ssd1322_set_brightness(oled_contrast_iseg);
+                    uart_printf("Brightness: %u\n", oled_contrast_iseg);
+                    break;
+                case 't': {
+                    GPIO_InitTypeDef GPIO_InitStruct = {0};
+                    GPIO_InitStruct.Pin = GPIO_PIN_5;
+                    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+                    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+                    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+                    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, mosi_pin_state);
+                    uart_printf("PB5(MOSI) %s\n", mosi_pin_state ? "HIGH" : "LOW");
+                    mosi_pin_state = mosi_pin_state ? 0 : 1;
+                    break;
                 }
-                break;
-            case 'T': {
-                GPIO_InitTypeDef GPIO_InitStruct = {0};
-                GPIO_InitStruct.Pin = GPIO_PIN_5;
-                GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-                GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-                HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-                flash_cs = flash_cs ? 0 : 1;
-                HAL_GPIO_WritePin(FLASH_CSn_GPIO_Port, FLASH_CSn_Pin, flash_cs);
-                uart_printf("Flash_CSn %s\n", flash_cs ? "HIGH" : "LOW");
-                if ((SPI1->CR1 & SPI_CR1_SPE) != SPI_CR1_SPE)  {
-                    /* Enable SPI peripheral */
-                    SET_BIT(SPI1->CR1, SPI_CR1_SPE);
+                case 'T': {
+                    GPIO_InitTypeDef GPIO_InitStruct = {0};
+                    GPIO_InitStruct.Pin = GPIO_PIN_5;
+                    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+                    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+                    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+                    flash_cs = flash_cs ? 0 : 1;
+                    HAL_GPIO_WritePin(FLASH_CSn_GPIO_Port, FLASH_CSn_Pin, flash_cs);
+                    uart_printf("Flash_CSn %s\n", flash_cs ? "HIGH" : "LOW");
+                    if ((SPI1->CR1 & SPI_CR1_SPE) != SPI_CR1_SPE)  {
+                        /* Enable SPI peripheral */
+                        SET_BIT(SPI1->CR1, SPI_CR1_SPE);
+                    }
+                    SPI1->DR = 0x55;
+                    break;
                 }
-                SPI1->DR = 0x55;
-                }
-                break;
-            case 'o':
-                ssd1322_init();
-                display_is_on = 1;
+                case 'o':
+                    ssd1322_init();
+                    display_is_on = 1;
 //    ssd1322_fill_display(0x13579bdf);
-                ssd1322_fill_display(0x00);
-                uart_puts("Display is ON!\n");
-                break;
-            case 'O':
-                ssd1322_uninit();
-                display_is_on = 0;
-                uart_puts("Display is OFF!\n");
-                break;
-            case 'l':
-                if (display_is_on) {
-                    ssd1322_update_display(Logo_256x64, sizeof(Logo_256x64));
-                    uart_puts("Logo_256x64 displayed\r\n");
-                } else uart_puts("Disp is off!\n");
-                break;
-            case 'm':
-                if (display_is_on) {
-                    ssd1322_set_display_mode(mode);
-                    uart_printf("Dispmode: %u\n", mode);
-                    mode = (mode + 1) & 0x03;
-                } else uart_puts("Disp is off!\n");
-                break;
-            case 'c':
-                if (display_is_on) {
                     ssd1322_fill_display(0x00);
-                    uart_puts("disp fill 0x00\n");
-                } else uart_puts("Disp is off!\n");
-                break;
-            case 'f':
-                if (display_is_on) {
-                    ssd1322_fill_display(0x13579bdf);
-                    uart_puts("disp fill 0x13579bdf\n");
-                } else uart_puts("Disp is off!\n");
-                break;
-            case 'F':
-                if (display_is_on) {
-                    ssd1322_fill_display(0xfdb97531);
-                    uart_puts("disp fill 0xfdb97531\n");
-                } else uart_puts("Disp is off!\n");
-                break;
-            case 'i':
-                if (display_is_on) {
-                    ssd1322_set_display_mode(inv?SET_DISPLAY_MODE_INV:SET_DISPLAY_MODE_NORM);
-                    uart_printf("Display %s inverted\n", inv ? "is" : "not");
-                    inv = (inv + 1) & 0x01;
-                } else uart_puts("Disp is off!\n");
-                break;
+                    uart_puts("Display is ON!\n");
+                    break;
+                case 'O':
+                    ssd1322_uninit();
+                    display_is_on = 0;
+                    uart_puts("Display is OFF!\n");
+                    break;
+                case 'l':
+                    if (display_is_on) {
+                        ssd1322_update_display(Logo_256x64, sizeof(Logo_256x64));
+                        uart_puts("Logo_256x64 displayed\r\n");
+                    } else uart_puts("Disp is off!\n");
+                    break;
+                case 'm':
+                    if (display_is_on) {
+                        ssd1322_set_display_mode(mode);
+                        uart_printf("Dispmode: %u\n", mode);
+                        mode = (mode + 1) & 0x03;
+                    } else uart_puts("Disp is off!\n");
+                    break;
+                case 'c':
+                    if (display_is_on) {
+                        ssd1322_fill_display(0x00);
+                        uart_puts("disp fill 0x00\n");
+                    } else uart_puts("Disp is off!\n");
+                    break;
+                case 'f':
+                    if (display_is_on) {
+                        ssd1322_fill_display(0x13579bdf);
+                        uart_puts("disp fill 0x13579bdf\n");
+                    } else uart_puts("Disp is off!\n");
+                    break;
+                case 'F':
+                    if (display_is_on) {
+                        ssd1322_fill_display(0xfdb97531);
+                        uart_puts("disp fill 0xfdb97531\n");
+                    } else uart_puts("Disp is off!\n");
+                    break;
+                case 'i':
+                    if (display_is_on) {
+                        ssd1322_set_display_mode(inv?SET_DISPLAY_MODE_INV:SET_DISPLAY_MODE_NORM);
+                        uart_printf("Display %s inverted\n", inv ? "is" : "not");
+                        inv = (inv + 1) & 0x01;
+                    } else uart_puts("Disp is off!\n");
+                    break;
 
-            case '!':
-                print_device_info();
-                break;
-            case '?':
-                print_hwids();
-                break;
-            case 'x':
-                NVIC_SystemReset();
-                break;
-            default:
-                // just echo for now...
-                uart_putc(ch);
-                break;
+                case '!':
+                    print_device_info();
+                    break;
+                case '?':
+                    print_hwids();
+                    break;
+                case 'x':
+                    NVIC_SystemReset();
+                    break;
+                case 'X':
+                    if (aux_rst) {
+                        // Ensure AUX_BOOT0 = 0 !
+                        HAL_GPIO_WritePin(BRD_LED_AUX_BOOT0_GPIO_Port, BRD_LED_AUX_BOOT0_Pin, GPIO_PIN_RESET);
+                        util_dwt_delay_us(10);
+                        HAL_GPIO_WritePin(SYS_RSTn_GPIO_Port, SYS_RSTn_Pin, GPIO_PIN_SET);  // rls from active low
+                        // BOOT0 is latched on 4th clk-edge from rising-edge of RESET
+                        util_dwt_delay_us(10);
+                    } else {
+                        HAL_GPIO_WritePin(SYS_RSTn_GPIO_Port, SYS_RSTn_Pin, GPIO_PIN_RESET);
+                    }
+                    aux_rst = !aux_rst;
+                    uart_printf("FP-MCU is %s\n", aux_rst ? "in RESET" : "not reset");
+                    break;
+                default:
+                    // just echo for now...
+                    uart_putc(USART1, ch);
+                    break;
             }
         }
 
@@ -505,4 +543,3 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-

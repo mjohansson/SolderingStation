@@ -138,7 +138,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb18d09")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "H2" (at 0 -4.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 87df339c-bdad-4218-a902-63cca7bd4fc0)
@@ -165,7 +165,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb18d47")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "H3" (at 0 -4.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1003580e-5682-46d0-96e6-0b6c4ed4232b)
@@ -192,7 +192,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb18ee6")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "H4" (at 0 -4.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d30466b1-5b76-4fdc-8ce2-533b0d5b9d80)
@@ -219,7 +219,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb1860c")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "H1" (at 0 -4.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 040bf59b-fbb7-4231-bd13-1fd840025f64)
@@ -246,7 +246,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb2c09c")
-    (attr through_hole)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "M1" (at 0 -2) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp b0e44ba8-54f9-408d-9d76-e24ea3045413)
@@ -289,7 +289,7 @@
     (property "Sheetfile" "Frontpanel_touch_sense.kicad_sch")
     (property "Sheetname" "Touch-sense controller")
     (path "/00000000-0000-0000-0000-00005fb1fd88/00000000-0000-0000-0000-00005fb8cef4")
-    (attr through_hole)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "LTS1" (at 0 5.5) (layer "F.SilkS") hide
       (effects (font (size 1.2 0.8) (thickness 0.16)))
       (tstamp 03d97872-a3e2-48aa-a646-b64c3ea2480c)
@@ -488,7 +488,7 @@
     (property "Sheetfile" "Frontpanel_touch_sense.kicad_sch")
     (property "Sheetname" "Touch-sense controller")
     (path "/00000000-0000-0000-0000-00005fb1fd88/00000000-0000-0000-0000-00005fb90710")
-    (attr through_hole)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "LTS2" (at 0 5.5) (layer "F.SilkS") hide
       (effects (font (size 1.2 0.8) (thickness 0.16)))
       (tstamp 13ccfd87-f7ed-4d7e-94a5-896d2589ffb8)
@@ -687,7 +687,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb2cd09")
-    (attr through_hole)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "M2" (at 0 -11) (layer "B.Fab")
       (effects (font (size 1.2 0.8) (thickness 0.16)) (justify mirror))
       (tstamp c52d99d3-2078-46ba-97d4-33951497732a)
@@ -1402,7 +1402,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fb2d7a3")
-    (attr through_hole)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "M3" (at 0 -5) (layer "B.Fab")
       (effects (font (size 1.2 0.8) (thickness 0.16)) (justify mirror))
       (tstamp df75c386-3877-4b84-8d39-8cba635c1f49)
@@ -2223,7 +2223,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-000060048a8c")
-    (attr through_hole)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "Logo1" (at 0 -10.16) (layer "B.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
       (tstamp c83ad756-7504-491d-91e1-f675a578ad6f)
@@ -2725,7 +2725,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00006004349e")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "Logo2" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp e485bee2-de45-4fe4-b7ae-76008269a978)
@@ -4110,7 +4110,7 @@
     (property "Sheetfile" "ss_frontpanel_outer_plate.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-000060054c86")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "Logo3" (at 0 5.08) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp fe0ede15-0b50-4e75-8e24-69deaa8abb69)

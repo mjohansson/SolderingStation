@@ -1403,8 +1403,8 @@
     (path "/00000000-0000-0000-0000-00005fe40c29/00000000-0000-0000-0000-0000620a4b05"
       (reference "R512") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
-    (path "/00000000-0000-0000-0000-00005fe40c29/00000000-0000-0000-0000-00006006e7e1"
-      (reference "R513") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0402_1005Metric")
+    (path "/00000000-0000-0000-0000-00005fe40c29/b25302dd-7993-4845-b294-1ad4712cb99e"
+      (reference "R513") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005fe40c29/00000000-0000-0000-0000-00006013d61c"
       (reference "R514") (unit 1) (value "47R") (footprint "Resistor_SMD:R_0402_1005Metric")

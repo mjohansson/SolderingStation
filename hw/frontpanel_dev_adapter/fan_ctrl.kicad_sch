@@ -1206,7 +1206,7 @@
     (pin "1" (uuid 874b828c-c6f3-4ed6-aad5-94543b80fbf7))
   )
 
-  (symbol (lib_id "customlib_mj:74LVC2G17") (at 76.2 130.81 0) (unit 1)
+  (symbol (lib_id "customlib_mj:74LVC2G17") (at 76.2 130.81 0) (unit 3)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f48a695)
     (property "Reference" "U401" (id 0) (at 82.9564 129.6416 0))
@@ -1220,8 +1220,8 @@
     (property "LCSC (DNM)" "C80500" (id 4) (at 76.2 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dc00fa94-a583-43b2-92cf-d179c920f4b4))
-    (pin "6" (uuid 159574a9-ecec-48bb-adb0-3dc9e65d4e79))
+    (pin "2" (uuid 7473c2c1-5a7c-45ca-8f33-94711cc3f2d3))
+    (pin "5" (uuid d1d65ee3-b754-47c0-b7ba-6bd9d2afc4e6))
   )
 
   (symbol (lib_id "power:VDD") (at 76.2 119.38 0) (unit 1)
@@ -1300,7 +1300,7 @@
     (pin "2" (uuid a1a1d45e-d8fc-40e4-b62b-40ff5823238b))
   )
 
-  (symbol (lib_id "customlib_mj:74LVC2G17") (at 80.01 162.56 180) (unit 1)
+  (symbol (lib_id "customlib_mj:74LVC2G17") (at 80.01 162.56 180) (unit 2)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f7058ca)
     (property "Reference" "U401" (id 0) (at 80.645 155.7782 0))
@@ -1314,8 +1314,8 @@
     (property "LCSC (DNM)" "C80500" (id 4) (at 80.01 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c36de2cd-62e2-4141-94ed-8598a4021bc0))
-    (pin "6" (uuid d0583253-7f1c-498c-afba-93bf9b28c781))
+    (pin "3" (uuid 279d721d-83fb-46e0-afd9-3e98a6459ef3))
+    (pin "4" (uuid 37a1a06a-0816-4038-a6f2-ac6d4d3b7116))
   )
 
   (symbol (lib_id "power:GND") (at 91.44 165.1 0) (unit 1)

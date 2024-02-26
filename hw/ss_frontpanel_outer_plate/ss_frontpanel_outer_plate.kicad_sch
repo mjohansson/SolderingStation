@@ -907,7 +907,7 @@
       (reference "R21") (unit 1) (value "20k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005fb1fd88/00000000-0000-0000-0000-00005fb21be6"
-      (reference "U1") (unit 1) (value "STM32L052C8Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
+      (reference "U1") (unit 1) (value "STM32L053C8Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
     )
   )
 )

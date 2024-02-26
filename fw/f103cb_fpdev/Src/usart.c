@@ -28,6 +28,8 @@
 const char g_hex_str[] = "0123456789ABCDEF";
 const char g_hex_str_lc[] = "0123456789abcdef";
 
+uint32_t g_uart3_dump = 0;
+
 // Index counter mask for RX buffer */
 #define UART_RXBUF_MSK    (UART_RXBUF_SZ - 1UL)
 
@@ -35,14 +37,14 @@ const char g_hex_str_lc[] = "0123456789abcdef";
 #define UART_TXBUF_MSK    (UART_TXBUF_SZ - 1UL)
 
 
-#define RINGBUF_RESET(buf)  { buf.rd_idx = buf.wr_idx = 0; }
+#define RINGBUF_RESET(buf)  { buf->rd_idx = buf->wr_idx = 0; }
 
-#define RINGBUF_EMPTY(buf)  ( buf.wr_idx == buf.rd_idx )
+#define RINGBUF_EMPTY(buf)  ( buf->wr_idx == buf->rd_idx )
 
 // This is not correct? Neither sizeof(data) or sizeof(data)-1 works?
-//#define RINGBUF_FULL(buf)   ( buf.wr_idx - buf.rd_idx == sizeof(buf.data)-1 )
+//#define RINGBUF_FULL(buf)   ( buf->wr_idx - buf->rd_idx == sizeof(buf->data)-1 )
 
-#define RINGBUF_COUNT(buf)  ( buf.wr_idx - buf.rd_idx )
+#define RINGBUF_COUNT(buf)  ( buf->wr_idx - buf->rd_idx )
 
 
 typedef struct _uart_rxbuf_s {
@@ -58,26 +60,58 @@ typedef struct _uart_txbuf_s {
 } uart_txbuf_t;
 
 uart_rxbuf_t uart1_rxbuf;
-
 uart_txbuf_t uart1_txbuf;
+
+uart_rxbuf_t uart3_rxbuf;
+uart_txbuf_t uart3_txbuf;
+
+
+typedef struct _uart_ctx_s {
+    UART_HandleTypeDef *huart;
+    uart_rxbuf_t *rx;
+    uart_txbuf_t *tx;
+} uart_ctx_t;
+
+
+
+static uart_ctx_t g_uarts[] = {
+    { &huart1, &uart1_rxbuf, &uart1_txbuf },
+    { &huart3, &uart3_rxbuf, &uart3_txbuf },
+    { NULL, NULL, NULL }
+};
+
+
+uart_ctx_t* find_uart(USART_TypeDef *uart_instance)
+{
+    uart_ctx_t* res = NULL;
+
+    for (int i = 0; i < sizeof(g_uarts) / sizeof(g_uarts[0]); i++) {
+        res = &g_uarts[i];
+        if (res != NULL && (res->huart->Instance == uart_instance)) {
+            break;
+        }
+    }
+    return res;
+}
+
 
 
 #define MAX_STRING_WIDTH    (80u)
 #define INVALID_INPUT       (0xFFu)
 
-#define IS_WHITESPACE(rx)    rx = uart_getc();                          \
+#define IS_WHITESPACE(U, rx)    rx = uart_getc(U);                      \
     while ( (rx == '\r') || (rx == ' ') ||                              \
             (rx == '\t') || (rx == '\b') ) {                            \
-        uart_putc(rx);                                                  \
-        rx = uart_getc();                                               \
+        uart_putc(U, rx);                                               \
+        rx = uart_getc(U);                                              \
     }
 
-#define UART_SCANF_ECHO_INPUT(rx)                                       \
-    if ( (rx == '\n') || (rx == '\r') ) {                               \
-        uart_putc('\r');                                                \
-        uart_putc('\n');                                                \
+#define UART_SCANF_ECHO_INPUT(U, rx)                                    \
+    if ( (rx == '\n') || (rx == ' ') ) {                                \
+        uart_putc(U, '\r');                                             \
+        uart_putc(U, '\n');                                             \
     } else {                                                            \
-        uart_putc(rx);                                                  \
+        uart_putc(U, rx);                                               \
     }
 
 
@@ -153,8 +187,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
   if(uartHandle->Instance==USART1)
   {
   /* USER CODE BEGIN USART1_MspInit 0 */
-      RINGBUF_RESET(uart1_rxbuf);
-      RINGBUF_RESET(uart1_txbuf);
+      uart_rxbuf_t *rx = &uart1_rxbuf;
+      uart_txbuf_t *tx = &uart1_txbuf;
+      RINGBUF_RESET(rx);
+      RINGBUF_RESET(tx);
 
   /* USER CODE END USART1_MspInit 0 */
     /* USART1 clock enable */
@@ -180,11 +216,18 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE BEGIN USART1_MspInit 1 */
 
+    uart_enable_rx_irq(uartHandle);
+
   /* USER CODE END USART1_MspInit 1 */
   }
   else if(uartHandle->Instance==USART3)
   {
   /* USER CODE BEGIN USART3_MspInit 0 */
+      uart_rxbuf_t *rx = &uart3_rxbuf;
+      uart_txbuf_t *tx = &uart3_txbuf;
+
+      RINGBUF_RESET(rx);
+      RINGBUF_RESET(tx);
 
   /* USER CODE END USART3_MspInit 0 */
     /* USART3 clock enable */
@@ -205,7 +248,12 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(AUX_TX_USART3_RX_GPIO_Port, &GPIO_InitStruct);
 
+    /* USART3 interrupt Init */
+    HAL_NVIC_SetPriority(USART3_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(USART3_IRQn);
   /* USER CODE BEGIN USART3_MspInit 1 */
+
+    uart_enable_rx_irq(uartHandle);
 
   /* USER CODE END USART3_MspInit 1 */
   }
@@ -217,9 +265,13 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   if(uartHandle->Instance==USART1)
   {
   /* USER CODE BEGIN USART1_MspDeInit 0 */
+      uart_rxbuf_t *rx = &uart1_rxbuf;
+      uart_txbuf_t *tx = &uart1_txbuf;
 
-      RINGBUF_RESET(uart1_txbuf);
-      RINGBUF_RESET(uart1_rxbuf);
+      uart_disable_rx_irq(uartHandle);
+
+      RINGBUF_RESET(rx);
+      RINGBUF_RESET(tx);
 
   /* USER CODE END USART1_MspDeInit 0 */
     /* Peripheral clock disable */
@@ -240,6 +292,13 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   else if(uartHandle->Instance==USART3)
   {
   /* USER CODE BEGIN USART3_MspDeInit 0 */
+      uart_rxbuf_t *rx = &uart3_rxbuf;
+      uart_txbuf_t *tx = &uart3_txbuf;
+
+      uart_disable_rx_irq(uartHandle);
+
+      RINGBUF_RESET(rx);
+      RINGBUF_RESET(tx);
 
   /* USER CODE END USART3_MspDeInit 0 */
     /* Peripheral clock disable */
@@ -251,6 +310,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
     */
     HAL_GPIO_DeInit(GPIOB, AUX_RX_USART3_TX_Pin|AUX_TX_USART3_RX_Pin);
 
+    /* USART3 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(USART3_IRQn);
   /* USER CODE BEGIN USART3_MspDeInit 1 */
 
   /* USER CODE END USART3_MspDeInit 1 */
@@ -260,25 +321,34 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 /* USER CODE BEGIN 1 */
 
 // Blocking uart tx of single char
-void uart_putc(int data)
+void uart_putc(USART_TypeDef *uart, int data)
 {
-    uart1_txbuf.wr_idx &= UART_TXBUF_MSK;
+    uart_ctx_t *u = find_uart(uart);
+
+    __disable_irq();
+    u->tx->wr_idx &= UART_TXBUF_MSK;
 #if 1
-    uint32_t nxt_wr = (uart1_txbuf.wr_idx + 1) & UART_TXBUF_MSK;
+    uint32_t nxt_wr = (u->tx->wr_idx + 1) & UART_TXBUF_MSK;
     // Block while txbuf full
-    while (nxt_wr == uart1_txbuf.rd_idx) ;
-    uart1_txbuf.data[uart1_txbuf.wr_idx] = (uint8_t)data;
-    uart1_txbuf.wr_idx = nxt_wr;
+    __enable_irq();
+    while (nxt_wr == u->tx->rd_idx) ;
+    __disable_irq();
+    u->tx->data[u->tx->wr_idx] = (uint8_t)data;
+    u->tx->wr_idx = nxt_wr;
 #else
     // Block while txbuf full
-    while (RINGBUF_FULL(uart1_txbuf)) { }
+    __enable_irq();
+    while (RINGBUF_FULL(u->tx)) { }
+    __disable_irq();
 
     // Add to tx queue
-    uart1_txbuf.data[uart1_txbuf.wr_idx++] = data;
-    uart1_txbuf.wr_idx &= UART_TXBUF_MSK;
+    u->tx->data[u->tx->wr_idx++] = data;
+    u->tx->wr_idx &= UART_TXBUF_MSK;
 #endif
+    __enable_irq();
+
     // Enable TXEIE to ensure data will be transmitted
-    uart_enable_tx_irq();
+    uart_enable_tx_irq(u->huart);
 }
 
 // Blocking uart tx of a nul-terminated string
@@ -287,30 +357,30 @@ void uart_puts(const char* str)
     uint8_t ch;
     while ( (ch = (uint8_t)*str++) != '\0') {
         if (ch == '\n') {
-            uart_putc('\r');
-            uart_putc('\n');
+            uart_putc(USART1, '\r');
+            uart_putc(USART1, '\n');
         } else {
-            uart_putc(ch);
+            uart_putc(USART1, ch);
         }
     }
 }
 
 // Blocking uart rx of up-to (max_buffer_size-1) bytes or until carriage return.
 // rx-data is 0-terminated
-char* uart_gets(char *p_rx_buf, int max_buf_size)
+char* uart_gets(USART_TypeDef *uart, char *p_rx_buf, int max_buf_size)
 {
     if ( (p_rx_buf != 0) && (max_buf_size > 0) ) {
         char *wr_ptr = p_rx_buf;
         uint32_t count = 0;
 
-        uint8_t ch = uart_getc();
+        uint8_t ch = uart_getc(uart);
         while ( (ch != '\r') && (count < (max_buf_size-1u)) ) {
             // Echo back the input
-            uart_putc(ch);
+            uart_putc(uart, ch);
 
             *wr_ptr++ = ch;
             count++;
-            ch = uart_getc();
+            ch = uart_getc(uart);
         }
 
         // terminate str
@@ -320,25 +390,52 @@ char* uart_gets(char *p_rx_buf, int max_buf_size)
     return p_rx_buf;
 }
 
+void uart_dump_buffer(USART_TypeDef *dest_uart, uart_ctx_t *rx_uart, uint32_t length)
+{
+    uint32_t nxt_wr;
+    uart_ctx_t *u = find_uart(dest_uart);
+    uart_rxbuf_t *rx_buf = rx_uart->rx;
+    u->tx->wr_idx &= UART_TXBUF_MSK;
+
+    while (length--) {
+        uint8_t ch;
+        nxt_wr = (u->tx->wr_idx + 1) & UART_TXBUF_MSK;
+        // Skip if txbuf full
+        if (nxt_wr == u->tx->rd_idx) {
+            break;
+        }
+        __disable_irq();
+        ch = rx_buf->data[rx_buf->rd_idx++];
+        rx_buf->rd_idx &= UART_RXBUF_MSK;
+        u->tx->data[u->tx->wr_idx] = ch;
+        u->tx->wr_idx = nxt_wr;
+        __enable_irq();
+    }
+
+    __enable_irq();
+    // Enable TXEIE to ensure data will be transmitted
+    uart_enable_tx_irq(u->huart);
+}
+
 // Blocking uart send data
-void uart_send(const uint8_t *data, uint32_t length)
+void uart_send(USART_TypeDef *uart, const uint8_t *data, uint32_t length)
 {
     while (length--) {
-        uart_putc((char)*data++);
+        uart_putc(uart, (char)*data++);
     }
 }
 
 // Like send, but with "\r\n" expansions
-uint32_t uart_write(const char *buf, uint32_t len)
+uint32_t uart_write(USART_TypeDef *uart, const char *buf, uint32_t len)
 {
     uint32_t idx;
 
     for (idx = 0; idx < len; idx++) {
         if (buf[idx] == '\n') {
-            uart_putc('\r');
+            uart_putc(uart, '\r');
         }
 
-        uart_putc(buf[idx]);
+        uart_putc(uart, buf[idx]);
     }
 
     // number of characters written
@@ -347,35 +444,40 @@ uint32_t uart_write(const char *buf, uint32_t len)
 
 
 // Blocking uart rx of a single char
-uint8_t uart_getc(void)
+uint8_t uart_getc(USART_TypeDef *uart)
 {
+    uart_ctx_t *u = find_uart(uart);
     uint8_t data;
 
-    uart1_rxbuf.rd_idx &= UART_RXBUF_MSK;
+    u->rx->rd_idx &= UART_RXBUF_MSK;
 
     // Enable RXNEIE to ensure data will be received
-    uart_enable_rx_irq();
+    uart_enable_rx_irq(u->huart);
 
     // Block while rxbuf empty
-    while (RINGBUF_EMPTY(uart1_rxbuf)) { }
+    while (RINGBUF_EMPTY(u->rx)) { }
 
+    __disable_irq();
     // Get first char from rx queue
-    data = uart1_rxbuf.data[uart1_rxbuf.rd_idx++];
-    uart1_rxbuf.rd_idx &= UART_RXBUF_MSK;
+    data = u->rx->data[u->rx->rd_idx++];
+    u->rx->rd_idx &= UART_RXBUF_MSK;
+    __enable_irq();
     return data;
 }
 
 // Check TX queue length
-uint32_t uart_tx_queue(void)
+uint32_t uart_tx_queue(USART_TypeDef *uart)
 {
-    uint32_t tx_len = RINGBUF_COUNT(uart1_txbuf);
+    uart_ctx_t *u = find_uart(uart);
+    uint32_t tx_len = RINGBUF_COUNT(u->tx);
     return tx_len;
 }
 
 // Check RX queue length
-uint32_t uart_rx_queue(void)
+uint32_t uart_rx_queue(USART_TypeDef *uart)
 {
-    uint32_t rx_len = RINGBUF_COUNT(uart1_rxbuf);
+    uart_ctx_t *u = find_uart(uart);
+    uint32_t rx_len = RINGBUF_COUNT(u->rx);
     return rx_len;
 }
 
@@ -385,29 +487,29 @@ uint32_t uart_rx_queue(void)
 void USART1_IRQHandler(void)
 {
     //    HAL_UART_IRQHandler(&huart1); -- not used
+    uart_ctx_t *u = find_uart(USART1);
+    uint32_t stat = u->huart->Instance->SR;
 
-    uint32_t stat = huart1.Instance->SR;
-
-    if ( uart_tx_irq_active() && (stat & UART_FLAG_TXE) ) {
+    if ( uart_tx_irq_active(u->huart) && (stat & UART_FLAG_TXE) ) {
         // OK to transmit another byte
-        uart1_txbuf.rd_idx &= UART_TXBUF_MSK;
-        uint8_t ch = uart1_txbuf.data[uart1_txbuf.rd_idx++];
-        huart1.Instance->DR = ch;
-        uart1_txbuf.rd_idx &= UART_TXBUF_MSK;
-        if ( RINGBUF_EMPTY(uart1_txbuf) ) {
+        u->tx->rd_idx &= UART_TXBUF_MSK;
+        uint8_t ch = u->tx->data[u->tx->rd_idx++];
+        u->huart->Instance->DR = ch;
+        u->tx->rd_idx &= UART_TXBUF_MSK;
+        if ( RINGBUF_EMPTY(u->tx) ) {
             // Last byte sent, disable further TXE irqs
-            uart_disable_tx_irq();  // Clear TXEIE
+            uart_disable_tx_irq(u->huart);  // Clear TXEIE
 //            huart1.Instance->CR1 |= USART_CR1_TCIE; // TBD (if OnComplete CB etc)
         }
     }
 
-    if ( uart_rx_irq_active() && (stat & UART_FLAG_RXNE) ) {
+    if ( uart_rx_irq_active(u->huart) && (stat & UART_FLAG_RXNE) ) {
         // Get and store (if possible) received byte in rx-buffer
-        uint8_t ch = huart1.Instance->DR;
-        uint32_t nxt_wr = (uart1_rxbuf.wr_idx + 1) & UART_RXBUF_MSK;
-        if ( nxt_wr != uart1_rxbuf.rd_idx ) {
-            uart1_rxbuf.data[uart1_rxbuf.wr_idx] = ch;
-            uart1_rxbuf.wr_idx = nxt_wr;
+        uint8_t ch = u->huart->Instance->DR;
+        uint32_t nxt_wr = (u->rx->wr_idx + 1) & UART_RXBUF_MSK;
+        if ( nxt_wr != u->rx->rd_idx ) {
+            u->rx->data[u->rx->wr_idx] = ch;
+            u->rx->wr_idx = nxt_wr;
         } else {
             // TBD: Set overflow flag
             // Drop overflowing data
@@ -421,16 +523,59 @@ void USART1_IRQHandler(void)
 
 }
 
-void uart_print_hex_byte(uint8_t byte)
+/**
+* @brief This function handles USART3 global interrupt.
+*/
+void USART3_IRQHandler(void)
 {
-    uart_putc(g_hex_str[(byte >> 4 & 0x0F)]);
-    uart_putc(g_hex_str[byte & 0x0F]);
+    uart_ctx_t *u = find_uart(USART3);
+    uint32_t stat = u->huart->Instance->SR;
+    //    HAL_UART_IRQHandler(u->huart); -- not used
+
+    if ( uart_tx_irq_active(u->huart) && (stat & UART_FLAG_TXE) ) {
+        // OK to transmit another byte
+        u->tx->rd_idx &= UART_TXBUF_MSK;
+        uint8_t ch = u->tx->data[u->tx->rd_idx++];
+        u->huart->Instance->DR = ch;
+        u->tx->rd_idx &= UART_TXBUF_MSK;
+        if ( RINGBUF_EMPTY(u->tx) ) {
+            // Last byte sent, disable further TXE irqs
+            uart_disable_tx_irq(u->huart);  // Clear TXEIE
+//            huart1.Instance->CR1 |= USART_CR1_TCIE; // TBD (if OnComplete CB etc)
+        }
+    }
+
+    if ( uart_rx_irq_active(u->huart) && (stat & UART_FLAG_RXNE) ) {
+        // Get and store (if possible) received byte in rx-buffer
+        uint8_t ch = u->huart->Instance->DR;
+        uint32_t nxt_wr = (u->rx->wr_idx + 1) & UART_RXBUF_MSK;
+        if ( nxt_wr != u->rx->rd_idx ) {
+/*
+            u->rx->data[u->rx->wr_idx] = ch;
+            u->rx->wr_idx = nxt_wr;
+            if (ch == 0 || ch == '\n') {
+                g_uart3_dump = RINGBUF_COUNT(u->rx);
+            }
+*/
+        } else {
+//            g_uart3_dump = RINGBUF_COUNT(u->rx);
+            // TBD: Set overflow flag
+            // Drop overflowing data
+        }
+    }
+
 }
 
-void uart_print_hex_word(uint32_t word)
+void uart_print_hex_byte(USART_TypeDef *uart, uint8_t byte)
+{
+    uart_putc(uart, g_hex_str[(byte >> 4 & 0x0F)]);
+    uart_putc(uart, g_hex_str[byte & 0x0F]);
+}
+
+void uart_print_hex_word(USART_TypeDef *uart, uint32_t word)
 {
     for (int i = 7; i >= 0; i--) {
-        uart_putc(g_hex_str[(word >> 28 & 0x0F)]);
+        uart_putc(uart, g_hex_str[(word >> 28 & 0x0F)]);
         word <<= 4;
     }
 }
@@ -459,18 +604,18 @@ void uart_put_hex(uint32_t value)
 
     util_uint_to_ascii(value, &buf[0], sizeof(buf), 16);
 
-    uart_putc('0');
-    uart_putc('x');
+    uart_putc(USART1, '0');
+    uart_putc(USART1, 'x');
     uart_puts(buf);
 }
 
 // Read UART into buffer until space or carriage return.
-void uart_stdio_read(uint8_t *rxBuff, uint8_t rxByte)
+void uart_stdio_read(USART_TypeDef *uart, uint8_t *rxBuff, uint8_t rxByte)
 {
     uint32_t input_count = 0u;
 
     while ( (rxByte != '\r') && (rxByte != ' ') ) {
-        uart_putc(rxByte);  // echo
+        uart_putc(uart, rxByte);  // echo
 
         // Handle backspace to allow user to edit the input
         if ( ('\b' == rxByte) && (input_count > 0) ) {
@@ -480,14 +625,14 @@ void uart_stdio_read(uint8_t *rxBuff, uint8_t rxByte)
             *rxBuff++ = rxByte;
             input_count++;
         }
-        rxByte = uart_getc();
+        rxByte = uart_getc(uart);
     }
 
     // Add the delimiting character at the end of the buffer
     *rxBuff = rxByte;
 }
 
-int uart_get_nums(void)
+int uart_get_nums(USART_TypeDef *uart)
 {
     uint8_t ch;
     int value = 0;
@@ -495,23 +640,23 @@ int uart_get_nums(void)
 
     // skip leading spaces
     do {
-        ch = uart_getc();
-        uart_putc(ch);
+        ch = uart_getc(uart);
+        uart_putc(uart, ch);
     } while (isspace(ch));
 
     // check sign
     if (ch == '-') {
         sign = -1;
-        ch = uart_getc();
-        uart_putc(ch);
+        ch = uart_getc(uart);
+        uart_putc(uart, ch);
     }
 
     // convert digits
     while (isdigit(ch)) {
         value = value * 10 + (ch - '0');
 
-        ch = uart_getc();
-        uart_putc(ch);
+        ch = uart_getc(uart);
+        uart_putc(uart, ch);
     }
 
     value = value * sign;
@@ -519,7 +664,7 @@ int uart_get_nums(void)
     return value;
 }
 
-uint32_t uart_get_hex(void)
+uint32_t uart_get_hex(USART_TypeDef *uart)
 {
     uint8_t ch;
     uint32_t value = 0;
@@ -528,13 +673,13 @@ uint32_t uart_get_hex(void)
     for (int i = 0; i < 2; i++) {
 
         do {
-            ch = uart_getc();
+            ch = uart_getc(uart);
         } while (isspace(ch));
 
         if (ch == '\r') break;
 
         if (isxdigit(ch)) {
-            uart_putc(ch);
+            uart_putc(uart, ch);
             ch = toupper(ch);
             if (ch <= '9') {
                 value = value * 16 + (ch - '0');
@@ -545,7 +690,7 @@ uint32_t uart_get_hex(void)
         }
 
         if ( (ch == 'x') || (ch == 'X') ) {
-            uart_putc(ch);
+            uart_putc(uart, ch);
             value = 0;
             break;
         }
@@ -556,12 +701,12 @@ uint32_t uart_get_hex(void)
     }
 
     do {
-        ch = uart_getc();
+        ch = uart_getc(uart);
 
         if (ch == '\r') break;
 
         if (isxdigit(ch)) {
-            uart_putc(ch);
+            uart_putc(uart, ch);
             ch = toupper(ch);
             if (ch < '9') {
                 value = value * 16 + (ch - '0');
@@ -618,7 +763,7 @@ void uart_printf(const char *pcString, ...)
         }
 
         /* Write this portion of the string. */
-        uart_write(pcString, idx);
+        uart_write(USART1, pcString, idx);
 
         /* Skip the portion of the string that was written. */
         pcString += idx;
@@ -678,7 +823,7 @@ again:
                     value = va_arg(vaArgP, unsigned int);
 
                     /* Print out the character. */
-                    uart_write((char *)&value, 1);
+                    uart_write(USART1, (char *)&value, 1);
 
                     /* This command has been handled. */
                     break;
@@ -728,13 +873,13 @@ again:
                     }
 
                     /* Write the string. */
-                    uart_write(pcStr, idx);
+                    uart_write(USART1, pcStr, idx);
 
                     /* Write any required padding spaces */
                     if (count > idx) {
                         count -= idx;
                         while (count--) {
-                            uart_putc(' ');
+                            uart_putc(USART1, ' ');
                         }
                     }
                     /* This command has been handled. */
@@ -851,7 +996,7 @@ convert:
                     }
 
                     /* Write the string. */
-                    uart_write(pcBuf, pos);
+                    uart_write(USART1, pcBuf, pos);
 
                     /* This command has been handled. */
                     break;
@@ -868,7 +1013,7 @@ convert:
                     /* count holds before-decimal-point format */
 
                     /* yay for recursion! */
-                    uart_printf("%d.%d",
+                    uart_printf(USART1, "%d.%d",
                                 (int)dvalue,
                                 (int)(1000*(dvalue-(int)dvalue + 0.5f/1000)));
 
@@ -883,7 +1028,7 @@ convert:
                 case '%':
                 {
                     /* Simply write a single %. */
-                    uart_putc('%');
+                    uart_putc(USART1, '%');
 
                     /* This command has been handled. */
                     break;
@@ -893,7 +1038,7 @@ convert:
                 default:
                 {
                     /* Indicate an error. */
-                    uart_write((const char *)"ERROR", 5);
+                    uart_write(USART1, (const char *)"ERROR", 5);
 
                     /* This command has been handled. */
                     break;
@@ -951,8 +1096,8 @@ int uart_scanf(const char *format, va_list vaArg)
                     /* Get the address of variable from varargs */
                     dst = va_arg(vaArg, char *);
 
-                    rxByte = uart_getc();
-                    uart_putc(rxByte);
+                    rxByte = uart_getc(USART1);
+                    uart_putc(USART1, rxByte);
                     *dst = rxByte;
                     /*
                     ** Increment the count for input values successfully
@@ -965,9 +1110,9 @@ int uart_scanf(const char *format, va_list vaArg)
                     ** return or space
                     */
                     while ( (rxByte != '\n') && (rxByte != '\r') && (rxByte != ' ') ) {
-                        rxByte = uart_getc();
+                        rxByte = uart_getc(USART1);
                     }
-                    UART_SCANF_ECHO_INPUT(rxByte);
+                    UART_SCANF_ECHO_INPUT(USART1, rxByte);
                     break;
 
                 /* Handle the %d command. */
@@ -986,14 +1131,14 @@ int uart_scanf(const char *format, va_list vaArg)
                     ** Continuously loop until user enters a non
                     ** white-space character
                     */
-                    IS_WHITESPACE(rxByte);
+                    IS_WHITESPACE(USART1, rxByte);
 
                     /*
                     ** Continuously read input values from UART console
                     ** and update the buffer until user enters a delimiting
                     ** character.
                     */
-                    uart_stdio_read(rxBuffer, rxByte);
+                    uart_stdio_read(USART1, rxBuffer, rxByte);
 
                     rxByte = rxBuffer[byteCount];
 
@@ -1028,7 +1173,7 @@ int uart_scanf(const char *format, va_list vaArg)
                     /* Add the sign value to the number */
                     *value = *(value) * sign;
                     byteCount = 0u;
-                    UART_SCANF_ECHO_INPUT(rxByte);
+                    UART_SCANF_ECHO_INPUT(USART1, rxByte);
                     break;
 
                 /* Handle the %x,%X and %p command. */
@@ -1048,14 +1193,14 @@ int uart_scanf(const char *format, va_list vaArg)
                     /* Continuously loop until user enters a non
                     ** white-space character.
                     */
-                    IS_WHITESPACE(rxByte)
+                    IS_WHITESPACE(USART1, rxByte)
 
                     /*
                     ** Continuously read input values from UART console
                     ** and update the buffer until user enters a delimiting
                     ** character.
                     */
-                    uart_stdio_read(rxBuffer, rxByte);
+                    uart_stdio_read(USART1, rxBuffer, rxByte);
 
                     rxByte = rxBuffer[byteCount];
                     /*
@@ -1088,7 +1233,7 @@ int uart_scanf(const char *format, va_list vaArg)
                         rxByte = rxBuffer[byteCount];
                     }
                     byteCount = 0u;
-                    UART_SCANF_ECHO_INPUT(rxByte);
+                    UART_SCANF_ECHO_INPUT(USART1, rxByte);
                     break;
 
                 /* Handle the %s command. */
@@ -1106,11 +1251,11 @@ int uart_scanf(const char *format, va_list vaArg)
                     ** Continuously loop till user enters a non
                     ** white-space character
                     */
-                    IS_WHITESPACE(rxByte);
+                    IS_WHITESPACE(USART1, rxByte);
 
                      /* Read the characters one at a time from UART console */
                     while ( (rxByte != '\n') && (rxByte != '\r') && (rxByte != ' ') && (width--) ) {
-                        uart_putc(rxByte);
+                        uart_putc(USART1, rxByte);
 
                         /*Account for backspace and decrement the pointer */
                         if ('\b' == rxByte) {
@@ -1119,10 +1264,10 @@ int uart_scanf(const char *format, va_list vaArg)
                         } else {
                             *dst++ = (char) rxByte;
                         }
-                        rxByte = uart_getc();
+                        rxByte = uart_getc(USART1);
                     }
                     *dst = '\0';
-                    UART_SCANF_ECHO_INPUT(rxByte);
+                    UART_SCANF_ECHO_INPUT(USART1, rxByte);
                     break;
 
                 /* Handles %u command */
@@ -1135,14 +1280,14 @@ int uart_scanf(const char *format, va_list vaArg)
                     ** Continuously loop until user enters a non
                     ** white-space character
                     */
-                    IS_WHITESPACE(rxByte);
+                    IS_WHITESPACE(USART1, rxByte);
 
                     /*
                     ** Continuously read input values from UART console
                     ** and update the buffer until user enters a delimiting
                     ** character.
                     */
-                    uart_stdio_read(rxBuffer, rxByte);
+                    uart_stdio_read(USART1, rxBuffer, rxByte);
 
                     rxByte = rxBuffer[byteCount];
                     while ( (rxByte != '\n') && (rxByte != '\r') && (rxByte != ' ') ) {
@@ -1163,7 +1308,7 @@ int uart_scanf(const char *format, va_list vaArg)
                         rxByte = rxBuffer[byteCount];
                     }
                     byteCount = 0u;
-                    UART_SCANF_ECHO_INPUT(rxByte);
+                    UART_SCANF_ECHO_INPUT(USART1, rxByte);
                     break;
 
                 default:

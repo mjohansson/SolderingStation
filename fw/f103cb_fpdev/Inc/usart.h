@@ -39,6 +39,8 @@ extern UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN Private defines */
 
+extern uint32_t g_uart3_dump;
+
 // TX buffer size - must be power of 2 */
 #define UART_TXBUF_SZ     256UL
 
@@ -47,7 +49,7 @@ extern UART_HandleTypeDef huart3;
 #endif
 
 // RX buffer size - must be power of 2 */
-#define UART_RXBUF_SZ     32UL
+#define UART_RXBUF_SZ     256UL
 
 #if (UART_RXBUF_SZ & (UART_RXBUF_SZ - 1u)) != 0
 #error UART_RXBUF_SZ must be a power-of-2
@@ -63,44 +65,55 @@ void MX_USART3_UART_Init(void);
 extern const char g_hex_str[];
 extern const char g_hex_str_lc[];
 
+
+typedef struct _uart_ctx_s uart_ctx_t;
+
+
+uart_ctx_t* find_uart(USART_TypeDef *uart_instance);
+
+
 // Blocking uart tx of single char
-void uart_putc(int data);
+void uart_putc(USART_TypeDef *uart, int data);
 
 // Blocking uart tx of a nul-terminated string
 void uart_puts(const char* str);
 
+void uart_dump_buffer(USART_TypeDef *dest_uart, uart_ctx_t *rx_uart, uint32_t length);
+
 // Blocking uart send data
-void uart_send(const uint8_t *data, uint32_t length);
+void uart_send(USART_TypeDef *uart, const uint8_t *data, uint32_t length);
 
 // Like send, but with "\r\n" expansions
-uint32_t uart_write(const char *buf, uint32_t len);
+uint32_t uart_write(USART_TypeDef *uart, const char *buf, uint32_t len);
 
 // Blocking uart rx of a single char
-uint8_t uart_getc(void);
+uint8_t uart_getc(USART_TypeDef *uart);
 
 // Blocking rx of up-to max_buf_size-1 bytes, or carriage return
-char* uart_gets(char *p_rx_buf, int max_buf_size);
+char* uart_gets(USART_TypeDef *uart, char *p_rx_buf, int max_buf_size);
 
 // Check TX queue length
-uint32_t uart_tx_queue(void);
+uint32_t uart_tx_queue(USART_TypeDef *uart);
 
 // Check RX queue length
-uint32_t uart_rx_queue(void);
+uint32_t uart_rx_queue(USART_TypeDef *uart);
 
-void uart_print_hex_byte(uint8_t byte);
+void uart_print_hex_byte(USART_TypeDef *uart, uint8_t byte);
 
-void uart_print_hex_word(uint32_t word);
+void uart_print_hex_word(USART_TypeDef *uart, uint32_t word);
 
+
+void uart_put_nums(int value);
 
 void uart_put_num(uint32_t value);
 
 void uart_put_hex(uint32_t value);
 
-void uart_stdio_read(uint8_t *rxBuff, uint8_t rxByte);
+void uart_stdio_read(USART_TypeDef *uart, uint8_t *rxBuff, uint8_t rxByte);
 
-int uart_get_nums(void);
+int uart_get_nums(USART_TypeDef *uart);
 
-uint32_t uart_get_hex(void);
+uint32_t uart_get_hex(USART_TypeDef *uart);
 
 void uart_printf(const char *pcString, ...);
 
@@ -108,28 +121,28 @@ int uart_scanf(const char *format, va_list vaArg);
 
 
 
-static inline void uart_disable_rx_irq(void) {
-    huart1.Instance->CR1 &= ~USART_CR1_RXNEIE;
+static inline void uart_disable_rx_irq(UART_HandleTypeDef *huart) {
+    huart->Instance->CR1 &= ~USART_CR1_RXNEIE;
 }
 
-static inline void uart_enable_rx_irq(void) {
-    huart1.Instance->CR1 |= USART_CR1_RXNEIE;
+static inline void uart_enable_rx_irq(UART_HandleTypeDef *huart) {
+    huart->Instance->CR1 |= USART_CR1_RXNEIE;
 }
 
-static inline uint32_t uart_rx_irq_active(void) {
-    return huart1.Instance->CR1 & USART_CR1_RXNEIE;
+static inline uint32_t uart_rx_irq_active(UART_HandleTypeDef *huart) {
+    return huart->Instance->CR1 & USART_CR1_RXNEIE;
 }
 
-static inline void uart_disable_tx_irq(void) {
-    huart1.Instance->CR1 &= ~USART_CR1_TXEIE;
+static inline void uart_disable_tx_irq(UART_HandleTypeDef *huart) {
+    huart->Instance->CR1 &= ~USART_CR1_TXEIE;
 }
 
-static inline void uart_enable_tx_irq(void) {
-    huart1.Instance->CR1 |= USART_CR1_TXEIE;
+static inline void uart_enable_tx_irq(UART_HandleTypeDef *huart) {
+    huart->Instance->CR1 |= USART_CR1_TXEIE;
 }
 
-static inline uint32_t uart_tx_irq_active(void) {
-    return huart1.Instance->CR1 & USART_CR1_TXEIE;
+static inline uint32_t uart_tx_irq_active(UART_HandleTypeDef *huart) {
+    return huart->Instance->CR1 & USART_CR1_TXEIE;
 }
 
 /* USER CODE END Prototypes */
@@ -139,4 +152,3 @@ static inline uint32_t uart_tx_irq_active(void) {
 #endif
 
 #endif /* __USART_H__ */
-
